@@ -6,5 +6,6 @@
         "TEST"
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "editor.parameterHints.enabled": false
 }

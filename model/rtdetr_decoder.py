@@ -1,7 +1,7 @@
 """by lyuwenyu
 """
 
-import math 
+import math,sys
 import copy 
 from collections import OrderedDict
 
@@ -276,7 +276,6 @@ class TransformerDecoder(nn.Module):
 
 
 class RTDETRTransformer(nn.Module):
-    __share__ = ['num_classes']
     def __init__(self,
                 num_classes=80,
                 hidden_dim=256,
@@ -320,6 +319,7 @@ class RTDETRTransformer(nn.Module):
         self.aux_loss = aux_loss
 
         # backbone feature projection
+
         self._build_input_proj_layer(feat_channels)
 
         # Transformer module
@@ -383,9 +383,13 @@ class RTDETRTransformer(nn.Module):
         init.xavier_uniform_(self.query_pos_head.layers[0].weight)
         init.xavier_uniform_(self.query_pos_head.layers[1].weight)
 
-
     def _build_input_proj_layer(self, feat_channels):
         self.input_proj = nn.ModuleList()
+
+        print("_build_input_proj_layer")
+        for it in feat_channels:
+            print(it)
+
         for in_channels in feat_channels:
             self.input_proj.append(
                 nn.Sequential(OrderedDict([
@@ -408,6 +412,11 @@ class RTDETRTransformer(nn.Module):
     def _get_encoder_input(self, feats):
         # get projection features
         proj_feats = [self.input_proj[i](feat) for i, feat in enumerate(feats)]
+        print("_get_encoder_input")
+        for it in proj_feats:
+            print(it.shape)
+            sys.stdout.flush()
+
         if self.num_levels > len(proj_feats):
             len_srcs = len(proj_feats)
             for i in range(len_srcs, self.num_levels):
@@ -463,7 +472,6 @@ class RTDETRTransformer(nn.Module):
 
         return anchors, valid_mask
 
-
     def _get_decoder_input(self,
                         memory,
                         spatial_shapes,
@@ -512,7 +520,7 @@ class RTDETRTransformer(nn.Module):
 
 
     def forward(self, feats, targets=None):
-
+        print("forward here")
         # input projection and embedding
         (memory, spatial_shapes, level_start_index) = self._get_encoder_input(feats)
         

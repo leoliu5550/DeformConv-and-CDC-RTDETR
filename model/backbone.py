@@ -8,12 +8,15 @@ from .common import FrozenBatchNorm2d
 class Backbone(nn.Module):
     def __init__(self,
                 backbone:str,
-                # frozenbatch=False,
                 weights=None,
                 dilation=False,
-                norm_layer= FrozenBatchNorm2d
+                norm_layer= False
 ):
         super().__init__()
+        if norm_layer == False:
+            norm_layer = FrozenBatchNorm2d
+        else:
+            norm_layer = None
         origin_model = getattr(torchvision.models, backbone)(
             replace_stride_with_dilation=[False, False, dilation],
             weights=weights,

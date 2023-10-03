@@ -4,12 +4,14 @@ import torch
 import torch.nn as nn
 from model.backbone import Backbone
 from model.common import FrozenBatchNorm2d
+import dynamic_yaml
 
 class Testbackbone:
-    device= 'cuda:1'
-    backbone='resnet50'
-    out_channel = 1024
-    norm_layer=None
+    with open('model_config.yaml') as fileobj:
+        cfg = dynamic_yaml.load(fileobj)
+    device= cfg.device
+    backbone= cfg.backbone.backbone
+    norm_layer= cfg.backbone.norm_layer
 
 
 
@@ -18,7 +20,7 @@ class Testbackbone:
     def test_FRbackbone(self):
         Backbone_model = Backbone(
             backbone='resnet50',
-            norm_layer=FrozenBatchNorm2d
+            norm_layer=False
         ).to(self.device)
         # output = list(Backbone_model(self.x).items())
         output = Backbone_model(self.x)
@@ -30,7 +32,6 @@ class Testbackbone:
     def test_BNbackbone2(self):
         Backbone_model = Backbone(
             backbone='resnet50',
-            out_channel = 1024,
             norm_layer=None
         ).to(self.device)
         output = Backbone_model(self.x)
@@ -38,7 +39,7 @@ class Testbackbone:
         assert output['feat2'].shape == torch.Size([2, 1024, 50, 50]) #1024
         assert output['feat3'].shape == torch.Size([2, 2048, 25, 25])
 
-    @pytest. mark. skip(reason="change to with out FPN")
+    @pytest. mark. skip(reason="change to orderdict type")
     def test_BNbackbone3(self):
         Backbone_model = Backbone(
             backbone='resnet50',
@@ -49,20 +50,6 @@ class Testbackbone:
         assert output[0][1].shape == torch.Size([2, 2048, 100, 100])#512
         assert output[1][1].shape == torch.Size([2, 2048, 50, 50]) #1024
         assert output[2][1].shape == torch.Size([2, 2048, 25, 25])
-
-# class Testmulthead:
-#     x = torch.ones([9,3,D_MODEL])
-#     def test_pos_head(self):
-#         # batch,rows,d_model
-#         # num_head and d_model
-#         model = multhead_position(NUM_HEAD,D_MODEL)
-#         assert model(self.x).shape == self.x.size()
-#     # unfinish
-#     def test_obj_head(self):
-#         # batch,rows,d_model
-#         # num_head and d_model
-#         model = multhead_position(NUM_HEAD,D_MODEL)
-#         assert model(self.x).shape == self.x.size()
 
 
 
