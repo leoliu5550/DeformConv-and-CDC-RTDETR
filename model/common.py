@@ -93,3 +93,8 @@ def get_activation(act: str, inpace: bool=True):
         m.inplace = inpace
     
     return m 
+
+
+class deformableConv(nn.ModuleList):
+    def __init__(self):
+        super().__init__()

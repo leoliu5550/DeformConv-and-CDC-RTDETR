@@ -576,3 +576,5 @@ class RTDETRTransformer(nn.Module):
         # as a dict having both a Tensor and a list.
         return [{'pred_logits': a, 'pred_boxes': b}
                 for a, b in zip(outputs_class, outputs_coord)]
+    
+
