@@ -282,7 +282,7 @@ class TransformerDecoder(nn.Module):
 
 
 class RTDETRTransformer(nn.Module):
-    __share__ = ['num_classes']
+
     def __init__(self,
                 num_classes=80,
                 hidden_dim=256,
@@ -441,10 +441,10 @@ class RTDETRTransformer(nn.Module):
         return (feat_flatten, spatial_shapes, level_start_index)
 
     def _generate_anchors(self,
-                          spatial_shapes=None,
-                          grid_size=0.05,
-                          dtype=torch.float32,
-                          device='cpu'):
+                        spatial_shapes=None,
+                        grid_size=0.05,
+                        dtype=torch.float32,
+                        device='cpu'):
         if spatial_shapes is None:
             spatial_shapes = [[int(self.eval_spatial_size[0] / s), int(self.eval_spatial_size[1] / s)]
                 for s in self.feat_strides
