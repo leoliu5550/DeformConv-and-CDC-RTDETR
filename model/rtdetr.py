@@ -4,10 +4,10 @@ import torch.nn.functional as F
 
 from .backbone import Backbone
 from .hybrid_encoder import HybridEncoder
-from .decoder import RTDETRTransformer
+from .decoder import RTDETRTransformer as decoder
 
 import numpy as np
-import dynamic_yaml
+import dynamic_yamls
 
 
 class rtdetr(nn.Module):
@@ -43,9 +43,18 @@ class rtdetr(nn.Module):
             eval_spatial_size = hybird_cfg.eval_size
         )
 
+        self.decoder = decoder(
+            
+        )
         # 
 
     def forward(self,x):
+
+        if self.multi_scale and self.training:
+            sz = np.random.choice(self.multi_scale)
+            x = F.interpolate(x, size=[sz, sz])
+
+            
         x = self.backbone(x)
         x = self.HybirdEncoder(x)
         return x
