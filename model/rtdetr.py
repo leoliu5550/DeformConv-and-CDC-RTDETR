@@ -1,9 +1,13 @@
 import torch 
 import torch.nn as nn
-import dynamic_yaml
+import torch.nn.functional as F 
+
 from .backbone import Backbone
 from .hybrid_encoder import HybridEncoder
 from .decoder import RTDETRTransformer
+
+import numpy as np
+import dynamic_yaml
 
 
 class rtdetr(nn.Module):
@@ -36,7 +40,7 @@ class rtdetr(nn.Module):
             expansion = hybird_cfg.expansion,
             depth_mult = hybird_cfg.depth_mult,
             act = hybird_cfg.act,
-            eval_size = hybird_cfg.eval_size
+            eval_spatial_size = hybird_cfg.eval_size
         )
 
         # 
@@ -45,3 +49,33 @@ class rtdetr(nn.Module):
         x = self.backbone(x)
         x = self.HybirdEncoder(x)
         return x
+    
+
+
+class RTDETR(nn.Module):
+    __inject__ = ['backbone', 'encoder', 'decoder', ]
+
+    def __init__(self, backbone: nn.Module, encoder, decoder, multi_scale=None):
+        super().__init__()
+        self.backbone = backbone
+        self.decoder = decoder
+        self.encoder = encoder
+        self.multi_scale = multi_scale
+        
+    def forward(self, x, targets=None):
+        if self.multi_scale and self.training:
+            sz = np.random.choice(self.multi_scale)
+            x = F.interpolate(x, size=[sz, sz])
+            
+        x = self.backbone(x)
+        x = self.encoder(x)        
+        x = self.decoder(x, targets)
+
+        return x
+    
+    def deploy(self, ):
+        self.eval()
+        for m in self.modules():
+            if hasattr(m, 'convert_to_deploy'):
+                m.convert_to_deploy()
+        return self 

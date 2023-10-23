@@ -1,7 +1,3 @@
-'''
-# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
-https://github.com/facebookresearch/detr/blob/main/util/box_ops.py
-'''
 
 import torch
 from torchvision.ops.boxes import box_area

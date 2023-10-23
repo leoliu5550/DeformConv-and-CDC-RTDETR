@@ -1,4 +1,5 @@
-device: 'cuda:1'
+device: 'cpu'
+device2: 'cuda:1'
 backbone:
   backbone: 'resnet50'
   weight:
@@ -19,4 +20,4 @@ hybirdencoder:
   expansion: 1.0
   depth_mult: 1.0
   act: 'silu'
-  eval_size:
+  eval_size: 

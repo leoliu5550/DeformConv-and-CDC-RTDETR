@@ -5,10 +5,14 @@ import torch.nn as nn
 from model.hybrid_encoder import *
 from model.backbone import Backbone
 from model.common import FrozenBatchNorm2d
+import dynamic_yaml 
+
 
 
 class Testencoder:
-    device= 'cuda:1'
+    with open("model_config.yaml") as file:
+        cfg = dynamic_yaml.load(file)
+    device = cfg['device']
     D_MODEL = 512
     def test_ConvNormlayer(self):
         x = torch.ones([2, 512, 100, 100]).to(self.device)
@@ -90,7 +94,7 @@ class Testencoder:
             expansion=1.0,
             depth_mult=1.0,
             act='silu',
-            eval_size=None
+            eval_spatial_size = None
         ).to(self.device)
         out = model(output)
 

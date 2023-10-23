@@ -6,9 +6,12 @@ import random
 from model.decoder import *
 from model.backbone import *
 from model.hybrid_encoder import *
+import dynamic_yaml 
 
 class Testdecoder:
-    device = 'cuda:1'
+    with open("model_config.yaml") as file:
+        cfg = dynamic_yaml.load(file)
+    device = cfg['device']
 
     def test_MLP(self):
         model = MLP(
@@ -28,6 +31,7 @@ class Testdecoder:
             query (Tensor): [bs, query_length, C]
             reference_points (Tensor): [bs, query_length, n_levels, 2], range in [0, 1], top-left (0,0),
                 bottom-right (1, 1), including padding area
+
             value (Tensor): [bs, value_length, C]
             value_spatial_shapes (List): [n_levels, 2], [(H_0, W_0), (H_1, W_1), ..., (H_{L-1}, W_{L-1})]
             value_level_start_index (List): [n_levels], [0, H_0*W_0, H_0*W_0+H_1*W_1, ...]
@@ -39,13 +43,15 @@ class Testdecoder:
         batch_szie = 4
         query_length = 256
         value_length = 1024
-        classify = 1024
+        classify = 80
         n_levels = 4
 
 
         querysize = torch.ones([batch_szie,query_length,classify]).to(self.device)
         reference_point = torch.ones([batch_szie,query_length,n_levels,2]).to(self.device)
+
         value = torch.ones([batch_szie,value_length,classify]).to(self.device)
+
         value_spatial_shapes = [(random.random(),random.random()) for _ in range(n_levels) ]
         value_mask = None
 
@@ -65,7 +71,7 @@ class Testdecoder:
         ).to(self.device)
 
         print()
-        print(output)
+        print(output.shape)
         assert 1 ==2
                 # value,
                 # value_spatial_shapes,
@@ -88,7 +94,7 @@ class Testdecoder:
         assert 1 == 22
 
 
-
+    # @pytest. mark. skip(reason="passnow because i dont have any choice")
     def test_RTDETRTransformer(self):
 
         x = torch.ones(1,3,800,800).to(self.device)
@@ -114,7 +120,7 @@ class Testdecoder:
             expansion=1.0,
             depth_mult=1.0,
             act='silu',
-            eval_size=None
+            eval_spatial_size = None
         ).to(self.device)
 
         model = RTDETRTransformer(                
