@@ -273,7 +273,8 @@
     'T_max': None, 
     'eta_min': 0, 
     'last_epoch': -1, 
-    'verbose': False}, 
+    'verbose': False
+}, 
 'OneCycleLR': {
     '_name': 'OneCycleLR',
     '_pymodule': 'module 'torch.optim.lr_scheduler' from '/home/lcliu/.conda/envs/research/lib/python3.9/site-packages/torch/optim/lr_scheduler.py'', 
