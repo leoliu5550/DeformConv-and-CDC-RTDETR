@@ -153,8 +153,8 @@ class SetCriterion(nn.Module):
 
     def loss_boxes(self, outputs, targets, indices, num_boxes):
         """Compute the losses related to the bounding boxes, the L1 regression loss and the GIoU loss
-           targets dicts must contain the key "boxes" containing a tensor of dim [nb_target_boxes, 4]
-           The target boxes are expected in format (center_x, center_y, w, h), normalized by the image size.
+            targets dicts must contain the key "boxes" containing a tensor of dim [nb_target_boxes, 4]
+            The target boxes are expected in format (center_x, center_y, w, h), normalized by the image size.
         """
         assert 'pred_boxes' in outputs
         idx = self._get_src_permutation_idx(indices)
@@ -230,9 +230,9 @@ class SetCriterion(nn.Module):
     def forward(self, outputs, targets):
         """ This performs the loss computation.
         Parameters:
-             outputs: dict of tensors, see the output specification of the model for the format
-             targets: list of dicts, such that len(targets) == batch_size.
-                      The expected keys in each dict depends on the losses applied, see each loss' doc
+                outputs: dict of tensors, see the output specification of the model for the format
+                targets: list of dicts, such that len(targets) == batch_size.
+                        The expected keys in each dict depends on the losses applied, see each loss' doc
         """
         outputs_without_aux = {k: v for k, v in outputs.items() if 'aux' not in k}
 

@@ -3,9 +3,17 @@ sys.path.append(".")
 import torch
 import torch.nn as nn
 import random
-from model.decoder import *
-from model.backbone import *
-from model.hybrid_encoder import *
+# from model.decoder import *
+# from model.backbone import *
+# from model.hybrid_encoder import *
+from model import (
+    RTDETRTransformer,
+    MLP, 
+    Backbone, 
+    MSDeformableAttention, 
+    HybridEncoder,
+    TransformerDecoderLayer)
+
 import dynamic_yaml 
 
 class Testdecoder:
@@ -109,9 +117,9 @@ class Testdecoder:
 
             in_channels=[512, 1024, 2048],
             feat_strides=[8, 16, 32],
-            hidden_dim=1024,
+            hidden_dim=256,
             nhead=8,
-            dim_feedforward = 1024,
+            dim_feedforward = 256,
             dropout=0.0,
             enc_act='gelu',
             use_encoder_idx=[2],
@@ -128,7 +136,7 @@ class Testdecoder:
                 hidden_dim=256,
                 num_queries=300,
                 position_embed_type='sine',
-                feat_channels=[512, 1024, 2048],
+                feat_channels=[256,256,256],
                 feat_strides=[8, 16, 32],
                 num_levels=3,
                 num_decoder_points=4,
@@ -150,14 +158,14 @@ class Testdecoder:
         out = hybird(out)
         print()
         print("#"*80)
-        # print(out)
+        print("hybird output")
+
         for it in out:
             print(it.shape)
-        print("here")
+
+
         out = model(out)
-
-
-        print()
         print("#"*80)
+        print("condee output")
         print(out.shape)
         assert 11==22

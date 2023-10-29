@@ -7,7 +7,7 @@ from .hybrid_encoder import HybridEncoder
 from .decoder import RTDETRTransformer as decoder
 
 import numpy as np
-import dynamic_yamls
+import dynamic_yaml
 
 
 class rtdetr(nn.Module):

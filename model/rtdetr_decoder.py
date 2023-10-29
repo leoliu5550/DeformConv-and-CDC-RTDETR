@@ -386,9 +386,7 @@ class RTDETRTransformer(nn.Module):
     def _build_input_proj_layer(self, feat_channels):
         self.input_proj = nn.ModuleList()
 
-        print("_build_input_proj_layer")
-        for it in feat_channels:
-            print(it)
+
 
         for in_channels in feat_channels:
             self.input_proj.append(
@@ -412,10 +410,8 @@ class RTDETRTransformer(nn.Module):
     def _get_encoder_input(self, feats):
         # get projection features
         proj_feats = [self.input_proj[i](feat) for i, feat in enumerate(feats)]
-        print("_get_encoder_input")
-        for it in proj_feats:
-            print(it.shape)
-            sys.stdout.flush()
+
+
 
         if self.num_levels > len(proj_feats):
             len_srcs = len(proj_feats)
@@ -441,6 +437,19 @@ class RTDETRTransformer(nn.Module):
         # [b, l, c]
         feat_flatten = torch.concat(feat_flatten, 1)
         level_start_index.pop()
+
+
+        print("_get_encoder_input : feat_flatten")
+        for it in feat_flatten:
+            print(it.shape)
+
+        print("_get_encoder_input : spatial_shapes")
+        for it in spatial_shapes:
+            print(it)
+
+        print("_get_encoder_input : level_start_index")
+        print(level_start_index)
+
         return (feat_flatten, spatial_shapes, level_start_index)
 
     def _generate_anchors(self,
@@ -520,7 +529,7 @@ class RTDETRTransformer(nn.Module):
 
 
     def forward(self, feats, targets=None):
-        print("forward here")
+
         # input projection and embedding
         (memory, spatial_shapes, level_start_index) = self._get_encoder_input(feats)
         

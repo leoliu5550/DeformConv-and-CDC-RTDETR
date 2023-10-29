@@ -1,11 +1,14 @@
-
+import sys
+sys.path.append(".")
 import copy
 import torch 
 import torch.nn as nn 
 import torch.nn.functional as F 
 
-from .common import get_activation
+from common import get_activation
+from core import register
 
+__all__ = ['HybridEncoder']
 
 class ConvNormLayer(nn.Module):
     def __init__(self, ch_in, ch_out, kernel_size, stride, padding=None, bias=False, act=None):
@@ -169,6 +172,7 @@ class TransformerEncoder(nn.Module):
 
         return output
 
+@register
 class HybridEncoder(nn.Module):
     def __init__(self,
                 in_channels=[512, 1024, 2048],

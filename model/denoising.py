@@ -2,6 +2,7 @@
 """
 
 import torch 
+
 from .utils import inverse_sigmoid
 from .box_ops import box_cxcywh_to_xyxy, box_xyxy_to_cxcywh
 
@@ -17,7 +18,9 @@ def get_contrastive_denoising_training_group(targets,
     """cnd"""
     if num_denoising <= 0:
         return None, None, None, None
-
+    print("#### denoising ####")
+    print(num_denoising)
+    print(targets)
     num_gts = [len(t['labels']) for t in targets]
     device = targets[0]['labels'].device
     
