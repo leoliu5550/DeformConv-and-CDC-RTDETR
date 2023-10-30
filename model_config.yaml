@@ -60,23 +60,22 @@ model:
     act: 'silu'
     eval_size: 
 
-  decoder:
+  RTDETRTransformer:
     num_classes: 80
     hidden_dim: 256
     num_queries: 300
     position_embed_type: 'sine'
     feat_channels: 
-      - 512
-      - 1024
-      - 2048
+      - 256
+      - 256
+      - 256
     feat_strides:
       - 8
       - 16
       - 32
-
+    nhead: 8
     num_levels: 3
     num_decoder_points: 4
-    nhead: 8
     num_decoder_layers: 6
     dim_feedforward: 1024
     dropout: 0.
@@ -85,7 +84,7 @@ model:
     label_noise_ratio: 0.5
     box_noise_scale: 1.
     learnt_init_query: False
-    eval_spatial_size:
+    eval_spatial_size: [640, 640]
     eval_idx: -1
     eps: '1e-2'
     aux_loss: True

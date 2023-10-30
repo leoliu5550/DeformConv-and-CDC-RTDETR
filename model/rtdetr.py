@@ -19,13 +19,13 @@ class rtdetr(nn.Module):
 
 
         # backbone part
-        backbone_cfg = cfg.backbone
+        backbone_cfg = cfg.model.backbone
         self.backbone = Backbone(
             backbone= backbone_cfg.backbone,
             norm_layer= backbone_cfg.norm_layer
         )
         # hybirdencoder part
-        hybird_cfg = cfg.hybirdencoder
+        hybird_cfg = cfg.model.hybirdencoder
         self.HybirdEncoder = HybridEncoder(
             in_channels = hybird_cfg.in_channels,
             feat_strides = hybird_cfg.feat_strides,
@@ -43,6 +43,9 @@ class rtdetr(nn.Module):
             eval_spatial_size = hybird_cfg.eval_size
         )
 
+
+        # decoder part
+        decoder_cfg = cfg.model.decoder
         self.decoder = decoder(
             
         )
@@ -61,30 +64,30 @@ class rtdetr(nn.Module):
     
 
 
-class RTDETR(nn.Module):
-    __inject__ = ['backbone', 'encoder', 'decoder', ]
+# class RTDETR(nn.Module):
+#     __inject__ = ['backbone', 'encoder', 'decoder', ]
 
-    def __init__(self, backbone: nn.Module, encoder, decoder, multi_scale=None):
-        super().__init__()
-        self.backbone = backbone
-        self.decoder = decoder
-        self.encoder = encoder
-        self.multi_scale = multi_scale
+#     def __init__(self, backbone: nn.Module, encoder, decoder, multi_scale=None):
+#         super().__init__()
+#         self.backbone = backbone
+#         self.decoder = decoder
+#         self.encoder = encoder
+#         self.multi_scale = multi_scale
         
-    def forward(self, x, targets=None):
-        if self.multi_scale and self.training:
-            sz = np.random.choice(self.multi_scale)
-            x = F.interpolate(x, size=[sz, sz])
+#     def forward(self, x, targets=None):
+#         if self.multi_scale and self.training:
+#             sz = np.random.choice(self.multi_scale)
+#             x = F.interpolate(x, size=[sz, sz])
             
-        x = self.backbone(x)
-        x = self.encoder(x)        
-        x = self.decoder(x, targets)
+#         x = self.backbone(x)
+#         x = self.encoder(x)        
+#         x = self.decoder(x, targets)
 
-        return x
+#         return x
     
-    def deploy(self, ):
-        self.eval()
-        for m in self.modules():
-            if hasattr(m, 'convert_to_deploy'):
-                m.convert_to_deploy()
-        return self 
+#     def deploy(self, ):
+#         self.eval()
+#         for m in self.modules():
+#             if hasattr(m, 'convert_to_deploy'):
+#                 m.convert_to_deploy()
+#         return self 
