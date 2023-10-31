@@ -1,12 +1,12 @@
-import sys
-sys.path.append(".")
+# import sys
+# sys.path.append(".")
 import copy
 import torch 
 import torch.nn as nn 
 import torch.nn.functional as F 
 
-from common import get_activation
-from core import register
+from .comm.common import get_activation
+# from core import register
 
 __all__ = ['HybridEncoder']
 
@@ -172,7 +172,7 @@ class TransformerEncoder(nn.Module):
 
         return output
 
-@register
+# @register
 class HybridEncoder(nn.Module):
     def __init__(self,
                 in_channels=[512, 1024, 2048],

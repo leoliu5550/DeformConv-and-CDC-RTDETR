@@ -9,12 +9,9 @@ import torch
 import torch.nn as nn 
 import torch.nn.functional as F 
 import torch.nn.init as init 
-
 from .denoising import get_contrastive_denoising_training_group
-
-from .utils import deformable_attention_core_func, inverse_sigmoid
-from .utils import bias_init_with_prob
-from .common import get_activation
+from .utils import deformable_attention_core_func, inverse_sigmoid, bias_init_with_prob
+from .comm.common import get_activation
 
 
 
@@ -439,16 +436,16 @@ class RTDETRTransformer(nn.Module):
         level_start_index.pop()
 
 
-        print("_get_encoder_input : feat_flatten")
-        for it in feat_flatten:
-            print(it.shape)
+        # print("_get_encoder_input : feat_flatten")
+        # for it in feat_flatten:
+        #     print(it.shape)
 
-        print("_get_encoder_input : spatial_shapes")
-        for it in spatial_shapes:
-            print(it)
+        # print("_get_encoder_input : spatial_shapes")
+        # for it in spatial_shapes:
+        #     print(it)
 
-        print("_get_encoder_input : level_start_index")
-        print(level_start_index)
+        # print("_get_encoder_input : level_start_index")
+        # print(level_start_index)
 
         return (feat_flatten, spatial_shapes, level_start_index)
 
@@ -532,7 +529,7 @@ class RTDETRTransformer(nn.Module):
 
         # input projection and embedding
         (memory, spatial_shapes, level_start_index) = self._get_encoder_input(feats)
-        
+
         # prepare denoising training
         if self.training and self.num_denoising > 0:
             denoising_class, denoising_bbox_unact, attn_mask, dn_meta = \
@@ -546,8 +543,15 @@ class RTDETRTransformer(nn.Module):
         else:
             denoising_class, denoising_bbox_unact, attn_mask, dn_meta = None, None, None, None
 
+
+
+        # print("#######rtdetr transformer#####")
+        # print(targets)
+
+
         target, init_ref_points_unact, enc_topk_bboxes, enc_topk_logits = \
             self._get_decoder_input(memory, spatial_shapes, denoising_class, denoising_bbox_unact)
+
 
         # decoder
         out_bboxes, out_logits = self.decoder(
@@ -574,7 +578,6 @@ class RTDETRTransformer(nn.Module):
             if self.training and dn_meta is not None:
                 out['dn_aux_outputs'] = self._set_aux_loss(dn_out_logits, dn_out_bboxes)
                 out['dn_meta'] = dn_meta
-
         return out
 
 

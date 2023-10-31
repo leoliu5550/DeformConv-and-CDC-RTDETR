@@ -13,7 +13,7 @@ import torch.nn.init as init
 from .denoising import get_contrastive_denoising_training_group
 from .utils import deformable_attention_core_func, inverse_sigmoid
 from .utils import bias_init_with_prob
-from .common import get_activation
+from .comm.common import get_activation
 
 # from src.core import register
 
@@ -469,7 +469,6 @@ class RTDETRTransformer(nn.Module):
 
         return anchors, valid_mask
 
-
     def _get_decoder_input(self,
                         memory,
                         spatial_shapes,
@@ -515,7 +514,6 @@ class RTDETRTransformer(nn.Module):
             target = torch.concat([denoising_class, target], 1)
 
         return target, reference_points_unact.detach(), enc_topk_bboxes, enc_topk_logits
-
 
     def forward(self, feats, targets=None):
 

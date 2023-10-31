@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 from model.hybrid_encoder import *
 from model.backbone import Backbone
-from model.common import FrozenBatchNorm2d
+from model.comm.common import FrozenBatchNorm2d
 import dynamic_yaml 
 
 

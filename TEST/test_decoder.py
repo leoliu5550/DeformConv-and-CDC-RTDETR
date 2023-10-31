@@ -1,12 +1,13 @@
-import sys,pytest
-sys.path.append(".")
+# import sys,pytest
+# sys.path.append(".")
+import pytest
 import torch
 import torch.nn as nn
 import random
 # from model.decoder import *
 # from model.backbone import *
 # from model.hybrid_encoder import *
-from model import (
+from ..model import (
     RTDETRTransformer,
     MLP, 
     Backbone, 
@@ -145,7 +146,7 @@ class Testdecoder:
                 dim_feedforward=1024,
                 dropout=0.,
                 activation="relu",
-                num_denoising=100,
+                num_denoising=0,
                 label_noise_ratio=0.5,
                 box_noise_scale=1.0,
                 learnt_init_query=False,
@@ -155,17 +156,18 @@ class Testdecoder:
                 aux_loss=True).to(self.device)
 
         out = bmodel(x)
-        out = hybird(out)
-        print()
+
+        with open("data/coco.yaml","r") as file:
+            cfg = dynamic_yaml.load(file)
         print("#"*80)
-        print("hybird output")
+        print(dict(cfg.names).keys())
 
-        for it in out:
-            print(it.shape)
-
-
-        out = model(out)
+        out = hybird(out)
+        out = model(feats= out,
+                    targets= list(dict(cfg.names).keys()))
+        # print(out)
+        
         print("#"*80)
         print("condee output")
-        print(out.shape)
+        print(out.keys())
         assert 11==22
