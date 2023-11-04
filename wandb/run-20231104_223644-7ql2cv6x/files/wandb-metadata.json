@@ -1,0 +1,152 @@
+{
+    "os": "Linux-6.2.0-34-generic-x86_64-with-glibc2.35",
+    "python": "3.9.16",
+    "heartbeatAt": "2023-11-04T14:36:45.028367",
+    "startedAt": "2023-11-04T14:36:44.185702",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/lcliu/Documents/EXP_RTDETR/main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/leoliu5550/RT-DETR.git",
+        "commit": "922c1cfd65d4a37b6522590691390487a10bb165"
+    },
+    "email": "leoliu5550@gmail.com",
+    "root": "/home/lcliu/Documents/EXP_RTDETR",
+    "host": "jhchen-server",
+    "username": "lcliu",
+    "executable": "/home/lcliu/.conda/envs/research/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 1459.29775,
+        "min": 1200.0,
+        "max": 3100.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1396.543,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1700.397,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1199.352,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 2655.033,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1998.866,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1616.929,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1199.315,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1999.299,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 467.8895797729492,
+            "used": 186.07217407226562
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 2080 SUPER",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2080 SUPER",
+            "memory_total": 8589934592
+        },
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 31.24392318725586
+    }
+}

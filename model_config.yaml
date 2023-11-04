@@ -1,7 +1,20 @@
 device: 'cpu'
-device2: 'cuda:1'
+notes: 'cuda:1'
 
 task: detection
+statement: '11/4 train model with no denoise queries'
+
+train:
+  save_dir: runs/exp1
+  epoch: 1000
+  batch_size: 8
+  base_lr: 0.0001
+  imgsz: 800
+  label_smoothing: 0.0
+  optimizer: 
+  save: true
+  save_period: 50
+
 
 data:
   num_classes: 80
@@ -36,6 +49,8 @@ data:
     batch_size: 8
     num_workers: 4
     drop_last: False
+
+
 
 model:
   backbone:
@@ -88,4 +103,3 @@ model:
     eval_idx: -1
     eps: '1e-2'
     aux_loss: True
-

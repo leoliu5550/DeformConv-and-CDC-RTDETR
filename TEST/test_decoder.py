@@ -7,7 +7,7 @@ import random
 # from model.decoder import *
 # from model.backbone import *
 # from model.hybrid_encoder import *
-from ..model import (
+from model import (
     RTDETRTransformer,
     MLP, 
     Backbone, 
@@ -159,15 +159,30 @@ class Testdecoder:
 
         with open("data/coco.yaml","r") as file:
             cfg = dynamic_yaml.load(file)
-        print("#"*80)
-        print(dict(cfg.names).keys())
 
         out = hybird(out)
         out = model(feats= out,
                     targets= list(dict(cfg.names).keys()))
-        # print(out)
+
         
         print("#"*80)
         print("condee output")
         print(out.keys())
-        assert 11==22
+        print('pred_logits',out['pred_logits'].shape)
+        assert out['pred_logits'].shape == torch.Size([1, 300, 80])
+        print('pred_boxes',out['pred_boxes'].shape)
+        assert out['pred_boxes'].shape == torch.Size([1, 300, 4])
+
+
+
+        print('#######aux_outputs######')
+        assert len(out['aux_outputs']) ==6
+
+        for item in out['aux_outputs']:
+            print(item.keys(),item['pred_logits'].shape,item['pred_boxes'].shape)
+        for item in out['aux_outputs']:
+            print(item.keys(),item['pred_logits'].shape,item['pred_boxes'].shape)
+            assert item['pred_logits'].shape == torch.Size([1, 300, 80])
+            assert item['pred_boxes'].shape == torch.Size([1, 300, 4])
+
+        # assert 11==22

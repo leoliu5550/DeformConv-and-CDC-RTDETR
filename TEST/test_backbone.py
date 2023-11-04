@@ -10,8 +10,8 @@ class Testbackbone:
     with open('model_config.yaml') as fileobj:
         cfg = dynamic_yaml.load(fileobj)
     device= cfg.device
-    backbone= cfg.backbone.backbone
-    norm_layer= cfg.backbone.norm_layer
+    backbone= cfg.model.backbone.backbone
+    norm_layer= cfg.model.backbone.norm_layer
 
 
 

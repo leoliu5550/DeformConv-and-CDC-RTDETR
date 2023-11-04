@@ -45,10 +45,10 @@ class rtdetr(nn.Module):
 
 
         # decoder part
-        decoder_cfg = cfg.model.decoder
-        self.decoder = decoder(
+        # decoder_cfg = cfg.model.decoder
+        # self.decoder = decoder(
             
-        )
+        # )
         # 
 
     def forward(self,x):

@@ -8,7 +8,6 @@ import torch.nn.functional as F
 from .comm.common import get_activation
 # from core import register
 
-__all__ = ['HybridEncoder']
 
 class ConvNormLayer(nn.Module):
     def __init__(self, ch_in, ch_out, kernel_size, stride, padding=None, bias=False, act=None):

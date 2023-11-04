@@ -4,27 +4,16 @@
 COCO dataset which returns image_id for evaluation.
 Mostly copy-paste from https://github.com/pytorch/vision/blob/13b35ff/references/detection/coco_utils.py
 """
-
 import torch
 import torch.utils.data
-
 import torchvision
 torchvision.disable_beta_transforms_warning()
-
 from torchvision import datapoints
-
 from pycocotools import mask as coco_mask
 
-from core import register
-
-__all__ = ['CocoDetection']
 
 
-@register
 class CocoDetection(torchvision.datasets.CocoDetection):
-    __inject__ = ['transforms']
-    __share__ = ['remap_mscoco_category']
-    
     def __init__(self, img_folder, ann_file, transforms, return_masks, remap_mscoco_category=False):
         super(CocoDetection, self).__init__(img_folder, ann_file)
         self._transforms = transforms
@@ -60,7 +49,6 @@ class CocoDetection(torchvision.datasets.CocoDetection):
         s += f' return_masks: {self.return_masks}\n'
         if hasattr(self, '_transforms') and self._transforms is not None:
             s += f' transforms:\n   {repr(self._transforms)}'
-
         return s 
 
 

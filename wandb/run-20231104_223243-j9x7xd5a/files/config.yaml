@@ -1,0 +1,134 @@
+wandb_version: 1
+
+device:
+  desc: null
+  value: cpu
+notes:
+  desc: null
+  value: cuda:1
+task:
+  desc: null
+  value: detection
+data:
+  desc: null
+  value:
+    num_classes: 80
+    remap_mscoco_category: true
+    train_dataloader:
+      type: DataLoader
+      dataset:
+        type: CocoDetection
+        img_folder: /data/lcliu/coco_dataset/train2017/
+        ann_file: /data/lcliu/coco_dataset/instances_train2017.json
+        transforms:
+          type: Compose
+          ops: null
+      shuffle: true
+      batch_size: 8
+      num_workers: 4
+      drop_last: true
+    val_dataloader:
+      type: DataLoader
+      dataset:
+        type: CocoDetection
+        img_folder: /data/lcliu/coco_dataset/val2017/
+        ann_file: /data/lcliu/coco_dataset/instances_val2017.json
+        transforms:
+          type: Compose
+          ops: null
+      shuffle: false
+      batch_size: 8
+      num_workers: 4
+      drop_last: false
+train:
+  desc: null
+  value:
+    epoch: 300
+    batch_size: 8
+    base_lr: 0.0001
+model:
+  desc: null
+  value:
+    backbone:
+      backbone: resnet50
+      weight: null
+      dilation: null
+      norm_layer: false
+    hybirdencoder:
+      in_channels:
+      - 512
+      - 1024
+      - 2048
+      feat_strides:
+      - 8
+      - 16
+      - 32
+      hidden_dim: 512
+      nhead: 8
+      dim_feedforward: 1024
+      dropout: 0.0
+      enc_act: gelu
+      use_encoder_idx:
+      - 2
+      num_encoder_layers: 5
+      pe_temperature: 10000
+      expansion: 1.0
+      depth_mult: 1.0
+      act: silu
+      eval_size: null
+    RTDETRTransformer:
+      num_classes: 80
+      hidden_dim: 256
+      num_queries: 300
+      position_embed_type: sine
+      feat_channels:
+      - 256
+      - 256
+      - 256
+      feat_strides:
+      - 8
+      - 16
+      - 32
+      nhead: 8
+      num_levels: 3
+      num_decoder_points: 4
+      num_decoder_layers: 6
+      dim_feedforward: 1024
+      dropout: 0.0
+      activation: relu
+      num_denoising: 100
+      label_noise_ratio: 0.5
+      box_noise_scale: 1.0
+      learnt_init_query: false
+      eval_spatial_size:
+      - 640
+      - 640
+      eval_idx: -1
+      eps: 1e-2
+      aux_loss: true
+statement:
+  desc: null
+  value: 11/4 train model with no denoise queries
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.16
+    cli_version: 0.15.10
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1699108363.440379
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 16
+      - 23
+      4: 3.9.16
+      5: 0.15.10
+      8:
+      - 5
