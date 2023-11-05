@@ -1,5 +1,5 @@
-device: 'cpu'
-notes: 'cuda:1'
+device: 'cuda:1'
+notes: 'cpu'
 
 task: detection
 statement: '11/4 train model with no denoise queries'
@@ -7,13 +7,13 @@ statement: '11/4 train model with no denoise queries'
 train:
   save_dir: runs/exp1
   epoch: 1000
-  batch_size: 8
   base_lr: 0.0001
-  imgsz: 800
+  img_size: 800
   label_smoothing: 0.0
   optimizer: 
   save: true
   save_period: 50
+  tolerance: 0.00001
 
 
 data:
@@ -25,7 +25,7 @@ data:
     dataset: 
       type: CocoDetection
       img_folder: /data/lcliu/coco_dataset/train2017/
-      ann_file: /data/lcliu/coco_dataset/instances_train2017.json
+      ann_file: /data/lcliu/coco_dataset/annotations/instances_train2017.json
       transforms:
         type: Compose
         ops: ~

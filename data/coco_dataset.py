@@ -9,20 +9,24 @@ import torch.utils.data
 import torchvision
 torchvision.disable_beta_transforms_warning()
 from torchvision import datapoints
+from torchvision import transforms
+from .functional import *
 from pycocotools import mask as coco_mask
 
 
 
 class CocoDetection(torchvision.datasets.CocoDetection):
-    def __init__(self, img_folder, ann_file, transforms, return_masks, remap_mscoco_category=False):
+    def __init__(self, img_folder, ann_file, # transforms, 
+                return_masks,# size, 
+                remap_mscoco_category=False):
         super(CocoDetection, self).__init__(img_folder, ann_file)
-        self._transforms = transforms
+        # self._transforms = transforms
         self.prepare = ConvertCocoPolysToMask(return_masks, remap_mscoco_category)
         self.img_folder = img_folder
         self.ann_file = ann_file
         self.return_masks = return_masks
         self.remap_mscoco_category = remap_mscoco_category
-
+        # self.size = size
     def __getitem__(self, idx):
         img, target = super(CocoDetection, self).__getitem__(idx)
         image_id = self.ids[idx]
@@ -39,9 +43,15 @@ class CocoDetection(torchvision.datasets.CocoDetection):
         if 'masks' in target:
             target['masks'] = datapoints.Mask(target['masks'])
 
-        if self._transforms is not None:
-            img, target = self._transforms(img, target)
-            
+        # if self._transforms is not None:
+        #     img, target = self._transforms(img, target)
+        transform1 = transforms.Compose([transforms.ToTensor()])  #归一化到(0,1)，简单直接除以255
+        # print("=-img-=")
+        print(img.size) # (640, 480) 
+        img = transform1(img) 
+        print(img.shape) # torch.Size([3, 480, 640])
+        # C x H x W in [0,1]
+
         return img, target
 
     def extra_repr(self) -> str:
@@ -98,6 +108,7 @@ class ConvertCocoPolysToMask(object):
             
         classes = torch.tensor(classes, dtype=torch.int64)
 
+        # image segmetations
         if self.return_masks:
             segmentations = [obj["segmentation"] for obj in anno]
             masks = convert_coco_poly_to_mask(segmentations, h, w)

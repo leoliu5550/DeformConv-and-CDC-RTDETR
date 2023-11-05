@@ -169,8 +169,10 @@ class Testdecoder:
         print("condee output")
         print(out.keys())
         print('pred_logits',out['pred_logits'].shape)
+        print(out['pred_logits'])
         assert out['pred_logits'].shape == torch.Size([1, 300, 80])
         print('pred_boxes',out['pred_boxes'].shape)
+        print(out['pred_boxes'])
         assert out['pred_boxes'].shape == torch.Size([1, 300, 4])
 
 
