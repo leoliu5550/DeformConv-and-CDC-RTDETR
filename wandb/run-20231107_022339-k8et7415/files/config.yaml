@@ -2,13 +2,39 @@ wandb_version: 1
 
 device:
   desc: null
-  value: cpu
+  value: cuda:0
 notes:
   desc: null
-  value: cuda:1
+  value: cpu
 task:
   desc: null
   value: detection
+statement:
+  desc: null
+  value: 11/4 train model with no denoise queries
+train:
+  desc: null
+  value:
+    save_dir: runs/exp1
+    epoch: 2
+    base_lr: 0.001
+    img_size: 800
+    label_smoothing: 0.0
+    optimizer: null
+    save: true
+    save_period: 50
+    tolerance: 1.0e-05
+optimizer:
+  desc: null
+  value:
+    adam:
+      lr: 0.001
+      betas:
+      - 0.9
+      - 0.999
+      eps: 1.0e-08
+      weight_decay: 0
+      amsgrad: false
 data:
   desc: null
   value:
@@ -19,7 +45,7 @@ data:
       dataset:
         type: CocoDetection
         img_folder: /data/lcliu/coco_dataset/train2017/
-        ann_file: /data/lcliu/coco_dataset/instances_train2017.json
+        ann_file: /data/lcliu/coco_dataset/annotations/instances_train2017.json
         transforms:
           type: Compose
           ops: null
@@ -40,12 +66,6 @@ data:
       batch_size: 8
       num_workers: 4
       drop_last: false
-train:
-  desc: null
-  value:
-    epoch: 300
-    batch_size: 8
-    base_lr: 0.0001
 model:
   desc: null
   value:
@@ -63,14 +83,14 @@ model:
       - 8
       - 16
       - 32
-      hidden_dim: 512
+      hidden_dim: 256
       nhead: 8
-      dim_feedforward: 1024
+      dim_feedforward: 256
       dropout: 0.0
       enc_act: gelu
       use_encoder_idx:
       - 2
-      num_encoder_layers: 5
+      num_encoder_layers: 1
       pe_temperature: 10000
       expansion: 1.0
       depth_mult: 1.0
@@ -79,7 +99,7 @@ model:
     RTDETRTransformer:
       num_classes: 80
       hidden_dim: 256
-      num_queries: 300
+      num_queries: 100
       position_embed_type: sine
       feat_channels:
       - 256
@@ -89,26 +109,43 @@ model:
       - 8
       - 16
       - 32
-      nhead: 8
       num_levels: 3
       num_decoder_points: 4
+      nhead: 8
       num_decoder_layers: 6
       dim_feedforward: 1024
       dropout: 0.0
-      activation: relu
-      num_denoising: 100
+      activation: silu
+      num_denoising: 0
       label_noise_ratio: 0.5
       box_noise_scale: 1.0
       learnt_init_query: false
-      eval_spatial_size:
-      - 640
-      - 640
+      eval_spatial_size: null
       eval_idx: -1
-      eps: 1e-2
+      eps: 0.01
       aux_loss: true
-statement:
+LOSS:
   desc: null
-  value: 11/4 train model with no denoise queries
+  value:
+    SetCriterion:
+      weight_dict:
+        loss_vfl: 1
+        loss_bbox: 5
+        loss_giou: 2
+      losses:
+      - vfl
+      - boxes
+      eos_coef: 0.0001
+      alpha: 0.75
+      gamma: 2.0
+    matcher:
+      type: HungarianMatcher
+      weight_dict:
+        cost_class: 2
+        cost_bbox: 5
+        cost_giou: 2
+      alpha: 0.25
+      gamma: 2.0
 _wandb:
   desc: null
   value:
@@ -117,13 +154,15 @@ _wandb:
     framework: torch
     is_jupyter_run: false
     is_kaggle_kernel: false
-    start_time: 1699108604.195254
+    start_time: 1699295019.832723
     t:
       1:
       - 1
+      - 41
       - 55
       2:
       - 1
+      - 41
       - 55
       3:
       - 13

@@ -1,4 +1,4 @@
-device: 'cuda:1'
+device: 'cuda:0'
 notes: 'cpu'
 
 task: detection
@@ -6,8 +6,8 @@ statement: '11/4 train model with no denoise queries'
 
 train:
   save_dir: runs/exp1
-  epoch: 1000
-  base_lr: 0.0001
+  epoch: 2
+  base_lr: 0.001
   img_size: 800
   label_smoothing: 0.0
   optimizer: 
@@ -15,6 +15,13 @@ train:
   save_period: 50
   tolerance: 0.00001
 
+optimizer:
+  adam:
+    lr: 0.001
+    betas: [0.9,0.999]
+    eps: 1.0e-8
+    weight_decay: 0
+    amsgrad: False
 
 data:
   num_classes: 80
@@ -40,7 +47,7 @@ data:
     dataset: 
       type: CocoDetection
       img_folder: /data/lcliu/coco_dataset/val2017/
-      ann_file: /data/lcliu/coco_dataset/instances_val2017.json
+      ann_file: /data/lcliu/coco_dataset/annotations/instances_val2017.json
       transforms:
         type: Compose
         ops: ~ 
@@ -62,13 +69,13 @@ model:
   hybirdencoder:
     in_channels: [512,1024,2048]
     feat_strides: [8, 16, 32]
-    hidden_dim: 512
+    hidden_dim: 256
     nhead: 8
-    dim_feedforward: 1024
+    dim_feedforward: 256
     dropout: 0.0
     enc_act: 'gelu'
     use_encoder_idx: [2]
-    num_encoder_layers: 5
+    num_encoder_layers: 1
     pe_temperature: 10000
     expansion: 1.0
     depth_mult: 1.0
@@ -78,7 +85,7 @@ model:
   RTDETRTransformer:
     num_classes: 80
     hidden_dim: 256
-    num_queries: 300
+    num_queries: 100
     position_embed_type: 'sine'
     feat_channels: 
       - 256
@@ -88,18 +95,33 @@ model:
       - 8
       - 16
       - 32
-    nhead: 8
     num_levels: 3
     num_decoder_points: 4
+    nhead: 8
     num_decoder_layers: 6
     dim_feedforward: 1024
     dropout: 0.
-    activation: "relu"
-    num_denoising: 100
+    activation: 'silu'
+    num_denoising: 0
     label_noise_ratio: 0.5
-    box_noise_scale: 1.
+    box_noise_scale: 1.0
     learnt_init_query: False
-    eval_spatial_size: [640, 640]
+    eval_spatial_size: 
     eval_idx: -1
-    eps: '1e-2'
+    eps: 1.0e-2
     aux_loss: True
+
+LOSS:
+  SetCriterion:
+    weight_dict: {loss_vfl: 1, loss_bbox: 5, loss_giou: 2,}
+    losses: ['vfl', 'boxes', ]
+    eos_coef: 1.0e-4
+    alpha: 0.75
+    gamma: 2.0
+
+  matcher:
+    type: HungarianMatcher
+    weight_dict: {cost_class: 2, cost_bbox: 5, cost_giou: 2}
+    # use_focal_loss: True 
+    alpha: 0.25
+    gamma: 2.0

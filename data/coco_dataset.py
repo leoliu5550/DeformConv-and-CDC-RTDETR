@@ -47,9 +47,9 @@ class CocoDetection(torchvision.datasets.CocoDetection):
         #     img, target = self._transforms(img, target)
         transform1 = transforms.Compose([transforms.ToTensor()])  #归一化到(0,1)，简单直接除以255
         # print("=-img-=")
-        print(img.size) # (640, 480) 
+        # print(img.size) # (640, 480) 
         img = transform1(img) 
-        print(img.shape) # torch.Size([3, 480, 640])
+        # print(img.shape) # torch.Size([3, 480, 640])
         # C x H x W in [0,1]
 
         return img, target

@@ -29,8 +29,6 @@ class MLP(nn.Module):
             x = self.act(layer(x)) if i < self.num_layers - 1 else layer(x)
         return x
 
-
-
 class MSDeformableAttention(nn.Module):
     def __init__(self, embed_dim=256, num_heads=8, num_levels=4, num_points=4,):
         """
@@ -135,7 +133,6 @@ class MSDeformableAttention(nn.Module):
 
         return output
 
-
 class TransformerDecoderLayer(nn.Module):
     def __init__(self,
                 d_model=256,
@@ -217,7 +214,6 @@ class TransformerDecoderLayer(nn.Module):
         tgt = self.norm3(tgt)
 
         return tgt
-
 
 class TransformerDecoder(nn.Module):
     def __init__(self, hidden_dim, decoder_layer, num_layers, eval_idx=-1):

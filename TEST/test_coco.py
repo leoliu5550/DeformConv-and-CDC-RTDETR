@@ -15,18 +15,22 @@ class TestCoCo:
         # transforms = None,
         return_masks = False
     )
+
+    data = Coco_loader.__getitem__(1)
     def test_Coco_loader(self):
-        data = self.Coco_loader.__getitem__(1)
-        # print(data[0].shape)
-        assert data[0].shape == torch.Size([3, 426, 640])
-        print(data[1]['orig_size'])
+        assert self.data[0].shape == torch.Size([3, 426, 640])
+        # print(self.data[1]['orig_size'])
         
     def test_Coco_Resize(self):
-        data = self.Coco_loader.__getitem__(1)
-        rimg =resize(data[0],data[1])
+        # resize input image and target
+        rimg =resize(self.data[0],self.data[1])
         print(rimg[1])
         assert rimg[0].shape == torch.Size([3, 800, 800])
         
 
-
-
+    def test_Coco_labelreshape(self):
+        img =resize(self.data[0],self.data[1])
+        # print(img[1]['labels'])
+        labels = torch.tensor([25,25])
+        # print(labels)
+        assert torch.equal(img[1]['labels'],labels) == True

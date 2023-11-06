@@ -1,8 +1,8 @@
 {
     "os": "Linux-6.2.0-34-generic-x86_64-with-glibc2.35",
     "python": "3.9.16",
-    "heartbeatAt": "2023-11-04T14:32:44.264460",
-    "startedAt": "2023-11-04T14:32:43.427858",
+    "heartbeatAt": "2023-11-06T18:25:00.343003",
+    "startedAt": "2023-11-06T18:24:59.491059",
     "docker": null,
     "cuda": null,
     "args": [],
@@ -12,7 +12,7 @@
     "codePath": "main.py",
     "git": {
         "remote": "https://github.com/leoliu5550/RT-DETR.git",
-        "commit": "922c1cfd65d4a37b6522590691390487a10bb165"
+        "commit": "5b04de38e2593fa97787c4578ee3e410e3dcb856"
     },
     "email": "leoliu5550@gmail.com",
     "root": "/home/lcliu/Documents/EXP_RTDETR",
@@ -22,23 +22,88 @@
     "cpu_count": 10,
     "cpu_count_logical": 20,
     "cpu_freq": {
-        "current": 1465.2154999999998,
+        "current": 1520.15555,
         "min": 1200.0,
         "max": 3100.0
     },
     "cpu_freq_per_core": [
         {
-            "current": 2200.389,
+            "current": 1200.063,
             "min": 1200.0,
             "max": 3100.0
         },
         {
-            "current": 1723.067,
+            "current": 1200.0,
             "min": 1200.0,
             "max": 3100.0
         },
         {
-            "current": 1200.401,
+            "current": 1447.141,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1299.254,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1405.337,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 2861.562,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.146,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1199.316,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 2000.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3100.0
+        },
+        {
+            "current": 1843.553,
             "min": 1200.0,
             "max": 3100.0
         },
@@ -53,72 +118,7 @@
             "max": 3100.0
         },
         {
-            "current": 1200.0,
-            "min": 1200.0,
-            "max": 3100.0
-        },
-        {
-            "current": 1200.0,
-            "min": 1200.0,
-            "max": 3100.0
-        },
-        {
-            "current": 1200.0,
-            "min": 1200.0,
-            "max": 3100.0
-        },
-        {
-            "current": 1200.0,
-            "min": 1200.0,
-            "max": 3100.0
-        },
-        {
-            "current": 1544.769,
-            "min": 1200.0,
-            "max": 3100.0
-        },
-        {
-            "current": 2198.382,
-            "min": 1200.0,
-            "max": 3100.0
-        },
-        {
-            "current": 1793.762,
-            "min": 1200.0,
-            "max": 3100.0
-        },
-        {
-            "current": 1200.0,
-            "min": 1200.0,
-            "max": 3100.0
-        },
-        {
-            "current": 1299.26,
-            "min": 1200.0,
-            "max": 3100.0
-        },
-        {
-            "current": 1999.245,
-            "min": 1200.0,
-            "max": 3100.0
-        },
-        {
-            "current": 1998.864,
-            "min": 1200.0,
-            "max": 3100.0
-        },
-        {
-            "current": 1200.0,
-            "min": 1200.0,
-            "max": 3100.0
-        },
-        {
-            "current": 2047.118,
-            "min": 1200.0,
-            "max": 3100.0
-        },
-        {
-            "current": 1199.326,
+            "current": 2708.454,
             "min": 1200.0,
             "max": 3100.0
         },
@@ -131,7 +131,7 @@
     "disk": {
         "/": {
             "total": 467.8895797729492,
-            "used": 186.07197952270508
+            "used": 186.08678817749023
         }
     },
     "gpu": "NVIDIA GeForce RTX 2080 SUPER",
