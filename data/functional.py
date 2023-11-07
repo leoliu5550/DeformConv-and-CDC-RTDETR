@@ -1,5 +1,6 @@
 import torch
 import torchvision.transforms.functional as F
+from torchvision import transforms
 import yaml
 from packaging import version
 from typing import Optional, List
@@ -130,7 +131,13 @@ def resize(image, target, max_size=None):
             return get_size_with_aspect_ratio(image_size, size, max_size)
 
     size = get_size(image.size, size, max_size)
-    rescaled_image = F.resize(image, size,antialias=True)
+    # rescaled_image = F.resize(image, size,antialias=True)
+
+    # =====
+    # print(size)
+    resize = transforms.Resize(size,antialias=True)
+    rescaled_image = resize(image)
+    # print(rescaled_image.size())
     # print("-----")
     # print(rescaled_image.size())
     # print(image.size())

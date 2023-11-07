@@ -34,3 +34,23 @@ class TestCoCo:
         labels = torch.tensor([25,25])
         # print(labels)
         assert torch.equal(img[1]['labels'],labels) == True
+
+
+from torch.utils.data import  DataLoader
+cfg_path = "model_config.yaml"
+with open(cfg_path,"r") as file:
+    cfg = yaml.safe_load(file)
+data_cfg = cfg['data'] 
+training_cfg = cfg['train']
+train_dataset = DataLoader(
+        CocoDetection(
+            img_folder = data_cfg['train_dataloader']['dataset']['img_folder'],
+            ann_file = data_cfg['train_dataloader']['dataset']['ann_file'],
+            return_masks = False),
+        batch_size=data_cfg['train_dataloader']['batch_size'],
+        shuffle=data_cfg['train_dataloader']['shuffle']
+    )
+
+for epoch in range(training_cfg['epoch']):
+    for batch, (data, target) in enumerate(train_dataset, 1):
+        data = resize(data).to(cfg['device'])

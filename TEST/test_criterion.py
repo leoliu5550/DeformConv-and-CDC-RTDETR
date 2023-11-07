@@ -72,27 +72,27 @@ Coco_loader = CocoDetection(
     img_folder = cfg['img_folder'],
     ann_file = cfg['ann_file'],
     # transforms = None,
-    return_masks = False
+    return_masks = False,
+    yaml_path = "model_config.yaml"
 )
 data = Coco_loader.__getitem__(1)
-data =resize(data[0],data[1])
+data, target =resize(data[0],data[1])
 
 # model output
 from model.rtdetr import rtdetr
 model = rtdetr('model_config.yaml')
-image = data[0].to("cuda:0")
-output = model(data[0])
+image = data
+output = model(data)
 
 
 # func test
-# ans = criter(output,[data[1]])
-# print("#"*80)
-# print(len(ans))
-# print("#"*80)
-# print(ans)
+# ans = criter(output,[target])
 print("-"*80)
-acc = accuracy(output,data[1])
-print(acc)
+print(target)
+print("="*80)
+# print(ans)
+# acc = accuracy(output,data[1])
+# print(acc)
 # for id,rows in enumerate(ans):
 #     # print()
 #     print(id,rows)

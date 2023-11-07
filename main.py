@@ -26,15 +26,18 @@ def main():
     data_cfg = cfg['data']
     opt_cfg = cfg['optimizer']['adam']
     loss_cfg = cfg['LOSS']
-    
-    
+
+    def collate_fn(batch):
+        return tuple(zip(*batch))
+        
     train_dataset = DataLoader(
         CocoDetection(
             img_folder = data_cfg['train_dataloader']['dataset']['img_folder'],
             ann_file = data_cfg['train_dataloader']['dataset']['ann_file'],
             return_masks = False),
         batch_size=data_cfg['train_dataloader']['batch_size'],
-        shuffle=data_cfg['train_dataloader']['shuffle']
+        shuffle=data_cfg['train_dataloader']['shuffle'],
+        collate_fn=collate_fn
     )
 
     valid_dataset = DataLoader(
@@ -43,7 +46,8 @@ def main():
             ann_file = data_cfg['val_dataloader']['dataset']['ann_file'],
             return_masks = False),
         batch_size=data_cfg['val_dataloader']['batch_size'],
-        shuffle=data_cfg['val_dataloader']['shuffle']
+        shuffle=data_cfg['val_dataloader']['shuffle'],
+        collate_fn=collate_fn
     )
 
     model = rtdetr(cfg_path).to(cfg['device'])
@@ -71,14 +75,21 @@ def main():
         eos_coef=loss_cfg['SetCriterion']['eos_coef'], 
         num_classes=data_cfg['num_classes']
     )
+
     # taining visualization setting
     for epoch in range(training_cfg['epoch']):
         model.train()
         for batch, (data, target) in enumerate(train_dataset, 1):
             # clear the gradients of all optimized variables
             optimizer.zero_grad()
-            data = resize(data).to(cfg['device'])
+            # data = data.to(cfg['device'])
+            
             # forward pass
+            data = torch.stack(data).to(cfg['device'])
+            target = torch.stack(target).to(cfg['device'])
+            print(target)
+            target = target.to(cfg['device'])
+            
             output = model(data)
             # calculate the loss
             trainloss = criter(output, target)
@@ -90,8 +101,11 @@ def main():
             
         model.eval()
         for data, target in valid_dataset:
-            data = resize(data).to(cfg['device'])
+            # data = data
             # forward pass: compute predicted outputs by passing inputs to the model
+            data = torch.stack(data).to(cfg['device'])
+            
+            target = torch.stack(target).to(cfg['device'])
             output = model(data)
             # calculate the loss
             validloss = criter(output, target)
