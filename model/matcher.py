@@ -76,6 +76,9 @@ class HungarianMatcher(nn.Module):
 
         # Also concat the target labels and boxes
         tgt_ids = torch.cat([v["labels"] for v in targets])
+        for dd,iii in enumerate(targets):
+            print(f"==={dd}===")
+            print(iii["labels"])
         tgt_bbox = torch.cat([v["boxes"] for v in targets])
 
         # Compute the classification cost. Contrary to the loss, we don't use the NLL,
@@ -87,6 +90,8 @@ class HungarianMatcher(nn.Module):
             pos_cost_class = self.alpha * ((1 - out_prob)**self.gamma) * (-(out_prob + 1e-8).log())
             cost_class = pos_cost_class - neg_cost_class        
         else:
+            print("====== matcher ========")
+            print(tgt_ids)
             cost_class = -out_prob[:, tgt_ids]
 
         # Compute the L1 cost between boxes

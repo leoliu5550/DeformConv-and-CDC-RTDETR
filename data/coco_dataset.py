@@ -55,7 +55,7 @@ class CocoDetection(torchvision.datasets.CocoDetection):
         img, target = resize(transform1(img),target)
 
 
-
+        # move data and labels to deviceß
         img = img.to(self.device)
         for key, value in target.items():
             target[key] = target[key].to(self.device)

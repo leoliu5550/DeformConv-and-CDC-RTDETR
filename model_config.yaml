@@ -1,5 +1,5 @@
-device: 'cuda:0'
-notes: 'cpu'
+device: 'cpu' 
+notes: 'cuda:0'
 
 task: detection
 statement: '11/4 train model with no denoise queries'
