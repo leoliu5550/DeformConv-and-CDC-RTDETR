@@ -18,7 +18,7 @@ import yaml
 class CocoDetection(torchvision.datasets.CocoDetection):
     def __init__(self, img_folder, ann_file, # transforms, 
                 return_masks,# size, 
-                #yaml_path,
+                yaml_path,
                 remap_mscoco_category=False):
         super(CocoDetection, self).__init__(img_folder, ann_file)
         # self._transforms = transforms
@@ -27,9 +27,9 @@ class CocoDetection(torchvision.datasets.CocoDetection):
         self.ann_file = ann_file
         self.return_masks = return_masks
         self.remap_mscoco_category = remap_mscoco_category
-        # with open(yaml_path,"r") as file:
-        #     cfg = yaml.safe_load(file)
-        # self.device = cfg['device']
+        with open(yaml_path,"r") as file:
+            cfg = yaml.safe_load(file)
+        self.device = cfg['device']
         # self.size = size
     def __getitem__(self, idx):
         img, target = super(CocoDetection, self).__getitem__(idx)
@@ -56,9 +56,9 @@ class CocoDetection(torchvision.datasets.CocoDetection):
 
 
 
-        # img = img.to(self.device)
-        # for key, value in target.items():
-        #     target[key] = target[key].to(self.device)
+        img = img.to(self.device)
+        for key, value in target.items():
+            target[key] = target[key].to(self.device)
 
         # print(img.shape) # torch.Size([3, 480, 640])
         # C x H x W in [0,1]
@@ -68,8 +68,8 @@ class CocoDetection(torchvision.datasets.CocoDetection):
     def extra_repr(self) -> str:
         s = f' img_folder: {self.img_folder}\n ann_file: {self.ann_file}\n'
         s += f' return_masks: {self.return_masks}\n'
-        if hasattr(self, '_transforms') and self._transforms is not None:
-            s += f' transforms:\n   {repr(self._transforms)}'
+        # if hasattr(self, '_transforms') and self._transforms is not None:
+        #     s += f' transforms:\n   {repr(self._transforms)}'
         return s 
 
 
