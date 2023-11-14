@@ -3,15 +3,15 @@ sys.path.append(".")
 import torch
 import torch.nn as nn
 from model.backbone import Backbone
-from model.common import FrozenBatchNorm2d
+from model.comm.common import FrozenBatchNorm2d
 import dynamic_yaml
 
 class Testbackbone:
     with open('model_config.yaml') as fileobj:
         cfg = dynamic_yaml.load(fileobj)
     device= cfg.device
-    backbone= cfg.backbone.backbone
-    norm_layer= cfg.backbone.norm_layer
+    backbone= cfg.model.backbone.backbone
+    norm_layer= cfg.model.backbone.norm_layer
 
 
 

@@ -1,11 +1,20 @@
-import sys,pytest
-sys.path.append(".")
+# import sys,pytest
+# sys.path.append(".")
+import pytest
 import torch
 import torch.nn as nn
 import random
-from model.decoder import *
-from model.backbone import *
-from model.hybrid_encoder import *
+# from model.decoder import *
+# from model.backbone import *
+# from model.hybrid_encoder import *
+from model import (
+    RTDETRTransformer,
+    MLP, 
+    Backbone, 
+    MSDeformableAttention, 
+    HybridEncoder,
+    TransformerDecoderLayer)
+
 import dynamic_yaml 
 
 class Testdecoder:
@@ -109,9 +118,9 @@ class Testdecoder:
 
             in_channels=[512, 1024, 2048],
             feat_strides=[8, 16, 32],
-            hidden_dim=1024,
+            hidden_dim=256,
             nhead=8,
-            dim_feedforward = 1024,
+            dim_feedforward = 256,
             dropout=0.0,
             enc_act='gelu',
             use_encoder_idx=[2],
@@ -128,7 +137,7 @@ class Testdecoder:
                 hidden_dim=256,
                 num_queries=300,
                 position_embed_type='sine',
-                feat_channels=[512, 1024, 2048],
+                feat_channels=[256,256,256],
                 feat_strides=[8, 16, 32],
                 num_levels=3,
                 num_decoder_points=4,
@@ -137,7 +146,7 @@ class Testdecoder:
                 dim_feedforward=1024,
                 dropout=0.,
                 activation="relu",
-                num_denoising=100,
+                num_denoising=0,
                 label_noise_ratio=0.5,
                 box_noise_scale=1.0,
                 learnt_init_query=False,
@@ -147,17 +156,35 @@ class Testdecoder:
                 aux_loss=True).to(self.device)
 
         out = bmodel(x)
+
+        with open("data/coco.yaml","r") as file:
+            cfg = dynamic_yaml.load(file)
+
         out = hybird(out)
-        print()
+        out = model(feats= out,
+                    targets= list(dict(cfg.names).keys()))
+
+        
         print("#"*80)
-        # print(out)
-        for it in out:
-            print(it.shape)
-        print("here")
-        out = model(out)
+        print("condee output")
+        print(out.keys())
+        print('pred_logits',out['pred_logits'].shape)
+        print(out['pred_logits'])
+        assert out['pred_logits'].shape == torch.Size([1, 300, 80])
+        print('pred_boxes',out['pred_boxes'].shape)
+        print(out['pred_boxes'])
+        assert out['pred_boxes'].shape == torch.Size([1, 300, 4])
 
 
-        print()
-        print("#"*80)
-        print(out.shape)
-        assert 11==22
+
+        print('#######aux_outputs######')
+        assert len(out['aux_outputs']) ==6
+
+        for item in out['aux_outputs']:
+            print(item.keys(),item['pred_logits'].shape,item['pred_boxes'].shape)
+        for item in out['aux_outputs']:
+            print(item.keys(),item['pred_logits'].shape,item['pred_boxes'].shape)
+            assert item['pred_logits'].shape == torch.Size([1, 300, 80])
+            assert item['pred_boxes'].shape == torch.Size([1, 300, 4])
+
+        # assert 11==22

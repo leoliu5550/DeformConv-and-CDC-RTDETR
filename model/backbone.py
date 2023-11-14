@@ -2,8 +2,8 @@ import torch
 import torch.nn as nn
 import torchvision
 from torchvision.models._utils import IntermediateLayerGetter
-from torchvision.ops import FeaturePyramidNetwork
-from .common import FrozenBatchNorm2d
+# from torchvision.ops import FeaturePyramidNetwork
+from .comm.common import FrozenBatchNorm2d
 
 class Backbone(nn.Module):
     def __init__(self,

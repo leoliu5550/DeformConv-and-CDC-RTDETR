@@ -9,12 +9,9 @@ import torch
 import torch.nn as nn 
 import torch.nn.functional as F 
 import torch.nn.init as init 
-
 from .denoising import get_contrastive_denoising_training_group
-
-from .utils import deformable_attention_core_func, inverse_sigmoid
-from .utils import bias_init_with_prob
-from .common import get_activation
+from .utils import deformable_attention_core_func, inverse_sigmoid, bias_init_with_prob
+from .comm.common import get_activation
 
 
 
@@ -31,8 +28,6 @@ class MLP(nn.Module):
         for i, layer in enumerate(self.layers):
             x = self.act(layer(x)) if i < self.num_layers - 1 else layer(x)
         return x
-
-
 
 class MSDeformableAttention(nn.Module):
     def __init__(self, embed_dim=256, num_heads=8, num_levels=4, num_points=4,):
@@ -138,7 +133,6 @@ class MSDeformableAttention(nn.Module):
 
         return output
 
-
 class TransformerDecoderLayer(nn.Module):
     def __init__(self,
                 d_model=256,
@@ -220,7 +214,6 @@ class TransformerDecoderLayer(nn.Module):
         tgt = self.norm3(tgt)
 
         return tgt
-
 
 class TransformerDecoder(nn.Module):
     def __init__(self, hidden_dim, decoder_layer, num_layers, eval_idx=-1):
@@ -386,9 +379,7 @@ class RTDETRTransformer(nn.Module):
     def _build_input_proj_layer(self, feat_channels):
         self.input_proj = nn.ModuleList()
 
-        print("_build_input_proj_layer")
-        for it in feat_channels:
-            print(it)
+
 
         for in_channels in feat_channels:
             self.input_proj.append(
@@ -412,10 +403,8 @@ class RTDETRTransformer(nn.Module):
     def _get_encoder_input(self, feats):
         # get projection features
         proj_feats = [self.input_proj[i](feat) for i, feat in enumerate(feats)]
-        print("_get_encoder_input")
-        for it in proj_feats:
-            print(it.shape)
-            sys.stdout.flush()
+
+
 
         if self.num_levels > len(proj_feats):
             len_srcs = len(proj_feats)
@@ -441,6 +430,19 @@ class RTDETRTransformer(nn.Module):
         # [b, l, c]
         feat_flatten = torch.concat(feat_flatten, 1)
         level_start_index.pop()
+
+
+        # print("_get_encoder_input : feat_flatten")
+        # for it in feat_flatten:
+        #     print(it.shape)
+
+        # print("_get_encoder_input : spatial_shapes")
+        # for it in spatial_shapes:
+        #     print(it)
+
+        # print("_get_encoder_input : level_start_index")
+        # print(level_start_index)
+
         return (feat_flatten, spatial_shapes, level_start_index)
 
     def _generate_anchors(self,
@@ -520,10 +522,10 @@ class RTDETRTransformer(nn.Module):
 
 
     def forward(self, feats, targets=None):
-        print("forward here")
+
         # input projection and embedding
         (memory, spatial_shapes, level_start_index) = self._get_encoder_input(feats)
-        
+
         # prepare denoising training
         if self.training and self.num_denoising > 0:
             denoising_class, denoising_bbox_unact, attn_mask, dn_meta = \
@@ -537,8 +539,15 @@ class RTDETRTransformer(nn.Module):
         else:
             denoising_class, denoising_bbox_unact, attn_mask, dn_meta = None, None, None, None
 
+
+
+        # print("#######rtdetr transformer#####")
+        # print(targets)
+
+
         target, init_ref_points_unact, enc_topk_bboxes, enc_topk_logits = \
             self._get_decoder_input(memory, spatial_shapes, denoising_class, denoising_bbox_unact)
+
 
         # decoder
         out_bboxes, out_logits = self.decoder(
@@ -565,7 +574,6 @@ class RTDETRTransformer(nn.Module):
             if self.training and dn_meta is not None:
                 out['dn_aux_outputs'] = self._set_aux_loss(dn_out_logits, dn_out_bboxes)
                 out['dn_meta'] = dn_meta
-
         return out
 
 
