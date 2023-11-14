@@ -49,19 +49,24 @@ class CocoDetection(torchvision.datasets.CocoDetection):
 
         # if self._transforms is not None:
         #     img, target = self._transforms(img, target)
+
+
+        # category2label
+        for labels_idx in range(len(target['labels'])):
+            target['labels'][labels_idx] = category2label[int(target['labels'][labels_idx])]-1
+        
         transform1 = transforms.Compose([transforms.ToTensor()])  #归一化到(0,1)，简单直接除以255
         # print("=-img-=")
         # print(img.size) # (640, 480) 
         img, target = resize(transform1(img),target)
 
+        # print(img.shape) # torch.Size([3, 480, 640])
+        # C x H x W in [0,1]
 
-        # move data and labels to deviceß
+        # move data and labels to device
         img = img.to(self.device)
         for key, value in target.items():
             target[key] = target[key].to(self.device)
-
-        # print(img.shape) # torch.Size([3, 480, 640])
-        # C x H x W in [0,1]
 
         return img, target
 
@@ -161,6 +166,22 @@ class ConvertCocoPolysToMask(object):
         return image, target
 
 
+# {'boxes': tensor([[260.1875, 163.8438, 505.9375, 276.9062],
+#         [ 62.2000, 480.9219, 308.8500, 713.3282],
+#         [133.7625, 256.3750, 292.8500, 553.6250],
+#         [323.2125, 262.3438, 456.2875, 661.5625],
+#         [205.0875, 220.1094, 244.3250, 271.2187],
+#         [140.6000, 227.1094, 219.1250, 417.9688],
+#         [661.2750, 184.6875, 736.3500, 446.6719],
+#         [703.5375, 225.8906, 794.9375, 505.0781],
+#         [ 34.8250, 311.3125,  97.0250, 424.9844],
+#         [634.2625, 237.3906, 685.7500, 389.6562],
+#         [464.9000, 361.9688, 495.2375, 441.8906],
+#         [269.5500, 326.3906, 547.8750, 435.4375],
+#         [425.4750, 254.0781, 484.3000, 420.1250],
+#         [238.7125, 262.8750, 291.8750, 374.9062]]), 'labels': tensor([28, 28,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1]), 'image_id': tensor([525939]), 'area': tensor([14339.5342, 29926.3184, 26330.7852, 36522.7266,  1122.1887,  7303.7803,
+#          9558.4521, 13974.3857,  3605.6980,  2998.3481,  1442.3893,  4123.8794,
+#          5652.4263,  2603.5833]), 'iscrowd': tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]), 'orig_size': tensor([640, 512]), 'size': tensor([800, 800])}
 
 
 names = {

@@ -1,19 +1,21 @@
-device: 'cpu' 
-notes: 'cuda:0'
+device: 'cuda:0'
+notes: 'cpu'
 
 task: detection
 statement: '11/4 train model with no denoise queries'
-
+wandbname: '1113runtest'
 train:
   save_dir: runs/exp1
-  epoch: 2
+  epoch: 100
   base_lr: 0.001
   img_size: 800
   label_smoothing: 0.0
   optimizer: 
   save: true
   save_period: 50
+  tolerance_period: 50
   tolerance: 0.00001
+  
 
 optimizer:
   adam:
@@ -36,7 +38,7 @@ data:
       transforms:
         type: Compose
         ops: ~
-    shuffle: True
+    shuffle: False
     batch_size: 8
     num_workers: 4
     drop_last: True 

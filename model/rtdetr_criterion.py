@@ -164,6 +164,7 @@ class SetCriterion(nn.Module):
         losses = {}
 
         loss_bbox = F.l1_loss(src_boxes, target_boxes, reduction='none')
+        
         losses['loss_bbox'] = loss_bbox.sum() / num_boxes
 
         loss_giou = 1 - torch.diag(generalized_box_iou(
@@ -292,7 +293,7 @@ class SetCriterion(nn.Module):
                     l_dict = {k: l_dict[k] * self.weight_dict[k] for k in l_dict if k in self.weight_dict}
                     l_dict = {k + f'_dn_{i}': v for k, v in l_dict.items()}
                     losses.update(l_dict)
-        print(losses)
+        # print(losses)
         return losses
 
     @staticmethod
