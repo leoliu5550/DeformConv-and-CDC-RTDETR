@@ -147,9 +147,9 @@ def main():
         # else:
         #     trigger_times = 0
         # last_loss = valloss
+# {epoch:>{training_cfg['epoch']}}/{epoch:>{training_cfg['epoch']}}
 
-
-        print(f"training msg : [{epoch:>{training_cfg['epoch']}}/{epoch:>{training_cfg['epoch']}}] | tarin loss : {loss} | valid loss : ")#{valloss }
+        print(f"training msg : [{epoch}/{training_cfg['epoch']}] | tarin loss : {loss} | valid loss : ")#{valloss }
 
     torch.save(model,os.path.join(cfg_path['save_dir'],"last.pt"))
 

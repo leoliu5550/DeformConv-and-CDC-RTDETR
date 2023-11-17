@@ -6,6 +6,11 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F 
 
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger(f"model.{__name__}")
+
 
 def inverse_sigmoid(x: torch.Tensor, eps: float=1e-5) -> torch.Tensor:
     x = x.clip(min=0., max=1.)

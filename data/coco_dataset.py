@@ -13,6 +13,11 @@ from torchvision import transforms
 from .functional import *
 from pycocotools import mask as coco_mask
 import yaml
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger(f"coco.{__name__}")
+
 
 
 class CocoDetection(torchvision.datasets.CocoDetection):

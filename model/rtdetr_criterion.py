@@ -21,6 +21,11 @@ from .misc.dist import get_world_size, \
         sigmoid_focal_loss, \
         dice_loss
 
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger(f"model.{__name__}")
+
 
 class SetCriterion(nn.Module):
     """ This class computes the loss for DETR.

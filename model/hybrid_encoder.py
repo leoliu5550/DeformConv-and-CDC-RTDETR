@@ -7,6 +7,10 @@ import torch.nn.functional as F
 
 from .comm.common import get_activation
 # from core import register
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger(f"model.{__name__}")
 
 
 class ConvNormLayer(nn.Module):

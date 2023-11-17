@@ -14,6 +14,10 @@ from .utils import deformable_attention_core_func, inverse_sigmoid, bias_init_wi
 from .comm.common import get_activation
 
 
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger(f"model.{__name__}")
 
 
 class MLP(nn.Module):

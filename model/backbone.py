@@ -4,6 +4,10 @@ import torchvision
 from torchvision.models._utils import IntermediateLayerGetter
 # from torchvision.ops import FeaturePyramidNetwork
 from .comm.common import FrozenBatchNorm2d
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger(f"model.{__name__}")
 
 class Backbone(nn.Module):
     def __init__(self,

@@ -20,6 +20,10 @@ from .comm.common import get_activation
 
 # __all__ = ['RTDETRTransformer']
 
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger(f"model.{__name__}")
 
 
 class MLP(nn.Module):

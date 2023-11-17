@@ -7,6 +7,11 @@ from .decoder import RTDETRTransformer as decoder
 
 import dynamic_yaml
 
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger(f"model.{__name__}")
+
 
 class rtdetr(nn.Module):
     def __init__(self,yaml_file):

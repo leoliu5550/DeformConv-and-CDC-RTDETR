@@ -12,6 +12,10 @@ from scipy.optimize import linear_sum_assignment
 from torch import nn
 
 from .box_ops import box_cxcywh_to_xyxy, generalized_box_iou
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger(f"model.{__name__}")
 
 
 class HungarianMatcher(nn.Module):

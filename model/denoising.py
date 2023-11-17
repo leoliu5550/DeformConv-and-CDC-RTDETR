@@ -6,6 +6,11 @@ import torch
 from .utils import inverse_sigmoid
 from .box_ops import box_cxcywh_to_xyxy, box_xyxy_to_cxcywh
 
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger(f"model.{__name__}")
+
 
 
 def get_contrastive_denoising_training_group(targets,

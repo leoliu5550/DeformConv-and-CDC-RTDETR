@@ -11,6 +11,10 @@ import torchvision
 # if version.parse(torchvision.__version__) < version.parse('0.7'):
 #     from torchvision.ops import _new_empty_tensor
 #     from torchvision.ops.misc import _output_size
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger(f"coco.{__name__}")
 
 # 雙線性插值法
 def interpolate(input, size=None, scale_factor=None, mode="nearest", align_corners=None):

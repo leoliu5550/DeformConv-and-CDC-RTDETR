@@ -5,7 +5,10 @@ import torch.utils.data
 import torchvision
 from pycocotools import mask as coco_mask
 from pycocotools.coco import COCO
-
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger(f"coco.{__name__}")
 
 def convert_coco_poly_to_mask(segmentations, height, width):
     masks = []

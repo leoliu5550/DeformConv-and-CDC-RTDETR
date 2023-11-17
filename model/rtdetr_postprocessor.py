@@ -7,6 +7,11 @@ import torch.nn.functional as F
 
 import torchvision
 
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger(f"model.{__name__}")
+
 
 class RTDETRPostProcessor(nn.Module):
     # __share__ = ['num_classes', 'use_focal_loss', 'num_top_queries', 'remap_mscoco_category']
