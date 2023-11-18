@@ -1,10 +1,10 @@
 
 import torch
 from torchvision.ops.boxes import box_area
-import logging
-import logging.config
-logging.config.fileConfig('logging.conf')
-logger = logging.getLogger(f"model.{__name__}")
+# import logging
+# import logging.config
+# logging.config.fileConfig('logging.conf')
+# logger = logging.getLogger(f"model.{__name__}")
 
 
 def box_cxcywh_to_xyxy(x):
