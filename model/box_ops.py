@@ -1,10 +1,10 @@
 
 import torch
 from torchvision.ops.boxes import box_area
-# import logging
-# import logging.config
-# logging.config.fileConfig('logging.conf')
-# logger = logging.getLogger(f"model.{__name__}")
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger("model.boxops")
 
 
 def box_cxcywh_to_xyxy(x):
@@ -25,12 +25,25 @@ def box_xyxy_to_cxcywh(x):
 def box_iou(boxes1, boxes2):
     area1 = box_area(boxes1)
     area2 = box_area(boxes2)
+    logger.debug("boxes1")
+    logger.debug(f"\n{boxes1[:,  :2]}")
 
-    lt = torch.max(boxes1[:, None, :2], boxes2[:, :2])  # [N,M,2]
-    rb = torch.min(boxes1[:, None, 2:], boxes2[:, 2:])  # [N,M,2]
+    logger.debug("boxes2")
+    logger.debug(f"\n{boxes2[:,  :2]}")
+    # lt = torch.max(boxes1[:, None, :2], boxes2[:, :2])  # [N,M,2]
+    lt = torch.max(boxes1[:,  :2], boxes2[:, :2])  # [N,M,2]
+    logger.debug(f"\nlt = \n {lt}")
+    logger.debug(f"\nlt.shape = \n {lt.shape}")
+    # rb = torch.min(boxes1[:, None, 2:], boxes2[:, 2:])  # [N,M,2]
+    rb = torch.min(boxes1[:,  2:], boxes2[:, 2:])  # [N,M,2]
+    logger.debug(f"\nrb = \n {rb}")
+    logger.debug(f"\nrb.shape = \n {rb.shape}")
+
 
     wh = (rb - lt).clamp(min=0)  # [N,M,2]
-    inter = wh[:, :, 0] * wh[:, :, 1]  # [N,M]
+    logger.debug(f"\nwh = \n{wh}")
+    inter = wh[:,  0] * wh[:,  1]  # [N,M]
+    logger.debug(f"\ninter=\n{inter}")
 
     union = area1[:, None] + area2 - inter
 
