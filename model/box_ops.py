@@ -30,19 +30,20 @@ def box_iou(boxes1, boxes2):
 
     logger.debug("boxes2")
     logger.debug(f"\n{boxes2[:,  :2]}")
-    # lt = torch.max(boxes1[:, None, :2], boxes2[:, :2])  # [N,M,2]
-    lt = torch.max(boxes1[:,  :2], boxes2[:, :2])  # [N,M,2]
+    lt = torch.max(boxes1[:, None, :2], boxes2[:, :2])  # [N,M,2]
+    # lt = torch.max(boxes1[:,  :2], boxes2[:, :2])  # [N,M,2]
     logger.debug(f"\nlt = \n {lt}")
     logger.debug(f"\nlt.shape = \n {lt.shape}")
-    # rb = torch.min(boxes1[:, None, 2:], boxes2[:, 2:])  # [N,M,2]
-    rb = torch.min(boxes1[:,  2:], boxes2[:, 2:])  # [N,M,2]
+    rb = torch.min(boxes1[:, None, 2:], boxes2[:, 2:])  # [N,M,2]
+    # rb = torch.min(boxes1[:,  2:], boxes2[:, 2:])  # [N,M,2]
     logger.debug(f"\nrb = \n {rb}")
     logger.debug(f"\nrb.shape = \n {rb.shape}")
 
 
     wh = (rb - lt).clamp(min=0)  # [N,M,2]
     logger.debug(f"\nwh = \n{wh}")
-    inter = wh[:,  0] * wh[:,  1]  # [N,M]
+    # inter = wh[:,  0] * wh[:,  1]  # [N,M]
+    inter = wh[:, :, 0] * wh[:, :, 1]  # [N,M]
     logger.debug(f"\ninter=\n{inter}")
 
     union = area1[:, None] + area2 - inter

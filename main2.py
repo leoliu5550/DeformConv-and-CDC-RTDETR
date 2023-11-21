@@ -11,8 +11,8 @@ from model import rtdetr
 import numpy as np
 import logging
 import logging.config
-logging.config.fileConfig('logging.conf')
-logger = logging.getLogger(f"train.{__name__}")
+# logging.config.fileConfig('logging.conf')
+# logger = logging.getLogger(f"train.{__name__}")
 
 
 cfg_path = "model_config.yaml"
@@ -96,34 +96,30 @@ def main():
         model.train()
         for batch, (data, target) in enumerate(train_dataset, 1):
             # clear the gradients of all optimized variables
+            
             optimizer.zero_grad()                                                
 
             # forward pass
             data = torch.stack(data) 
-            output = model(data)
+            logger.debug("#"*20+"target"+"#"*20)
+            logger.debug(target)
+            # output = model(data)
+            # print(target)
             
             # calculate the loss
-            trainloss = criter(output, target)
-            loss = sum(trainloss.values())
-            logger.info(f"train loss : {loss}")
-            # backward pass: compute gradient of the loss with respect to model parameters
-            loss.backward()
-            # perform a single optimization step (parameter update)
-            optimizer.step()
+
+        # model.eval()
+        # for data, target in valid_dataset:
+        #     # data = data
+        #     # forward pass: compute predicted outputs by passing inputs to the model
+        #     data = torch.stack(data) #.to(cfg['device'])
             
-        model.eval()
-        for data, target in valid_dataset:
-            # data = data
-            # forward pass: compute predicted outputs by passing inputs to the model
-            data = torch.stack(data) #.to(cfg['device'])
-            
-            # target = torch.stack(target).to(cfg['device'])
-            output = model(data)
-            # calculate the loss
-            validloss = criter(output, target)
-            valloss = sum(validloss)
-            logger.info(f"valid loss : {valloss}")
-            # record validation loss
+        #     # target = torch.stack(target).to(cfg['device'])
+        #     output = model(data)
+        #     # calculate the loss
+        #     validloss = criter(output, target)
+        #     valloss = sum(validloss)
+        #     # record validation loss
 
         if epoch == training_cfg['save_period']:
             print(f"loss save at {epoch}")

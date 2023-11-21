@@ -4,42 +4,49 @@ import torch
 import pytest
 import yaml
 from data import *
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger(f"coco.{__name__}")
 
-# class TestCoCo:
-#     with open("model_config.yaml") as file:
-#         cfg = yaml.safe_load(file)
-#     cfg = cfg['data']['train_dataloader']['dataset']
-#     Coco_loader = CocoDetection(
-#         img_folder = cfg['img_folder'],
-#         ann_file = cfg['ann_file'],
-#         # transforms = None,
-#         return_masks = False
-#     )
+class TestCoCo:
+    cfg_path = "model_config.yaml"
+    with open(cfg_path) as file:
+        cfg = yaml.safe_load(file)
+    cfg = cfg['data']['train_dataloader']['dataset']
+    Coco_loader = CocoDetection(
+        img_folder = cfg['img_folder'],
+        ann_file = cfg['ann_file'],
+        return_masks = False,
+        yaml_path=cfg_path
+    )
 
-#     data = Coco_loader.__getitem__(1)
-#     def test_Coco_loader(self):
-#         assert self.data[0].shape == torch.Size([3, 426, 640])
-#         # print(self.data[1]['orig_size'])
+
+    data = Coco_loader.__getitem__(1)
+    def test_Coco_loader(self):
+        logger.debug(self.data[1])
+        assert self.data[0].shape == torch.Size([3, 426, 640])
+        # print(self.data[1]['orig_size'])
         
-#     def test_Coco_Resize(self):
-#         # resize input image and target
-#         rimg =resize(self.data[0],self.data[1])
-#         print(rimg[1])
-#         assert rimg[0].shape == torch.Size([3, 800, 800])
+    # def test_Coco_Resize(self):
+    #     # resize input image and target
+    #     rimg =resize(self.data[0],self.data[1])
+    #     print(rimg[1])
+    #     assert rimg[0].shape == torch.Size([3, 800, 800])
         
 
-#     def test_Coco_labelreshape(self):
-#         img =resize(self.data[0],self.data[1])
-#         # print(img[1]['labels'])
-#         labels = torch.tensor([25,25])
-#         # print(labels)
-#         assert torch.equal(img[1]['labels'],labels) == True
+    # def test_Coco_labelreshape(self):
+    #     img =resize(self.data[0],self.data[1])
+    #     # print(img[1]['labels'])
+    #     labels = torch.tensor([25,25])
+    #     # print(labels)
+    #     assert torch.equal(img[1]['labels'],labels) == True
 
 
 # from torch.utils.data import  DataLoader
-cfg_path = "model_config.yaml"
-with open(cfg_path,"r") as file:
-    cfg = yaml.safe_load(file)
+# cfg_path = "model_config.yaml"
+# with open(cfg_path,"r") as file:
+#     cfg = yaml.safe_load(file)
 
 
 
@@ -72,19 +79,19 @@ with open(cfg_path,"r") as file:
         
 #     break
 
-cfg = cfg['data']['train_dataloader']['dataset']
-Coco_loader = CocoDetection(
-    img_folder = cfg['img_folder'],
-    ann_file = cfg['ann_file'],
-    # transforms = None,
-    return_masks = False,
-    yaml_path=cfg_path
-)
+# cfg = cfg['data']['train_dataloader']['dataset']
+# Coco_loader = CocoDetection(
+#     img_folder = cfg['img_folder'],
+#     ann_file = cfg['ann_file'],
+#     # transforms = None,
+#     return_masks = False,
+#     yaml_path=cfg_path
+# )
 
-data = Coco_loader.__getitem__(1)
-print(data[1])
-# print(data[0].shape)
+# data = Coco_loader.__getitem__(1)
+# print(data[1])
+# # print(data[0].shape)
 
-from torchvision.utils import save_image
+# from torchvision.utils import save_image
 
-save_image(data[0], 'img3.png')
+# save_image(data[0], 'img3.png')

@@ -29,6 +29,14 @@ class Testbox:
         logger.debug(f"trans_stdans \n {std_ans/800}" ) 
         assert torch.equal(box_trans/800,std_ans/800) == True
 
+    def test_box_cxcywh_to_xyxy_2(self):
+        x = torch.tensor([[0.0017, 0.3910, 0.9573, 0.9865]])
+        # [-0.4770, -0.1022,  0.4803,  0.8843]
+        logger.debug(f"x_box\n {x}" )
+        box_trans = box_cxcywh_to_xyxy(x)
+        logger.debug(f"box_trans \n {box_trans}"  ) 
+        assert 1==11
+
     def test_box_xyxy_to_cxcywh(self):
         x = torch.tensor([[0.2500, 0.2500, 0.7500, 0.7500]], device=self.device)
 

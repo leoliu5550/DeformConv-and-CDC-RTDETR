@@ -63,7 +63,14 @@ class CocoDetection(torchvision.datasets.CocoDetection):
         transform1 = transforms.Compose([transforms.ToTensor()])  #归一化到(0,1)，简单直接除以255
         # print("=-img-=")
         # print(img.size) # (640, 480) 
+        logger.debug("#"*20+"before_target"+"#"*20)
+        logger.debug(target)
         img, target = resize(transform1(img),target)
+        logger.debug("#"*20+"after_target"+"#"*20)
+        logger.debug(target)
+        # {'boxes': BoundingBox([[385.5300,  60.0300, 600.5000, 357.1900],
+        #              [ 53.0100, 356.4900, 185.0400, 411.6800]], 
+        # format=BoundingBoxFormat.XYXY, spatial_size=(426, 640)), 'labels': tensor([23, 23]), 'image_id': tensor([25]), 'area': tensor([19686.5977,  2785.8477]), 'iscrowd': tensor([0, 0]), 'orig_size': tensor([640, 426]), 'size': tensor([640, 426])}
 
         # print(img.shape) # torch.Size([3, 480, 640])
         # C x H x W in [0,1]

@@ -1,0 +1,2269 @@
+2023-11-20 22:00:11 [train.__main__][INFO] [main/main] - 108  : train loss : 30.36283302307129
+2023-11-20 22:00:12 [train.__main__][INFO] [main/main] - 108  : train loss : 27.406129837036133
+2023-11-20 22:00:13 [train.__main__][INFO] [main/main] - 108  : train loss : 30.33013153076172
+2023-11-20 22:00:15 [train.__main__][INFO] [main/main] - 108  : train loss : 34.62131118774414
+2023-11-20 22:00:16 [train.__main__][INFO] [main/main] - 108  : train loss : 31.35942840576172
+2023-11-20 22:00:17 [train.__main__][INFO] [main/main] - 108  : train loss : 30.508041381835938
+2023-11-20 22:00:19 [train.__main__][INFO] [main/main] - 108  : train loss : 35.735965728759766
+2023-11-20 22:00:20 [train.__main__][INFO] [main/main] - 108  : train loss : 34.661827087402344
+2023-11-20 22:00:21 [train.__main__][INFO] [main/main] - 108  : train loss : 26.516883850097656
+2023-11-20 22:00:22 [train.__main__][INFO] [main/main] - 108  : train loss : 37.06278991699219
+2023-11-20 22:00:24 [train.__main__][INFO] [main/main] - 108  : train loss : 27.387622833251953
+2023-11-20 22:00:25 [train.__main__][INFO] [main/main] - 108  : train loss : 37.60261917114258
+2023-11-20 22:00:26 [train.__main__][INFO] [main/main] - 108  : train loss : 34.861026763916016
+2023-11-20 22:00:27 [train.__main__][INFO] [main/main] - 108  : train loss : 36.54655838012695
+2023-11-20 22:00:28 [train.__main__][INFO] [main/main] - 108  : train loss : 29.203290939331055
+2023-11-20 22:00:29 [train.__main__][INFO] [main/main] - 108  : train loss : 29.846710205078125
+2023-11-20 22:00:31 [train.__main__][INFO] [main/main] - 108  : train loss : 32.453033447265625
+2023-11-20 22:00:32 [train.__main__][INFO] [main/main] - 108  : train loss : 28.86376190185547
+2023-11-20 22:00:33 [train.__main__][INFO] [main/main] - 108  : train loss : 36.63734817504883
+2023-11-20 22:00:34 [train.__main__][INFO] [main/main] - 108  : train loss : 33.6158332824707
+2023-11-20 22:00:36 [train.__main__][INFO] [main/main] - 108  : train loss : 30.960941314697266
+2023-11-20 22:00:37 [train.__main__][INFO] [main/main] - 108  : train loss : 37.80760192871094
+2023-11-20 22:00:38 [train.__main__][INFO] [main/main] - 108  : train loss : 29.45063018798828
+2023-11-20 22:00:39 [train.__main__][INFO] [main/main] - 108  : train loss : 28.43836784362793
+2023-11-20 22:00:41 [train.__main__][INFO] [main/main] - 108  : train loss : 33.18103790283203
+2023-11-20 22:00:42 [train.__main__][INFO] [main/main] - 108  : train loss : 33.69929885864258
+2023-11-20 22:00:43 [train.__main__][INFO] [main/main] - 108  : train loss : 29.445558547973633
+2023-11-20 22:00:44 [train.__main__][INFO] [main/main] - 108  : train loss : 29.896808624267578
+2023-11-20 22:00:46 [train.__main__][INFO] [main/main] - 108  : train loss : 30.16636085510254
+2023-11-20 22:00:47 [train.__main__][INFO] [main/main] - 108  : train loss : 29.702476501464844
+2023-11-20 22:00:48 [train.__main__][INFO] [main/main] - 108  : train loss : 52.7222785949707
+2023-11-20 22:00:49 [train.__main__][INFO] [main/main] - 108  : train loss : 29.52926254272461
+2023-11-20 22:00:50 [train.__main__][INFO] [main/main] - 108  : train loss : 32.532508850097656
+2023-11-20 22:00:52 [train.__main__][INFO] [main/main] - 108  : train loss : 31.29895782470703
+2023-11-20 22:00:53 [train.__main__][INFO] [main/main] - 108  : train loss : 28.60072135925293
+2023-11-20 22:00:54 [train.__main__][INFO] [main/main] - 108  : train loss : 35.481815338134766
+2023-11-20 22:00:55 [train.__main__][INFO] [main/main] - 108  : train loss : 27.980417251586914
+2023-11-20 22:00:56 [train.__main__][INFO] [main/main] - 108  : train loss : 40.10100555419922
+2023-11-20 22:00:58 [train.__main__][INFO] [main/main] - 108  : train loss : 38.99949645996094
+2023-11-20 22:00:59 [train.__main__][INFO] [main/main] - 108  : train loss : 29.963367462158203
+2023-11-20 22:01:00 [train.__main__][INFO] [main/main] - 108  : train loss : 40.58927536010742
+2023-11-20 22:01:02 [train.__main__][INFO] [main/main] - 108  : train loss : 32.1096305847168
+2023-11-20 22:01:03 [train.__main__][INFO] [main/main] - 108  : train loss : 33.67158126831055
+2023-11-20 22:01:04 [train.__main__][INFO] [main/main] - 108  : train loss : 35.37788009643555
+2023-11-20 22:01:06 [train.__main__][INFO] [main/main] - 108  : train loss : 34.090518951416016
+2023-11-20 22:01:07 [train.__main__][INFO] [main/main] - 108  : train loss : 28.844003677368164
+2023-11-20 22:01:08 [train.__main__][INFO] [main/main] - 108  : train loss : 31.012184143066406
+2023-11-20 22:01:09 [train.__main__][INFO] [main/main] - 108  : train loss : 25.98330307006836
+2023-11-20 22:01:11 [train.__main__][INFO] [main/main] - 108  : train loss : 33.83979797363281
+2023-11-20 22:01:12 [train.__main__][INFO] [main/main] - 108  : train loss : 28.89864730834961
+2023-11-20 22:01:13 [train.__main__][INFO] [main/main] - 108  : train loss : 31.035654067993164
+2023-11-20 22:01:14 [train.__main__][INFO] [main/main] - 108  : train loss : 29.75896644592285
+2023-11-20 22:01:15 [train.__main__][INFO] [main/main] - 108  : train loss : 33.74783706665039
+2023-11-20 22:01:17 [train.__main__][INFO] [main/main] - 108  : train loss : 31.49727439880371
+2023-11-20 22:01:18 [train.__main__][INFO] [main/main] - 108  : train loss : 26.718177795410156
+2023-11-20 22:01:19 [train.__main__][INFO] [main/main] - 108  : train loss : 28.21007537841797
+2023-11-20 22:01:20 [train.__main__][INFO] [main/main] - 108  : train loss : 27.72263526916504
+2023-11-20 22:01:21 [train.__main__][INFO] [main/main] - 108  : train loss : 30.637592315673828
+2023-11-20 22:01:23 [train.__main__][INFO] [main/main] - 108  : train loss : 28.48830223083496
+2023-11-20 22:01:24 [train.__main__][INFO] [main/main] - 108  : train loss : 27.16703224182129
+2023-11-20 22:01:25 [train.__main__][INFO] [main/main] - 108  : train loss : 29.67603874206543
+2023-11-20 22:01:26 [train.__main__][INFO] [main/main] - 108  : train loss : 36.06156539916992
+2023-11-20 22:01:27 [train.__main__][INFO] [main/main] - 108  : train loss : 29.385528564453125
+2023-11-20 22:01:29 [train.__main__][INFO] [main/main] - 108  : train loss : 28.620792388916016
+2023-11-20 22:01:30 [train.__main__][INFO] [main/main] - 108  : train loss : 26.690326690673828
+2023-11-20 22:01:31 [train.__main__][INFO] [main/main] - 108  : train loss : 31.48862648010254
+2023-11-20 22:01:32 [train.__main__][INFO] [main/main] - 108  : train loss : 29.54991340637207
+2023-11-20 22:01:34 [train.__main__][INFO] [main/main] - 108  : train loss : 28.48023223876953
+2023-11-20 22:01:35 [train.__main__][INFO] [main/main] - 108  : train loss : 30.851778030395508
+2023-11-20 22:01:36 [train.__main__][INFO] [main/main] - 108  : train loss : 32.54039001464844
+2023-11-20 22:01:37 [train.__main__][INFO] [main/main] - 108  : train loss : 26.227510452270508
+2023-11-20 22:01:38 [train.__main__][INFO] [main/main] - 108  : train loss : 28.59981346130371
+2023-11-20 22:01:40 [train.__main__][INFO] [main/main] - 108  : train loss : 28.217836380004883
+2023-11-20 22:01:41 [train.__main__][INFO] [main/main] - 108  : train loss : 30.177095413208008
+2023-11-20 22:01:42 [train.__main__][INFO] [main/main] - 108  : train loss : 36.563907623291016
+2023-11-20 22:01:43 [train.__main__][INFO] [main/main] - 108  : train loss : 29.177608489990234
+2023-11-20 22:01:44 [train.__main__][INFO] [main/main] - 108  : train loss : 28.014339447021484
+2023-11-20 22:01:45 [train.__main__][INFO] [main/main] - 108  : train loss : 33.01244354248047
+2023-11-20 22:01:47 [train.__main__][INFO] [main/main] - 108  : train loss : 27.424922943115234
+2023-11-20 22:01:48 [train.__main__][INFO] [main/main] - 108  : train loss : 27.702417373657227
+2023-11-20 22:01:49 [train.__main__][INFO] [main/main] - 108  : train loss : 31.051565170288086
+2023-11-20 22:01:50 [train.__main__][INFO] [main/main] - 108  : train loss : 26.965282440185547
+2023-11-20 22:01:51 [train.__main__][INFO] [main/main] - 108  : train loss : 28.824220657348633
+2023-11-20 22:01:53 [train.__main__][INFO] [main/main] - 108  : train loss : 28.898845672607422
+2023-11-20 22:01:54 [train.__main__][INFO] [main/main] - 108  : train loss : 28.431337356567383
+2023-11-20 22:01:55 [train.__main__][INFO] [main/main] - 108  : train loss : 34.08859634399414
+2023-11-20 22:01:56 [train.__main__][INFO] [main/main] - 108  : train loss : 32.110374450683594
+2023-11-20 22:01:57 [train.__main__][INFO] [main/main] - 108  : train loss : 29.0761661529541
+2023-11-20 22:01:58 [train.__main__][INFO] [main/main] - 108  : train loss : 28.13800621032715
+2023-11-20 22:02:00 [train.__main__][INFO] [main/main] - 108  : train loss : 30.746423721313477
+2023-11-20 22:02:01 [train.__main__][INFO] [main/main] - 108  : train loss : 32.19252014160156
+2023-11-20 22:02:02 [train.__main__][INFO] [main/main] - 108  : train loss : 32.617828369140625
+2023-11-20 22:02:03 [train.__main__][INFO] [main/main] - 108  : train loss : 35.402259826660156
+2023-11-20 22:02:05 [train.__main__][INFO] [main/main] - 108  : train loss : 37.34553527832031
+2023-11-20 22:02:06 [train.__main__][INFO] [main/main] - 108  : train loss : 31.46082878112793
+2023-11-20 22:02:07 [train.__main__][INFO] [main/main] - 108  : train loss : 30.478137969970703
+2023-11-20 22:02:08 [train.__main__][INFO] [main/main] - 108  : train loss : 34.341426849365234
+2023-11-20 22:02:09 [train.__main__][INFO] [main/main] - 108  : train loss : 28.988691329956055
+2023-11-20 22:02:10 [train.__main__][INFO] [main/main] - 108  : train loss : 38.883544921875
+2023-11-20 22:02:12 [train.__main__][INFO] [main/main] - 108  : train loss : 33.97003936767578
+2023-11-20 22:02:13 [train.__main__][INFO] [main/main] - 108  : train loss : 32.11888885498047
+2023-11-20 22:02:14 [train.__main__][INFO] [main/main] - 108  : train loss : 38.93407440185547
+2023-11-20 22:02:15 [train.__main__][INFO] [main/main] - 108  : train loss : 34.583831787109375
+2023-11-20 22:02:16 [train.__main__][INFO] [main/main] - 108  : train loss : 30.35520362854004
+2023-11-20 22:02:17 [train.__main__][INFO] [main/main] - 108  : train loss : 28.369718551635742
+2023-11-20 22:02:19 [train.__main__][INFO] [main/main] - 108  : train loss : 31.712791442871094
+2023-11-20 22:02:20 [train.__main__][INFO] [main/main] - 108  : train loss : 29.166645050048828
+2023-11-20 22:02:21 [train.__main__][INFO] [main/main] - 108  : train loss : 32.5703239440918
+2023-11-20 22:02:22 [train.__main__][INFO] [main/main] - 108  : train loss : 29.76313591003418
+2023-11-20 22:02:23 [train.__main__][INFO] [main/main] - 108  : train loss : 35.71586990356445
+2023-11-20 22:02:25 [train.__main__][INFO] [main/main] - 108  : train loss : 27.92379379272461
+2023-11-20 22:02:26 [train.__main__][INFO] [main/main] - 108  : train loss : 31.15009880065918
+2023-11-20 22:02:27 [train.__main__][INFO] [main/main] - 108  : train loss : 32.08636474609375
+2023-11-20 22:02:28 [train.__main__][INFO] [main/main] - 108  : train loss : 29.128284454345703
+2023-11-20 22:02:29 [train.__main__][INFO] [main/main] - 108  : train loss : 27.489133834838867
+2023-11-20 22:02:31 [train.__main__][INFO] [main/main] - 108  : train loss : 26.93123435974121
+2023-11-20 22:02:32 [train.__main__][INFO] [main/main] - 108  : train loss : 30.924638748168945
+2023-11-20 22:02:33 [train.__main__][INFO] [main/main] - 108  : train loss : 27.75988006591797
+2023-11-20 22:02:34 [train.__main__][INFO] [main/main] - 108  : train loss : 28.739870071411133
+2023-11-20 22:02:35 [train.__main__][INFO] [main/main] - 108  : train loss : 27.521987915039062
+2023-11-20 22:02:37 [train.__main__][INFO] [main/main] - 108  : train loss : 27.31194496154785
+2023-11-20 22:02:38 [train.__main__][INFO] [main/main] - 108  : train loss : 30.07486915588379
+2023-11-20 22:02:39 [train.__main__][INFO] [main/main] - 108  : train loss : 28.98517608642578
+2023-11-20 22:02:40 [train.__main__][INFO] [main/main] - 108  : train loss : 31.805089950561523
+2023-11-20 22:02:41 [train.__main__][INFO] [main/main] - 108  : train loss : 28.56414794921875
+2023-11-20 22:02:42 [train.__main__][INFO] [main/main] - 108  : train loss : 24.145957946777344
+2023-11-20 22:02:44 [train.__main__][INFO] [main/main] - 108  : train loss : 27.712202072143555
+2023-11-20 22:02:45 [train.__main__][INFO] [main/main] - 108  : train loss : 27.423419952392578
+2023-11-20 22:02:46 [train.__main__][INFO] [main/main] - 108  : train loss : 30.824445724487305
+2023-11-20 22:02:47 [train.__main__][INFO] [main/main] - 108  : train loss : 32.85844039916992
+2023-11-20 22:02:48 [train.__main__][INFO] [main/main] - 108  : train loss : 30.276391983032227
+2023-11-20 22:02:50 [train.__main__][INFO] [main/main] - 108  : train loss : 27.087913513183594
+2023-11-20 22:02:51 [train.__main__][INFO] [main/main] - 108  : train loss : 29.207494735717773
+2023-11-20 22:02:52 [train.__main__][INFO] [main/main] - 108  : train loss : 27.4976806640625
+2023-11-20 22:02:53 [train.__main__][INFO] [main/main] - 108  : train loss : 30.491840362548828
+2023-11-20 22:02:54 [train.__main__][INFO] [main/main] - 108  : train loss : 29.037450790405273
+2023-11-20 22:02:56 [train.__main__][INFO] [main/main] - 108  : train loss : 30.266450881958008
+2023-11-20 22:02:57 [train.__main__][INFO] [main/main] - 108  : train loss : 31.29214859008789
+2023-11-20 22:02:58 [train.__main__][INFO] [main/main] - 108  : train loss : 31.262561798095703
+2023-11-20 22:02:59 [train.__main__][INFO] [main/main] - 108  : train loss : 30.220657348632812
+2023-11-20 22:03:00 [train.__main__][INFO] [main/main] - 108  : train loss : 30.18108367919922
+2023-11-20 22:03:02 [train.__main__][INFO] [main/main] - 108  : train loss : 27.123193740844727
+2023-11-20 22:03:03 [train.__main__][INFO] [main/main] - 108  : train loss : 27.153759002685547
+2023-11-20 22:03:05 [train.__main__][INFO] [main/main] - 108  : train loss : 34.15775680541992
+2023-11-20 22:03:07 [train.__main__][INFO] [main/main] - 108  : train loss : 25.691455841064453
+2023-11-20 22:03:08 [train.__main__][INFO] [main/main] - 108  : train loss : 27.453004837036133
+2023-11-20 22:03:10 [train.__main__][INFO] [main/main] - 108  : train loss : 26.225858688354492
+2023-11-20 22:03:11 [train.__main__][INFO] [main/main] - 108  : train loss : 31.412418365478516
+2023-11-20 22:03:12 [train.__main__][INFO] [main/main] - 108  : train loss : 30.6110897064209
+2023-11-20 22:03:13 [train.__main__][INFO] [main/main] - 108  : train loss : 31.262310028076172
+2023-11-20 22:03:14 [train.__main__][INFO] [main/main] - 108  : train loss : 32.374839782714844
+2023-11-20 22:03:15 [train.__main__][INFO] [main/main] - 108  : train loss : 29.41929054260254
+2023-11-20 22:03:17 [train.__main__][INFO] [main/main] - 108  : train loss : 27.204437255859375
+2023-11-20 22:03:18 [train.__main__][INFO] [main/main] - 108  : train loss : 30.169675827026367
+2023-11-20 22:03:19 [train.__main__][INFO] [main/main] - 108  : train loss : 30.522031784057617
+2023-11-20 22:03:20 [train.__main__][INFO] [main/main] - 108  : train loss : 29.575410842895508
+2023-11-20 22:03:22 [train.__main__][INFO] [main/main] - 108  : train loss : 38.41520690917969
+2023-11-20 22:03:23 [train.__main__][INFO] [main/main] - 108  : train loss : 29.028690338134766
+2023-11-20 22:03:24 [train.__main__][INFO] [main/main] - 108  : train loss : 25.946514129638672
+2023-11-20 22:03:25 [train.__main__][INFO] [main/main] - 108  : train loss : 27.657855987548828
+2023-11-20 22:03:26 [train.__main__][INFO] [main/main] - 108  : train loss : 26.672321319580078
+2023-11-20 22:03:28 [train.__main__][INFO] [main/main] - 108  : train loss : 27.436376571655273
+2023-11-20 22:03:29 [train.__main__][INFO] [main/main] - 108  : train loss : 29.897682189941406
+2023-11-20 22:03:30 [train.__main__][INFO] [main/main] - 108  : train loss : 29.53303337097168
+2023-11-20 22:03:31 [train.__main__][INFO] [main/main] - 108  : train loss : 27.813879013061523
+2023-11-20 22:03:32 [train.__main__][INFO] [main/main] - 108  : train loss : 27.927724838256836
+2023-11-20 22:03:34 [train.__main__][INFO] [main/main] - 108  : train loss : 27.085983276367188
+2023-11-20 22:03:35 [train.__main__][INFO] [main/main] - 108  : train loss : 26.716157913208008
+2023-11-20 22:03:36 [train.__main__][INFO] [main/main] - 108  : train loss : 29.90957260131836
+2023-11-20 22:03:37 [train.__main__][INFO] [main/main] - 108  : train loss : 28.379724502563477
+2023-11-20 22:03:39 [train.__main__][INFO] [main/main] - 108  : train loss : 27.296337127685547
+2023-11-20 22:03:40 [train.__main__][INFO] [main/main] - 108  : train loss : 26.472902297973633
+2023-11-20 22:03:41 [train.__main__][INFO] [main/main] - 108  : train loss : 28.721269607543945
+2023-11-20 22:03:42 [train.__main__][INFO] [main/main] - 108  : train loss : 28.918296813964844
+2023-11-20 22:03:43 [train.__main__][INFO] [main/main] - 108  : train loss : 25.688100814819336
+2023-11-20 22:03:45 [train.__main__][INFO] [main/main] - 108  : train loss : 28.536523818969727
+2023-11-20 22:03:46 [train.__main__][INFO] [main/main] - 108  : train loss : 31.865657806396484
+2023-11-20 22:03:47 [train.__main__][INFO] [main/main] - 108  : train loss : 31.794275283813477
+2023-11-20 22:03:48 [train.__main__][INFO] [main/main] - 108  : train loss : 30.165246963500977
+2023-11-20 22:03:49 [train.__main__][INFO] [main/main] - 108  : train loss : 29.970611572265625
+2023-11-20 22:03:51 [train.__main__][INFO] [main/main] - 108  : train loss : 40.851524353027344
+2023-11-20 22:03:52 [train.__main__][INFO] [main/main] - 108  : train loss : 32.44751739501953
+2023-11-20 22:03:53 [train.__main__][INFO] [main/main] - 108  : train loss : 32.002193450927734
+2023-11-20 22:03:55 [train.__main__][INFO] [main/main] - 108  : train loss : 30.71177101135254
+2023-11-20 22:03:56 [train.__main__][INFO] [main/main] - 108  : train loss : 30.03395652770996
+2023-11-20 22:03:57 [train.__main__][INFO] [main/main] - 108  : train loss : 33.10148239135742
+2023-11-20 22:03:58 [train.__main__][INFO] [main/main] - 108  : train loss : 30.01040267944336
+2023-11-20 22:03:59 [train.__main__][INFO] [main/main] - 108  : train loss : 29.31679916381836
+2023-11-20 22:04:00 [train.__main__][INFO] [main/main] - 108  : train loss : 31.94212532043457
+2023-11-20 22:04:02 [train.__main__][INFO] [main/main] - 108  : train loss : 29.868732452392578
+2023-11-20 22:04:03 [train.__main__][INFO] [main/main] - 108  : train loss : 29.301692962646484
+2023-11-20 22:04:04 [train.__main__][INFO] [main/main] - 108  : train loss : 30.592748641967773
+2023-11-20 22:04:05 [train.__main__][INFO] [main/main] - 108  : train loss : 29.80670928955078
+2023-11-20 22:04:06 [train.__main__][INFO] [main/main] - 108  : train loss : 29.35263442993164
+2023-11-20 22:04:08 [train.__main__][INFO] [main/main] - 108  : train loss : 30.110387802124023
+2023-11-20 22:04:09 [train.__main__][INFO] [main/main] - 108  : train loss : 27.15194320678711
+2023-11-20 22:04:10 [train.__main__][INFO] [main/main] - 108  : train loss : 28.44416046142578
+2023-11-20 22:04:11 [train.__main__][INFO] [main/main] - 108  : train loss : 29.10191535949707
+2023-11-20 22:04:12 [train.__main__][INFO] [main/main] - 108  : train loss : 29.075422286987305
+2023-11-20 22:04:13 [train.__main__][INFO] [main/main] - 108  : train loss : 26.27202796936035
+2023-11-20 22:04:15 [train.__main__][INFO] [main/main] - 108  : train loss : 29.6988582611084
+2023-11-20 22:04:16 [train.__main__][INFO] [main/main] - 108  : train loss : 28.88920783996582
+2023-11-20 22:04:17 [train.__main__][INFO] [main/main] - 108  : train loss : 28.731115341186523
+2023-11-20 22:04:18 [train.__main__][INFO] [main/main] - 108  : train loss : 31.199966430664062
+2023-11-20 22:04:19 [train.__main__][INFO] [main/main] - 108  : train loss : 28.956974029541016
+2023-11-20 22:04:21 [train.__main__][INFO] [main/main] - 108  : train loss : 27.649385452270508
+2023-11-20 22:04:22 [train.__main__][INFO] [main/main] - 108  : train loss : 26.936628341674805
+2023-11-20 22:04:23 [train.__main__][INFO] [main/main] - 108  : train loss : 29.279685974121094
+2023-11-20 22:04:24 [train.__main__][INFO] [main/main] - 108  : train loss : 30.135887145996094
+2023-11-20 22:04:25 [train.__main__][INFO] [main/main] - 108  : train loss : 27.963369369506836
+2023-11-20 22:04:27 [train.__main__][INFO] [main/main] - 108  : train loss : 29.20775604248047
+2023-11-20 22:04:28 [train.__main__][INFO] [main/main] - 108  : train loss : 31.42991065979004
+2023-11-20 22:04:29 [train.__main__][INFO] [main/main] - 108  : train loss : 32.12691116333008
+2023-11-20 22:04:30 [train.__main__][INFO] [main/main] - 108  : train loss : 27.731281280517578
+2023-11-20 22:04:31 [train.__main__][INFO] [main/main] - 108  : train loss : 27.943830490112305
+2023-11-20 22:04:32 [train.__main__][INFO] [main/main] - 108  : train loss : 31.056167602539062
+2023-11-20 22:04:34 [train.__main__][INFO] [main/main] - 108  : train loss : 37.95368576049805
+2023-11-20 22:04:35 [train.__main__][INFO] [main/main] - 108  : train loss : 31.859695434570312
+2023-11-20 22:04:36 [train.__main__][INFO] [main/main] - 108  : train loss : 37.09943771362305
+2023-11-20 22:04:37 [train.__main__][INFO] [main/main] - 108  : train loss : 48.5994758605957
+2023-11-20 22:04:39 [train.__main__][INFO] [main/main] - 108  : train loss : 41.63374710083008
+2023-11-20 22:04:40 [train.__main__][INFO] [main/main] - 108  : train loss : 42.447879791259766
+2023-11-20 22:04:41 [train.__main__][INFO] [main/main] - 108  : train loss : 35.74152374267578
+2023-11-20 22:04:42 [train.__main__][INFO] [main/main] - 108  : train loss : 28.61989402770996
+2023-11-20 22:04:44 [train.__main__][INFO] [main/main] - 108  : train loss : 31.394573211669922
+2023-11-20 22:04:45 [train.__main__][INFO] [main/main] - 108  : train loss : 28.383880615234375
+2023-11-20 22:04:46 [train.__main__][INFO] [main/main] - 108  : train loss : 29.44289207458496
+2023-11-20 22:04:47 [train.__main__][INFO] [main/main] - 108  : train loss : 27.565584182739258
+2023-11-20 22:04:48 [train.__main__][INFO] [main/main] - 108  : train loss : 30.399845123291016
+2023-11-20 22:04:50 [train.__main__][INFO] [main/main] - 108  : train loss : 28.000959396362305
+2023-11-20 22:04:51 [train.__main__][INFO] [main/main] - 108  : train loss : 28.05769920349121
+2023-11-20 22:04:52 [train.__main__][INFO] [main/main] - 108  : train loss : 27.152923583984375
+2023-11-20 22:04:53 [train.__main__][INFO] [main/main] - 108  : train loss : 27.011754989624023
+2023-11-20 22:04:54 [train.__main__][INFO] [main/main] - 108  : train loss : 27.30034828186035
+2023-11-20 22:04:56 [train.__main__][INFO] [main/main] - 108  : train loss : 29.064775466918945
+2023-11-20 22:04:57 [train.__main__][INFO] [main/main] - 108  : train loss : 29.39085578918457
+2023-11-20 22:04:58 [train.__main__][INFO] [main/main] - 108  : train loss : 27.507436752319336
+2023-11-20 22:04:59 [train.__main__][INFO] [main/main] - 108  : train loss : 28.258337020874023
+2023-11-20 22:05:00 [train.__main__][INFO] [main/main] - 108  : train loss : 30.327926635742188
+2023-11-20 22:05:02 [train.__main__][INFO] [main/main] - 108  : train loss : 27.16216468811035
+2023-11-20 22:05:03 [train.__main__][INFO] [main/main] - 108  : train loss : 27.925945281982422
+2023-11-20 22:05:04 [train.__main__][INFO] [main/main] - 108  : train loss : 26.587665557861328
+2023-11-20 22:05:05 [train.__main__][INFO] [main/main] - 108  : train loss : 27.18903160095215
+2023-11-20 22:05:06 [train.__main__][INFO] [main/main] - 108  : train loss : 27.12984848022461
+2023-11-20 22:05:08 [train.__main__][INFO] [main/main] - 108  : train loss : 29.424392700195312
+2023-11-20 22:05:09 [train.__main__][INFO] [main/main] - 108  : train loss : 27.68072509765625
+2023-11-20 22:05:10 [train.__main__][INFO] [main/main] - 108  : train loss : 28.775671005249023
+2023-11-20 22:05:11 [train.__main__][INFO] [main/main] - 108  : train loss : 29.677734375
+2023-11-20 22:05:12 [train.__main__][INFO] [main/main] - 108  : train loss : 30.962862014770508
+2023-11-20 22:05:14 [train.__main__][INFO] [main/main] - 108  : train loss : 32.642398834228516
+2023-11-20 22:05:15 [train.__main__][INFO] [main/main] - 108  : train loss : 30.456527709960938
+2023-11-20 22:05:16 [train.__main__][INFO] [main/main] - 108  : train loss : 30.465110778808594
+2023-11-20 22:05:17 [train.__main__][INFO] [main/main] - 108  : train loss : 32.484317779541016
+2023-11-20 22:05:18 [train.__main__][INFO] [main/main] - 108  : train loss : 29.183774948120117
+2023-11-20 22:05:20 [train.__main__][INFO] [main/main] - 108  : train loss : 29.93552589416504
+2023-11-20 22:05:21 [train.__main__][INFO] [main/main] - 108  : train loss : 27.03314971923828
+2023-11-20 22:05:22 [train.__main__][INFO] [main/main] - 108  : train loss : 30.830585479736328
+2023-11-20 22:05:23 [train.__main__][INFO] [main/main] - 108  : train loss : 30.875850677490234
+2023-11-20 22:05:24 [train.__main__][INFO] [main/main] - 108  : train loss : 29.006114959716797
+2023-11-20 22:05:25 [train.__main__][INFO] [main/main] - 108  : train loss : 30.751293182373047
+2023-11-20 22:05:27 [train.__main__][INFO] [main/main] - 108  : train loss : 29.877418518066406
+2023-11-20 22:05:28 [train.__main__][INFO] [main/main] - 108  : train loss : 29.3394775390625
+2023-11-20 22:05:29 [train.__main__][INFO] [main/main] - 108  : train loss : 29.167449951171875
+2023-11-20 22:05:30 [train.__main__][INFO] [main/main] - 108  : train loss : 28.555713653564453
+2023-11-20 22:05:31 [train.__main__][INFO] [main/main] - 108  : train loss : 27.189453125
+2023-11-20 22:05:33 [train.__main__][INFO] [main/main] - 108  : train loss : 30.976768493652344
+2023-11-20 22:05:34 [train.__main__][INFO] [main/main] - 108  : train loss : 29.81386947631836
+2023-11-20 22:05:35 [train.__main__][INFO] [main/main] - 108  : train loss : 28.929466247558594
+2023-11-20 22:05:36 [train.__main__][INFO] [main/main] - 108  : train loss : 29.164403915405273
+2023-11-20 22:05:37 [train.__main__][INFO] [main/main] - 108  : train loss : 29.72812271118164
+2023-11-20 22:05:39 [train.__main__][INFO] [main/main] - 108  : train loss : 30.454448699951172
+2023-11-20 22:05:40 [train.__main__][INFO] [main/main] - 108  : train loss : 30.38509750366211
+2023-11-20 22:05:41 [train.__main__][INFO] [main/main] - 108  : train loss : 32.39264678955078
+2023-11-20 22:05:42 [train.__main__][INFO] [main/main] - 108  : train loss : 30.617822647094727
+2023-11-20 22:05:43 [train.__main__][INFO] [main/main] - 108  : train loss : 28.065744400024414
+2023-11-20 22:05:45 [train.__main__][INFO] [main/main] - 108  : train loss : 26.456871032714844
+2023-11-20 22:05:46 [train.__main__][INFO] [main/main] - 108  : train loss : 25.89739418029785
+2023-11-20 22:05:47 [train.__main__][INFO] [main/main] - 108  : train loss : 28.442928314208984
+2023-11-20 22:05:48 [train.__main__][INFO] [main/main] - 108  : train loss : 28.59008026123047
+2023-11-20 22:05:50 [train.__main__][INFO] [main/main] - 108  : train loss : 28.2454833984375
+2023-11-20 22:05:51 [train.__main__][INFO] [main/main] - 108  : train loss : 27.697174072265625
+2023-11-20 22:05:52 [train.__main__][INFO] [main/main] - 108  : train loss : 28.621028900146484
+2023-11-20 22:05:53 [train.__main__][INFO] [main/main] - 108  : train loss : 27.655147552490234
+2023-11-20 22:05:54 [train.__main__][INFO] [main/main] - 108  : train loss : 30.09716796875
+2023-11-20 22:05:56 [train.__main__][INFO] [main/main] - 108  : train loss : 26.74593734741211
+2023-11-20 22:05:57 [train.__main__][INFO] [main/main] - 108  : train loss : 33.09979248046875
+2023-11-20 22:05:58 [train.__main__][INFO] [main/main] - 108  : train loss : 26.696523666381836
+2023-11-20 22:05:59 [train.__main__][INFO] [main/main] - 108  : train loss : 27.143482208251953
+2023-11-20 22:06:00 [train.__main__][INFO] [main/main] - 108  : train loss : 29.425857543945312
+2023-11-20 22:06:02 [train.__main__][INFO] [main/main] - 108  : train loss : 28.9150390625
+2023-11-20 22:06:03 [train.__main__][INFO] [main/main] - 108  : train loss : 25.685266494750977
+2023-11-20 22:06:04 [train.__main__][INFO] [main/main] - 108  : train loss : 29.553871154785156
+2023-11-20 22:06:05 [train.__main__][INFO] [main/main] - 108  : train loss : 30.94659423828125
+2023-11-20 22:06:06 [train.__main__][INFO] [main/main] - 108  : train loss : 29.275577545166016
+2023-11-20 22:06:08 [train.__main__][INFO] [main/main] - 108  : train loss : 34.092254638671875
+2023-11-20 22:06:09 [train.__main__][INFO] [main/main] - 108  : train loss : 26.98181915283203
+2023-11-20 22:06:10 [train.__main__][INFO] [main/main] - 108  : train loss : 26.81232261657715
+2023-11-20 22:06:11 [train.__main__][INFO] [main/main] - 108  : train loss : 26.96010971069336
+2023-11-20 22:06:13 [train.__main__][INFO] [main/main] - 108  : train loss : 31.371187210083008
+2023-11-20 22:06:14 [train.__main__][INFO] [main/main] - 108  : train loss : 32.59654235839844
+2023-11-20 22:06:15 [train.__main__][INFO] [main/main] - 108  : train loss : 29.019088745117188
+2023-11-20 22:06:16 [train.__main__][INFO] [main/main] - 108  : train loss : 29.451313018798828
+2023-11-20 22:06:17 [train.__main__][INFO] [main/main] - 108  : train loss : 31.026508331298828
+2023-11-20 22:06:18 [train.__main__][INFO] [main/main] - 108  : train loss : 28.26753044128418
+2023-11-20 22:06:20 [train.__main__][INFO] [main/main] - 108  : train loss : 27.853286743164062
+2023-11-20 22:06:21 [train.__main__][INFO] [main/main] - 108  : train loss : 31.199420928955078
+2023-11-20 22:06:22 [train.__main__][INFO] [main/main] - 108  : train loss : 28.44392967224121
+2023-11-20 22:06:23 [train.__main__][INFO] [main/main] - 108  : train loss : 38.91694641113281
+2023-11-20 22:06:25 [train.__main__][INFO] [main/main] - 108  : train loss : 30.09406852722168
+2023-11-20 22:06:26 [train.__main__][INFO] [main/main] - 108  : train loss : 28.968393325805664
+2023-11-20 22:06:27 [train.__main__][INFO] [main/main] - 108  : train loss : 27.650102615356445
+2023-11-20 22:06:29 [train.__main__][INFO] [main/main] - 108  : train loss : 30.1257266998291
+2023-11-20 22:06:30 [train.__main__][INFO] [main/main] - 108  : train loss : 30.017858505249023
+2023-11-20 22:06:31 [train.__main__][INFO] [main/main] - 108  : train loss : 33.093017578125
+2023-11-20 22:06:32 [train.__main__][INFO] [main/main] - 108  : train loss : 26.932958602905273
+2023-11-20 22:06:33 [train.__main__][INFO] [main/main] - 108  : train loss : 29.676183700561523
+2023-11-20 22:06:35 [train.__main__][INFO] [main/main] - 108  : train loss : 29.14898681640625
+2023-11-20 22:06:36 [train.__main__][INFO] [main/main] - 108  : train loss : 27.944061279296875
+2023-11-20 22:06:37 [train.__main__][INFO] [main/main] - 108  : train loss : 28.033336639404297
+2023-11-20 22:06:38 [train.__main__][INFO] [main/main] - 108  : train loss : 28.917781829833984
+2023-11-20 22:06:39 [train.__main__][INFO] [main/main] - 108  : train loss : 28.584787368774414
+2023-11-20 22:06:40 [train.__main__][INFO] [main/main] - 108  : train loss : 31.615190505981445
+2023-11-20 22:06:42 [train.__main__][INFO] [main/main] - 108  : train loss : 29.6998348236084
+2023-11-20 22:06:43 [train.__main__][INFO] [main/main] - 108  : train loss : 29.873836517333984
+2023-11-20 22:06:44 [train.__main__][INFO] [main/main] - 108  : train loss : 32.468379974365234
+2023-11-20 22:06:45 [train.__main__][INFO] [main/main] - 108  : train loss : 27.40530776977539
+2023-11-20 22:06:46 [train.__main__][INFO] [main/main] - 108  : train loss : 30.586442947387695
+2023-11-20 22:06:48 [train.__main__][INFO] [main/main] - 108  : train loss : 30.782501220703125
+2023-11-20 22:06:49 [train.__main__][INFO] [main/main] - 108  : train loss : 30.8539981842041
+2023-11-20 22:06:50 [train.__main__][INFO] [main/main] - 108  : train loss : 30.485694885253906
+2023-11-20 22:06:51 [train.__main__][INFO] [main/main] - 108  : train loss : 28.840587615966797
+2023-11-20 22:06:53 [train.__main__][INFO] [main/main] - 108  : train loss : 28.101024627685547
+2023-11-20 22:06:54 [train.__main__][INFO] [main/main] - 108  : train loss : 28.30674934387207
+2023-11-20 22:06:55 [train.__main__][INFO] [main/main] - 108  : train loss : 29.884843826293945
+2023-11-20 22:06:56 [train.__main__][INFO] [main/main] - 108  : train loss : 32.538597106933594
+2023-11-20 22:06:57 [train.__main__][INFO] [main/main] - 108  : train loss : 35.311771392822266
+2023-11-20 22:06:59 [train.__main__][INFO] [main/main] - 108  : train loss : 30.118532180786133
+2023-11-20 22:07:00 [train.__main__][INFO] [main/main] - 108  : train loss : 30.739526748657227
+2023-11-20 22:07:01 [train.__main__][INFO] [main/main] - 108  : train loss : 30.38032341003418
+2023-11-20 22:07:02 [train.__main__][INFO] [main/main] - 108  : train loss : 29.41512107849121
+2023-11-20 22:07:04 [train.__main__][INFO] [main/main] - 108  : train loss : 30.678720474243164
+2023-11-20 22:07:05 [train.__main__][INFO] [main/main] - 108  : train loss : 33.436485290527344
+2023-11-20 22:07:06 [train.__main__][INFO] [main/main] - 108  : train loss : 31.521528244018555
+2023-11-20 22:07:07 [train.__main__][INFO] [main/main] - 108  : train loss : 31.39710807800293
+2023-11-20 22:07:08 [train.__main__][INFO] [main/main] - 108  : train loss : 32.18706130981445
+2023-11-20 22:07:10 [train.__main__][INFO] [main/main] - 108  : train loss : 31.85264015197754
+2023-11-20 22:07:11 [train.__main__][INFO] [main/main] - 108  : train loss : 31.60979461669922
+2023-11-20 22:07:12 [train.__main__][INFO] [main/main] - 108  : train loss : 30.16729164123535
+2023-11-20 22:07:13 [train.__main__][INFO] [main/main] - 108  : train loss : 34.450008392333984
+2023-11-20 22:07:14 [train.__main__][INFO] [main/main] - 108  : train loss : 27.129220962524414
+2023-11-20 22:07:16 [train.__main__][INFO] [main/main] - 108  : train loss : 35.37725830078125
+2023-11-20 22:07:17 [train.__main__][INFO] [main/main] - 108  : train loss : 30.943010330200195
+2023-11-20 22:07:18 [train.__main__][INFO] [main/main] - 108  : train loss : 29.69498062133789
+2023-11-20 22:07:19 [train.__main__][INFO] [main/main] - 108  : train loss : 30.63763427734375
+2023-11-20 22:07:21 [train.__main__][INFO] [main/main] - 108  : train loss : 30.83686637878418
+2023-11-20 22:07:22 [train.__main__][INFO] [main/main] - 108  : train loss : 30.75041389465332
+2023-11-20 22:07:23 [train.__main__][INFO] [main/main] - 108  : train loss : 31.827239990234375
+2023-11-20 22:07:24 [train.__main__][INFO] [main/main] - 108  : train loss : 31.21820068359375
+2023-11-20 22:07:25 [train.__main__][INFO] [main/main] - 108  : train loss : 31.674068450927734
+2023-11-20 22:07:27 [train.__main__][INFO] [main/main] - 108  : train loss : 31.516826629638672
+2023-11-20 22:07:28 [train.__main__][INFO] [main/main] - 108  : train loss : 33.84666442871094
+2023-11-20 22:07:29 [train.__main__][INFO] [main/main] - 108  : train loss : 34.163639068603516
+2023-11-20 22:07:30 [train.__main__][INFO] [main/main] - 108  : train loss : 27.30023956298828
+2023-11-20 22:07:31 [train.__main__][INFO] [main/main] - 108  : train loss : 28.968502044677734
+2023-11-20 22:07:33 [train.__main__][INFO] [main/main] - 108  : train loss : 31.309057235717773
+2023-11-20 22:07:34 [train.__main__][INFO] [main/main] - 108  : train loss : 24.28038787841797
+2023-11-20 22:07:35 [train.__main__][INFO] [main/main] - 108  : train loss : 27.525039672851562
+2023-11-20 22:07:36 [train.__main__][INFO] [main/main] - 108  : train loss : 31.92921257019043
+2023-11-20 22:07:37 [train.__main__][INFO] [main/main] - 108  : train loss : 25.986051559448242
+2023-11-20 22:07:39 [train.__main__][INFO] [main/main] - 108  : train loss : 30.196292877197266
+2023-11-20 22:07:40 [train.__main__][INFO] [main/main] - 108  : train loss : 29.161537170410156
+2023-11-20 22:07:41 [train.__main__][INFO] [main/main] - 108  : train loss : 37.18450927734375
+2023-11-20 22:07:42 [train.__main__][INFO] [main/main] - 108  : train loss : 31.864360809326172
+2023-11-20 22:07:43 [train.__main__][INFO] [main/main] - 108  : train loss : 30.438827514648438
+2023-11-20 22:07:45 [train.__main__][INFO] [main/main] - 108  : train loss : 32.25228500366211
+2023-11-20 22:07:46 [train.__main__][INFO] [main/main] - 108  : train loss : 33.13518524169922
+2023-11-20 22:07:47 [train.__main__][INFO] [main/main] - 108  : train loss : 30.696701049804688
+2023-11-20 22:07:48 [train.__main__][INFO] [main/main] - 108  : train loss : 32.87545394897461
+2023-11-20 22:07:49 [train.__main__][INFO] [main/main] - 108  : train loss : 27.959667205810547
+2023-11-20 22:07:51 [train.__main__][INFO] [main/main] - 108  : train loss : 27.585527420043945
+2023-11-20 22:07:52 [train.__main__][INFO] [main/main] - 108  : train loss : 29.76865005493164
+2023-11-20 22:07:53 [train.__main__][INFO] [main/main] - 108  : train loss : 30.00079917907715
+2023-11-20 22:07:54 [train.__main__][INFO] [main/main] - 108  : train loss : 28.1156063079834
+2023-11-20 22:07:55 [train.__main__][INFO] [main/main] - 108  : train loss : 32.55848693847656
+2023-11-20 22:07:56 [train.__main__][INFO] [main/main] - 108  : train loss : 28.341144561767578
+2023-11-20 22:07:58 [train.__main__][INFO] [main/main] - 108  : train loss : 28.66922950744629
+2023-11-20 22:07:59 [train.__main__][INFO] [main/main] - 108  : train loss : 32.4334716796875
+2023-11-20 22:08:00 [train.__main__][INFO] [main/main] - 108  : train loss : 30.48590660095215
+2023-11-20 22:08:01 [train.__main__][INFO] [main/main] - 108  : train loss : 29.955163955688477
+2023-11-20 22:08:02 [train.__main__][INFO] [main/main] - 108  : train loss : 29.793766021728516
+2023-11-20 22:08:04 [train.__main__][INFO] [main/main] - 108  : train loss : 27.87889862060547
+2023-11-20 22:08:05 [train.__main__][INFO] [main/main] - 108  : train loss : 28.771434783935547
+2023-11-20 22:08:06 [train.__main__][INFO] [main/main] - 108  : train loss : 32.40217971801758
+2023-11-20 22:08:07 [train.__main__][INFO] [main/main] - 108  : train loss : 29.007614135742188
+2023-11-20 22:08:08 [train.__main__][INFO] [main/main] - 108  : train loss : 28.39366340637207
+2023-11-20 22:08:09 [train.__main__][INFO] [main/main] - 108  : train loss : 31.343124389648438
+2023-11-20 22:08:11 [train.__main__][INFO] [main/main] - 108  : train loss : 33.02987289428711
+2023-11-20 22:08:12 [train.__main__][INFO] [main/main] - 108  : train loss : 35.11515426635742
+2023-11-20 22:08:13 [train.__main__][INFO] [main/main] - 108  : train loss : 31.16914939880371
+2023-11-20 22:08:14 [train.__main__][INFO] [main/main] - 108  : train loss : 37.00258255004883
+2023-11-20 22:08:15 [train.__main__][INFO] [main/main] - 108  : train loss : 39.76568603515625
+2023-11-20 22:08:18 [train.__main__][INFO] [main/main] - 108  : train loss : 34.542972564697266
+2023-11-20 22:08:19 [train.__main__][INFO] [main/main] - 108  : train loss : 34.6116943359375
+2023-11-20 22:08:21 [train.__main__][INFO] [main/main] - 108  : train loss : 33.769798278808594
+2023-11-20 22:08:22 [train.__main__][INFO] [main/main] - 108  : train loss : 30.61343002319336
+2023-11-20 22:08:23 [train.__main__][INFO] [main/main] - 108  : train loss : 37.1026496887207
+2023-11-20 22:08:24 [train.__main__][INFO] [main/main] - 108  : train loss : 29.234600067138672
+2023-11-20 22:08:25 [train.__main__][INFO] [main/main] - 108  : train loss : 31.440204620361328
+2023-11-20 22:08:26 [train.__main__][INFO] [main/main] - 108  : train loss : 30.33870506286621
+2023-11-20 22:08:28 [train.__main__][INFO] [main/main] - 108  : train loss : 31.27444076538086
+2023-11-20 22:08:29 [train.__main__][INFO] [main/main] - 108  : train loss : 40.30960464477539
+2023-11-20 22:08:30 [train.__main__][INFO] [main/main] - 108  : train loss : 30.299802780151367
+2023-11-20 22:08:31 [train.__main__][INFO] [main/main] - 108  : train loss : 35.7573356628418
+2023-11-20 22:08:33 [train.__main__][INFO] [main/main] - 108  : train loss : 48.31470489501953
+2023-11-20 22:08:34 [train.__main__][INFO] [main/main] - 108  : train loss : 31.885061264038086
+2023-11-20 22:08:35 [train.__main__][INFO] [main/main] - 108  : train loss : 37.02381896972656
+2023-11-20 22:08:36 [train.__main__][INFO] [main/main] - 108  : train loss : 33.6305046081543
+2023-11-20 22:08:37 [train.__main__][INFO] [main/main] - 108  : train loss : 29.600299835205078
+2023-11-20 22:08:38 [train.__main__][INFO] [main/main] - 108  : train loss : 32.299537658691406
+2023-11-20 22:08:40 [train.__main__][INFO] [main/main] - 108  : train loss : 34.54547882080078
+2023-11-20 22:08:41 [train.__main__][INFO] [main/main] - 108  : train loss : 31.495712280273438
+2023-11-20 22:08:42 [train.__main__][INFO] [main/main] - 108  : train loss : 42.518646240234375
+2023-11-20 22:08:43 [train.__main__][INFO] [main/main] - 108  : train loss : 37.976139068603516
+2023-11-20 22:08:44 [train.__main__][INFO] [main/main] - 108  : train loss : 33.676429748535156
+2023-11-20 22:08:45 [train.__main__][INFO] [main/main] - 108  : train loss : 30.14300537109375
+2023-11-20 22:08:47 [train.__main__][INFO] [main/main] - 108  : train loss : 33.9319953918457
+2023-11-20 22:08:48 [train.__main__][INFO] [main/main] - 108  : train loss : 36.815467834472656
+2023-11-20 22:08:49 [train.__main__][INFO] [main/main] - 108  : train loss : 33.36698532104492
+2023-11-20 22:08:50 [train.__main__][INFO] [main/main] - 108  : train loss : 32.59440612792969
+2023-11-20 22:08:51 [train.__main__][INFO] [main/main] - 108  : train loss : 31.138662338256836
+2023-11-20 22:08:53 [train.__main__][INFO] [main/main] - 108  : train loss : 30.791770935058594
+2023-11-20 22:08:54 [train.__main__][INFO] [main/main] - 108  : train loss : 31.829687118530273
+2023-11-20 22:08:55 [train.__main__][INFO] [main/main] - 108  : train loss : 32.998382568359375
+2023-11-20 22:08:56 [train.__main__][INFO] [main/main] - 108  : train loss : 35.865455627441406
+2023-11-20 22:08:57 [train.__main__][INFO] [main/main] - 108  : train loss : 34.30056381225586
+2023-11-20 22:08:59 [train.__main__][INFO] [main/main] - 108  : train loss : 32.84722137451172
+2023-11-20 22:09:00 [train.__main__][INFO] [main/main] - 108  : train loss : 31.077510833740234
+2023-11-20 22:09:01 [train.__main__][INFO] [main/main] - 108  : train loss : 31.128036499023438
+2023-11-20 22:09:02 [train.__main__][INFO] [main/main] - 108  : train loss : 28.000247955322266
+2023-11-20 22:09:03 [train.__main__][INFO] [main/main] - 108  : train loss : 36.199195861816406
+2023-11-20 22:09:05 [train.__main__][INFO] [main/main] - 108  : train loss : 31.273284912109375
+2023-11-20 22:09:06 [train.__main__][INFO] [main/main] - 108  : train loss : 39.121849060058594
+2023-11-20 22:09:07 [train.__main__][INFO] [main/main] - 108  : train loss : 30.994205474853516
+2023-11-20 22:09:08 [train.__main__][INFO] [main/main] - 108  : train loss : 33.36812210083008
+2023-11-20 22:09:09 [train.__main__][INFO] [main/main] - 108  : train loss : 40.45295715332031
+2023-11-20 22:09:10 [train.__main__][INFO] [main/main] - 108  : train loss : 31.42283058166504
+2023-11-20 22:09:12 [train.__main__][INFO] [main/main] - 108  : train loss : 37.30583190917969
+2023-11-20 22:09:13 [train.__main__][INFO] [main/main] - 108  : train loss : 35.0481071472168
+2023-11-20 22:09:14 [train.__main__][INFO] [main/main] - 108  : train loss : 60.37520217895508
+2023-11-20 22:09:15 [train.__main__][INFO] [main/main] - 108  : train loss : 39.730140686035156
+2023-11-20 22:09:16 [train.__main__][INFO] [main/main] - 108  : train loss : 43.97896194458008
+2023-11-20 22:09:17 [train.__main__][INFO] [main/main] - 108  : train loss : 34.84803771972656
+2023-11-20 22:09:19 [train.__main__][INFO] [main/main] - 108  : train loss : 32.39025115966797
+2023-11-20 22:09:20 [train.__main__][INFO] [main/main] - 108  : train loss : 46.19143295288086
+2023-11-20 22:09:21 [train.__main__][INFO] [main/main] - 108  : train loss : 43.97252655029297
+2023-11-20 22:09:22 [train.__main__][INFO] [main/main] - 108  : train loss : 41.90378189086914
+2023-11-20 22:09:23 [train.__main__][INFO] [main/main] - 108  : train loss : 36.366241455078125
+2023-11-20 22:09:25 [train.__main__][INFO] [main/main] - 108  : train loss : 39.80826187133789
+2023-11-20 22:09:26 [train.__main__][INFO] [main/main] - 108  : train loss : 38.55393600463867
+2023-11-20 22:09:27 [train.__main__][INFO] [main/main] - 108  : train loss : 39.856224060058594
+2023-11-20 22:09:28 [train.__main__][INFO] [main/main] - 108  : train loss : 35.72566604614258
+2023-11-20 22:09:29 [train.__main__][INFO] [main/main] - 108  : train loss : 39.94204330444336
+2023-11-20 22:09:31 [train.__main__][INFO] [main/main] - 108  : train loss : 28.617841720581055
+2023-11-20 22:09:32 [train.__main__][INFO] [main/main] - 108  : train loss : 38.113861083984375
+2023-11-20 22:09:33 [train.__main__][INFO] [main/main] - 108  : train loss : 41.024696350097656
+2023-11-20 22:09:34 [train.__main__][INFO] [main/main] - 108  : train loss : 36.29109191894531
+2023-11-20 22:09:35 [train.__main__][INFO] [main/main] - 108  : train loss : 49.70726013183594
+2023-11-20 22:09:36 [train.__main__][INFO] [main/main] - 108  : train loss : 46.67655563354492
+2023-11-20 22:09:38 [train.__main__][INFO] [main/main] - 108  : train loss : 43.0401725769043
+2023-11-20 22:09:39 [train.__main__][INFO] [main/main] - 108  : train loss : 42.564823150634766
+2023-11-20 22:09:40 [train.__main__][INFO] [main/main] - 108  : train loss : 38.8289794921875
+2023-11-20 22:09:41 [train.__main__][INFO] [main/main] - 108  : train loss : 39.877967834472656
+2023-11-20 22:09:42 [train.__main__][INFO] [main/main] - 108  : train loss : 37.11391067504883
+2023-11-20 22:09:44 [train.__main__][INFO] [main/main] - 108  : train loss : 37.094459533691406
+2023-11-20 22:09:45 [train.__main__][INFO] [main/main] - 108  : train loss : 34.38341522216797
+2023-11-20 22:09:46 [train.__main__][INFO] [main/main] - 108  : train loss : 35.658226013183594
+2023-11-20 22:09:47 [train.__main__][INFO] [main/main] - 108  : train loss : 38.792266845703125
+2023-11-20 22:09:48 [train.__main__][INFO] [main/main] - 108  : train loss : 35.3557243347168
+2023-11-20 22:09:49 [train.__main__][INFO] [main/main] - 108  : train loss : 36.623008728027344
+2023-11-20 22:09:51 [train.__main__][INFO] [main/main] - 108  : train loss : 33.23633575439453
+2023-11-20 22:09:52 [train.__main__][INFO] [main/main] - 108  : train loss : 32.68458938598633
+2023-11-20 22:09:53 [train.__main__][INFO] [main/main] - 108  : train loss : 37.53672409057617
+2023-11-20 22:09:54 [train.__main__][INFO] [main/main] - 108  : train loss : 42.18800354003906
+2023-11-20 22:09:55 [train.__main__][INFO] [main/main] - 108  : train loss : 34.10523986816406
+2023-11-20 22:09:57 [train.__main__][INFO] [main/main] - 108  : train loss : 31.931123733520508
+2023-11-20 22:09:58 [train.__main__][INFO] [main/main] - 108  : train loss : 35.76234436035156
+2023-11-20 22:09:59 [train.__main__][INFO] [main/main] - 108  : train loss : 33.53373336791992
+2023-11-20 22:10:00 [train.__main__][INFO] [main/main] - 108  : train loss : 36.957855224609375
+2023-11-20 22:10:01 [train.__main__][INFO] [main/main] - 108  : train loss : 34.240272521972656
+2023-11-20 22:10:02 [train.__main__][INFO] [main/main] - 108  : train loss : 37.59157180786133
+2023-11-20 22:10:04 [train.__main__][INFO] [main/main] - 108  : train loss : 34.102996826171875
+2023-11-20 22:10:05 [train.__main__][INFO] [main/main] - 108  : train loss : 36.44730758666992
+2023-11-20 22:10:06 [train.__main__][INFO] [main/main] - 108  : train loss : 39.15975570678711
+2023-11-20 22:10:07 [train.__main__][INFO] [main/main] - 108  : train loss : 33.50959396362305
+2023-11-20 22:10:08 [train.__main__][INFO] [main/main] - 108  : train loss : 36.88823318481445
+2023-11-20 22:10:09 [train.__main__][INFO] [main/main] - 108  : train loss : 40.5522575378418
+2023-11-20 22:10:11 [train.__main__][INFO] [main/main] - 108  : train loss : 46.05936050415039
+2023-11-20 22:10:12 [train.__main__][INFO] [main/main] - 108  : train loss : 41.437007904052734
+2023-11-20 22:10:13 [train.__main__][INFO] [main/main] - 108  : train loss : 31.357872009277344
+2023-11-20 22:10:14 [train.__main__][INFO] [main/main] - 108  : train loss : 36.964111328125
+2023-11-20 22:10:15 [train.__main__][INFO] [main/main] - 108  : train loss : 42.3406867980957
+2023-11-20 22:10:17 [train.__main__][INFO] [main/main] - 108  : train loss : 34.06848907470703
+2023-11-20 22:10:18 [train.__main__][INFO] [main/main] - 108  : train loss : 44.970481872558594
+2023-11-20 22:10:19 [train.__main__][INFO] [main/main] - 108  : train loss : 33.83671569824219
+2023-11-20 22:10:20 [train.__main__][INFO] [main/main] - 108  : train loss : 33.09364700317383
+2023-11-20 22:10:21 [train.__main__][INFO] [main/main] - 108  : train loss : 38.04151153564453
+2023-11-20 22:10:22 [train.__main__][INFO] [main/main] - 108  : train loss : 30.867691040039062
+2023-11-20 22:10:24 [train.__main__][INFO] [main/main] - 108  : train loss : 42.36945724487305
+2023-11-20 22:10:25 [train.__main__][INFO] [main/main] - 108  : train loss : 32.240997314453125
+2023-11-20 22:10:26 [train.__main__][INFO] [main/main] - 108  : train loss : 32.06394958496094
+2023-11-20 22:10:28 [train.__main__][INFO] [main/main] - 108  : train loss : 30.144447326660156
+2023-11-20 22:10:29 [train.__main__][INFO] [main/main] - 108  : train loss : 34.9431037902832
+2023-11-20 22:10:31 [train.__main__][INFO] [main/main] - 108  : train loss : 32.71741485595703
+2023-11-20 22:10:32 [train.__main__][INFO] [main/main] - 108  : train loss : 30.72559928894043
+2023-11-20 22:10:33 [train.__main__][INFO] [main/main] - 108  : train loss : 33.01253128051758
+2023-11-20 22:10:34 [train.__main__][INFO] [main/main] - 108  : train loss : 34.4967041015625
+2023-11-20 22:10:35 [train.__main__][INFO] [main/main] - 108  : train loss : 32.72943115234375
+2023-11-20 22:10:37 [train.__main__][INFO] [main/main] - 108  : train loss : 30.582565307617188
+2023-11-20 22:10:38 [train.__main__][INFO] [main/main] - 108  : train loss : 31.185672760009766
+2023-11-20 22:10:39 [train.__main__][INFO] [main/main] - 108  : train loss : 31.51846694946289
+2023-11-20 22:10:40 [train.__main__][INFO] [main/main] - 108  : train loss : 34.17414855957031
+2023-11-20 22:10:41 [train.__main__][INFO] [main/main] - 108  : train loss : 34.9940299987793
+2023-11-20 22:10:43 [train.__main__][INFO] [main/main] - 108  : train loss : 30.745838165283203
+2023-11-20 22:10:44 [train.__main__][INFO] [main/main] - 108  : train loss : 36.52461242675781
+2023-11-20 22:10:45 [train.__main__][INFO] [main/main] - 108  : train loss : 29.61721420288086
+2023-11-20 22:10:46 [train.__main__][INFO] [main/main] - 108  : train loss : 32.10384750366211
+2023-11-20 22:10:47 [train.__main__][INFO] [main/main] - 108  : train loss : 31.25142478942871
+2023-11-20 22:10:48 [train.__main__][INFO] [main/main] - 108  : train loss : 33.47504806518555
+2023-11-20 22:10:50 [train.__main__][INFO] [main/main] - 108  : train loss : 31.247806549072266
+2023-11-20 22:10:51 [train.__main__][INFO] [main/main] - 108  : train loss : 31.25112533569336
+2023-11-20 22:10:52 [train.__main__][INFO] [main/main] - 108  : train loss : 36.74468994140625
+2023-11-20 22:10:53 [train.__main__][INFO] [main/main] - 108  : train loss : 33.6181755065918
+2023-11-20 22:10:55 [train.__main__][INFO] [main/main] - 108  : train loss : 27.360570907592773
+2023-11-20 22:10:56 [train.__main__][INFO] [main/main] - 108  : train loss : 35.367645263671875
+2023-11-20 22:10:57 [train.__main__][INFO] [main/main] - 108  : train loss : 32.697662353515625
+2023-11-20 22:10:58 [train.__main__][INFO] [main/main] - 108  : train loss : 27.09141731262207
+2023-11-20 22:11:00 [train.__main__][INFO] [main/main] - 108  : train loss : 28.75335693359375
+2023-11-20 22:11:01 [train.__main__][INFO] [main/main] - 108  : train loss : 26.489421844482422
+2023-11-20 22:11:02 [train.__main__][INFO] [main/main] - 108  : train loss : 29.37356948852539
+2023-11-20 22:11:03 [train.__main__][INFO] [main/main] - 108  : train loss : 29.526329040527344
+2023-11-20 22:11:05 [train.__main__][INFO] [main/main] - 108  : train loss : 30.602754592895508
+2023-11-20 22:11:06 [train.__main__][INFO] [main/main] - 108  : train loss : 32.553897857666016
+2023-11-20 22:11:07 [train.__main__][INFO] [main/main] - 108  : train loss : 33.38231658935547
+2023-11-20 22:11:08 [train.__main__][INFO] [main/main] - 108  : train loss : 29.333621978759766
+2023-11-20 22:11:09 [train.__main__][INFO] [main/main] - 108  : train loss : 33.53817367553711
+2023-11-20 22:11:11 [train.__main__][INFO] [main/main] - 108  : train loss : 28.998600006103516
+2023-11-20 22:11:12 [train.__main__][INFO] [main/main] - 108  : train loss : 28.041933059692383
+2023-11-20 22:11:13 [train.__main__][INFO] [main/main] - 108  : train loss : 29.909788131713867
+2023-11-20 22:11:14 [train.__main__][INFO] [main/main] - 108  : train loss : 28.768693923950195
+2023-11-20 22:11:16 [train.__main__][INFO] [main/main] - 108  : train loss : 27.693559646606445
+2023-11-20 22:11:17 [train.__main__][INFO] [main/main] - 108  : train loss : 30.942890167236328
+2023-11-20 22:11:18 [train.__main__][INFO] [main/main] - 108  : train loss : 29.88144302368164
+2023-11-20 22:11:19 [train.__main__][INFO] [main/main] - 108  : train loss : 25.569618225097656
+2023-11-20 22:11:21 [train.__main__][INFO] [main/main] - 108  : train loss : 29.063676834106445
+2023-11-20 22:11:22 [train.__main__][INFO] [main/main] - 108  : train loss : 28.07516098022461
+2023-11-20 22:11:23 [train.__main__][INFO] [main/main] - 108  : train loss : 27.829452514648438
+2023-11-20 22:11:24 [train.__main__][INFO] [main/main] - 108  : train loss : 28.702129364013672
+2023-11-20 22:11:25 [train.__main__][INFO] [main/main] - 108  : train loss : 29.33647346496582
+2023-11-20 22:11:27 [train.__main__][INFO] [main/main] - 108  : train loss : 29.595638275146484
+2023-11-20 22:11:28 [train.__main__][INFO] [main/main] - 108  : train loss : 29.696243286132812
+2023-11-20 22:11:29 [train.__main__][INFO] [main/main] - 108  : train loss : 27.801109313964844
+2023-11-20 22:11:30 [train.__main__][INFO] [main/main] - 108  : train loss : 26.781850814819336
+2023-11-20 22:11:31 [train.__main__][INFO] [main/main] - 108  : train loss : 30.311880111694336
+2023-11-20 22:11:33 [train.__main__][INFO] [main/main] - 108  : train loss : 26.60195541381836
+2023-11-20 22:11:34 [train.__main__][INFO] [main/main] - 108  : train loss : 30.271549224853516
+2023-11-20 22:11:35 [train.__main__][INFO] [main/main] - 108  : train loss : 26.18077278137207
+2023-11-20 22:11:37 [train.__main__][INFO] [main/main] - 108  : train loss : 31.017681121826172
+2023-11-20 22:11:38 [train.__main__][INFO] [main/main] - 108  : train loss : 26.720001220703125
+2023-11-20 22:11:39 [train.__main__][INFO] [main/main] - 108  : train loss : 27.234088897705078
+2023-11-20 22:11:40 [train.__main__][INFO] [main/main] - 108  : train loss : 29.403688430786133
+2023-11-20 22:11:42 [train.__main__][INFO] [main/main] - 108  : train loss : 32.17531967163086
+2023-11-20 22:11:44 [train.__main__][INFO] [main/main] - 108  : train loss : 31.398540496826172
+2023-11-20 22:11:45 [train.__main__][INFO] [main/main] - 108  : train loss : 27.421911239624023
+2023-11-20 22:11:46 [train.__main__][INFO] [main/main] - 108  : train loss : 29.692230224609375
+2023-11-20 22:11:47 [train.__main__][INFO] [main/main] - 108  : train loss : 27.03865623474121
+2023-11-20 22:11:48 [train.__main__][INFO] [main/main] - 108  : train loss : 28.23401641845703
+2023-11-20 22:11:50 [train.__main__][INFO] [main/main] - 108  : train loss : 29.865346908569336
+2023-11-20 22:11:51 [train.__main__][INFO] [main/main] - 108  : train loss : 29.80175018310547
+2023-11-20 22:11:52 [train.__main__][INFO] [main/main] - 108  : train loss : 26.091394424438477
+2023-11-20 22:11:53 [train.__main__][INFO] [main/main] - 108  : train loss : 26.247722625732422
+2023-11-20 22:11:55 [train.__main__][INFO] [main/main] - 108  : train loss : 26.676820755004883
+2023-11-20 22:11:56 [train.__main__][INFO] [main/main] - 108  : train loss : 25.833221435546875
+2023-11-20 22:11:57 [train.__main__][INFO] [main/main] - 108  : train loss : 27.683452606201172
+2023-11-20 22:11:58 [train.__main__][INFO] [main/main] - 108  : train loss : 27.004159927368164
+2023-11-20 22:11:59 [train.__main__][INFO] [main/main] - 108  : train loss : 25.548688888549805
+2023-11-20 22:12:01 [train.__main__][INFO] [main/main] - 108  : train loss : 32.536529541015625
+2023-11-20 22:12:02 [train.__main__][INFO] [main/main] - 108  : train loss : 26.852985382080078
+2023-11-20 22:12:03 [train.__main__][INFO] [main/main] - 108  : train loss : 27.947717666625977
+2023-11-20 22:12:04 [train.__main__][INFO] [main/main] - 108  : train loss : 31.35856819152832
+2023-11-20 22:12:05 [train.__main__][INFO] [main/main] - 108  : train loss : 34.88412857055664
+2023-11-20 22:12:07 [train.__main__][INFO] [main/main] - 108  : train loss : 28.83817481994629
+2023-11-20 22:12:08 [train.__main__][INFO] [main/main] - 108  : train loss : 29.90745735168457
+2023-11-20 22:12:09 [train.__main__][INFO] [main/main] - 108  : train loss : 27.798120498657227
+2023-11-20 22:12:10 [train.__main__][INFO] [main/main] - 108  : train loss : 28.150806427001953
+2023-11-20 22:12:12 [train.__main__][INFO] [main/main] - 108  : train loss : 27.016586303710938
+2023-11-20 22:12:13 [train.__main__][INFO] [main/main] - 108  : train loss : 30.481441497802734
+2023-11-20 22:12:14 [train.__main__][INFO] [main/main] - 108  : train loss : 29.00360679626465
+2023-11-20 22:12:15 [train.__main__][INFO] [main/main] - 108  : train loss : 28.547819137573242
+2023-11-20 22:12:17 [train.__main__][INFO] [main/main] - 108  : train loss : 28.63648796081543
+2023-11-20 22:12:18 [train.__main__][INFO] [main/main] - 108  : train loss : 26.84288787841797
+2023-11-20 22:12:19 [train.__main__][INFO] [main/main] - 108  : train loss : 28.282058715820312
+2023-11-20 22:12:20 [train.__main__][INFO] [main/main] - 108  : train loss : 26.772567749023438
+2023-11-20 22:12:21 [train.__main__][INFO] [main/main] - 108  : train loss : 27.058147430419922
+2023-11-20 22:12:23 [train.__main__][INFO] [main/main] - 108  : train loss : 29.32431983947754
+2023-11-20 22:12:24 [train.__main__][INFO] [main/main] - 108  : train loss : 28.421998977661133
+2023-11-20 22:12:26 [train.__main__][INFO] [main/main] - 108  : train loss : 32.71415710449219
+2023-11-20 22:12:27 [train.__main__][INFO] [main/main] - 108  : train loss : 28.289098739624023
+2023-11-20 22:12:28 [train.__main__][INFO] [main/main] - 108  : train loss : 27.660417556762695
+2023-11-20 22:12:30 [train.__main__][INFO] [main/main] - 108  : train loss : 29.727075576782227
+2023-11-20 22:12:31 [train.__main__][INFO] [main/main] - 108  : train loss : 30.642858505249023
+2023-11-20 22:12:32 [train.__main__][INFO] [main/main] - 108  : train loss : 28.54515838623047
+2023-11-20 22:12:33 [train.__main__][INFO] [main/main] - 108  : train loss : 28.69814682006836
+2023-11-20 22:12:35 [train.__main__][INFO] [main/main] - 108  : train loss : 31.589265823364258
+2023-11-20 22:12:36 [train.__main__][INFO] [main/main] - 108  : train loss : 30.848735809326172
+2023-11-20 22:12:37 [train.__main__][INFO] [main/main] - 108  : train loss : 27.954423904418945
+2023-11-20 22:12:38 [train.__main__][INFO] [main/main] - 108  : train loss : 32.2149772644043
+2023-11-20 22:12:39 [train.__main__][INFO] [main/main] - 108  : train loss : 34.371490478515625
+2023-11-20 22:12:41 [train.__main__][INFO] [main/main] - 108  : train loss : 30.27178382873535
+2023-11-20 22:12:42 [train.__main__][INFO] [main/main] - 108  : train loss : 34.97186279296875
+2023-11-20 22:12:43 [train.__main__][INFO] [main/main] - 108  : train loss : 29.381013870239258
+2023-11-20 22:12:44 [train.__main__][INFO] [main/main] - 108  : train loss : 29.125654220581055
+2023-11-20 22:12:45 [train.__main__][INFO] [main/main] - 108  : train loss : 30.597644805908203
+2023-11-20 22:12:47 [train.__main__][INFO] [main/main] - 108  : train loss : 31.429187774658203
+2023-11-20 22:12:48 [train.__main__][INFO] [main/main] - 108  : train loss : 27.29520606994629
+2023-11-20 22:12:49 [train.__main__][INFO] [main/main] - 108  : train loss : 28.81641387939453
+2023-11-20 22:12:50 [train.__main__][INFO] [main/main] - 108  : train loss : 28.105762481689453
+2023-11-20 22:12:52 [train.__main__][INFO] [main/main] - 108  : train loss : 28.812814712524414
+2023-11-20 22:12:53 [train.__main__][INFO] [main/main] - 108  : train loss : 29.855791091918945
+2023-11-20 22:12:54 [train.__main__][INFO] [main/main] - 108  : train loss : 27.79201316833496
+2023-11-20 22:12:55 [train.__main__][INFO] [main/main] - 108  : train loss : 32.11575698852539
+2023-11-20 22:12:56 [train.__main__][INFO] [main/main] - 108  : train loss : 30.35896873474121
+2023-11-20 22:12:58 [train.__main__][INFO] [main/main] - 108  : train loss : 28.826383590698242
+2023-11-20 22:12:59 [train.__main__][INFO] [main/main] - 108  : train loss : 30.382869720458984
+2023-11-20 22:13:00 [train.__main__][INFO] [main/main] - 108  : train loss : 28.183326721191406
+2023-11-20 22:13:01 [train.__main__][INFO] [main/main] - 108  : train loss : 26.577716827392578
+2023-11-20 22:13:02 [train.__main__][INFO] [main/main] - 108  : train loss : 29.03140640258789
+2023-11-20 22:13:04 [train.__main__][INFO] [main/main] - 108  : train loss : 27.11695671081543
+2023-11-20 22:13:05 [train.__main__][INFO] [main/main] - 108  : train loss : 28.269947052001953
+2023-11-20 22:13:06 [train.__main__][INFO] [main/main] - 108  : train loss : 32.97840118408203
+2023-11-20 22:13:07 [train.__main__][INFO] [main/main] - 108  : train loss : 30.87608528137207
+2023-11-20 22:13:09 [train.__main__][INFO] [main/main] - 108  : train loss : 26.5922908782959
+2023-11-20 22:13:10 [train.__main__][INFO] [main/main] - 108  : train loss : 28.187759399414062
+2023-11-20 22:13:11 [train.__main__][INFO] [main/main] - 108  : train loss : 25.714330673217773
+2023-11-20 22:13:12 [train.__main__][INFO] [main/main] - 108  : train loss : 27.970502853393555
+2023-11-20 22:13:14 [train.__main__][INFO] [main/main] - 108  : train loss : 30.2708683013916
+2023-11-20 22:13:15 [train.__main__][INFO] [main/main] - 108  : train loss : 32.23884201049805
+2023-11-20 22:13:16 [train.__main__][INFO] [main/main] - 108  : train loss : 34.12610626220703
+2023-11-20 22:13:17 [train.__main__][INFO] [main/main] - 108  : train loss : 32.15071105957031
+2023-11-20 22:13:18 [train.__main__][INFO] [main/main] - 108  : train loss : 31.710269927978516
+2023-11-20 22:13:20 [train.__main__][INFO] [main/main] - 108  : train loss : 28.467391967773438
+2023-11-20 22:13:21 [train.__main__][INFO] [main/main] - 108  : train loss : 29.489486694335938
+2023-11-20 22:13:22 [train.__main__][INFO] [main/main] - 108  : train loss : 29.76636505126953
+2023-11-20 22:13:23 [train.__main__][INFO] [main/main] - 108  : train loss : 29.32175636291504
+2023-11-20 22:13:26 [train.__main__][INFO] [main/main] - 108  : train loss : 27.58281707763672
+2023-11-20 22:13:27 [train.__main__][INFO] [main/main] - 108  : train loss : 26.994325637817383
+2023-11-20 22:13:28 [train.__main__][INFO] [main/main] - 108  : train loss : 30.53244972229004
+2023-11-20 22:13:29 [train.__main__][INFO] [main/main] - 108  : train loss : 28.963563919067383
+2023-11-20 22:13:31 [train.__main__][INFO] [main/main] - 108  : train loss : 27.676069259643555
+2023-11-20 22:13:33 [train.__main__][INFO] [main/main] - 108  : train loss : 28.607126235961914
+2023-11-20 22:13:34 [train.__main__][INFO] [main/main] - 108  : train loss : 36.756858825683594
+2023-11-20 22:13:35 [train.__main__][INFO] [main/main] - 108  : train loss : 28.312801361083984
+2023-11-20 22:13:36 [train.__main__][INFO] [main/main] - 108  : train loss : 28.052526473999023
+2023-11-20 22:13:38 [train.__main__][INFO] [main/main] - 108  : train loss : 29.06708335876465
+2023-11-20 22:13:39 [train.__main__][INFO] [main/main] - 108  : train loss : 27.01436424255371
+2023-11-20 22:13:40 [train.__main__][INFO] [main/main] - 108  : train loss : 30.705232620239258
+2023-11-20 22:13:41 [train.__main__][INFO] [main/main] - 108  : train loss : 29.83315086364746
+2023-11-20 22:13:42 [train.__main__][INFO] [main/main] - 108  : train loss : 30.43406867980957
+2023-11-20 22:13:44 [train.__main__][INFO] [main/main] - 108  : train loss : 27.886838912963867
+2023-11-20 22:13:45 [train.__main__][INFO] [main/main] - 108  : train loss : 26.001855850219727
+2023-11-20 22:13:46 [train.__main__][INFO] [main/main] - 108  : train loss : 29.546676635742188
+2023-11-20 22:13:47 [train.__main__][INFO] [main/main] - 108  : train loss : 30.028244018554688
+2023-11-20 22:13:48 [train.__main__][INFO] [main/main] - 108  : train loss : 30.41301727294922
+2023-11-20 22:13:50 [train.__main__][INFO] [main/main] - 108  : train loss : 31.41258430480957
+2023-11-20 22:13:51 [train.__main__][INFO] [main/main] - 108  : train loss : 29.544511795043945
+2023-11-20 22:13:52 [train.__main__][INFO] [main/main] - 108  : train loss : 29.16400909423828
+2023-11-20 22:13:53 [train.__main__][INFO] [main/main] - 108  : train loss : 29.54697608947754
+2023-11-20 22:13:55 [train.__main__][INFO] [main/main] - 108  : train loss : 32.47206497192383
+2023-11-20 22:13:56 [train.__main__][INFO] [main/main] - 108  : train loss : 31.554956436157227
+2023-11-20 22:13:57 [train.__main__][INFO] [main/main] - 108  : train loss : 36.92443084716797
+2023-11-20 22:13:58 [train.__main__][INFO] [main/main] - 108  : train loss : 48.52790069580078
+2023-11-20 22:14:00 [train.__main__][INFO] [main/main] - 108  : train loss : 30.773405075073242
+2023-11-20 22:14:01 [train.__main__][INFO] [main/main] - 108  : train loss : 28.27204704284668
+2023-11-20 22:14:02 [train.__main__][INFO] [main/main] - 108  : train loss : 29.859689712524414
+2023-11-20 22:14:03 [train.__main__][INFO] [main/main] - 108  : train loss : 32.170326232910156
+2023-11-20 22:14:04 [train.__main__][INFO] [main/main] - 108  : train loss : 28.735044479370117
+2023-11-20 22:14:06 [train.__main__][INFO] [main/main] - 108  : train loss : 31.751462936401367
+2023-11-20 22:14:07 [train.__main__][INFO] [main/main] - 108  : train loss : 34.42226028442383
+2023-11-20 22:14:08 [train.__main__][INFO] [main/main] - 108  : train loss : 32.62578582763672
+2023-11-20 22:14:10 [train.__main__][INFO] [main/main] - 108  : train loss : 34.435420989990234
+2023-11-20 22:14:11 [train.__main__][INFO] [main/main] - 108  : train loss : 31.194049835205078
+2023-11-20 22:14:12 [train.__main__][INFO] [main/main] - 108  : train loss : 31.503389358520508
+2023-11-20 22:14:14 [train.__main__][INFO] [main/main] - 108  : train loss : 34.82682418823242
+2023-11-20 22:14:15 [train.__main__][INFO] [main/main] - 108  : train loss : 30.229543685913086
+2023-11-20 22:14:16 [train.__main__][INFO] [main/main] - 108  : train loss : 34.00413513183594
+2023-11-20 22:14:17 [train.__main__][INFO] [main/main] - 108  : train loss : 32.7473030090332
+2023-11-20 22:14:19 [train.__main__][INFO] [main/main] - 108  : train loss : 30.031967163085938
+2023-11-20 22:14:20 [train.__main__][INFO] [main/main] - 108  : train loss : 32.33732986450195
+2023-11-20 22:14:21 [train.__main__][INFO] [main/main] - 108  : train loss : 30.100778579711914
+2023-11-20 22:14:22 [train.__main__][INFO] [main/main] - 108  : train loss : 30.2320556640625
+2023-11-20 22:14:23 [train.__main__][INFO] [main/main] - 108  : train loss : 31.224950790405273
+2023-11-20 22:14:25 [train.__main__][INFO] [main/main] - 108  : train loss : 27.416397094726562
+2023-11-20 22:14:26 [train.__main__][INFO] [main/main] - 108  : train loss : 28.957014083862305
+2023-11-20 22:14:27 [train.__main__][INFO] [main/main] - 108  : train loss : 26.501440048217773
+2023-11-20 22:14:28 [train.__main__][INFO] [main/main] - 108  : train loss : 30.535667419433594
+2023-11-20 22:14:29 [train.__main__][INFO] [main/main] - 108  : train loss : 29.859041213989258
+2023-11-20 22:14:31 [train.__main__][INFO] [main/main] - 108  : train loss : 27.311519622802734
+2023-11-20 22:14:32 [train.__main__][INFO] [main/main] - 108  : train loss : 27.754138946533203
+2023-11-20 22:14:33 [train.__main__][INFO] [main/main] - 108  : train loss : 27.395288467407227
+2023-11-20 22:14:34 [train.__main__][INFO] [main/main] - 108  : train loss : 25.768310546875
+2023-11-20 22:14:36 [train.__main__][INFO] [main/main] - 108  : train loss : 31.68029022216797
+2023-11-20 22:14:37 [train.__main__][INFO] [main/main] - 108  : train loss : 28.476673126220703
+2023-11-20 22:14:38 [train.__main__][INFO] [main/main] - 108  : train loss : 28.737228393554688
+2023-11-20 22:14:39 [train.__main__][INFO] [main/main] - 108  : train loss : 30.728750228881836
+2023-11-20 22:14:41 [train.__main__][INFO] [main/main] - 108  : train loss : 33.93718338012695
+2023-11-20 22:14:42 [train.__main__][INFO] [main/main] - 108  : train loss : 33.85902786254883
+2023-11-20 22:14:43 [train.__main__][INFO] [main/main] - 108  : train loss : 28.746551513671875
+2023-11-20 22:14:44 [train.__main__][INFO] [main/main] - 108  : train loss : 30.661678314208984
+2023-11-20 22:14:45 [train.__main__][INFO] [main/main] - 108  : train loss : 37.45987319946289
+2023-11-20 22:14:47 [train.__main__][INFO] [main/main] - 108  : train loss : 29.229915618896484
+2023-11-20 22:14:48 [train.__main__][INFO] [main/main] - 108  : train loss : 40.729610443115234
+2023-11-20 22:14:49 [train.__main__][INFO] [main/main] - 108  : train loss : 29.6331729888916
+2023-11-20 22:14:50 [train.__main__][INFO] [main/main] - 108  : train loss : 31.593341827392578
+2023-11-20 22:14:52 [train.__main__][INFO] [main/main] - 108  : train loss : 30.505046844482422
+2023-11-20 22:14:53 [train.__main__][INFO] [main/main] - 108  : train loss : 28.83432388305664
+2023-11-20 22:14:54 [train.__main__][INFO] [main/main] - 108  : train loss : 29.20400047302246
+2023-11-20 22:14:55 [train.__main__][INFO] [main/main] - 108  : train loss : 29.857755661010742
+2023-11-20 22:14:57 [train.__main__][INFO] [main/main] - 108  : train loss : 29.77718162536621
+2023-11-20 22:14:58 [train.__main__][INFO] [main/main] - 108  : train loss : 28.617258071899414
+2023-11-20 22:14:59 [train.__main__][INFO] [main/main] - 108  : train loss : 31.277297973632812
+2023-11-20 22:15:00 [train.__main__][INFO] [main/main] - 108  : train loss : 27.4687557220459
+2023-11-20 22:15:01 [train.__main__][INFO] [main/main] - 108  : train loss : 28.1569766998291
+2023-11-20 22:15:03 [train.__main__][INFO] [main/main] - 108  : train loss : 35.859928131103516
+2023-11-20 22:15:04 [train.__main__][INFO] [main/main] - 108  : train loss : 28.720928192138672
+2023-11-20 22:15:05 [train.__main__][INFO] [main/main] - 108  : train loss : 29.251310348510742
+2023-11-20 22:15:06 [train.__main__][INFO] [main/main] - 108  : train loss : 27.6672420501709
+2023-11-20 22:15:08 [train.__main__][INFO] [main/main] - 108  : train loss : 29.778207778930664
+2023-11-20 22:15:09 [train.__main__][INFO] [main/main] - 108  : train loss : 28.151426315307617
+2023-11-20 22:15:10 [train.__main__][INFO] [main/main] - 108  : train loss : 34.06998062133789
+2023-11-20 22:15:11 [train.__main__][INFO] [main/main] - 108  : train loss : 33.059207916259766
+2023-11-20 22:15:13 [train.__main__][INFO] [main/main] - 108  : train loss : 29.50618553161621
+2023-11-20 22:15:14 [train.__main__][INFO] [main/main] - 108  : train loss : 26.86000633239746
+2023-11-20 22:15:15 [train.__main__][INFO] [main/main] - 108  : train loss : 27.32564926147461
+2023-11-20 22:15:16 [train.__main__][INFO] [main/main] - 108  : train loss : 27.181087493896484
+2023-11-20 22:15:17 [train.__main__][INFO] [main/main] - 108  : train loss : 27.463558197021484
+2023-11-20 22:15:19 [train.__main__][INFO] [main/main] - 108  : train loss : 28.368257522583008
+2023-11-20 22:15:20 [train.__main__][INFO] [main/main] - 108  : train loss : 29.204004287719727
+2023-11-20 22:15:21 [train.__main__][INFO] [main/main] - 108  : train loss : 32.42518615722656
+2023-11-20 22:15:22 [train.__main__][INFO] [main/main] - 108  : train loss : 35.418434143066406
+2023-11-20 22:15:24 [train.__main__][INFO] [main/main] - 108  : train loss : 29.196332931518555
+2023-11-20 22:15:25 [train.__main__][INFO] [main/main] - 108  : train loss : 30.760372161865234
+2023-11-20 22:15:26 [train.__main__][INFO] [main/main] - 108  : train loss : 27.068883895874023
+2023-11-20 22:15:27 [train.__main__][INFO] [main/main] - 108  : train loss : 30.871917724609375
+2023-11-20 22:15:29 [train.__main__][INFO] [main/main] - 108  : train loss : 27.96828269958496
+2023-11-20 22:15:30 [train.__main__][INFO] [main/main] - 108  : train loss : 28.261423110961914
+2023-11-20 22:15:31 [train.__main__][INFO] [main/main] - 108  : train loss : 26.418371200561523
+2023-11-20 22:15:32 [train.__main__][INFO] [main/main] - 108  : train loss : 28.71812629699707
+2023-11-20 22:15:33 [train.__main__][INFO] [main/main] - 108  : train loss : 28.897531509399414
+2023-11-20 22:15:35 [train.__main__][INFO] [main/main] - 108  : train loss : 28.450054168701172
+2023-11-20 22:15:36 [train.__main__][INFO] [main/main] - 108  : train loss : 27.28400421142578
+2023-11-20 22:15:37 [train.__main__][INFO] [main/main] - 108  : train loss : 28.133846282958984
+2023-11-20 22:15:38 [train.__main__][INFO] [main/main] - 108  : train loss : 28.036592483520508
+2023-11-20 22:15:39 [train.__main__][INFO] [main/main] - 108  : train loss : 28.929813385009766
+2023-11-20 22:15:41 [train.__main__][INFO] [main/main] - 108  : train loss : 31.312984466552734
+2023-11-20 22:15:42 [train.__main__][INFO] [main/main] - 108  : train loss : 31.76406478881836
+2023-11-20 22:15:43 [train.__main__][INFO] [main/main] - 108  : train loss : 29.784255981445312
+2023-11-20 22:15:44 [train.__main__][INFO] [main/main] - 108  : train loss : 31.72195053100586
+2023-11-20 22:15:46 [train.__main__][INFO] [main/main] - 108  : train loss : 32.5540885925293
+2023-11-20 22:15:47 [train.__main__][INFO] [main/main] - 108  : train loss : 44.54156494140625
+2023-11-20 22:15:49 [train.__main__][INFO] [main/main] - 108  : train loss : 32.94696807861328
+2023-11-20 22:15:50 [train.__main__][INFO] [main/main] - 108  : train loss : 29.796493530273438
+2023-11-20 22:15:51 [train.__main__][INFO] [main/main] - 108  : train loss : 38.47700119018555
+2023-11-20 22:15:52 [train.__main__][INFO] [main/main] - 108  : train loss : 32.918575286865234
+2023-11-20 22:15:54 [train.__main__][INFO] [main/main] - 108  : train loss : 35.88098907470703
+2023-11-20 22:15:55 [train.__main__][INFO] [main/main] - 108  : train loss : 27.413158416748047
+2023-11-20 22:15:56 [train.__main__][INFO] [main/main] - 108  : train loss : 33.06785583496094
+2023-11-20 22:15:57 [train.__main__][INFO] [main/main] - 108  : train loss : 32.01310348510742
+2023-11-20 22:15:58 [train.__main__][INFO] [main/main] - 108  : train loss : 29.34202766418457
+2023-11-20 22:16:00 [train.__main__][INFO] [main/main] - 108  : train loss : 29.77808380126953
+2023-11-20 22:16:01 [train.__main__][INFO] [main/main] - 108  : train loss : 30.361604690551758
+2023-11-20 22:16:02 [train.__main__][INFO] [main/main] - 108  : train loss : 34.91865158081055
+2023-11-20 22:16:04 [train.__main__][INFO] [main/main] - 108  : train loss : 28.846717834472656
+2023-11-20 22:16:05 [train.__main__][INFO] [main/main] - 108  : train loss : 32.335914611816406
+2023-11-20 22:16:06 [train.__main__][INFO] [main/main] - 108  : train loss : 28.15249252319336
+2023-11-20 22:16:07 [train.__main__][INFO] [main/main] - 108  : train loss : 28.181392669677734
+2023-11-20 22:16:08 [train.__main__][INFO] [main/main] - 108  : train loss : 28.74620246887207
+2023-11-20 22:16:10 [train.__main__][INFO] [main/main] - 108  : train loss : 32.05221176147461
+2023-11-20 22:16:11 [train.__main__][INFO] [main/main] - 108  : train loss : 27.28355598449707
+2023-11-20 22:16:12 [train.__main__][INFO] [main/main] - 108  : train loss : 28.47428321838379
+2023-11-20 22:16:13 [train.__main__][INFO] [main/main] - 108  : train loss : 28.441516876220703
+2023-11-20 22:16:15 [train.__main__][INFO] [main/main] - 108  : train loss : 27.041431427001953
+2023-11-20 22:16:16 [train.__main__][INFO] [main/main] - 108  : train loss : 27.857133865356445
+2023-11-20 22:16:17 [train.__main__][INFO] [main/main] - 108  : train loss : 28.14634895324707
+2023-11-20 22:16:18 [train.__main__][INFO] [main/main] - 108  : train loss : 30.01368522644043
+2023-11-20 22:16:19 [train.__main__][INFO] [main/main] - 108  : train loss : 31.102251052856445
+2023-11-20 22:16:21 [train.__main__][INFO] [main/main] - 108  : train loss : 30.514198303222656
+2023-11-20 22:16:22 [train.__main__][INFO] [main/main] - 108  : train loss : 29.954097747802734
+2023-11-20 22:16:23 [train.__main__][INFO] [main/main] - 108  : train loss : 28.5926570892334
+2023-11-20 22:16:24 [train.__main__][INFO] [main/main] - 108  : train loss : 38.71706008911133
+2023-11-20 22:16:26 [train.__main__][INFO] [main/main] - 108  : train loss : 41.820404052734375
+2023-11-20 22:16:27 [train.__main__][INFO] [main/main] - 108  : train loss : 30.08504867553711
+2023-11-20 22:16:28 [train.__main__][INFO] [main/main] - 108  : train loss : 30.43744659423828
+2023-11-20 22:16:29 [train.__main__][INFO] [main/main] - 108  : train loss : 30.84129524230957
+2023-11-20 22:16:31 [train.__main__][INFO] [main/main] - 108  : train loss : 26.712371826171875
+2023-11-20 22:16:32 [train.__main__][INFO] [main/main] - 108  : train loss : 28.33439826965332
+2023-11-20 22:16:33 [train.__main__][INFO] [main/main] - 108  : train loss : 27.432334899902344
+2023-11-20 22:16:34 [train.__main__][INFO] [main/main] - 108  : train loss : 26.403305053710938
+2023-11-20 22:16:35 [train.__main__][INFO] [main/main] - 108  : train loss : 28.66497802734375
+2023-11-20 22:16:37 [train.__main__][INFO] [main/main] - 108  : train loss : 29.869062423706055
+2023-11-20 22:16:38 [train.__main__][INFO] [main/main] - 108  : train loss : 28.588510513305664
+2023-11-20 22:16:39 [train.__main__][INFO] [main/main] - 108  : train loss : 31.662609100341797
+2023-11-20 22:16:40 [train.__main__][INFO] [main/main] - 108  : train loss : 31.539690017700195
+2023-11-20 22:16:41 [train.__main__][INFO] [main/main] - 108  : train loss : 27.23084831237793
+2023-11-20 22:16:43 [train.__main__][INFO] [main/main] - 108  : train loss : 34.59995651245117
+2023-11-20 22:16:44 [train.__main__][INFO] [main/main] - 108  : train loss : 32.08840560913086
+2023-11-20 22:16:45 [train.__main__][INFO] [main/main] - 108  : train loss : 32.03965759277344
+2023-11-20 22:16:47 [train.__main__][INFO] [main/main] - 108  : train loss : 28.07525062561035
+2023-11-20 22:16:48 [train.__main__][INFO] [main/main] - 108  : train loss : 28.64405059814453
+2023-11-20 22:16:49 [train.__main__][INFO] [main/main] - 108  : train loss : 28.545101165771484
+2023-11-20 22:16:50 [train.__main__][INFO] [main/main] - 108  : train loss : 29.2572021484375
+2023-11-20 22:16:52 [train.__main__][INFO] [main/main] - 108  : train loss : 28.633310317993164
+2023-11-20 22:16:53 [train.__main__][INFO] [main/main] - 108  : train loss : 34.21733856201172
+2023-11-20 22:16:54 [train.__main__][INFO] [main/main] - 108  : train loss : 30.10443878173828
+2023-11-20 22:16:55 [train.__main__][INFO] [main/main] - 108  : train loss : 28.415752410888672
+2023-11-20 22:16:57 [train.__main__][INFO] [main/main] - 108  : train loss : 30.051074981689453
+2023-11-20 22:16:58 [train.__main__][INFO] [main/main] - 108  : train loss : 34.591304779052734
+2023-11-20 22:16:59 [train.__main__][INFO] [main/main] - 108  : train loss : 32.29830551147461
+2023-11-20 22:17:00 [train.__main__][INFO] [main/main] - 108  : train loss : 29.82708740234375
+2023-11-20 22:17:02 [train.__main__][INFO] [main/main] - 108  : train loss : 31.053098678588867
+2023-11-20 22:17:03 [train.__main__][INFO] [main/main] - 108  : train loss : 28.99355125427246
+2023-11-20 22:17:04 [train.__main__][INFO] [main/main] - 108  : train loss : 33.19926834106445
+2023-11-20 22:17:05 [train.__main__][INFO] [main/main] - 108  : train loss : 32.82608413696289
+2023-11-20 22:17:06 [train.__main__][INFO] [main/main] - 108  : train loss : 28.24989128112793
+2023-11-20 22:17:08 [train.__main__][INFO] [main/main] - 108  : train loss : 29.800392150878906
+2023-11-20 22:17:09 [train.__main__][INFO] [main/main] - 108  : train loss : 32.48410415649414
+2023-11-20 22:17:10 [train.__main__][INFO] [main/main] - 108  : train loss : 30.099586486816406
+2023-11-20 22:17:12 [train.__main__][INFO] [main/main] - 108  : train loss : 29.88623809814453
+2023-11-20 22:17:13 [train.__main__][INFO] [main/main] - 108  : train loss : 35.72179412841797
+2023-11-20 22:17:14 [train.__main__][INFO] [main/main] - 108  : train loss : 30.36463737487793
+2023-11-20 22:17:15 [train.__main__][INFO] [main/main] - 108  : train loss : 37.941261291503906
+2023-11-20 22:17:17 [train.__main__][INFO] [main/main] - 108  : train loss : 30.920204162597656
+2023-11-20 22:17:18 [train.__main__][INFO] [main/main] - 108  : train loss : 35.62550354003906
+2023-11-20 22:17:19 [train.__main__][INFO] [main/main] - 108  : train loss : 34.53293991088867
+2023-11-20 22:17:20 [train.__main__][INFO] [main/main] - 108  : train loss : 30.817663192749023
+2023-11-20 22:17:22 [train.__main__][INFO] [main/main] - 108  : train loss : 37.767913818359375
+2023-11-20 22:17:23 [train.__main__][INFO] [main/main] - 108  : train loss : 33.9241828918457
+2023-11-20 22:17:24 [train.__main__][INFO] [main/main] - 108  : train loss : 27.775466918945312
+2023-11-20 22:17:25 [train.__main__][INFO] [main/main] - 108  : train loss : 30.204275131225586
+2023-11-20 22:17:26 [train.__main__][INFO] [main/main] - 108  : train loss : 34.455257415771484
+2023-11-20 22:17:28 [train.__main__][INFO] [main/main] - 108  : train loss : 31.396669387817383
+2023-11-20 22:17:29 [train.__main__][INFO] [main/main] - 108  : train loss : 32.1524658203125
+2023-11-20 22:17:30 [train.__main__][INFO] [main/main] - 108  : train loss : 32.23386001586914
+2023-11-20 22:17:31 [train.__main__][INFO] [main/main] - 108  : train loss : 31.886362075805664
+2023-11-20 22:17:33 [train.__main__][INFO] [main/main] - 108  : train loss : 28.383398056030273
+2023-11-20 22:17:34 [train.__main__][INFO] [main/main] - 108  : train loss : 27.69175910949707
+2023-11-20 22:17:35 [train.__main__][INFO] [main/main] - 108  : train loss : 30.204198837280273
+2023-11-20 22:17:36 [train.__main__][INFO] [main/main] - 108  : train loss : 36.36928176879883
+2023-11-20 22:17:37 [train.__main__][INFO] [main/main] - 108  : train loss : 28.68958282470703
+2023-11-20 22:17:39 [train.__main__][INFO] [main/main] - 108  : train loss : 33.91082000732422
+2023-11-20 22:17:40 [train.__main__][INFO] [main/main] - 108  : train loss : 37.1590461730957
+2023-11-20 22:17:41 [train.__main__][INFO] [main/main] - 108  : train loss : 31.542726516723633
+2023-11-20 22:17:42 [train.__main__][INFO] [main/main] - 108  : train loss : 31.218914031982422
+2023-11-20 22:17:43 [train.__main__][INFO] [main/main] - 108  : train loss : 29.418508529663086
+2023-11-20 22:17:45 [train.__main__][INFO] [main/main] - 108  : train loss : 59.458152770996094
+2023-11-20 22:17:46 [train.__main__][INFO] [main/main] - 108  : train loss : 38.68952560424805
+2023-11-20 22:17:47 [train.__main__][INFO] [main/main] - 108  : train loss : 37.82200622558594
+2023-11-20 22:17:48 [train.__main__][INFO] [main/main] - 108  : train loss : 62.834449768066406
+2023-11-20 22:17:50 [train.__main__][INFO] [main/main] - 108  : train loss : 39.13831329345703
+2023-11-20 22:17:51 [train.__main__][INFO] [main/main] - 108  : train loss : 49.15896987915039
+2023-11-20 22:17:52 [train.__main__][INFO] [main/main] - 108  : train loss : 34.746253967285156
+2023-11-20 22:17:53 [train.__main__][INFO] [main/main] - 108  : train loss : 36.02289581298828
+2023-11-20 22:17:54 [train.__main__][INFO] [main/main] - 108  : train loss : 40.46464538574219
+2023-11-20 22:17:56 [train.__main__][INFO] [main/main] - 108  : train loss : 43.67912673950195
+2023-11-20 22:17:57 [train.__main__][INFO] [main/main] - 108  : train loss : 41.62459182739258
+2023-11-20 22:17:58 [train.__main__][INFO] [main/main] - 108  : train loss : 34.8964958190918
+2023-11-20 22:17:59 [train.__main__][INFO] [main/main] - 108  : train loss : 34.918373107910156
+2023-11-20 22:18:00 [train.__main__][INFO] [main/main] - 108  : train loss : 36.385894775390625
+2023-11-20 22:18:02 [train.__main__][INFO] [main/main] - 108  : train loss : 32.35923767089844
+2023-11-20 22:18:03 [train.__main__][INFO] [main/main] - 108  : train loss : 35.87136459350586
+2023-11-20 22:18:04 [train.__main__][INFO] [main/main] - 108  : train loss : 32.244384765625
+2023-11-20 22:18:05 [train.__main__][INFO] [main/main] - 108  : train loss : 28.948617935180664
+2023-11-20 22:18:07 [train.__main__][INFO] [main/main] - 108  : train loss : 30.12496566772461
+2023-11-20 22:18:08 [train.__main__][INFO] [main/main] - 108  : train loss : 26.345624923706055
+2023-11-20 22:18:09 [train.__main__][INFO] [main/main] - 108  : train loss : 35.778709411621094
+2023-11-20 22:18:10 [train.__main__][INFO] [main/main] - 108  : train loss : 30.21274757385254
+2023-11-20 22:18:12 [train.__main__][INFO] [main/main] - 108  : train loss : 28.47063446044922
+2023-11-20 22:18:13 [train.__main__][INFO] [main/main] - 108  : train loss : 27.001462936401367
+2023-11-20 22:18:14 [train.__main__][INFO] [main/main] - 108  : train loss : 30.240222930908203
+2023-11-20 22:18:15 [train.__main__][INFO] [main/main] - 108  : train loss : 30.592729568481445
+2023-11-20 22:18:16 [train.__main__][INFO] [main/main] - 108  : train loss : 29.48859977722168
+2023-11-20 22:18:18 [train.__main__][INFO] [main/main] - 108  : train loss : 27.8241024017334
+2023-11-20 22:18:19 [train.__main__][INFO] [main/main] - 108  : train loss : 29.133054733276367
+2023-11-20 22:18:20 [train.__main__][INFO] [main/main] - 108  : train loss : 31.520835876464844
+2023-11-20 22:18:21 [train.__main__][INFO] [main/main] - 108  : train loss : 28.803680419921875
+2023-11-20 22:18:23 [train.__main__][INFO] [main/main] - 108  : train loss : 31.77767562866211
+2023-11-20 22:18:24 [train.__main__][INFO] [main/main] - 108  : train loss : 32.50811767578125
+2023-11-20 22:18:25 [train.__main__][INFO] [main/main] - 108  : train loss : 34.567134857177734
+2023-11-20 22:18:26 [train.__main__][INFO] [main/main] - 108  : train loss : 27.129026412963867
+2023-11-20 22:18:28 [train.__main__][INFO] [main/main] - 108  : train loss : 28.504261016845703
+2023-11-20 22:18:29 [train.__main__][INFO] [main/main] - 108  : train loss : 29.272109985351562
+2023-11-20 22:18:30 [train.__main__][INFO] [main/main] - 108  : train loss : 28.256235122680664
+2023-11-20 22:18:31 [train.__main__][INFO] [main/main] - 108  : train loss : 34.09907150268555
+2023-11-20 22:18:32 [train.__main__][INFO] [main/main] - 108  : train loss : 28.40411376953125
+2023-11-20 22:18:34 [train.__main__][INFO] [main/main] - 108  : train loss : 27.7869815826416
+2023-11-20 22:18:35 [train.__main__][INFO] [main/main] - 108  : train loss : 29.18198013305664
+2023-11-20 22:18:36 [train.__main__][INFO] [main/main] - 108  : train loss : 29.520275115966797
+2023-11-20 22:18:37 [train.__main__][INFO] [main/main] - 108  : train loss : 28.473920822143555
+2023-11-20 22:18:39 [train.__main__][INFO] [main/main] - 108  : train loss : 27.553890228271484
+2023-11-20 22:18:40 [train.__main__][INFO] [main/main] - 108  : train loss : 31.499683380126953
+2023-11-20 22:18:41 [train.__main__][INFO] [main/main] - 108  : train loss : 29.0648193359375
+2023-11-20 22:18:43 [train.__main__][INFO] [main/main] - 108  : train loss : 31.359378814697266
+2023-11-20 22:18:44 [train.__main__][INFO] [main/main] - 108  : train loss : 28.60395050048828
+2023-11-20 22:18:45 [train.__main__][INFO] [main/main] - 108  : train loss : 31.888826370239258
+2023-11-20 22:18:46 [train.__main__][INFO] [main/main] - 108  : train loss : 28.254199981689453
+2023-11-20 22:18:47 [train.__main__][INFO] [main/main] - 108  : train loss : 28.691051483154297
+2023-11-20 22:18:49 [train.__main__][INFO] [main/main] - 108  : train loss : 31.015108108520508
+2023-11-20 22:18:50 [train.__main__][INFO] [main/main] - 108  : train loss : 29.655414581298828
+2023-11-20 22:18:51 [train.__main__][INFO] [main/main] - 108  : train loss : 27.676088333129883
+2023-11-20 22:18:52 [train.__main__][INFO] [main/main] - 108  : train loss : 30.20804214477539
+2023-11-20 22:18:54 [train.__main__][INFO] [main/main] - 108  : train loss : 28.217304229736328
+2023-11-20 22:18:55 [train.__main__][INFO] [main/main] - 108  : train loss : 27.715740203857422
+2023-11-20 22:18:56 [train.__main__][INFO] [main/main] - 108  : train loss : 29.741796493530273
+2023-11-20 22:18:58 [train.__main__][INFO] [main/main] - 108  : train loss : 29.866928100585938
+2023-11-20 22:18:59 [train.__main__][INFO] [main/main] - 108  : train loss : 27.285091400146484
+2023-11-20 22:19:01 [train.__main__][INFO] [main/main] - 108  : train loss : 27.0667781829834
+2023-11-20 22:19:02 [train.__main__][INFO] [main/main] - 108  : train loss : 28.09450912475586
+2023-11-20 22:19:03 [train.__main__][INFO] [main/main] - 108  : train loss : 25.885709762573242
+2023-11-20 22:19:04 [train.__main__][INFO] [main/main] - 108  : train loss : 29.431875228881836
+2023-11-20 22:19:06 [train.__main__][INFO] [main/main] - 108  : train loss : 36.16545104980469
+2023-11-20 22:19:07 [train.__main__][INFO] [main/main] - 108  : train loss : 36.45469665527344
+2023-11-20 22:19:08 [train.__main__][INFO] [main/main] - 108  : train loss : 29.790925979614258
+2023-11-20 22:19:09 [train.__main__][INFO] [main/main] - 108  : train loss : 29.95111846923828
+2023-11-20 22:19:11 [train.__main__][INFO] [main/main] - 108  : train loss : 28.469764709472656
+2023-11-20 22:19:12 [train.__main__][INFO] [main/main] - 108  : train loss : 28.912609100341797
+2023-11-20 22:19:13 [train.__main__][INFO] [main/main] - 108  : train loss : 28.267881393432617
+2023-11-20 22:19:14 [train.__main__][INFO] [main/main] - 108  : train loss : 26.308610916137695
+2023-11-20 22:19:16 [train.__main__][INFO] [main/main] - 108  : train loss : 30.250364303588867
+2023-11-20 22:19:17 [train.__main__][INFO] [main/main] - 108  : train loss : 34.127662658691406
+2023-11-20 22:19:18 [train.__main__][INFO] [main/main] - 108  : train loss : 29.980213165283203
+2023-11-20 22:19:19 [train.__main__][INFO] [main/main] - 108  : train loss : 27.55200958251953
+2023-11-20 22:19:21 [train.__main__][INFO] [main/main] - 108  : train loss : 35.839012145996094
+2023-11-20 22:19:22 [train.__main__][INFO] [main/main] - 108  : train loss : 31.9619083404541
+2023-11-20 22:19:23 [train.__main__][INFO] [main/main] - 108  : train loss : 27.80459976196289
+2023-11-20 22:19:24 [train.__main__][INFO] [main/main] - 108  : train loss : 29.636127471923828
+2023-11-20 22:19:26 [train.__main__][INFO] [main/main] - 108  : train loss : 28.482797622680664
+2023-11-20 22:19:27 [train.__main__][INFO] [main/main] - 108  : train loss : 27.649900436401367
+2023-11-20 22:19:28 [train.__main__][INFO] [main/main] - 108  : train loss : 29.387197494506836
+2023-11-20 22:19:31 [train.__main__][INFO] [main/main] - 108  : train loss : 28.27117156982422
+2023-11-20 22:19:32 [train.__main__][INFO] [main/main] - 108  : train loss : 29.889001846313477
+2023-11-20 22:19:33 [train.__main__][INFO] [main/main] - 108  : train loss : 29.311553955078125
+2023-11-20 22:19:34 [train.__main__][INFO] [main/main] - 108  : train loss : 28.2928524017334
+2023-11-20 22:19:36 [train.__main__][INFO] [main/main] - 108  : train loss : 27.676345825195312
+2023-11-20 22:19:37 [train.__main__][INFO] [main/main] - 108  : train loss : 32.07529067993164
+2023-11-20 22:19:38 [train.__main__][INFO] [main/main] - 108  : train loss : 28.930889129638672
+2023-11-20 22:19:39 [train.__main__][INFO] [main/main] - 108  : train loss : 28.27810287475586
+2023-11-20 22:19:40 [train.__main__][INFO] [main/main] - 108  : train loss : 32.358367919921875
+2023-11-20 22:19:42 [train.__main__][INFO] [main/main] - 108  : train loss : 28.83579444885254
+2023-11-20 22:19:43 [train.__main__][INFO] [main/main] - 108  : train loss : 30.459932327270508
+2023-11-20 22:19:44 [train.__main__][INFO] [main/main] - 108  : train loss : 30.606090545654297
+2023-11-20 22:19:45 [train.__main__][INFO] [main/main] - 108  : train loss : 25.47040557861328
+2023-11-20 22:19:46 [train.__main__][INFO] [main/main] - 108  : train loss : 29.35642433166504
+2023-11-20 22:19:47 [train.__main__][INFO] [main/main] - 108  : train loss : 28.21715545654297
+2023-11-20 22:19:49 [train.__main__][INFO] [main/main] - 108  : train loss : 27.256563186645508
+2023-11-20 22:19:50 [train.__main__][INFO] [main/main] - 108  : train loss : 29.507326126098633
+2023-11-20 22:19:51 [train.__main__][INFO] [main/main] - 108  : train loss : 28.319366455078125
+2023-11-20 22:19:52 [train.__main__][INFO] [main/main] - 108  : train loss : 27.225772857666016
+2023-11-20 22:19:53 [train.__main__][INFO] [main/main] - 108  : train loss : 27.89495086669922
+2023-11-20 22:19:54 [train.__main__][INFO] [main/main] - 108  : train loss : 28.178531646728516
+2023-11-20 22:19:56 [train.__main__][INFO] [main/main] - 108  : train loss : 27.602277755737305
+2023-11-20 22:19:57 [train.__main__][INFO] [main/main] - 108  : train loss : 31.782062530517578
+2023-11-20 22:19:58 [train.__main__][INFO] [main/main] - 108  : train loss : 27.570493698120117
+2023-11-20 22:19:59 [train.__main__][INFO] [main/main] - 108  : train loss : 28.666210174560547
+2023-11-20 22:20:00 [train.__main__][INFO] [main/main] - 108  : train loss : 26.398420333862305
+2023-11-20 22:20:02 [train.__main__][INFO] [main/main] - 108  : train loss : 27.030715942382812
+2023-11-20 22:20:03 [train.__main__][INFO] [main/main] - 108  : train loss : 26.947860717773438
+2023-11-20 22:20:04 [train.__main__][INFO] [main/main] - 108  : train loss : 30.34988784790039
+2023-11-20 22:20:05 [train.__main__][INFO] [main/main] - 108  : train loss : 30.449565887451172
+2023-11-20 22:20:06 [train.__main__][INFO] [main/main] - 108  : train loss : 27.9974365234375
+2023-11-20 22:20:08 [train.__main__][INFO] [main/main] - 108  : train loss : 30.805753707885742
+2023-11-20 22:20:09 [train.__main__][INFO] [main/main] - 108  : train loss : 30.984209060668945
+2023-11-20 22:20:10 [train.__main__][INFO] [main/main] - 108  : train loss : 29.74566650390625
+2023-11-20 22:20:11 [train.__main__][INFO] [main/main] - 108  : train loss : 28.790498733520508
+2023-11-20 22:20:12 [train.__main__][INFO] [main/main] - 108  : train loss : 31.2246150970459
+2023-11-20 22:20:13 [train.__main__][INFO] [main/main] - 108  : train loss : 28.60205078125
+2023-11-20 22:20:15 [train.__main__][INFO] [main/main] - 108  : train loss : 31.651386260986328
+2023-11-20 22:20:16 [train.__main__][INFO] [main/main] - 108  : train loss : 32.08555603027344
+2023-11-20 22:20:17 [train.__main__][INFO] [main/main] - 108  : train loss : 25.975711822509766
+2023-11-20 22:20:18 [train.__main__][INFO] [main/main] - 108  : train loss : 31.648386001586914
+2023-11-20 22:20:19 [train.__main__][INFO] [main/main] - 108  : train loss : 27.589155197143555
+2023-11-20 22:20:21 [train.__main__][INFO] [main/main] - 108  : train loss : 26.935781478881836
+2023-11-20 22:20:22 [train.__main__][INFO] [main/main] - 108  : train loss : 31.271697998046875
+2023-11-20 22:20:23 [train.__main__][INFO] [main/main] - 108  : train loss : 31.391902923583984
+2023-11-20 22:20:24 [train.__main__][INFO] [main/main] - 108  : train loss : 27.71605682373047
+2023-11-20 22:20:25 [train.__main__][INFO] [main/main] - 108  : train loss : 33.036582946777344
+2023-11-20 22:20:27 [train.__main__][INFO] [main/main] - 108  : train loss : 33.71605682373047
+2023-11-20 22:20:28 [train.__main__][INFO] [main/main] - 108  : train loss : 29.84293556213379
+2023-11-20 22:20:29 [train.__main__][INFO] [main/main] - 108  : train loss : 28.163143157958984
+2023-11-20 22:20:30 [train.__main__][INFO] [main/main] - 108  : train loss : 30.655763626098633
+2023-11-20 22:20:31 [train.__main__][INFO] [main/main] - 108  : train loss : 29.195215225219727
+2023-11-20 22:20:33 [train.__main__][INFO] [main/main] - 108  : train loss : 48.18482208251953
+2023-11-20 22:20:34 [train.__main__][INFO] [main/main] - 108  : train loss : 32.82633972167969
+2023-11-20 22:20:35 [train.__main__][INFO] [main/main] - 108  : train loss : 39.000667572021484
+2023-11-20 22:20:36 [train.__main__][INFO] [main/main] - 108  : train loss : 28.487611770629883
+2023-11-20 22:20:37 [train.__main__][INFO] [main/main] - 108  : train loss : 27.844898223876953
+2023-11-20 22:20:38 [train.__main__][INFO] [main/main] - 108  : train loss : 25.636280059814453
+2023-11-20 22:20:40 [train.__main__][INFO] [main/main] - 108  : train loss : 36.00096130371094
+2023-11-20 22:20:41 [train.__main__][INFO] [main/main] - 108  : train loss : 33.79978942871094
+2023-11-20 22:20:42 [train.__main__][INFO] [main/main] - 108  : train loss : 34.12834930419922
+2023-11-20 22:20:44 [train.__main__][INFO] [main/main] - 108  : train loss : 29.01905632019043
+2023-11-20 22:20:45 [train.__main__][INFO] [main/main] - 108  : train loss : 34.26469421386719
+2023-11-20 22:20:46 [train.__main__][INFO] [main/main] - 108  : train loss : 28.853532791137695
+2023-11-20 22:20:47 [train.__main__][INFO] [main/main] - 108  : train loss : 31.648889541625977
+2023-11-20 22:20:48 [train.__main__][INFO] [main/main] - 108  : train loss : 29.813203811645508
+2023-11-20 22:20:50 [train.__main__][INFO] [main/main] - 108  : train loss : 32.398048400878906
+2023-11-20 22:20:51 [train.__main__][INFO] [main/main] - 108  : train loss : 29.60799217224121
+2023-11-20 22:20:52 [train.__main__][INFO] [main/main] - 108  : train loss : 30.132925033569336
+2023-11-20 22:20:53 [train.__main__][INFO] [main/main] - 108  : train loss : 33.02791976928711
+2023-11-20 22:20:54 [train.__main__][INFO] [main/main] - 108  : train loss : 28.50469207763672
+2023-11-20 22:20:56 [train.__main__][INFO] [main/main] - 108  : train loss : 32.79368591308594
+2023-11-20 22:20:57 [train.__main__][INFO] [main/main] - 108  : train loss : 31.099628448486328
+2023-11-20 22:20:58 [train.__main__][INFO] [main/main] - 108  : train loss : 33.01716995239258
+2023-11-20 22:20:59 [train.__main__][INFO] [main/main] - 108  : train loss : 31.216114044189453
+2023-11-20 22:21:00 [train.__main__][INFO] [main/main] - 108  : train loss : 30.201841354370117
+2023-11-20 22:21:01 [train.__main__][INFO] [main/main] - 108  : train loss : 31.132442474365234
+2023-11-20 22:21:03 [train.__main__][INFO] [main/main] - 108  : train loss : 36.084190368652344
+2023-11-20 22:21:04 [train.__main__][INFO] [main/main] - 108  : train loss : 37.22724533081055
+2023-11-20 22:21:05 [train.__main__][INFO] [main/main] - 108  : train loss : 27.41834259033203
+2023-11-20 22:21:06 [train.__main__][INFO] [main/main] - 108  : train loss : 29.822471618652344
+2023-11-20 22:21:07 [train.__main__][INFO] [main/main] - 108  : train loss : 30.435688018798828
+2023-11-20 22:21:09 [train.__main__][INFO] [main/main] - 108  : train loss : 30.22309684753418
+2023-11-20 22:21:10 [train.__main__][INFO] [main/main] - 108  : train loss : 31.753570556640625
+2023-11-20 22:21:11 [train.__main__][INFO] [main/main] - 108  : train loss : 32.30134201049805
+2023-11-20 22:21:12 [train.__main__][INFO] [main/main] - 108  : train loss : 30.98176383972168
+2023-11-20 22:21:13 [train.__main__][INFO] [main/main] - 108  : train loss : 28.584232330322266
+2023-11-20 22:21:15 [train.__main__][INFO] [main/main] - 108  : train loss : 26.944217681884766
+2023-11-20 22:21:16 [train.__main__][INFO] [main/main] - 108  : train loss : 29.210735321044922
+2023-11-20 22:21:17 [train.__main__][INFO] [main/main] - 108  : train loss : 33.416934967041016
+2023-11-20 22:21:18 [train.__main__][INFO] [main/main] - 108  : train loss : 29.59733772277832
+2023-11-20 22:21:19 [train.__main__][INFO] [main/main] - 108  : train loss : 28.700214385986328
+2023-11-20 22:21:21 [train.__main__][INFO] [main/main] - 108  : train loss : 27.779268264770508
+2023-11-20 22:21:22 [train.__main__][INFO] [main/main] - 108  : train loss : 32.446109771728516
+2023-11-20 22:21:23 [train.__main__][INFO] [main/main] - 108  : train loss : 30.248058319091797
+2023-11-20 22:21:24 [train.__main__][INFO] [main/main] - 108  : train loss : 35.18268966674805
+2023-11-20 22:21:25 [train.__main__][INFO] [main/main] - 108  : train loss : 32.5767936706543
+2023-11-20 22:21:27 [train.__main__][INFO] [main/main] - 108  : train loss : 29.916074752807617
+2023-11-20 22:21:28 [train.__main__][INFO] [main/main] - 108  : train loss : 28.59440040588379
+2023-11-20 22:21:29 [train.__main__][INFO] [main/main] - 108  : train loss : 31.35728645324707
+2023-11-20 22:21:30 [train.__main__][INFO] [main/main] - 108  : train loss : 28.232463836669922
+2023-11-20 22:21:32 [train.__main__][INFO] [main/main] - 108  : train loss : 31.366029739379883
+2023-11-20 22:21:33 [train.__main__][INFO] [main/main] - 108  : train loss : 28.760509490966797
+2023-11-20 22:21:35 [train.__main__][INFO] [main/main] - 108  : train loss : 29.963565826416016
+2023-11-20 22:21:36 [train.__main__][INFO] [main/main] - 108  : train loss : 27.189271926879883
+2023-11-20 22:21:37 [train.__main__][INFO] [main/main] - 108  : train loss : 27.63279914855957
+2023-11-20 22:21:38 [train.__main__][INFO] [main/main] - 108  : train loss : 27.43949317932129
+2023-11-20 22:21:39 [train.__main__][INFO] [main/main] - 108  : train loss : 28.439620971679688
+2023-11-20 22:21:41 [train.__main__][INFO] [main/main] - 108  : train loss : 27.40431022644043
+2023-11-20 22:21:42 [train.__main__][INFO] [main/main] - 108  : train loss : 30.404125213623047
+2023-11-20 22:21:43 [train.__main__][INFO] [main/main] - 108  : train loss : 27.993858337402344
+2023-11-20 22:21:44 [train.__main__][INFO] [main/main] - 108  : train loss : 32.31123352050781
+2023-11-20 22:21:45 [train.__main__][INFO] [main/main] - 108  : train loss : 29.75950050354004
+2023-11-20 22:21:47 [train.__main__][INFO] [main/main] - 108  : train loss : 39.82448959350586
+2023-11-20 22:21:48 [train.__main__][INFO] [main/main] - 108  : train loss : 29.481224060058594
+2023-11-20 22:21:49 [train.__main__][INFO] [main/main] - 108  : train loss : 31.78736114501953
+2023-11-20 22:21:50 [train.__main__][INFO] [main/main] - 108  : train loss : 30.646188735961914
+2023-11-20 22:21:52 [train.__main__][INFO] [main/main] - 108  : train loss : 28.67693328857422
+2023-11-20 22:21:53 [train.__main__][INFO] [main/main] - 108  : train loss : 28.289819717407227
+2023-11-20 22:21:54 [train.__main__][INFO] [main/main] - 108  : train loss : 42.293212890625
+2023-11-20 22:21:56 [train.__main__][INFO] [main/main] - 108  : train loss : 34.772186279296875
+2023-11-20 22:21:57 [train.__main__][INFO] [main/main] - 108  : train loss : 38.35449981689453
+2023-11-20 22:21:58 [train.__main__][INFO] [main/main] - 108  : train loss : 32.6549186706543
+2023-11-20 22:21:59 [train.__main__][INFO] [main/main] - 108  : train loss : 34.14435958862305
+2023-11-20 22:22:00 [train.__main__][INFO] [main/main] - 108  : train loss : 40.49449157714844
+2023-11-20 22:22:02 [train.__main__][INFO] [main/main] - 108  : train loss : 33.464630126953125
+2023-11-20 22:22:03 [train.__main__][INFO] [main/main] - 108  : train loss : 29.607879638671875
+2023-11-20 22:22:04 [train.__main__][INFO] [main/main] - 108  : train loss : 29.224525451660156
+2023-11-20 22:22:05 [train.__main__][INFO] [main/main] - 108  : train loss : 33.061927795410156
+2023-11-20 22:22:06 [train.__main__][INFO] [main/main] - 108  : train loss : 30.85972785949707
+2023-11-20 22:22:07 [train.__main__][INFO] [main/main] - 108  : train loss : 30.074995040893555
+2023-11-20 22:22:09 [train.__main__][INFO] [main/main] - 108  : train loss : 27.579254150390625
+2023-11-20 22:22:10 [train.__main__][INFO] [main/main] - 108  : train loss : 27.302562713623047
+2023-11-20 22:22:11 [train.__main__][INFO] [main/main] - 108  : train loss : 31.2342529296875
+2023-11-20 22:22:12 [train.__main__][INFO] [main/main] - 108  : train loss : 27.44155502319336
+2023-11-20 22:22:14 [train.__main__][INFO] [main/main] - 108  : train loss : 29.240337371826172
+2023-11-20 22:22:15 [train.__main__][INFO] [main/main] - 108  : train loss : 35.52819061279297
+2023-11-20 22:22:16 [train.__main__][INFO] [main/main] - 108  : train loss : 27.075904846191406
+2023-11-20 22:22:17 [train.__main__][INFO] [main/main] - 108  : train loss : 34.443294525146484
+2023-11-20 22:22:18 [train.__main__][INFO] [main/main] - 108  : train loss : 30.488880157470703
+2023-11-20 22:22:20 [train.__main__][INFO] [main/main] - 108  : train loss : 27.36065673828125
+2023-11-20 22:22:21 [train.__main__][INFO] [main/main] - 108  : train loss : 29.082231521606445
+2023-11-20 22:22:22 [train.__main__][INFO] [main/main] - 108  : train loss : 28.400930404663086
+2023-11-20 22:22:23 [train.__main__][INFO] [main/main] - 108  : train loss : 27.799713134765625
+2023-11-20 22:22:24 [train.__main__][INFO] [main/main] - 108  : train loss : 28.258596420288086
+2023-11-20 22:22:26 [train.__main__][INFO] [main/main] - 108  : train loss : 29.58506202697754
+2023-11-20 22:22:27 [train.__main__][INFO] [main/main] - 108  : train loss : 27.373001098632812
+2023-11-20 22:22:28 [train.__main__][INFO] [main/main] - 108  : train loss : 26.86007308959961
+2023-11-20 22:22:29 [train.__main__][INFO] [main/main] - 108  : train loss : 26.603473663330078
+2023-11-20 22:22:30 [train.__main__][INFO] [main/main] - 108  : train loss : 26.304134368896484
+2023-11-20 22:22:31 [train.__main__][INFO] [main/main] - 108  : train loss : 31.64205551147461
+2023-11-20 22:22:33 [train.__main__][INFO] [main/main] - 108  : train loss : 28.29545021057129
+2023-11-20 22:22:34 [train.__main__][INFO] [main/main] - 108  : train loss : 27.820032119750977
+2023-11-20 22:22:35 [train.__main__][INFO] [main/main] - 108  : train loss : 27.587779998779297
+2023-11-20 22:22:36 [train.__main__][INFO] [main/main] - 108  : train loss : 30.559932708740234
+2023-11-20 22:22:37 [train.__main__][INFO] [main/main] - 108  : train loss : 37.68182373046875
+2023-11-20 22:22:39 [train.__main__][INFO] [main/main] - 108  : train loss : 38.04633331298828
+2023-11-20 22:22:40 [train.__main__][INFO] [main/main] - 108  : train loss : 28.12666893005371
+2023-11-20 22:22:41 [train.__main__][INFO] [main/main] - 108  : train loss : 32.558204650878906
+2023-11-20 22:22:42 [train.__main__][INFO] [main/main] - 108  : train loss : 47.319095611572266
+2023-11-20 22:22:43 [train.__main__][INFO] [main/main] - 108  : train loss : 36.73762130737305
+2023-11-20 22:22:45 [train.__main__][INFO] [main/main] - 108  : train loss : 46.52372360229492
+2023-11-20 22:22:46 [train.__main__][INFO] [main/main] - 108  : train loss : 40.36000061035156
+2023-11-20 22:22:47 [train.__main__][INFO] [main/main] - 108  : train loss : 44.414283752441406
+2023-11-20 22:22:48 [train.__main__][INFO] [main/main] - 108  : train loss : 41.383262634277344
+2023-11-20 22:22:49 [train.__main__][INFO] [main/main] - 108  : train loss : 40.381492614746094
+2023-11-20 22:22:51 [train.__main__][INFO] [main/main] - 108  : train loss : 41.42577362060547
+2023-11-20 22:22:52 [train.__main__][INFO] [main/main] - 108  : train loss : 49.36769104003906
+2023-11-20 22:22:53 [train.__main__][INFO] [main/main] - 108  : train loss : 58.50272750854492
+2023-11-20 22:22:54 [train.__main__][INFO] [main/main] - 108  : train loss : 40.52518081665039
+2023-11-20 22:22:55 [train.__main__][INFO] [main/main] - 108  : train loss : 30.8436336517334
+2023-11-20 22:22:57 [train.__main__][INFO] [main/main] - 108  : train loss : 32.26446533203125
+2023-11-20 22:22:58 [train.__main__][INFO] [main/main] - 108  : train loss : 45.71476364135742
+2023-11-20 22:22:59 [train.__main__][INFO] [main/main] - 108  : train loss : 31.294384002685547
+2023-11-20 22:23:00 [train.__main__][INFO] [main/main] - 108  : train loss : 36.03437423706055
+2023-11-20 22:23:01 [train.__main__][INFO] [main/main] - 108  : train loss : 36.58970260620117
+2023-11-20 22:23:03 [train.__main__][INFO] [main/main] - 108  : train loss : 32.377872467041016
+2023-11-20 22:23:04 [train.__main__][INFO] [main/main] - 108  : train loss : 30.698408126831055
+2023-11-20 22:23:05 [train.__main__][INFO] [main/main] - 108  : train loss : 30.20386505126953
+2023-11-20 22:23:06 [train.__main__][INFO] [main/main] - 108  : train loss : 33.57548141479492
+2023-11-20 22:23:07 [train.__main__][INFO] [main/main] - 108  : train loss : 30.378753662109375
+2023-11-20 22:23:10 [train.__main__][INFO] [main/main] - 108  : train loss : 33.03075408935547
+2023-11-20 22:23:11 [train.__main__][INFO] [main/main] - 108  : train loss : 27.170867919921875
+2023-11-20 22:23:12 [train.__main__][INFO] [main/main] - 108  : train loss : 29.733522415161133
+2023-11-20 22:23:13 [train.__main__][INFO] [main/main] - 108  : train loss : 31.402807235717773
+2023-11-20 22:23:14 [train.__main__][INFO] [main/main] - 108  : train loss : 28.72584342956543
+2023-11-20 22:23:15 [train.__main__][INFO] [main/main] - 108  : train loss : 26.046667098999023
+2023-11-20 22:23:17 [train.__main__][INFO] [main/main] - 108  : train loss : 28.0520076751709
+2023-11-20 22:23:18 [train.__main__][INFO] [main/main] - 108  : train loss : 28.252744674682617
+2023-11-20 22:23:19 [train.__main__][INFO] [main/main] - 108  : train loss : 25.706724166870117
+2023-11-20 22:23:20 [train.__main__][INFO] [main/main] - 108  : train loss : 28.4006290435791
+2023-11-20 22:23:21 [train.__main__][INFO] [main/main] - 108  : train loss : 34.693878173828125
+2023-11-20 22:23:23 [train.__main__][INFO] [main/main] - 108  : train loss : 28.667821884155273
+2023-11-20 22:23:24 [train.__main__][INFO] [main/main] - 108  : train loss : 29.100566864013672
+2023-11-20 22:23:25 [train.__main__][INFO] [main/main] - 108  : train loss : 26.998428344726562
+2023-11-20 22:23:26 [train.__main__][INFO] [main/main] - 108  : train loss : 31.705263137817383
+2023-11-20 22:23:27 [train.__main__][INFO] [main/main] - 108  : train loss : 28.76736068725586
+2023-11-20 22:23:28 [train.__main__][INFO] [main/main] - 108  : train loss : 29.143362045288086
+2023-11-20 22:23:30 [train.__main__][INFO] [main/main] - 108  : train loss : 31.45595932006836
+2023-11-20 22:23:31 [train.__main__][INFO] [main/main] - 108  : train loss : 29.18279266357422
+2023-11-20 22:23:32 [train.__main__][INFO] [main/main] - 108  : train loss : 30.605327606201172
+2023-11-20 22:23:33 [train.__main__][INFO] [main/main] - 108  : train loss : 36.13375473022461
+2023-11-20 22:23:35 [train.__main__][INFO] [main/main] - 108  : train loss : 31.8779296875
+2023-11-20 22:23:36 [train.__main__][INFO] [main/main] - 108  : train loss : 35.07143020629883
+2023-11-20 22:23:37 [train.__main__][INFO] [main/main] - 108  : train loss : 27.790712356567383
+2023-11-20 22:23:38 [train.__main__][INFO] [main/main] - 108  : train loss : 28.604360580444336
+2023-11-20 22:23:39 [train.__main__][INFO] [main/main] - 108  : train loss : 29.441898345947266
+2023-11-20 22:23:40 [train.__main__][INFO] [main/main] - 108  : train loss : 27.81376075744629
+2023-11-20 22:23:42 [train.__main__][INFO] [main/main] - 108  : train loss : 27.257516860961914
+2023-11-20 22:23:43 [train.__main__][INFO] [main/main] - 108  : train loss : 27.99861717224121
+2023-11-20 22:23:44 [train.__main__][INFO] [main/main] - 108  : train loss : 29.81969451904297
+2023-11-20 22:23:45 [train.__main__][INFO] [main/main] - 108  : train loss : 29.069774627685547
+2023-11-20 22:23:46 [train.__main__][INFO] [main/main] - 108  : train loss : 32.723899841308594
+2023-11-20 22:23:48 [train.__main__][INFO] [main/main] - 108  : train loss : 27.618860244750977
+2023-11-20 22:23:49 [train.__main__][INFO] [main/main] - 108  : train loss : 27.61385154724121
+2023-11-20 22:23:50 [train.__main__][INFO] [main/main] - 108  : train loss : 30.661897659301758
+2023-11-20 22:23:51 [train.__main__][INFO] [main/main] - 108  : train loss : 32.884742736816406
+2023-11-20 22:23:52 [train.__main__][INFO] [main/main] - 108  : train loss : 27.549602508544922
+2023-11-20 22:23:53 [train.__main__][INFO] [main/main] - 108  : train loss : 29.159189224243164
+2023-11-20 22:23:55 [train.__main__][INFO] [main/main] - 108  : train loss : 28.082740783691406
+2023-11-20 22:23:56 [train.__main__][INFO] [main/main] - 108  : train loss : 28.907867431640625
+2023-11-20 22:23:57 [train.__main__][INFO] [main/main] - 108  : train loss : 28.166854858398438
+2023-11-20 22:23:58 [train.__main__][INFO] [main/main] - 108  : train loss : 30.273296356201172
+2023-11-20 22:24:00 [train.__main__][INFO] [main/main] - 108  : train loss : 27.57649040222168
+2023-11-20 22:24:01 [train.__main__][INFO] [main/main] - 108  : train loss : 28.5071964263916
+2023-11-20 22:24:02 [train.__main__][INFO] [main/main] - 108  : train loss : 30.315872192382812
+2023-11-20 22:24:03 [train.__main__][INFO] [main/main] - 108  : train loss : 28.044158935546875
+2023-11-20 22:24:04 [train.__main__][INFO] [main/main] - 108  : train loss : 30.407554626464844
+2023-11-20 22:24:05 [train.__main__][INFO] [main/main] - 108  : train loss : 26.487112045288086
+2023-11-20 22:24:07 [train.__main__][INFO] [main/main] - 108  : train loss : 28.500381469726562
+2023-11-20 22:24:08 [train.__main__][INFO] [main/main] - 108  : train loss : 29.555688858032227
+2023-11-20 22:24:09 [train.__main__][INFO] [main/main] - 108  : train loss : 31.07207489013672
+2023-11-20 22:24:10 [train.__main__][INFO] [main/main] - 108  : train loss : 40.966495513916016
+2023-11-20 22:24:11 [train.__main__][INFO] [main/main] - 108  : train loss : 28.675922393798828
+2023-11-20 22:24:13 [train.__main__][INFO] [main/main] - 108  : train loss : 29.82242202758789
+2023-11-20 22:24:14 [train.__main__][INFO] [main/main] - 108  : train loss : 29.87169647216797
+2023-11-20 22:24:15 [train.__main__][INFO] [main/main] - 108  : train loss : 36.528648376464844
+2023-11-20 22:24:16 [train.__main__][INFO] [main/main] - 108  : train loss : 27.887468338012695
+2023-11-20 22:24:17 [train.__main__][INFO] [main/main] - 108  : train loss : 29.995113372802734
+2023-11-20 22:24:18 [train.__main__][INFO] [main/main] - 108  : train loss : 31.7868595123291
+2023-11-20 22:24:20 [train.__main__][INFO] [main/main] - 108  : train loss : 31.879173278808594
+2023-11-20 22:24:21 [train.__main__][INFO] [main/main] - 108  : train loss : 30.529769897460938
+2023-11-20 22:24:22 [train.__main__][INFO] [main/main] - 108  : train loss : 32.51960754394531
+2023-11-20 22:24:23 [train.__main__][INFO] [main/main] - 108  : train loss : 26.694351196289062
+2023-11-20 22:24:24 [train.__main__][INFO] [main/main] - 108  : train loss : 29.47102928161621
+2023-11-20 22:24:26 [train.__main__][INFO] [main/main] - 108  : train loss : 34.666996002197266
+2023-11-20 22:24:27 [train.__main__][INFO] [main/main] - 108  : train loss : 29.949010848999023
+2023-11-20 22:24:28 [train.__main__][INFO] [main/main] - 108  : train loss : 27.764917373657227
+2023-11-20 22:24:29 [train.__main__][INFO] [main/main] - 108  : train loss : 27.673667907714844
+2023-11-20 22:24:30 [train.__main__][INFO] [main/main] - 108  : train loss : 26.52871322631836
+2023-11-20 22:24:31 [train.__main__][INFO] [main/main] - 108  : train loss : 28.46457290649414
+2023-11-20 22:24:33 [train.__main__][INFO] [main/main] - 108  : train loss : 28.039546966552734
+2023-11-20 22:24:34 [train.__main__][INFO] [main/main] - 108  : train loss : 27.512548446655273
+2023-11-20 22:24:35 [train.__main__][INFO] [main/main] - 108  : train loss : 29.7491455078125
+2023-11-20 22:24:36 [train.__main__][INFO] [main/main] - 108  : train loss : 29.429088592529297
+2023-11-20 22:24:37 [train.__main__][INFO] [main/main] - 108  : train loss : 29.63983154296875
+2023-11-20 22:24:38 [train.__main__][INFO] [main/main] - 108  : train loss : 25.33999252319336
+2023-11-20 22:24:40 [train.__main__][INFO] [main/main] - 108  : train loss : 27.069772720336914
+2023-11-20 22:24:41 [train.__main__][INFO] [main/main] - 108  : train loss : 28.121559143066406
+2023-11-20 22:24:42 [train.__main__][INFO] [main/main] - 108  : train loss : 29.886682510375977
+2023-11-20 22:24:43 [train.__main__][INFO] [main/main] - 108  : train loss : 28.764638900756836
+2023-11-20 22:24:44 [train.__main__][INFO] [main/main] - 108  : train loss : 29.098499298095703
+2023-11-20 22:24:45 [train.__main__][INFO] [main/main] - 108  : train loss : 30.11210823059082
+2023-11-20 22:24:47 [train.__main__][INFO] [main/main] - 108  : train loss : 29.02145004272461
+2023-11-20 22:24:48 [train.__main__][INFO] [main/main] - 108  : train loss : 29.222335815429688
+2023-11-20 22:24:49 [train.__main__][INFO] [main/main] - 108  : train loss : 29.79603385925293
+2023-11-20 22:24:50 [train.__main__][INFO] [main/main] - 108  : train loss : 26.834306716918945
+2023-11-20 22:24:51 [train.__main__][INFO] [main/main] - 108  : train loss : 30.00293731689453
+2023-11-20 22:24:53 [train.__main__][INFO] [main/main] - 108  : train loss : 36.19614028930664
+2023-11-20 22:24:54 [train.__main__][INFO] [main/main] - 108  : train loss : 26.264463424682617
+2023-11-20 22:24:55 [train.__main__][INFO] [main/main] - 108  : train loss : 28.359201431274414
+2023-11-20 22:24:56 [train.__main__][INFO] [main/main] - 108  : train loss : 32.70431900024414
+2023-11-20 22:24:57 [train.__main__][INFO] [main/main] - 108  : train loss : 27.700153350830078
+2023-11-20 22:24:58 [train.__main__][INFO] [main/main] - 108  : train loss : 29.60284423828125
+2023-11-20 22:24:59 [train.__main__][INFO] [main/main] - 108  : train loss : 27.790803909301758
+2023-11-20 22:25:01 [train.__main__][INFO] [main/main] - 108  : train loss : 35.69711685180664
+2023-11-20 22:25:02 [train.__main__][INFO] [main/main] - 108  : train loss : 33.17845153808594
+2023-11-20 22:25:03 [train.__main__][INFO] [main/main] - 108  : train loss : 36.808380126953125
+2023-11-20 22:25:04 [train.__main__][INFO] [main/main] - 108  : train loss : 30.11806869506836
+2023-11-20 22:25:05 [train.__main__][INFO] [main/main] - 108  : train loss : 28.600309371948242
+2023-11-20 22:25:06 [train.__main__][INFO] [main/main] - 108  : train loss : 29.396432876586914
+2023-11-20 22:25:08 [train.__main__][INFO] [main/main] - 108  : train loss : 30.408954620361328
+2023-11-20 22:25:09 [train.__main__][INFO] [main/main] - 108  : train loss : 39.223541259765625
+2023-11-20 22:25:10 [train.__main__][INFO] [main/main] - 108  : train loss : 26.438365936279297
+2023-11-20 22:25:11 [train.__main__][INFO] [main/main] - 108  : train loss : 29.292701721191406
+2023-11-20 22:25:12 [train.__main__][INFO] [main/main] - 108  : train loss : 26.961322784423828
+2023-11-20 22:25:14 [train.__main__][INFO] [main/main] - 108  : train loss : 30.62413787841797
+2023-11-20 22:25:15 [train.__main__][INFO] [main/main] - 108  : train loss : 28.53056526184082
+2023-11-20 22:25:16 [train.__main__][INFO] [main/main] - 108  : train loss : 29.277761459350586
+2023-11-20 22:25:18 [train.__main__][INFO] [main/main] - 108  : train loss : 32.62254333496094
+2023-11-20 22:25:19 [train.__main__][INFO] [main/main] - 108  : train loss : 29.56759262084961
+2023-11-20 22:25:20 [train.__main__][INFO] [main/main] - 108  : train loss : 27.392009735107422
+2023-11-20 22:25:22 [train.__main__][INFO] [main/main] - 108  : train loss : 27.92127799987793
+2023-11-20 22:25:23 [train.__main__][INFO] [main/main] - 108  : train loss : 25.97076416015625
+2023-11-20 22:25:24 [train.__main__][INFO] [main/main] - 108  : train loss : 28.114912033081055
+2023-11-20 22:25:25 [train.__main__][INFO] [main/main] - 108  : train loss : 31.037519454956055
+2023-11-20 22:25:26 [train.__main__][INFO] [main/main] - 108  : train loss : 28.873960494995117
+2023-11-20 22:25:28 [train.__main__][INFO] [main/main] - 108  : train loss : 26.195005416870117
+2023-11-20 22:25:29 [train.__main__][INFO] [main/main] - 108  : train loss : 28.165607452392578
+2023-11-20 22:25:30 [train.__main__][INFO] [main/main] - 108  : train loss : 46.448238372802734
+2023-11-20 22:25:31 [train.__main__][INFO] [main/main] - 108  : train loss : 32.92055892944336
+2023-11-20 22:25:32 [train.__main__][INFO] [main/main] - 108  : train loss : 28.51022720336914
+2023-11-20 22:25:34 [train.__main__][INFO] [main/main] - 108  : train loss : 37.52079391479492
+2023-11-20 22:25:35 [train.__main__][INFO] [main/main] - 108  : train loss : 32.142311096191406
+2023-11-20 22:25:36 [train.__main__][INFO] [main/main] - 108  : train loss : 28.321033477783203
+2023-11-20 22:25:37 [train.__main__][INFO] [main/main] - 108  : train loss : 27.668752670288086
+2023-11-20 22:25:38 [train.__main__][INFO] [main/main] - 108  : train loss : 29.297761917114258
+2023-11-20 22:25:40 [train.__main__][INFO] [main/main] - 108  : train loss : 30.003915786743164
+2023-11-20 22:25:41 [train.__main__][INFO] [main/main] - 108  : train loss : 31.87260627746582
+2023-11-20 22:25:42 [train.__main__][INFO] [main/main] - 108  : train loss : 32.24085235595703
+2023-11-20 22:25:43 [train.__main__][INFO] [main/main] - 108  : train loss : 32.48558044433594
+2023-11-20 22:25:44 [train.__main__][INFO] [main/main] - 108  : train loss : 27.128999710083008
+2023-11-20 22:25:46 [train.__main__][INFO] [main/main] - 108  : train loss : 31.657955169677734
+2023-11-20 22:25:47 [train.__main__][INFO] [main/main] - 108  : train loss : 29.64268684387207
+2023-11-20 22:25:48 [train.__main__][INFO] [main/main] - 108  : train loss : 31.17778205871582
+2023-11-20 22:25:49 [train.__main__][INFO] [main/main] - 108  : train loss : 28.71794319152832
+2023-11-20 22:25:50 [train.__main__][INFO] [main/main] - 108  : train loss : 27.53052520751953
+2023-11-20 22:25:52 [train.__main__][INFO] [main/main] - 108  : train loss : 31.452558517456055
+2023-11-20 22:25:53 [train.__main__][INFO] [main/main] - 108  : train loss : 32.95720291137695
+2023-11-20 22:25:54 [train.__main__][INFO] [main/main] - 108  : train loss : 30.841602325439453
+2023-11-20 22:25:55 [train.__main__][INFO] [main/main] - 108  : train loss : 31.191404342651367
+2023-11-20 22:25:56 [train.__main__][INFO] [main/main] - 108  : train loss : 28.588821411132812
+2023-11-20 22:25:57 [train.__main__][INFO] [main/main] - 108  : train loss : 29.087366104125977
+2023-11-20 22:25:59 [train.__main__][INFO] [main/main] - 108  : train loss : 30.4261417388916
+2023-11-20 22:26:00 [train.__main__][INFO] [main/main] - 108  : train loss : 29.43779182434082
+2023-11-20 22:26:01 [train.__main__][INFO] [main/main] - 108  : train loss : 28.750408172607422
+2023-11-20 22:26:02 [train.__main__][INFO] [main/main] - 108  : train loss : 32.428550720214844
+2023-11-20 22:26:03 [train.__main__][INFO] [main/main] - 108  : train loss : 29.685720443725586
+2023-11-20 22:26:05 [train.__main__][INFO] [main/main] - 108  : train loss : 31.101882934570312
+2023-11-20 22:26:06 [train.__main__][INFO] [main/main] - 108  : train loss : 31.394887924194336
+2023-11-20 22:26:07 [train.__main__][INFO] [main/main] - 108  : train loss : 30.045272827148438
+2023-11-20 22:26:08 [train.__main__][INFO] [main/main] - 108  : train loss : 28.221725463867188
+2023-11-20 22:26:10 [train.__main__][INFO] [main/main] - 108  : train loss : 27.183624267578125
+2023-11-20 22:26:11 [train.__main__][INFO] [main/main] - 108  : train loss : 26.774354934692383
+2023-11-20 22:26:12 [train.__main__][INFO] [main/main] - 108  : train loss : 33.075687408447266
+2023-11-20 22:26:13 [train.__main__][INFO] [main/main] - 108  : train loss : 28.51243782043457
+2023-11-20 22:26:14 [train.__main__][INFO] [main/main] - 108  : train loss : 27.551162719726562
+2023-11-20 22:26:16 [train.__main__][INFO] [main/main] - 108  : train loss : 26.943159103393555
+2023-11-20 22:26:17 [train.__main__][INFO] [main/main] - 108  : train loss : 28.7229061126709
+2023-11-20 22:26:18 [train.__main__][INFO] [main/main] - 108  : train loss : 26.97901153564453
+2023-11-20 22:26:19 [train.__main__][INFO] [main/main] - 108  : train loss : 31.006635665893555
+2023-11-20 22:26:20 [train.__main__][INFO] [main/main] - 108  : train loss : 29.92987823486328
+2023-11-20 22:26:22 [train.__main__][INFO] [main/main] - 108  : train loss : 34.28207778930664
+2023-11-20 22:26:23 [train.__main__][INFO] [main/main] - 108  : train loss : 29.01238250732422
+2023-11-20 22:26:24 [train.__main__][INFO] [main/main] - 108  : train loss : 34.14768981933594
+2023-11-20 22:26:25 [train.__main__][INFO] [main/main] - 108  : train loss : 31.09817886352539
+2023-11-20 22:26:26 [train.__main__][INFO] [main/main] - 108  : train loss : 30.45647621154785
+2023-11-20 22:26:27 [train.__main__][INFO] [main/main] - 108  : train loss : 33.40471267700195
+2023-11-20 22:26:29 [train.__main__][INFO] [main/main] - 108  : train loss : 41.65813446044922
+2023-11-20 22:26:30 [train.__main__][INFO] [main/main] - 108  : train loss : 34.544883728027344
+2023-11-20 22:26:31 [train.__main__][INFO] [main/main] - 108  : train loss : 34.74931335449219
+2023-11-20 22:26:32 [train.__main__][INFO] [main/main] - 108  : train loss : 43.15476989746094
+2023-11-20 22:26:34 [train.__main__][INFO] [main/main] - 108  : train loss : 40.08137130737305
+2023-11-20 22:26:35 [train.__main__][INFO] [main/main] - 108  : train loss : 36.34514617919922
+2023-11-20 22:26:37 [train.__main__][INFO] [main/main] - 108  : train loss : 40.44808578491211
+2023-11-20 22:26:38 [train.__main__][INFO] [main/main] - 108  : train loss : 34.373329162597656
+2023-11-20 22:26:39 [train.__main__][INFO] [main/main] - 108  : train loss : 30.60999870300293
+2023-11-20 22:26:40 [train.__main__][INFO] [main/main] - 108  : train loss : 30.600109100341797
+2023-11-20 22:26:41 [train.__main__][INFO] [main/main] - 108  : train loss : 29.29955291748047
+2023-11-20 22:26:43 [train.__main__][INFO] [main/main] - 108  : train loss : 30.07696533203125
+2023-11-20 22:26:44 [train.__main__][INFO] [main/main] - 108  : train loss : 28.263572692871094
+2023-11-20 22:26:45 [train.__main__][INFO] [main/main] - 108  : train loss : 28.86127281188965
+2023-11-20 22:26:46 [train.__main__][INFO] [main/main] - 108  : train loss : 28.218307495117188
+2023-11-20 22:26:47 [train.__main__][INFO] [main/main] - 108  : train loss : 30.052867889404297
+2023-11-20 22:26:48 [train.__main__][INFO] [main/main] - 108  : train loss : 28.682220458984375
+2023-11-20 22:26:50 [train.__main__][INFO] [main/main] - 108  : train loss : 33.70018005371094
+2023-11-20 22:26:51 [train.__main__][INFO] [main/main] - 108  : train loss : 28.753585815429688
+2023-11-20 22:26:52 [train.__main__][INFO] [main/main] - 108  : train loss : 28.127216339111328
+2023-11-20 22:26:53 [train.__main__][INFO] [main/main] - 108  : train loss : 29.440664291381836
+2023-11-20 22:26:54 [train.__main__][INFO] [main/main] - 108  : train loss : 26.727575302124023
+2023-11-20 22:26:56 [train.__main__][INFO] [main/main] - 108  : train loss : 26.704330444335938
+2023-11-20 22:26:57 [train.__main__][INFO] [main/main] - 108  : train loss : 28.310462951660156
+2023-11-20 22:26:58 [train.__main__][INFO] [main/main] - 108  : train loss : 29.19625473022461
+2023-11-20 22:26:59 [train.__main__][INFO] [main/main] - 108  : train loss : 27.598278045654297
+2023-11-20 22:27:00 [train.__main__][INFO] [main/main] - 108  : train loss : 28.77865219116211
+2023-11-20 22:27:02 [train.__main__][INFO] [main/main] - 108  : train loss : 29.693431854248047
+2023-11-20 22:27:03 [train.__main__][INFO] [main/main] - 108  : train loss : 28.71660804748535
+2023-11-20 22:27:04 [train.__main__][INFO] [main/main] - 108  : train loss : 28.033042907714844
+2023-11-20 22:27:05 [train.__main__][INFO] [main/main] - 108  : train loss : 25.71384048461914
+2023-11-20 22:27:06 [train.__main__][INFO] [main/main] - 108  : train loss : 26.61797523498535
+2023-11-20 22:27:07 [train.__main__][INFO] [main/main] - 108  : train loss : 33.870689392089844
+2023-11-20 22:27:09 [train.__main__][INFO] [main/main] - 108  : train loss : 30.1573486328125
+2023-11-20 22:27:10 [train.__main__][INFO] [main/main] - 108  : train loss : 29.369009017944336
+2023-11-20 22:27:11 [train.__main__][INFO] [main/main] - 108  : train loss : 32.267555236816406
+2023-11-20 22:27:12 [train.__main__][INFO] [main/main] - 108  : train loss : 28.34560203552246
+2023-11-20 22:27:13 [train.__main__][INFO] [main/main] - 108  : train loss : 31.22748374938965
+2023-11-20 22:27:15 [train.__main__][INFO] [main/main] - 108  : train loss : 40.46153259277344
+2023-11-20 22:27:16 [train.__main__][INFO] [main/main] - 108  : train loss : 39.14716339111328
+2023-11-20 22:27:17 [train.__main__][INFO] [main/main] - 108  : train loss : 33.762882232666016
+2023-11-20 22:27:18 [train.__main__][INFO] [main/main] - 108  : train loss : 34.37736892700195
+2023-11-20 22:27:19 [train.__main__][INFO] [main/main] - 108  : train loss : 36.40031814575195
+2023-11-20 22:27:20 [train.__main__][INFO] [main/main] - 108  : train loss : 28.42996597290039
+2023-11-20 22:27:21 [train.__main__][INFO] [main/main] - 108  : train loss : 30.201290130615234
+2023-11-20 22:27:23 [train.__main__][INFO] [main/main] - 108  : train loss : 31.75932502746582
+2023-11-20 22:27:24 [train.__main__][INFO] [main/main] - 108  : train loss : 27.056961059570312
+2023-11-20 22:27:25 [train.__main__][INFO] [main/main] - 108  : train loss : 30.944448471069336
+2023-11-20 22:27:26 [train.__main__][INFO] [main/main] - 108  : train loss : 27.658403396606445
+2023-11-20 22:27:27 [train.__main__][INFO] [main/main] - 108  : train loss : 35.90245056152344
+2023-11-20 22:27:28 [train.__main__][INFO] [main/main] - 108  : train loss : 31.262645721435547
+2023-11-20 22:27:30 [train.__main__][INFO] [main/main] - 108  : train loss : 30.425779342651367
+2023-11-20 22:27:31 [train.__main__][INFO] [main/main] - 108  : train loss : 30.06072235107422
+2023-11-20 22:27:32 [train.__main__][INFO] [main/main] - 108  : train loss : 30.41139030456543
+2023-11-20 22:27:33 [train.__main__][INFO] [main/main] - 108  : train loss : 33.096923828125
+2023-11-20 22:27:34 [train.__main__][INFO] [main/main] - 108  : train loss : 34.59962463378906
+2023-11-20 22:27:35 [train.__main__][INFO] [main/main] - 108  : train loss : 31.20662498474121
+2023-11-20 22:27:37 [train.__main__][INFO] [main/main] - 108  : train loss : 28.59990692138672
+2023-11-20 22:27:38 [train.__main__][INFO] [main/main] - 108  : train loss : 30.45757293701172
+2023-11-20 22:27:39 [train.__main__][INFO] [main/main] - 108  : train loss : 30.207778930664062
+2023-11-20 22:27:40 [train.__main__][INFO] [main/main] - 108  : train loss : 26.48659896850586
+2023-11-20 22:27:41 [train.__main__][INFO] [main/main] - 108  : train loss : 27.92085838317871
+2023-11-20 22:27:43 [train.__main__][INFO] [main/main] - 108  : train loss : 29.82118797302246
+2023-11-20 22:27:44 [train.__main__][INFO] [main/main] - 108  : train loss : 30.666532516479492
+2023-11-20 22:27:45 [train.__main__][INFO] [main/main] - 108  : train loss : 30.76528549194336
+2023-11-20 22:27:46 [train.__main__][INFO] [main/main] - 108  : train loss : 29.45989227294922
+2023-11-20 22:27:47 [train.__main__][INFO] [main/main] - 108  : train loss : 30.91254425048828
+2023-11-20 22:27:48 [train.__main__][INFO] [main/main] - 108  : train loss : 31.407535552978516
+2023-11-20 22:27:50 [train.__main__][INFO] [main/main] - 108  : train loss : 30.647686004638672
+2023-11-20 22:27:51 [train.__main__][INFO] [main/main] - 108  : train loss : 28.06337547302246
+2023-11-20 22:27:52 [train.__main__][INFO] [main/main] - 108  : train loss : 28.74190902709961
+2023-11-20 22:27:53 [train.__main__][INFO] [main/main] - 108  : train loss : 27.982101440429688
+2023-11-20 22:27:54 [train.__main__][INFO] [main/main] - 108  : train loss : 25.835289001464844
+2023-11-20 22:27:56 [train.__main__][INFO] [main/main] - 108  : train loss : 28.680923461914062
+2023-11-20 22:27:57 [train.__main__][INFO] [main/main] - 108  : train loss : 30.37413215637207
+2023-11-20 22:27:58 [train.__main__][INFO] [main/main] - 108  : train loss : 28.034753799438477
+2023-11-20 22:27:59 [train.__main__][INFO] [main/main] - 108  : train loss : 26.588621139526367
+2023-11-20 22:28:00 [train.__main__][INFO] [main/main] - 108  : train loss : 28.698633193969727
+2023-11-20 22:28:02 [train.__main__][INFO] [main/main] - 108  : train loss : 31.685834884643555
+2023-11-20 22:28:03 [train.__main__][INFO] [main/main] - 108  : train loss : 28.09616470336914
+2023-11-20 22:28:04 [train.__main__][INFO] [main/main] - 108  : train loss : 31.145875930786133
+2023-11-20 22:28:05 [train.__main__][INFO] [main/main] - 108  : train loss : 28.040618896484375
+2023-11-20 22:28:06 [train.__main__][INFO] [main/main] - 108  : train loss : 34.6934928894043
+2023-11-20 22:28:08 [train.__main__][INFO] [main/main] - 108  : train loss : 31.802141189575195
+2023-11-20 22:28:10 [train.__main__][INFO] [main/main] - 108  : train loss : 32.887054443359375
+2023-11-20 22:28:11 [train.__main__][INFO] [main/main] - 108  : train loss : 28.048208236694336
+2023-11-20 22:28:12 [train.__main__][INFO] [main/main] - 108  : train loss : 27.186845779418945
+2023-11-20 22:28:13 [train.__main__][INFO] [main/main] - 108  : train loss : 28.875736236572266
+2023-11-20 22:28:15 [train.__main__][INFO] [main/main] - 108  : train loss : 35.336917877197266
+2023-11-20 22:28:16 [train.__main__][INFO] [main/main] - 108  : train loss : 30.5205020904541
+2023-11-20 22:28:17 [train.__main__][INFO] [main/main] - 108  : train loss : 30.136905670166016
+2023-11-20 22:28:18 [train.__main__][INFO] [main/main] - 108  : train loss : 26.241050720214844
+2023-11-20 22:28:19 [train.__main__][INFO] [main/main] - 108  : train loss : 29.37850570678711
+2023-11-20 22:28:21 [train.__main__][INFO] [main/main] - 108  : train loss : 30.065467834472656
+2023-11-20 22:28:22 [train.__main__][INFO] [main/main] - 108  : train loss : 29.34491729736328
+2023-11-20 22:28:23 [train.__main__][INFO] [main/main] - 108  : train loss : 29.771846771240234
+2023-11-20 22:28:24 [train.__main__][INFO] [main/main] - 108  : train loss : 29.361753463745117
+2023-11-20 22:28:25 [train.__main__][INFO] [main/main] - 108  : train loss : 28.779552459716797
+2023-11-20 22:28:27 [train.__main__][INFO] [main/main] - 108  : train loss : 32.146419525146484
+2023-11-20 22:28:28 [train.__main__][INFO] [main/main] - 108  : train loss : 28.222259521484375
+2023-11-20 22:28:29 [train.__main__][INFO] [main/main] - 108  : train loss : 31.08419418334961
+2023-11-20 22:28:30 [train.__main__][INFO] [main/main] - 108  : train loss : 27.9708251953125
+2023-11-20 22:28:31 [train.__main__][INFO] [main/main] - 108  : train loss : 27.60980224609375
+2023-11-20 22:28:32 [train.__main__][INFO] [main/main] - 108  : train loss : 27.777599334716797
+2023-11-20 22:28:33 [train.__main__][INFO] [main/main] - 108  : train loss : 27.099821090698242
+2023-11-20 22:28:35 [train.__main__][INFO] [main/main] - 108  : train loss : 28.520368576049805
+2023-11-20 22:28:36 [train.__main__][INFO] [main/main] - 108  : train loss : 29.52539825439453
+2023-11-20 22:28:37 [train.__main__][INFO] [main/main] - 108  : train loss : 26.7812557220459
+2023-11-20 22:28:38 [train.__main__][INFO] [main/main] - 108  : train loss : 31.09946060180664
+2023-11-20 22:28:39 [train.__main__][INFO] [main/main] - 108  : train loss : 28.850126266479492
+2023-11-20 22:28:41 [train.__main__][INFO] [main/main] - 108  : train loss : 28.037811279296875
+2023-11-20 22:28:42 [train.__main__][INFO] [main/main] - 108  : train loss : 29.0919246673584
+2023-11-20 22:28:43 [train.__main__][INFO] [main/main] - 108  : train loss : 27.02845573425293
+2023-11-20 22:28:44 [train.__main__][INFO] [main/main] - 108  : train loss : 25.97394371032715
+2023-11-20 22:28:45 [train.__main__][INFO] [main/main] - 108  : train loss : 28.466150283813477
+2023-11-20 22:28:47 [train.__main__][INFO] [main/main] - 108  : train loss : 29.157190322875977
+2023-11-20 22:28:48 [train.__main__][INFO] [main/main] - 108  : train loss : 27.770994186401367
+2023-11-20 22:28:49 [train.__main__][INFO] [main/main] - 108  : train loss : 29.352161407470703
+2023-11-20 22:28:50 [train.__main__][INFO] [main/main] - 108  : train loss : 29.988134384155273
+2023-11-20 22:28:52 [train.__main__][INFO] [main/main] - 108  : train loss : 29.990222930908203
+2023-11-20 22:28:53 [train.__main__][INFO] [main/main] - 108  : train loss : 29.253849029541016
+2023-11-20 22:28:54 [train.__main__][INFO] [main/main] - 108  : train loss : 26.80724334716797
+2023-11-20 22:28:55 [train.__main__][INFO] [main/main] - 108  : train loss : 29.352048873901367
+2023-11-20 22:28:56 [train.__main__][INFO] [main/main] - 108  : train loss : 28.22747802734375
+2023-11-20 22:28:58 [train.__main__][INFO] [main/main] - 108  : train loss : 27.693559646606445
+2023-11-20 22:28:59 [train.__main__][INFO] [main/main] - 108  : train loss : 26.548856735229492
+2023-11-20 22:29:00 [train.__main__][INFO] [main/main] - 108  : train loss : 30.156618118286133
+2023-11-20 22:29:01 [train.__main__][INFO] [main/main] - 108  : train loss : 25.684812545776367
+2023-11-20 22:29:02 [train.__main__][INFO] [main/main] - 108  : train loss : 29.747230529785156
+2023-11-20 22:29:04 [train.__main__][INFO] [main/main] - 108  : train loss : 29.5131778717041
+2023-11-20 22:29:05 [train.__main__][INFO] [main/main] - 108  : train loss : 25.862520217895508
+2023-11-20 22:29:06 [train.__main__][INFO] [main/main] - 108  : train loss : 33.505897521972656
+2023-11-20 22:29:08 [train.__main__][INFO] [main/main] - 108  : train loss : 28.838424682617188
+2023-11-20 22:29:10 [train.__main__][INFO] [main/main] - 108  : train loss : 29.943506240844727
+2023-11-20 22:29:11 [train.__main__][INFO] [main/main] - 108  : train loss : 26.153717041015625
+2023-11-20 22:29:12 [train.__main__][INFO] [main/main] - 108  : train loss : 27.411495208740234
+2023-11-20 22:29:13 [train.__main__][INFO] [main/main] - 108  : train loss : 28.955625534057617
+2023-11-20 22:29:14 [train.__main__][INFO] [main/main] - 108  : train loss : 27.618587493896484
+2023-11-20 22:29:16 [train.__main__][INFO] [main/main] - 108  : train loss : 25.500141143798828
+2023-11-20 22:29:17 [train.__main__][INFO] [main/main] - 108  : train loss : 26.535552978515625
+2023-11-20 22:29:18 [train.__main__][INFO] [main/main] - 108  : train loss : 27.855606079101562
+2023-11-20 22:29:19 [train.__main__][INFO] [main/main] - 108  : train loss : 25.484262466430664
+2023-11-20 22:29:20 [train.__main__][INFO] [main/main] - 108  : train loss : 30.080419540405273
+2023-11-20 22:29:21 [train.__main__][INFO] [main/main] - 108  : train loss : 27.064308166503906
+2023-11-20 22:29:23 [train.__main__][INFO] [main/main] - 108  : train loss : 25.731769561767578
+2023-11-20 22:29:24 [train.__main__][INFO] [main/main] - 108  : train loss : 29.505210876464844
+2023-11-20 22:29:25 [train.__main__][INFO] [main/main] - 108  : train loss : 26.099777221679688
+2023-11-20 22:29:26 [train.__main__][INFO] [main/main] - 108  : train loss : 26.87871551513672
+2023-11-20 22:29:28 [train.__main__][INFO] [main/main] - 108  : train loss : 28.658937454223633
+2023-11-20 22:29:29 [train.__main__][INFO] [main/main] - 108  : train loss : 30.101285934448242
+2023-11-20 22:29:30 [train.__main__][INFO] [main/main] - 108  : train loss : 29.61835479736328
+2023-11-20 22:29:31 [train.__main__][INFO] [main/main] - 108  : train loss : 28.968542098999023
+2023-11-20 22:29:32 [train.__main__][INFO] [main/main] - 108  : train loss : 28.452730178833008
+2023-11-20 22:29:34 [train.__main__][INFO] [main/main] - 108  : train loss : 29.044492721557617
+2023-11-20 22:29:35 [train.__main__][INFO] [main/main] - 108  : train loss : 29.141061782836914
+2023-11-20 22:29:36 [train.__main__][INFO] [main/main] - 108  : train loss : 33.23259353637695
+2023-11-20 22:29:37 [train.__main__][INFO] [main/main] - 108  : train loss : 28.988037109375
+2023-11-20 22:29:38 [train.__main__][INFO] [main/main] - 108  : train loss : 26.769071578979492
+2023-11-20 22:29:39 [train.__main__][INFO] [main/main] - 108  : train loss : 28.10248565673828
+2023-11-20 22:29:41 [train.__main__][INFO] [main/main] - 108  : train loss : 31.274457931518555
+2023-11-20 22:29:42 [train.__main__][INFO] [main/main] - 108  : train loss : 30.213043212890625
+2023-11-20 22:29:43 [train.__main__][INFO] [main/main] - 108  : train loss : 28.765594482421875
+2023-11-20 22:29:44 [train.__main__][INFO] [main/main] - 108  : train loss : 32.35600662231445
+2023-11-20 22:29:45 [train.__main__][INFO] [main/main] - 108  : train loss : 27.773014068603516
+2023-11-20 22:29:48 [train.__main__][INFO] [main/main] - 108  : train loss : 27.461122512817383
+2023-11-20 22:29:49 [train.__main__][INFO] [main/main] - 108  : train loss : 28.728984832763672
+2023-11-20 22:29:51 [train.__main__][INFO] [main/main] - 108  : train loss : 27.831459045410156
+2023-11-20 22:29:52 [train.__main__][INFO] [main/main] - 108  : train loss : 28.557374954223633
+2023-11-20 22:29:53 [train.__main__][INFO] [main/main] - 108  : train loss : 30.225204467773438
+2023-11-20 22:29:54 [train.__main__][INFO] [main/main] - 108  : train loss : 27.33539390563965
+2023-11-20 22:29:55 [train.__main__][INFO] [main/main] - 108  : train loss : 26.769746780395508
+2023-11-20 22:29:56 [train.__main__][INFO] [main/main] - 108  : train loss : 31.908035278320312
+2023-11-20 22:29:58 [train.__main__][INFO] [main/main] - 108  : train loss : 27.781492233276367
+2023-11-20 22:29:59 [train.__main__][INFO] [main/main] - 108  : train loss : 28.431459426879883
+2023-11-20 22:30:00 [train.__main__][INFO] [main/main] - 108  : train loss : 27.207059860229492
+2023-11-20 22:30:01 [train.__main__][INFO] [main/main] - 108  : train loss : 28.18154525756836
+2023-11-20 22:30:02 [train.__main__][INFO] [main/main] - 108  : train loss : 26.57391357421875
+2023-11-20 22:30:04 [train.__main__][INFO] [main/main] - 108  : train loss : 25.181455612182617
+2023-11-20 22:30:05 [train.__main__][INFO] [main/main] - 108  : train loss : 29.702516555786133
+2023-11-20 22:30:06 [train.__main__][INFO] [main/main] - 108  : train loss : 32.00477981567383
+2023-11-20 22:30:07 [train.__main__][INFO] [main/main] - 108  : train loss : 29.63829231262207
+2023-11-20 22:30:09 [train.__main__][INFO] [main/main] - 108  : train loss : 26.968088150024414
+2023-11-20 22:30:10 [train.__main__][INFO] [main/main] - 108  : train loss : 30.867639541625977
+2023-11-20 22:30:11 [train.__main__][INFO] [main/main] - 108  : train loss : 29.462778091430664
+2023-11-20 22:30:12 [train.__main__][INFO] [main/main] - 108  : train loss : 29.379343032836914
+2023-11-20 22:30:13 [train.__main__][INFO] [main/main] - 108  : train loss : 30.517459869384766
+2023-11-20 22:30:14 [train.__main__][INFO] [main/main] - 108  : train loss : 26.804405212402344
+2023-11-20 22:30:16 [train.__main__][INFO] [main/main] - 108  : train loss : 31.381582260131836
+2023-11-20 22:30:17 [train.__main__][INFO] [main/main] - 108  : train loss : 28.250831604003906
+2023-11-20 22:30:18 [train.__main__][INFO] [main/main] - 108  : train loss : 28.96637535095215
+2023-11-20 22:30:19 [train.__main__][INFO] [main/main] - 108  : train loss : 31.507858276367188
+2023-11-20 22:30:20 [train.__main__][INFO] [main/main] - 108  : train loss : 30.607608795166016
+2023-11-20 22:30:22 [train.__main__][INFO] [main/main] - 108  : train loss : 31.0755615234375
+2023-11-20 22:30:23 [train.__main__][INFO] [main/main] - 108  : train loss : 37.00570297241211
+2023-11-20 22:30:24 [train.__main__][INFO] [main/main] - 108  : train loss : 40.22110366821289
+2023-11-20 22:30:25 [train.__main__][INFO] [main/main] - 108  : train loss : 33.038265228271484
+2023-11-20 22:30:26 [train.__main__][INFO] [main/main] - 108  : train loss : 31.980119705200195
+2023-11-20 22:30:28 [train.__main__][INFO] [main/main] - 108  : train loss : 33.26262664794922
+2023-11-20 22:30:29 [train.__main__][INFO] [main/main] - 108  : train loss : 31.867008209228516
+2023-11-20 22:30:30 [train.__main__][INFO] [main/main] - 108  : train loss : 33.90523147583008
+2023-11-20 22:30:31 [train.__main__][INFO] [main/main] - 108  : train loss : 33.72212219238281
+2023-11-20 22:30:33 [train.__main__][INFO] [main/main] - 108  : train loss : 35.457088470458984
+2023-11-20 22:30:34 [train.__main__][INFO] [main/main] - 108  : train loss : 35.7363166809082
+2023-11-20 22:30:35 [train.__main__][INFO] [main/main] - 108  : train loss : 41.782569885253906
+2023-11-20 22:30:36 [train.__main__][INFO] [main/main] - 108  : train loss : 31.99074363708496
+2023-11-20 22:30:37 [train.__main__][INFO] [main/main] - 108  : train loss : 29.205183029174805
+2023-11-20 22:30:39 [train.__main__][INFO] [main/main] - 108  : train loss : 29.612558364868164
+2023-11-20 22:30:40 [train.__main__][INFO] [main/main] - 108  : train loss : 32.67030334472656
+2023-11-20 22:30:41 [train.__main__][INFO] [main/main] - 108  : train loss : 31.346399307250977
+2023-11-20 22:30:42 [train.__main__][INFO] [main/main] - 108  : train loss : 32.17548370361328
+2023-11-20 22:30:43 [train.__main__][INFO] [main/main] - 108  : train loss : 33.244964599609375
+2023-11-20 22:30:45 [train.__main__][INFO] [main/main] - 108  : train loss : 29.802169799804688
+2023-11-20 22:30:46 [train.__main__][INFO] [main/main] - 108  : train loss : 35.03118133544922
+2023-11-20 22:30:47 [train.__main__][INFO] [main/main] - 108  : train loss : 30.642593383789062
+2023-11-20 22:30:48 [train.__main__][INFO] [main/main] - 108  : train loss : 27.801084518432617
+2023-11-20 22:30:49 [train.__main__][INFO] [main/main] - 108  : train loss : 28.985010147094727
+2023-11-20 22:30:51 [train.__main__][INFO] [main/main] - 108  : train loss : 28.623313903808594
+2023-11-20 22:30:52 [train.__main__][INFO] [main/main] - 108  : train loss : 29.526426315307617
+2023-11-20 22:30:53 [train.__main__][INFO] [main/main] - 108  : train loss : 28.335844039916992
+2023-11-20 22:30:54 [train.__main__][INFO] [main/main] - 108  : train loss : 27.429977416992188
+2023-11-20 22:30:55 [train.__main__][INFO] [main/main] - 108  : train loss : 26.82278060913086
+2023-11-20 22:30:56 [train.__main__][INFO] [main/main] - 108  : train loss : 25.637758255004883
+2023-11-20 22:30:58 [train.__main__][INFO] [main/main] - 108  : train loss : 30.42999267578125
+2023-11-20 22:30:59 [train.__main__][INFO] [main/main] - 108  : train loss : 28.008872985839844
+2023-11-20 22:31:00 [train.__main__][INFO] [main/main] - 108  : train loss : 30.16570472717285
+2023-11-20 22:31:01 [train.__main__][INFO] [main/main] - 108  : train loss : 29.224687576293945
+2023-11-20 22:31:02 [train.__main__][INFO] [main/main] - 108  : train loss : 28.470041275024414
+2023-11-20 22:31:03 [train.__main__][INFO] [main/main] - 108  : train loss : 29.248838424682617
+2023-11-20 22:31:05 [train.__main__][INFO] [main/main] - 108  : train loss : 28.501771926879883
+2023-11-20 22:31:06 [train.__main__][INFO] [main/main] - 108  : train loss : 27.014768600463867
+2023-11-20 22:31:07 [train.__main__][INFO] [main/main] - 108  : train loss : 27.342309951782227
+2023-11-20 22:31:08 [train.__main__][INFO] [main/main] - 108  : train loss : 27.610342025756836
+2023-11-20 22:31:09 [train.__main__][INFO] [main/main] - 108  : train loss : 27.492835998535156
+2023-11-20 22:31:11 [train.__main__][INFO] [main/main] - 108  : train loss : 26.509151458740234
+2023-11-20 22:31:12 [train.__main__][INFO] [main/main] - 108  : train loss : 26.864173889160156
+2023-11-20 22:31:13 [train.__main__][INFO] [main/main] - 108  : train loss : 30.49685287475586
+2023-11-20 22:31:14 [train.__main__][INFO] [main/main] - 108  : train loss : 25.55012321472168
+2023-11-20 22:31:15 [train.__main__][INFO] [main/main] - 108  : train loss : 28.878032684326172
+2023-11-20 22:31:17 [train.__main__][INFO] [main/main] - 108  : train loss : 26.980266571044922
+2023-11-20 22:31:18 [train.__main__][INFO] [main/main] - 108  : train loss : 29.004369735717773
+2023-11-20 22:31:19 [train.__main__][INFO] [main/main] - 108  : train loss : 27.38202476501465
+2023-11-20 22:31:20 [train.__main__][INFO] [main/main] - 108  : train loss : 26.72418785095215
+2023-11-20 22:31:21 [train.__main__][INFO] [main/main] - 108  : train loss : 28.067150115966797
+2023-11-20 22:31:23 [train.__main__][INFO] [main/main] - 108  : train loss : 24.97466468811035
+2023-11-20 22:31:24 [train.__main__][INFO] [main/main] - 108  : train loss : 25.680217742919922
+2023-11-20 22:31:25 [train.__main__][INFO] [main/main] - 108  : train loss : 28.13011932373047
+2023-11-20 22:31:26 [train.__main__][INFO] [main/main] - 108  : train loss : 27.373863220214844
+2023-11-20 22:31:27 [train.__main__][INFO] [main/main] - 108  : train loss : 29.018178939819336
+2023-11-20 22:31:29 [train.__main__][INFO] [main/main] - 108  : train loss : 31.122268676757812
+2023-11-20 22:31:31 [train.__main__][INFO] [main/main] - 108  : train loss : 29.79254913330078
+2023-11-20 22:31:32 [train.__main__][INFO] [main/main] - 108  : train loss : 28.525463104248047
+2023-11-20 22:31:33 [train.__main__][INFO] [main/main] - 108  : train loss : 26.530052185058594
+2023-11-20 22:31:34 [train.__main__][INFO] [main/main] - 108  : train loss : 28.814599990844727
+2023-11-20 22:31:35 [train.__main__][INFO] [main/main] - 108  : train loss : 27.98109245300293
+2023-11-20 22:31:37 [train.__main__][INFO] [main/main] - 108  : train loss : 33.79695129394531
+2023-11-20 22:31:38 [train.__main__][INFO] [main/main] - 108  : train loss : 29.390180587768555
+2023-11-20 22:31:39 [train.__main__][INFO] [main/main] - 108  : train loss : 27.861499786376953
+2023-11-20 22:31:40 [train.__main__][INFO] [main/main] - 108  : train loss : 26.411130905151367
+2023-11-20 22:31:41 [train.__main__][INFO] [main/main] - 108  : train loss : 30.246734619140625
+2023-11-20 22:31:42 [train.__main__][INFO] [main/main] - 108  : train loss : 28.52300262451172
+2023-11-20 22:31:44 [train.__main__][INFO] [main/main] - 108  : train loss : 28.802549362182617
+2023-11-20 22:31:45 [train.__main__][INFO] [main/main] - 108  : train loss : 27.32791519165039
+2023-11-20 22:31:46 [train.__main__][INFO] [main/main] - 108  : train loss : 29.883529663085938
+2023-11-20 22:31:48 [train.__main__][INFO] [main/main] - 108  : train loss : 26.882246017456055
+2023-11-20 22:31:49 [train.__main__][INFO] [main/main] - 108  : train loss : 29.76922607421875
+2023-11-20 22:31:51 [train.__main__][INFO] [main/main] - 108  : train loss : 31.25105857849121
+2023-11-20 22:31:52 [train.__main__][INFO] [main/main] - 108  : train loss : 25.961910247802734
+2023-11-20 22:31:53 [train.__main__][INFO] [main/main] - 108  : train loss : 27.097509384155273
+2023-11-20 22:31:54 [train.__main__][INFO] [main/main] - 108  : train loss : 30.13365936279297
+2023-11-20 22:31:55 [train.__main__][INFO] [main/main] - 108  : train loss : 27.803287506103516
+2023-11-20 22:31:57 [train.__main__][INFO] [main/main] - 108  : train loss : 28.16486930847168
+2023-11-20 22:31:58 [train.__main__][INFO] [main/main] - 108  : train loss : 28.981569290161133
+2023-11-20 22:31:59 [train.__main__][INFO] [main/main] - 108  : train loss : 28.15395164489746
+2023-11-20 22:32:00 [train.__main__][INFO] [main/main] - 108  : train loss : 33.106685638427734
+2023-11-20 22:32:01 [train.__main__][INFO] [main/main] - 108  : train loss : 28.631818771362305
+2023-11-20 22:32:02 [train.__main__][INFO] [main/main] - 108  : train loss : 25.4995059967041
+2023-11-20 22:32:04 [train.__main__][INFO] [main/main] - 108  : train loss : 31.12202262878418
+2023-11-20 22:32:05 [train.__main__][INFO] [main/main] - 108  : train loss : 32.43454360961914
+2023-11-20 22:32:06 [train.__main__][INFO] [main/main] - 108  : train loss : 29.195701599121094
+2023-11-20 22:32:07 [train.__main__][INFO] [main/main] - 108  : train loss : 29.271976470947266
+2023-11-20 22:32:08 [train.__main__][INFO] [main/main] - 108  : train loss : 27.234573364257812
+2023-11-20 22:32:10 [train.__main__][INFO] [main/main] - 108  : train loss : 26.163549423217773
+2023-11-20 22:32:11 [train.__main__][INFO] [main/main] - 108  : train loss : 28.61428451538086
+2023-11-20 22:32:12 [train.__main__][INFO] [main/main] - 108  : train loss : 26.305545806884766
+2023-11-20 22:32:13 [train.__main__][INFO] [main/main] - 108  : train loss : 27.1425724029541
+2023-11-20 22:32:14 [train.__main__][INFO] [main/main] - 108  : train loss : 28.320180892944336
+2023-11-20 22:32:15 [train.__main__][INFO] [main/main] - 108  : train loss : 27.099178314208984
+2023-11-20 22:32:17 [train.__main__][INFO] [main/main] - 108  : train loss : 27.6765193939209
+2023-11-20 22:32:18 [train.__main__][INFO] [main/main] - 108  : train loss : 27.036640167236328
+2023-11-20 22:32:19 [train.__main__][INFO] [main/main] - 108  : train loss : 27.527568817138672
+2023-11-20 22:32:20 [train.__main__][INFO] [main/main] - 108  : train loss : 27.930877685546875
+2023-11-20 22:32:22 [train.__main__][INFO] [main/main] - 108  : train loss : 25.114948272705078
+2023-11-20 22:32:23 [train.__main__][INFO] [main/main] - 108  : train loss : 26.683494567871094
+2023-11-20 22:32:24 [train.__main__][INFO] [main/main] - 108  : train loss : 26.398895263671875
+2023-11-20 22:32:25 [train.__main__][INFO] [main/main] - 108  : train loss : 27.634506225585938
+2023-11-20 22:32:26 [train.__main__][INFO] [main/main] - 108  : train loss : 27.73222541809082
+2023-11-20 22:32:28 [train.__main__][INFO] [main/main] - 108  : train loss : 27.204486846923828
+2023-11-20 22:32:29 [train.__main__][INFO] [main/main] - 108  : train loss : 26.275117874145508
+2023-11-20 22:32:30 [train.__main__][INFO] [main/main] - 108  : train loss : 28.474611282348633
+2023-11-20 22:32:31 [train.__main__][INFO] [main/main] - 108  : train loss : 27.086328506469727
+2023-11-20 22:32:32 [train.__main__][INFO] [main/main] - 108  : train loss : 27.09654426574707
+2023-11-20 22:32:33 [train.__main__][INFO] [main/main] - 108  : train loss : 31.028261184692383
+2023-11-20 22:32:35 [train.__main__][INFO] [main/main] - 108  : train loss : 28.8919677734375
+2023-11-20 22:32:36 [train.__main__][INFO] [main/main] - 108  : train loss : 32.36502456665039
+2023-11-20 22:32:37 [train.__main__][INFO] [main/main] - 108  : train loss : 29.695552825927734
+2023-11-20 22:32:38 [train.__main__][INFO] [main/main] - 108  : train loss : 28.765243530273438
+2023-11-20 22:32:40 [train.__main__][INFO] [main/main] - 108  : train loss : 28.793636322021484
+2023-11-20 22:32:41 [train.__main__][INFO] [main/main] - 108  : train loss : 28.593290328979492
+2023-11-20 22:32:42 [train.__main__][INFO] [main/main] - 108  : train loss : 26.61789321899414
+2023-11-20 22:32:43 [train.__main__][INFO] [main/main] - 108  : train loss : 30.038921356201172
+2023-11-20 22:32:44 [train.__main__][INFO] [main/main] - 108  : train loss : 27.129478454589844
+2023-11-20 22:32:46 [train.__main__][INFO] [main/main] - 108  : train loss : 26.213260650634766
+2023-11-20 22:32:47 [train.__main__][INFO] [main/main] - 108  : train loss : 30.72676658630371
+2023-11-20 22:32:48 [train.__main__][INFO] [main/main] - 108  : train loss : 27.081762313842773
+2023-11-20 22:32:49 [train.__main__][INFO] [main/main] - 108  : train loss : 26.076845169067383
+2023-11-20 22:32:50 [train.__main__][INFO] [main/main] - 108  : train loss : 26.583784103393555
+2023-11-20 22:32:52 [train.__main__][INFO] [main/main] - 108  : train loss : 26.813276290893555
+2023-11-20 22:32:53 [train.__main__][INFO] [main/main] - 108  : train loss : 27.04239845275879
+2023-11-20 22:32:54 [train.__main__][INFO] [main/main] - 108  : train loss : 29.097963333129883
+2023-11-20 22:32:55 [train.__main__][INFO] [main/main] - 108  : train loss : 28.675594329833984
+2023-11-20 22:32:56 [train.__main__][INFO] [main/main] - 108  : train loss : 28.8862361907959
+2023-11-20 22:32:57 [train.__main__][INFO] [main/main] - 108  : train loss : 28.52847671508789
+2023-11-20 22:32:59 [train.__main__][INFO] [main/main] - 108  : train loss : 29.239919662475586
+2023-11-20 22:33:00 [train.__main__][INFO] [main/main] - 108  : train loss : 28.69987678527832
+2023-11-20 22:33:01 [train.__main__][INFO] [main/main] - 108  : train loss : 29.80084800720215
+2023-11-20 22:33:02 [train.__main__][INFO] [main/main] - 108  : train loss : 29.227279663085938
+2023-11-20 22:33:03 [train.__main__][INFO] [main/main] - 108  : train loss : 28.853897094726562
+2023-11-20 22:33:05 [train.__main__][INFO] [main/main] - 108  : train loss : 28.961645126342773
+2023-11-20 22:33:06 [train.__main__][INFO] [main/main] - 108  : train loss : 26.950233459472656
+2023-11-20 22:33:07 [train.__main__][INFO] [main/main] - 108  : train loss : 38.54918670654297
+2023-11-20 22:33:08 [train.__main__][INFO] [main/main] - 108  : train loss : 29.29290199279785
+2023-11-20 22:33:09 [train.__main__][INFO] [main/main] - 108  : train loss : 26.231666564941406
+2023-11-20 22:33:11 [train.__main__][INFO] [main/main] - 108  : train loss : 28.551464080810547
+2023-11-20 22:33:12 [train.__main__][INFO] [main/main] - 108  : train loss : 26.357776641845703
+2023-11-20 22:33:14 [train.__main__][INFO] [main/main] - 108  : train loss : 29.664644241333008
+2023-11-20 22:33:15 [train.__main__][INFO] [main/main] - 108  : train loss : 29.995872497558594
+2023-11-20 22:33:16 [train.__main__][INFO] [main/main] - 108  : train loss : 27.595617294311523
+2023-11-20 22:33:17 [train.__main__][INFO] [main/main] - 108  : train loss : 27.486560821533203
+2023-11-20 22:33:19 [train.__main__][INFO] [main/main] - 108  : train loss : 28.96286392211914
+2023-11-20 22:33:20 [train.__main__][INFO] [main/main] - 108  : train loss : 37.516517639160156
+2023-11-20 22:33:21 [train.__main__][INFO] [main/main] - 108  : train loss : 29.95486068725586
+2023-11-20 22:33:22 [train.__main__][INFO] [main/main] - 108  : train loss : 29.653079986572266
+2023-11-20 22:33:23 [train.__main__][INFO] [main/main] - 108  : train loss : 31.009838104248047
+2023-11-20 22:33:25 [train.__main__][INFO] [main/main] - 108  : train loss : 30.985103607177734
+2023-11-20 22:33:26 [train.__main__][INFO] [main/main] - 108  : train loss : 32.77727127075195
+2023-11-20 22:33:27 [train.__main__][INFO] [main/main] - 108  : train loss : 31.01019859313965
+2023-11-20 22:33:28 [train.__main__][INFO] [main/main] - 108  : train loss : 37.53515625
+2023-11-20 22:33:29 [train.__main__][INFO] [main/main] - 108  : train loss : 31.230022430419922
+2023-11-20 22:33:31 [train.__main__][INFO] [main/main] - 108  : train loss : 29.613170623779297
+2023-11-20 22:33:32 [train.__main__][INFO] [main/main] - 108  : train loss : 30.487289428710938
+2023-11-20 22:33:33 [train.__main__][INFO] [main/main] - 108  : train loss : 28.49325942993164
+2023-11-20 22:33:34 [train.__main__][INFO] [main/main] - 108  : train loss : 31.07297134399414
+2023-11-20 22:33:36 [train.__main__][INFO] [main/main] - 108  : train loss : 29.21987533569336
+2023-11-20 22:33:37 [train.__main__][INFO] [main/main] - 108  : train loss : 32.1437873840332
+2023-11-20 22:33:38 [train.__main__][INFO] [main/main] - 108  : train loss : 29.04800796508789
+2023-11-20 22:33:40 [train.__main__][INFO] [main/main] - 108  : train loss : 30.315919876098633
+2023-11-20 22:33:41 [train.__main__][INFO] [main/main] - 108  : train loss : 27.327404022216797
+2023-11-20 22:33:42 [train.__main__][INFO] [main/main] - 108  : train loss : 27.592580795288086
+2023-11-20 22:33:43 [train.__main__][INFO] [main/main] - 108  : train loss : 26.98724937438965
+2023-11-20 22:33:45 [train.__main__][INFO] [main/main] - 108  : train loss : 26.09728240966797
+2023-11-20 22:33:46 [train.__main__][INFO] [main/main] - 108  : train loss : 27.041240692138672
+2023-11-20 22:33:47 [train.__main__][INFO] [main/main] - 108  : train loss : 27.459760665893555
+2023-11-20 22:33:48 [train.__main__][INFO] [main/main] - 108  : train loss : 27.291790008544922
+2023-11-20 22:33:49 [train.__main__][INFO] [main/main] - 108  : train loss : 27.899280548095703
+2023-11-20 22:33:51 [train.__main__][INFO] [main/main] - 108  : train loss : 28.59516716003418
+2023-11-20 22:33:52 [train.__main__][INFO] [main/main] - 108  : train loss : 30.457942962646484
+2023-11-20 22:33:54 [train.__main__][INFO] [main/main] - 108  : train loss : 30.952924728393555
+2023-11-20 22:33:55 [train.__main__][INFO] [main/main] - 108  : train loss : 38.59828567504883
+2023-11-20 22:33:56 [train.__main__][INFO] [main/main] - 108  : train loss : 28.95774269104004
+2023-11-20 22:33:57 [train.__main__][INFO] [main/main] - 108  : train loss : 28.762727737426758
+2023-11-20 22:33:58 [train.__main__][INFO] [main/main] - 108  : train loss : 28.663623809814453
+2023-11-20 22:34:00 [train.__main__][INFO] [main/main] - 108  : train loss : 30.5847225189209
+2023-11-20 22:34:01 [train.__main__][INFO] [main/main] - 108  : train loss : 36.457942962646484
+2023-11-20 22:34:02 [train.__main__][INFO] [main/main] - 108  : train loss : 31.12767219543457
+2023-11-20 22:34:03 [train.__main__][INFO] [main/main] - 108  : train loss : 31.989770889282227
+2023-11-20 22:34:05 [train.__main__][INFO] [main/main] - 108  : train loss : 28.92319107055664
+2023-11-20 22:34:06 [train.__main__][INFO] [main/main] - 108  : train loss : 27.72146224975586
+2023-11-20 22:34:07 [train.__main__][INFO] [main/main] - 108  : train loss : 28.9788818359375
+2023-11-20 22:34:08 [train.__main__][INFO] [main/main] - 108  : train loss : 28.631881713867188
+2023-11-20 22:34:09 [train.__main__][INFO] [main/main] - 108  : train loss : 29.642839431762695
+2023-11-20 22:34:11 [train.__main__][INFO] [main/main] - 108  : train loss : 27.89634132385254
+2023-11-20 22:34:12 [train.__main__][INFO] [main/main] - 108  : train loss : 30.792348861694336
+2023-11-20 22:34:13 [train.__main__][INFO] [main/main] - 108  : train loss : 31.815128326416016
+2023-11-20 22:34:14 [train.__main__][INFO] [main/main] - 108  : train loss : 29.80742645263672
+2023-11-20 22:34:15 [train.__main__][INFO] [main/main] - 108  : train loss : 31.82384490966797
+2023-11-20 22:34:17 [train.__main__][INFO] [main/main] - 108  : train loss : 33.03496551513672
+2023-11-20 22:34:18 [train.__main__][INFO] [main/main] - 108  : train loss : 30.209115982055664
+2023-11-20 22:34:19 [train.__main__][INFO] [main/main] - 108  : train loss : 28.481958389282227
+2023-11-20 22:34:20 [train.__main__][INFO] [main/main] - 108  : train loss : 26.895750045776367
+2023-11-20 22:34:21 [train.__main__][INFO] [main/main] - 108  : train loss : 28.839981079101562
+2023-11-20 22:34:23 [train.__main__][INFO] [main/main] - 108  : train loss : 28.661258697509766
+2023-11-20 22:34:24 [train.__main__][INFO] [main/main] - 108  : train loss : 28.776592254638672
+2023-11-20 22:34:25 [train.__main__][INFO] [main/main] - 108  : train loss : 27.50530242919922
+2023-11-20 22:34:26 [train.__main__][INFO] [main/main] - 108  : train loss : 26.716367721557617
+2023-11-20 22:34:27 [train.__main__][INFO] [main/main] - 108  : train loss : 27.5462703704834
+2023-11-20 22:34:28 [train.__main__][INFO] [main/main] - 108  : train loss : 26.915512084960938
+2023-11-20 22:34:30 [train.__main__][INFO] [main/main] - 108  : train loss : 27.3515682220459
+2023-11-20 22:34:31 [train.__main__][INFO] [main/main] - 108  : train loss : 28.099040985107422
+2023-11-20 22:34:32 [train.__main__][INFO] [main/main] - 108  : train loss : 26.20865821838379
+2023-11-20 22:34:33 [train.__main__][INFO] [main/main] - 108  : train loss : 27.688756942749023
+2023-11-20 22:34:34 [train.__main__][INFO] [main/main] - 108  : train loss : 26.2334041595459
+2023-11-20 22:34:36 [train.__main__][INFO] [main/main] - 108  : train loss : 27.776229858398438
+2023-11-20 22:34:37 [train.__main__][INFO] [main/main] - 108  : train loss : 27.953075408935547
+2023-11-20 22:34:38 [train.__main__][INFO] [main/main] - 108  : train loss : 29.593059539794922
+2023-11-20 22:34:39 [train.__main__][INFO] [main/main] - 108  : train loss : 27.263952255249023
+2023-11-20 22:34:40 [train.__main__][INFO] [main/main] - 108  : train loss : 26.830020904541016
+2023-11-20 22:34:42 [train.__main__][INFO] [main/main] - 108  : train loss : 29.13178062438965
+2023-11-20 22:34:43 [train.__main__][INFO] [main/main] - 108  : train loss : 26.457530975341797
+2023-11-20 22:34:44 [train.__main__][INFO] [main/main] - 108  : train loss : 30.39467430114746
+2023-11-20 22:34:45 [train.__main__][INFO] [main/main] - 108  : train loss : 26.62899398803711
+2023-11-20 22:34:46 [train.__main__][INFO] [main/main] - 108  : train loss : 27.164155960083008
+2023-11-20 22:34:48 [train.__main__][INFO] [main/main] - 108  : train loss : 27.9781551361084
+2023-11-20 22:34:49 [train.__main__][INFO] [main/main] - 108  : train loss : 28.537839889526367
+2023-11-20 22:34:50 [train.__main__][INFO] [main/main] - 108  : train loss : 26.581953048706055
+2023-11-20 22:34:51 [train.__main__][INFO] [main/main] - 108  : train loss : 27.47334861755371
+2023-11-20 22:34:52 [train.__main__][INFO] [main/main] - 108  : train loss : 27.867673873901367
+2023-11-20 22:34:54 [train.__main__][INFO] [main/main] - 108  : train loss : 29.52318572998047
+2023-11-20 22:34:55 [train.__main__][INFO] [main/main] - 108  : train loss : 27.680665969848633
+2023-11-20 22:34:56 [train.__main__][INFO] [main/main] - 108  : train loss : 29.659006118774414
+2023-11-20 22:34:57 [train.__main__][INFO] [main/main] - 108  : train loss : 25.717660903930664
+2023-11-20 22:34:58 [train.__main__][INFO] [main/main] - 108  : train loss : 30.70701789855957
+2023-11-20 22:35:00 [train.__main__][INFO] [main/main] - 108  : train loss : 28.774532318115234
+2023-11-20 22:35:01 [train.__main__][INFO] [main/main] - 108  : train loss : 29.383197784423828
+2023-11-20 22:35:02 [train.__main__][INFO] [main/main] - 108  : train loss : 27.88212776184082
+2023-11-20 22:35:03 [train.__main__][INFO] [main/main] - 108  : train loss : 27.133594512939453
+2023-11-20 22:35:05 [train.__main__][INFO] [main/main] - 108  : train loss : 27.46996307373047
+2023-11-20 22:35:06 [train.__main__][INFO] [main/main] - 108  : train loss : 29.852073669433594
+2023-11-20 22:35:07 [train.__main__][INFO] [main/main] - 108  : train loss : 27.685073852539062
+2023-11-20 22:35:08 [train.__main__][INFO] [main/main] - 108  : train loss : 30.81179428100586
+2023-11-20 22:35:09 [train.__main__][INFO] [main/main] - 108  : train loss : 26.00426483154297
+2023-11-20 22:35:10 [train.__main__][INFO] [main/main] - 108  : train loss : 28.216856002807617
+2023-11-20 22:35:12 [train.__main__][INFO] [main/main] - 108  : train loss : 26.822837829589844
+2023-11-20 22:35:13 [train.__main__][INFO] [main/main] - 108  : train loss : 29.18922233581543
+2023-11-20 22:35:14 [train.__main__][INFO] [main/main] - 108  : train loss : 26.904342651367188
+2023-11-20 22:35:15 [train.__main__][INFO] [main/main] - 108  : train loss : 28.141799926757812
+2023-11-20 22:35:16 [train.__main__][INFO] [main/main] - 108  : train loss : 29.077342987060547
+2023-11-20 22:35:18 [train.__main__][INFO] [main/main] - 108  : train loss : 28.52114486694336
+2023-11-20 22:35:19 [train.__main__][INFO] [main/main] - 108  : train loss : 31.99997901916504
+2023-11-20 22:35:20 [train.__main__][INFO] [main/main] - 108  : train loss : 26.49729347229004
+2023-11-20 22:35:21 [train.__main__][INFO] [main/main] - 108  : train loss : 27.185867309570312
+2023-11-20 22:35:22 [train.__main__][INFO] [main/main] - 108  : train loss : 27.415454864501953
+2023-11-20 22:35:24 [train.__main__][INFO] [main/main] - 108  : train loss : 28.328765869140625
+2023-11-20 22:35:25 [train.__main__][INFO] [main/main] - 108  : train loss : 27.54236602783203
+2023-11-20 22:35:26 [train.__main__][INFO] [main/main] - 108  : train loss : 27.857568740844727
+2023-11-20 22:35:27 [train.__main__][INFO] [main/main] - 108  : train loss : 26.064430236816406
+2023-11-20 22:35:28 [train.__main__][INFO] [main/main] - 108  : train loss : 26.157085418701172
+2023-11-20 22:35:30 [train.__main__][INFO] [main/main] - 108  : train loss : 26.929990768432617
+2023-11-20 22:35:31 [train.__main__][INFO] [main/main] - 108  : train loss : 30.763458251953125
+2023-11-20 22:35:32 [train.__main__][INFO] [main/main] - 108  : train loss : 30.062959671020508
+2023-11-20 22:35:33 [train.__main__][INFO] [main/main] - 108  : train loss : 27.652860641479492
+2023-11-20 22:35:34 [train.__main__][INFO] [main/main] - 108  : train loss : 33.5171012878418
+2023-11-20 22:35:35 [train.__main__][INFO] [main/main] - 108  : train loss : 27.836387634277344
+2023-11-20 22:35:37 [train.__main__][INFO] [main/main] - 108  : train loss : 28.646385192871094
+2023-11-20 22:35:38 [train.__main__][INFO] [main/main] - 108  : train loss : 27.644460678100586
+2023-11-20 22:35:39 [train.__main__][INFO] [main/main] - 108  : train loss : 31.367355346679688
+2023-11-20 22:35:40 [train.__main__][INFO] [main/main] - 108  : train loss : 29.36643409729004
+2023-11-20 22:35:41 [train.__main__][INFO] [main/main] - 108  : train loss : 26.885217666625977
+2023-11-20 22:35:42 [train.__main__][INFO] [main/main] - 108  : train loss : 25.48155403137207
+2023-11-20 22:35:44 [train.__main__][INFO] [main/main] - 108  : train loss : 28.42629623413086
+2023-11-20 22:35:45 [train.__main__][INFO] [main/main] - 108  : train loss : 26.609508514404297
+2023-11-20 22:35:46 [train.__main__][INFO] [main/main] - 108  : train loss : 26.395599365234375
+2023-11-20 22:35:47 [train.__main__][INFO] [main/main] - 108  : train loss : 28.347639083862305
+2023-11-20 22:35:49 [train.__main__][INFO] [main/main] - 108  : train loss : 28.567365646362305
+2023-11-20 22:35:50 [train.__main__][INFO] [main/main] - 108  : train loss : 27.846128463745117
+2023-11-20 22:35:51 [train.__main__][INFO] [main/main] - 108  : train loss : 29.445545196533203
+2023-11-20 22:35:52 [train.__main__][INFO] [main/main] - 108  : train loss : 26.945058822631836
+2023-11-20 22:35:53 [train.__main__][INFO] [main/main] - 108  : train loss : 27.578697204589844
+2023-11-20 22:35:55 [train.__main__][INFO] [main/main] - 108  : train loss : 25.413833618164062
+2023-11-20 22:35:56 [train.__main__][INFO] [main/main] - 108  : train loss : 27.742198944091797
+2023-11-20 22:35:57 [train.__main__][INFO] [main/main] - 108  : train loss : 26.075531005859375
+2023-11-20 22:35:58 [train.__main__][INFO] [main/main] - 108  : train loss : 28.117198944091797
+2023-11-20 22:35:59 [train.__main__][INFO] [main/main] - 108  : train loss : 27.579923629760742
+2023-11-20 22:36:01 [train.__main__][INFO] [main/main] - 108  : train loss : 30.889726638793945
+2023-11-20 22:36:02 [train.__main__][INFO] [main/main] - 108  : train loss : 26.628173828125
+2023-11-20 22:36:03 [train.__main__][INFO] [main/main] - 108  : train loss : 29.026643753051758
+2023-11-20 22:36:04 [train.__main__][INFO] [main/main] - 108  : train loss : 28.40626335144043
+2023-11-20 22:36:05 [train.__main__][INFO] [main/main] - 108  : train loss : 26.920618057250977
+2023-11-20 22:36:07 [train.__main__][INFO] [main/main] - 108  : train loss : 27.475914001464844
+2023-11-20 22:36:08 [train.__main__][INFO] [main/main] - 108  : train loss : 28.31980323791504
+2023-11-20 22:36:09 [train.__main__][INFO] [main/main] - 108  : train loss : 26.251808166503906
+2023-11-20 22:36:10 [train.__main__][INFO] [main/main] - 108  : train loss : 27.776796340942383
+2023-11-20 22:36:12 [train.__main__][INFO] [main/main] - 108  : train loss : 28.035200119018555
+2023-11-20 22:36:13 [train.__main__][INFO] [main/main] - 108  : train loss : 28.595911026000977
+2023-11-20 22:36:14 [train.__main__][INFO] [main/main] - 108  : train loss : 28.689363479614258
+2023-11-20 22:36:15 [train.__main__][INFO] [main/main] - 108  : train loss : 28.669918060302734
+2023-11-20 22:36:16 [train.__main__][INFO] [main/main] - 108  : train loss : 28.18017578125
+2023-11-20 22:36:18 [train.__main__][INFO] [main/main] - 108  : train loss : 29.154521942138672
+2023-11-20 22:36:19 [train.__main__][INFO] [main/main] - 108  : train loss : 29.482707977294922
+2023-11-20 22:36:20 [train.__main__][INFO] [main/main] - 108  : train loss : 28.137788772583008
+2023-11-20 22:36:21 [train.__main__][INFO] [main/main] - 108  : train loss : 28.69819450378418
+2023-11-20 22:36:22 [train.__main__][INFO] [main/main] - 108  : train loss : 30.18877601623535
+2023-11-20 22:36:24 [train.__main__][INFO] [main/main] - 108  : train loss : 31.366653442382812
+2023-11-20 22:36:25 [train.__main__][INFO] [main/main] - 108  : train loss : 27.39280128479004
+2023-11-20 22:36:26 [train.__main__][INFO] [main/main] - 108  : train loss : 25.891164779663086
+2023-11-20 22:36:27 [train.__main__][INFO] [main/main] - 108  : train loss : 30.326379776000977
+2023-11-20 22:36:28 [train.__main__][INFO] [main/main] - 108  : train loss : 26.85150909423828
+2023-11-20 22:36:30 [train.__main__][INFO] [main/main] - 108  : train loss : 27.1741886138916
+2023-11-20 22:36:31 [train.__main__][INFO] [main/main] - 108  : train loss : 29.04191017150879
+2023-11-20 22:36:32 [train.__main__][INFO] [main/main] - 108  : train loss : 26.496959686279297
+2023-11-20 22:36:33 [train.__main__][INFO] [main/main] - 108  : train loss : 31.10538673400879
+2023-11-20 22:36:34 [train.__main__][INFO] [main/main] - 108  : train loss : 27.50728988647461
+2023-11-20 22:36:36 [train.__main__][INFO] [main/main] - 108  : train loss : 28.481088638305664
+2023-11-20 22:36:37 [train.__main__][INFO] [main/main] - 108  : train loss : 28.976558685302734
+2023-11-20 22:36:38 [train.__main__][INFO] [main/main] - 108  : train loss : 29.066024780273438
+2023-11-20 22:36:39 [train.__main__][INFO] [main/main] - 108  : train loss : 29.93671417236328
+2023-11-20 22:36:40 [train.__main__][INFO] [main/main] - 108  : train loss : 32.317291259765625
+2023-11-20 22:36:42 [train.__main__][INFO] [main/main] - 108  : train loss : 30.404447555541992
+2023-11-20 22:36:43 [train.__main__][INFO] [main/main] - 108  : train loss : 38.77128601074219
+2023-11-20 22:36:44 [train.__main__][INFO] [main/main] - 108  : train loss : 29.11943244934082
+2023-11-20 22:36:45 [train.__main__][INFO] [main/main] - 108  : train loss : 29.488492965698242
+2023-11-20 22:36:46 [train.__main__][INFO] [main/main] - 108  : train loss : 39.77415466308594
+2023-11-20 22:36:48 [train.__main__][INFO] [main/main] - 108  : train loss : 28.794147491455078
+2023-11-20 22:36:49 [train.__main__][INFO] [main/main] - 108  : train loss : 28.680282592773438
+2023-11-20 22:36:50 [train.__main__][INFO] [main/main] - 108  : train loss : 51.38518142700195
+2023-11-20 22:36:51 [train.__main__][INFO] [main/main] - 108  : train loss : 32.84614562988281
+2023-11-20 22:36:52 [train.__main__][INFO] [main/main] - 108  : train loss : 30.343730926513672
+2023-11-20 22:36:54 [train.__main__][INFO] [main/main] - 108  : train loss : 31.960369110107422
+2023-11-20 22:36:55 [train.__main__][INFO] [main/main] - 108  : train loss : 37.978031158447266
+2023-11-20 22:36:56 [train.__main__][INFO] [main/main] - 108  : train loss : 31.38298988342285
+2023-11-20 22:36:57 [train.__main__][INFO] [main/main] - 108  : train loss : 29.681102752685547
+2023-11-20 22:36:58 [train.__main__][INFO] [main/main] - 108  : train loss : 29.019756317138672
+2023-11-20 22:37:00 [train.__main__][INFO] [main/main] - 108  : train loss : 28.287168502807617
+2023-11-20 22:37:01 [train.__main__][INFO] [main/main] - 108  : train loss : 28.415203094482422
+2023-11-20 22:37:02 [train.__main__][INFO] [main/main] - 108  : train loss : 30.463462829589844
+2023-11-20 22:37:03 [train.__main__][INFO] [main/main] - 108  : train loss : 30.82324981689453
+2023-11-20 22:37:04 [train.__main__][INFO] [main/main] - 108  : train loss : 30.273435592651367
+2023-11-20 22:37:05 [train.__main__][INFO] [main/main] - 108  : train loss : 30.5350399017334
+2023-11-20 22:37:07 [train.__main__][INFO] [main/main] - 108  : train loss : 29.844173431396484
+2023-11-20 22:37:08 [train.__main__][INFO] [main/main] - 108  : train loss : 36.68494415283203
+2023-11-20 22:37:09 [train.__main__][INFO] [main/main] - 108  : train loss : 29.41853141784668
+2023-11-20 22:37:10 [train.__main__][INFO] [main/main] - 108  : train loss : 28.412843704223633
+2023-11-20 22:37:11 [train.__main__][INFO] [main/main] - 108  : train loss : 31.840579986572266
+2023-11-20 22:37:13 [train.__main__][INFO] [main/main] - 108  : train loss : 32.56875228881836
+2023-11-20 22:37:14 [train.__main__][INFO] [main/main] - 108  : train loss : 32.48086166381836
+2023-11-20 22:37:15 [train.__main__][INFO] [main/main] - 108  : train loss : 35.78649139404297
+2023-11-20 22:37:16 [train.__main__][INFO] [main/main] - 108  : train loss : 28.31272315979004
+2023-11-20 22:37:17 [train.__main__][INFO] [main/main] - 108  : train loss : 32.31362533569336
+2023-11-20 22:37:19 [train.__main__][INFO] [main/main] - 108  : train loss : 31.36200714111328
+2023-11-20 22:37:20 [train.__main__][INFO] [main/main] - 108  : train loss : 30.869760513305664
+2023-11-20 22:37:21 [train.__main__][INFO] [main/main] - 108  : train loss : 37.15362548828125
+2023-11-20 22:37:22 [train.__main__][INFO] [main/main] - 108  : train loss : 28.55281639099121
+2023-11-20 22:37:23 [train.__main__][INFO] [main/main] - 108  : train loss : 33.537349700927734
+2023-11-20 22:37:25 [train.__main__][INFO] [main/main] - 108  : train loss : 29.7647705078125
+2023-11-20 22:37:26 [train.__main__][INFO] [main/main] - 108  : train loss : 32.48933410644531
+2023-11-20 22:37:27 [train.__main__][INFO] [main/main] - 108  : train loss : 28.996261596679688
+2023-11-20 22:37:28 [train.__main__][INFO] [main/main] - 108  : train loss : 36.151241302490234
+2023-11-20 22:37:29 [train.__main__][INFO] [main/main] - 108  : train loss : 30.593597412109375
+2023-11-20 22:37:30 [train.__main__][INFO] [main/main] - 108  : train loss : 30.099853515625
+2023-11-20 22:37:32 [train.__main__][INFO] [main/main] - 108  : train loss : 27.912466049194336
+2023-11-20 22:37:33 [train.__main__][INFO] [main/main] - 108  : train loss : 27.131757736206055
+2023-11-20 22:37:34 [train.__main__][INFO] [main/main] - 108  : train loss : 35.196983337402344
+2023-11-20 22:37:35 [train.__main__][INFO] [main/main] - 108  : train loss : 35.89275360107422
+2023-11-20 22:37:36 [train.__main__][INFO] [main/main] - 108  : train loss : 29.3754940032959
+2023-11-20 22:37:37 [train.__main__][INFO] [main/main] - 108  : train loss : 29.348297119140625
+2023-11-20 22:37:39 [train.__main__][INFO] [main/main] - 108  : train loss : 28.9447021484375
+2023-11-20 22:37:40 [train.__main__][INFO] [main/main] - 108  : train loss : 30.34974479675293
+2023-11-20 22:37:41 [train.__main__][INFO] [main/main] - 108  : train loss : 33.73405075073242
+2023-11-20 22:37:42 [train.__main__][INFO] [main/main] - 108  : train loss : 28.790590286254883
+2023-11-20 22:37:43 [train.__main__][INFO] [main/main] - 108  : train loss : 28.230985641479492
+2023-11-20 22:37:44 [train.__main__][INFO] [main/main] - 108  : train loss : 31.09297752380371
+2023-11-20 22:37:46 [train.__main__][INFO] [main/main] - 108  : train loss : 30.228391647338867
+2023-11-20 22:37:47 [train.__main__][INFO] [main/main] - 108  : train loss : 31.736164093017578
+2023-11-20 22:37:48 [train.__main__][INFO] [main/main] - 108  : train loss : 31.61124610900879
+2023-11-20 22:37:49 [train.__main__][INFO] [main/main] - 108  : train loss : 32.77751922607422
+2023-11-20 22:37:50 [train.__main__][INFO] [main/main] - 108  : train loss : 29.434080123901367
+2023-11-20 22:37:51 [train.__main__][INFO] [main/main] - 108  : train loss : 29.489856719970703
+2023-11-20 22:37:53 [train.__main__][INFO] [main/main] - 108  : train loss : 29.251171112060547
+2023-11-20 22:37:54 [train.__main__][INFO] [main/main] - 108  : train loss : 31.71771812438965
+2023-11-20 22:37:55 [train.__main__][INFO] [main/main] - 108  : train loss : 33.08623504638672
+2023-11-20 22:37:56 [train.__main__][INFO] [main/main] - 108  : train loss : 30.076610565185547
+2023-11-20 22:37:57 [train.__main__][INFO] [main/main] - 108  : train loss : 32.16936492919922
+2023-11-20 22:37:59 [train.__main__][INFO] [main/main] - 108  : train loss : 29.776695251464844
+2023-11-20 22:38:00 [train.__main__][INFO] [main/main] - 108  : train loss : 41.67377471923828
+2023-11-20 22:38:01 [train.__main__][INFO] [main/main] - 108  : train loss : 32.256832122802734
+2023-11-20 22:38:02 [train.__main__][INFO] [main/main] - 108  : train loss : 33.357120513916016
+2023-11-20 22:38:03 [train.__main__][INFO] [main/main] - 108  : train loss : 37.39068603515625
+2023-11-20 22:38:04 [train.__main__][INFO] [main/main] - 108  : train loss : 30.971044540405273
+2023-11-20 22:38:06 [train.__main__][INFO] [main/main] - 108  : train loss : 31.146438598632812
+2023-11-20 22:38:07 [train.__main__][INFO] [main/main] - 108  : train loss : 41.73501205444336
+2023-11-20 22:38:08 [train.__main__][INFO] [main/main] - 108  : train loss : 32.58109664916992
+2023-11-20 22:38:09 [model.model.matcher][CRITICAL] [matcher/forward] - 115  : ERROR
+2023-11-20 22:38:09 [model.model.matcher][CRITICAL] [matcher/forward] - 116  : 
+matrix contains invalid numeric entries
+2023-11-20 22:38:09 [model.model.matcher][CRITICAL] [matcher/forward] - 117  : 
+tgt box = 
+tensor([[0.5318, 0.5951, 0.7310, 0.7530],
+        [0.6512, 0.2464, 0.8630, 0.5733],
+        [0.0022, 0.2205, 0.3742, 0.7438],
+        [0.3404, 0.3529, 0.6300, 0.7912],
+        [0.0000, 0.0000, 0.8526, 0.8668],
+        [0.0101, 0.0000, 0.1625, 0.4158],
+        [0.7715, 0.4538, 0.9049, 0.5706],
+        [0.4736, 0.0854, 0.9994, 0.9888],
+        [0.0835, 0.3443, 0.3873, 0.6566],
+        [0.4871, 0.2149, 0.8376, 0.5103],
+        [0.2339, 0.7494, 0.5812, 0.9997],
+        [0.0113, 0.0146, 0.9865, 0.9718],
+        [0.4633, 0.4349, 0.7802, 0.4781],
+        [0.2438, 0.6574, 0.4323, 0.8491],
+        [0.2506, 0.3483, 0.4402, 0.5433],
+        [0.5661, 0.0076, 0.8143, 0.1520],
+        [0.1586, 0.0114, 0.4217, 0.0941],
+        [0.6087, 0.5957, 0.7869, 0.9095],
+        [0.7232, 0.4665, 0.7699, 0.5701],
+        [0.2445, 0.5737, 0.2958, 0.6645],
+        [0.0893, 0.6202, 0.1567, 0.8000],
+        [0.2707, 0.5937, 0.3277, 0.6770],
+        [0.5225, 0.6674, 0.5848, 0.8180],
+        [0.1567, 0.1753, 0.6758, 0.9214],
+        [0.0017, 0.6562, 0.4921, 0.8449],
+        [0.2739, 0.6262, 0.3304, 0.6734],
+        [0.1534, 0.6499, 0.2124, 0.7210],
+        [0.1552, 0.4206, 0.2531, 0.5161],
+        [0.3357, 0.5585, 0.3707, 0.6415],
+        [0.1475, 0.4204, 0.1814, 0.4868],
+        [0.1716, 0.4006, 0.2363, 0.4881],
+        [0.9025, 0.5959, 0.9154, 0.6182],
+        [0.7468, 0.6584, 0.8906, 0.9968],
+        [0.0000, 0.5208, 0.0475, 0.7700],
+        [0.7735, 0.5986, 0.8980, 0.7816],
+        [0.7922, 0.0000, 1.0000, 0.3975],
+        [0.0084, 0.5730, 0.9961, 0.9888],
+        [0.0000, 0.0045, 0.3632, 0.6144],
+        [0.3128, 0.4458, 0.3740, 0.5246],
+        [0.0954, 0.6183, 0.2522, 0.7743],
+        [0.1467, 0.5664, 0.2735, 0.6727],
+        [0.2478, 0.5774, 0.2647, 0.5896],
+        [0.2327, 0.5825, 0.2559, 0.6024],
+        [0.4180, 0.0019, 0.7331, 0.6401],
+        [0.0012, 0.6965, 0.0314, 0.8810],
+        [0.5023, 0.5949, 0.6224, 0.7130],
+        [0.3585, 0.6611, 0.4746, 0.7622],
+        [0.1742, 0.5833, 0.2186, 0.6146],
+        [0.1413, 0.5906, 0.1721, 0.6121],
+        [0.4117, 0.6556, 0.4578, 0.6897],
+        [0.2344, 0.5758, 0.2486, 0.5831],
+        [0.2188, 0.5804, 0.2703, 0.6055],
+        [0.6078, 0.6312, 0.7383, 0.9532],
+        [0.8655, 0.2862, 0.8991, 0.3844],
+        [0.3780, 0.6336, 0.3893, 0.6656],
+        [0.6365, 0.7754, 0.6545, 0.8958],
+        [0.3359, 0.0116, 0.7585, 0.5166],
+        [0.0000, 0.0000, 0.1819, 0.3219],
+        [0.3745, 0.6128, 0.4849, 0.6938],
+        [0.0253, 0.1768, 1.0000, 0.9634],
+        [0.3267, 0.0401, 0.7043, 0.3651],
+        [0.6320, 0.2112, 0.9253, 0.8854],
+        [0.0252, 0.2614, 0.2657, 0.8735],
+        [0.2646, 0.2225, 0.6118, 0.9573],
+        [0.6679, 0.4962, 0.6899, 0.5247],
+        [0.0913, 0.8375, 0.5992, 0.9292]], device='cuda:0')
+2023-11-20 22:38:09 [model.model.matcher][CRITICAL] [matcher/forward] - 118  : 
+outputs_without_aux = 
+{'pred_logits': tensor([[[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]],
+
+        [[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]],
+
+        [[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]],
+
+        ...,
+
+        [[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]],
+
+        [[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]],
+
+        [[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]]], device='cuda:0',
+       grad_fn=<SelectBackward0>), 'pred_boxes': tensor([[[nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         ...,
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan]],
+
+        [[nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         ...,
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan]],
+
+        [[nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         ...,
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan]],
+
+        ...,
+
+        [[nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         ...,
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan]],
+
+        [[nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         ...,
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan]],
+
+        [[nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         ...,
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan]]], device='cuda:0', grad_fn=<SelectBackward0>)}
+2023-11-20 22:38:09 [model.model.matcher][CRITICAL] [matcher/forward] - 119  : 
+cost matrix at line 110 = 
+tensor([[[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]],
+
+        [[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]],
+
+        [[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]],
+
+        ...,
+
+        [[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]],
+
+        [[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]],
+
+        [[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]]])
+2023-11-20 22:38:09 [model.model.rtdetr_criterion][CRITICAL] [rtdetr_criterion/forward] - 248  : 
+outputs_without_aux = 
+{'pred_logits': tensor([[[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]],
+
+        [[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]],
+
+        [[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]],
+
+        ...,
+
+        [[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]],
+
+        [[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]],
+
+        [[nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         ...,
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan],
+         [nan, nan, nan,  ..., nan, nan, nan]]], device='cuda:0',
+       grad_fn=<SelectBackward0>), 'pred_boxes': tensor([[[nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         ...,
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan]],
+
+        [[nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         ...,
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan]],
+
+        [[nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         ...,
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan]],
+
+        ...,
+
+        [[nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         ...,
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan]],
+
+        [[nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         ...,
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan]],
+
+        [[nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         ...,
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan],
+         [nan, nan, nan, nan]]], device='cuda:0', grad_fn=<SelectBackward0>)}
+2023-11-20 22:38:09 [model.model.rtdetr_criterion][CRITICAL] [rtdetr_criterion/forward] - 249  : 
+tgt box = 
+({'boxes': tensor([[0.5318, 0.5951, 0.7310, 0.7530],
+        [0.6512, 0.2464, 0.8630, 0.5733],
+        [0.0022, 0.2205, 0.3742, 0.7438],
+        [0.3404, 0.3529, 0.6300, 0.7912],
+        [0.0000, 0.0000, 0.8526, 0.8668],
+        [0.0101, 0.0000, 0.1625, 0.4158],
+        [0.7715, 0.4538, 0.9049, 0.5706]], device='cuda:0'), 'labels': tensor([44, 45, 45, 45, 60, 44, 44], device='cuda:0'), 'image_id': tensor([189223], device='cuda:0'), 'area': tensor([  3157.2434,  29779.4023,  95517.3125,  60997.3320, 373141.1562,
+         12381.7412,   3937.9746], device='cuda:0'), 'iscrowd': tensor([0, 0, 0, 0, 0, 0, 0], device='cuda:0'), 'orig_size': tensor([640, 480], device='cuda:0'), 'size': tensor([800, 800], device='cuda:0')}, {'boxes': tensor([[0.4736, 0.0854, 0.9994, 0.9888],
+        [0.0835, 0.3443, 0.3873, 0.6566],
+        [0.4871, 0.2149, 0.8376, 0.5103],
+        [0.2339, 0.7494, 0.5812, 0.9997]], device='cuda:0'), 'labels': tensor([ 0, 63, 62, 73], device='cuda:0'), 'image_id': tensor([189224], device='cuda:0'), 'area': tensor([209897.3594,  37850.0977,  21075.2539,  34228.0586], device='cuda:0'), 'iscrowd': tensor([0, 0, 0, 0], device='cuda:0'), 'orig_size': tensor([500, 375], device='cuda:0'), 'size': tensor([800, 800], device='cuda:0')}, {'boxes': tensor([[0.0113, 0.0146, 0.9865, 0.9718],
+        [0.4633, 0.4349, 0.7802, 0.4781],
+        [0.2438, 0.6574, 0.4323, 0.8491],
+        [0.2506, 0.3483, 0.4402, 0.5433],
+        [0.5661, 0.0076, 0.8143, 0.1520],
+        [0.1586, 0.0114, 0.4217, 0.0941],
+        [0.6087, 0.5957, 0.7869, 0.9095]], device='cuda:0'), 'labels': tensor([60, 44, 55, 41, 40, 40, 55], device='cuda:0'), 'image_id': tensor([189229], device='cuda:0'), 'area': tensor([164209.3594,   3465.3328,  20730.3477,  15810.9600,  19139.0000,
+          9038.1729,  31041.6309], device='cuda:0'), 'iscrowd': tensor([0, 0, 0, 0, 0, 0, 0], device='cuda:0'), 'orig_size': tensor([612, 612], device='cuda:0'), 'size': tensor([800, 800], device='cuda:0')}, {'boxes': tensor([[0.7232, 0.4665, 0.7699, 0.5701],
+        [0.2445, 0.5737, 0.2958, 0.6645],
+        [0.0893, 0.6202, 0.1567, 0.8000],
+        [0.2707, 0.5937, 0.3277, 0.6770],
+        [0.5225, 0.6674, 0.5848, 0.8180],
+        [0.1567, 0.1753, 0.6758, 0.9214],
+        [0.0017, 0.6562, 0.4921, 0.8449],
+        [0.2739, 0.6262, 0.3304, 0.6734],
+        [0.1534, 0.6499, 0.2124, 0.7210],
+        [0.1552, 0.4206, 0.2531, 0.5161],
+        [0.3357, 0.5585, 0.3707, 0.6415],
+        [0.1475, 0.4204, 0.1814, 0.4868],
+        [0.1716, 0.4006, 0.2363, 0.4881],
+        [0.9025, 0.5959, 0.9154, 0.6182]], device='cuda:0'), 'labels': tensor([ 0,  0,  0,  0,  0, 23,  7, 56, 56,  0,  0,  0,  0,  0],
+       device='cuda:0'), 'image_id': tensor([189239], device='cuda:0'), 'area': tensor([ 1372.2706,   943.1937,  4934.8774,  1768.0858,  2503.1460, 64348.2031,
+        33760.6055,  1278.9984,   947.5144,  2271.7715,   791.4308,   754.8425,
+         1371.4033,   145.3235], device='cuda:0'), 'iscrowd': tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0'), 'orig_size': tensor([500, 375], device='cuda:0'), 'size': tensor([800, 800], device='cuda:0')}, {'boxes': tensor([[0.7468, 0.6584, 0.8906, 0.9968],
+        [0.0000, 0.5208, 0.0475, 0.7700],
+        [0.7735, 0.5986, 0.8980, 0.7816],
+        [0.7922, 0.0000, 1.0000, 0.3975],
+        [0.0084, 0.5730, 0.9961, 0.9888],
+        [0.0000, 0.0045, 0.3632, 0.6144],
+        [0.3128, 0.4458, 0.3740, 0.5246],
+        [0.0954, 0.6183, 0.2522, 0.7743],
+        [0.1467, 0.5664, 0.2735, 0.6727],
+        [0.2478, 0.5774, 0.2647, 0.5896],
+        [0.2327, 0.5825, 0.2559, 0.6024],
+        [0.4180, 0.0019, 0.7331, 0.6401],
+        [0.0012, 0.6965, 0.0314, 0.8810],
+        [0.5023, 0.5949, 0.6224, 0.7130],
+        [0.3585, 0.6611, 0.4746, 0.7622],
+        [0.1742, 0.5833, 0.2186, 0.6146],
+        [0.1413, 0.5906, 0.1721, 0.6121],
+        [0.4117, 0.6556, 0.4578, 0.6897],
+        [0.2344, 0.5758, 0.2486, 0.5831],
+        [0.2188, 0.5804, 0.2703, 0.6055],
+        [0.6078, 0.6312, 0.7383, 0.9532],
+        [0.8655, 0.2862, 0.8991, 0.3844],
+        [0.3780, 0.6336, 0.3893, 0.6656],
+        [0.6365, 0.7754, 0.6545, 0.8958],
+        [0.3359, 0.0116, 0.7585, 0.5166],
+        [0.0000, 0.0000, 0.1819, 0.3219],
+        [0.3745, 0.6128, 0.4849, 0.6938]], device='cuda:0'), 'labels': tensor([39, 39, 39,  2, 60,  0, 44, 45, 45, 51, 51,  0, 39, 48, 48, 51, 51, 51,
+        51, 51, 39, 39, 51, 51,  2,  7, 48], device='cuda:0'), 'image_id': tensor([189241], device='cuda:0'), 'area': tensor([2.6277e+04, 5.3075e+03, 5.1199e+03, 3.9985e+04, 2.2235e+05, 9.0637e+04,
+        9.0857e+02, 1.1129e+04, 4.6262e+03, 6.6781e+01, 1.6953e+02, 9.0521e+04,
+        1.8751e+03, 7.2458e+03, 5.0231e+03, 4.3392e+02, 2.1222e+02, 5.7855e+02,
+        4.8627e+01, 2.2172e+02, 2.3127e+04, 1.1726e+03, 1.3410e+02, 9.2563e+02,
+        4.6777e+04, 1.9924e+04, 4.0277e+03], device='cuda:0'), 'iscrowd': tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0], device='cuda:0'), 'orig_size': tensor([640, 480], device='cuda:0'), 'size': tensor([800, 800], device='cuda:0')}, {'boxes': tensor([[0.0253, 0.1768, 1.0000, 0.9634]], device='cuda:0'), 'labels': tensor([53], device='cuda:0'), 'image_id': tensor([189243], device='cuda:0'), 'area': tensor([374025.1250], device='cuda:0'), 'iscrowd': tensor([0], device='cuda:0'), 'orig_size': tensor([640, 480], device='cuda:0'), 'size': tensor([800, 800], device='cuda:0')}, {'boxes': tensor([[0.3267, 0.0401, 0.7043, 0.3651],
+        [0.6320, 0.2112, 0.9253, 0.8854],
+        [0.0252, 0.2614, 0.2657, 0.8735],
+        [0.2646, 0.2225, 0.6118, 0.9573],
+        [0.6679, 0.4962, 0.6899, 0.5247]], device='cuda:0'), 'labels': tensor([62,  0,  0,  0, 65], device='cuda:0'), 'image_id': tensor([189244], device='cuda:0'), 'area': tensor([64599.4180, 66012.4453, 48875.0273, 79575.8984,   338.3048],
+       device='cuda:0'), 'iscrowd': tensor([0, 0, 0, 0, 0], device='cuda:0'), 'orig_size': tensor([640, 480], device='cuda:0'), 'size': tensor([800, 800], device='cuda:0')}, {'boxes': tensor([[0.0913, 0.8375, 0.5992, 0.9292]], device='cuda:0'), 'labels': tensor([13], device='cuda:0'), 'image_id': tensor([189245], device='cuda:0'), 'area': tensor([14903.0869], device='cuda:0'), 'iscrowd': tensor([0], device='cuda:0'), 'orig_size': tensor([428, 640], device='cuda:0'), 'size': tensor([800, 800], device='cuda:0')})
