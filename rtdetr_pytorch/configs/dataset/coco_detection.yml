@@ -7,8 +7,8 @@ train_dataloader:
   type: DataLoader
   dataset: 
     type: CocoDetection
-    img_folder: ./data/lcliu/coco_dataset/train2017/
-    ann_file: ./data/lcliu/coco_dataset/annotations/instances_train2017.json
+    img_folder: /data/lcliu/coco_dataset/train2017/
+    ann_file: /data/lcliu/coco_dataset/annotations/instances_train2017.json
     transforms:
       type: Compose
       ops: ~
@@ -22,8 +22,8 @@ val_dataloader:
   type: DataLoader
   dataset: 
     type: CocoDetection
-    img_folder: ./data/lcliu/coco_dataset/coco/val2017/
-    ann_file: ./data/lcliu/coco_dataset/annotations/instances_val2017.json
+    img_folder: /data/lcliu/coco_dataset/coco/val2017/
+    ann_file: /data/lcliu/coco_dataset/annotations/instances_val2017.json
     transforms:
       type: Compose
       ops: ~ 
