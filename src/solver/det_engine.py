@@ -17,6 +17,11 @@ import torch.amp
 from src.data import CocoEvaluator
 from src.misc import (MetricLogger, SmoothedValue, reduce_dict)
 
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logtracker = logging.getLogger(f"train.{__name__}")
+
 
 def train_one_epoch(model: torch.nn.Module, criterion: torch.nn.Module,
                     data_loader: Iterable, optimizer: torch.optim.Optimizer,

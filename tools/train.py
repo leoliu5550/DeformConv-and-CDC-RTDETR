@@ -10,6 +10,10 @@ import src.misc.dist as dist
 from src.core import YAMLConfig 
 from src.solver import TASKS
 
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logtracker = logging.getLogger(f"root.{__name__}")
 
 def main(args, ) -> None:
     '''main
