@@ -13,17 +13,25 @@ from src.data import get_coco_api_from_dataset
 from .solver import BaseSolver
 from .det_engine import train_one_epoch, evaluate
 
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logtracker = logging.getLogger(f"train.{__name__}")
+
+
 
 class DetSolver(BaseSolver):
     
     def fit(self, ):
-        print("Start training")
+        # print("Start training")
+        # logger.debug("Start training")
         self.train()
 
         args = self.cfg 
         
         n_parameters = sum(p.numel() for p in self.model.parameters() if p.requires_grad)
-        print('number of params:', n_parameters)
+        # print('number of params:', n_parameters)
+        logtracker.debug(f"number of params: { n_parameters}")
 
         base_ds = get_coco_api_from_dataset(self.val_dataloader.dataset)
         # best_stat = {'coco_eval_bbox': 0, 'coco_eval_masks': 0, 'epoch': -1, }
@@ -61,8 +69,8 @@ class DetSolver(BaseSolver):
                 else:
                     best_stat['epoch'] = epoch
                     best_stat[k] = test_stats[k][0]
-            print('best_stat: ', best_stat)
-
+            # print('best_stat: ', best_stat)
+            logtracker.debug(f"\n best_stat: \n{best_stat}")
 
             log_stats = {**{f'train_{k}': v for k, v in train_stats.items()},
                         **{f'test_{k}': v for k, v in test_stats.items()},
@@ -86,7 +94,8 @@ class DetSolver(BaseSolver):
 
         total_time = time.time() - start_time
         total_time_str = str(datetime.timedelta(seconds=int(total_time)))
-        print('Training time {}'.format(total_time_str))
+        # print('Training time {}'.format(total_time_str))
+        logtracker.debug(f'Training time = {total_time_str}')
 
 
     def val(self, ):
