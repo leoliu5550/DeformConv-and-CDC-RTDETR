@@ -13,7 +13,7 @@ from src.solver import TASKS
 import logging
 import logging.config
 logging.config.fileConfig('logging.conf')
-logtracker = logging.getLogger(f"root.{__name__}")
+logtracker = logging.getLogger(f"train.{__name__}")
 
 def main(args, ) -> None:
     '''main

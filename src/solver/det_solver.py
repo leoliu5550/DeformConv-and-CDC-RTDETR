@@ -24,7 +24,7 @@ class DetSolver(BaseSolver):
     
     def fit(self, ):
         # print("Start training")
-        # logger.debug("Start training")
+        logtracker.debug("Start training")
         self.train()
 
         args = self.cfg 
@@ -76,7 +76,7 @@ class DetSolver(BaseSolver):
                         **{f'test_{k}': v for k, v in test_stats.items()},
                         'epoch': epoch,
                         'n_parameters': n_parameters}
-
+            logtracker.debug(f"\n log_stats: \n{log_stats}")
             if self.output_dir and dist.is_main_process():
                 with (self.output_dir / "log.txt").open("a") as f:
                     f.write(json.dumps(log_stats) + "\n")

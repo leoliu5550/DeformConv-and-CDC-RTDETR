@@ -11,6 +11,10 @@ from torch.cuda.amp.grad_scaler import GradScaler
 
 from typing import Callable, List, Dict
 
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logtracker = logging.getLogger(f"configer.{__name__}")
 
 __all__ = ['BaseConfig', ]
 
@@ -187,7 +191,8 @@ class BaseConfig(object):
     @property
     def val_shuffle(self):
         if self._val_shuffle is None:
-            print('warning: set default val_shuffle=False')
+            # print('warning: set default val_shuffle=False')
+            logtracker.critical('warning: set default val_shuffle=False')
             return False
         return self._val_shuffle
 
@@ -199,7 +204,8 @@ class BaseConfig(object):
     @property
     def train_shuffle(self):
         if self._train_shuffle is None:
-            print('warning: set default train_shuffle=True')
+            # print('warning: set default train_shuffle=True')
+            logtracker.critical('warning: set default train_shuffle=True')
             return True
         return self._train_shuffle
 

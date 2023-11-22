@@ -47,7 +47,7 @@ def train_one_epoch(model: torch.nn.Module, criterion: torch.nn.Module,
             
             with torch.autocast(device_type=str(device), enabled=False):
                 loss_dict = criterion(outputs, targets)
-
+            logtracker.debug(f"\ntraining loss:\n{loss_dict}")
             loss = sum(loss_dict.values())
             scaler.scale(loss).backward()
             
@@ -80,8 +80,10 @@ def train_one_epoch(model: torch.nn.Module, criterion: torch.nn.Module,
         loss_value = sum(loss_dict_reduced.values())
 
         if not math.isfinite(loss_value):
-            print("Loss is {}, stopping training".format(loss_value))
-            print(loss_dict_reduced)
+            # print("Loss is {}, stopping training".format(loss_value))
+            logtracker.debug("Loss is {}, stopping training".format(loss_value))
+            # print(loss_dict_reduced)
+            logtracker.debug("loss_dict_reduced is {}, loss_dict_reduced".format(loss_dict_reduced))
             sys.exit(1)
 
         metric_logger.update(loss=loss_value, **loss_dict_reduced)
@@ -89,7 +91,8 @@ def train_one_epoch(model: torch.nn.Module, criterion: torch.nn.Module,
 
     # gather the stats from all processes
     metric_logger.synchronize_between_processes()
-    print("Averaged stats:", metric_logger)
+    # print("Averaged stats:", metric_logger)
+    logtracker.debug(f"Averaged stats = {metric_logger}")
     return {k: meter.global_avg for k, meter in metric_logger.meters.items()}
 
 
@@ -161,7 +164,9 @@ def evaluate(model: torch.nn.Module, criterion: torch.nn.Module, postprocessors,
 
     # gather the stats from all processes
     metric_logger.synchronize_between_processes()
-    print("Averaged stats:", metric_logger)
+    # print("Averaged stats:", metric_logger)
+    logtracker.debug(f"Averaged stats: { metric_logger}")
+    
     if coco_evaluator is not None:
         coco_evaluator.synchronize_between_processes()
     if panoptic_evaluator is not None:

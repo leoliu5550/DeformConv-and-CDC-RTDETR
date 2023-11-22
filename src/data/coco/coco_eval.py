@@ -17,6 +17,10 @@ from pycocotools.coco import COCO
 import pycocotools.mask as mask_util
 
 from src.misc import dist
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logtracker = logging.getLogger(f"coco.{__name__}")
 
 
 __all__ = ['CocoEvaluator',]
@@ -66,7 +70,8 @@ class CocoEvaluator(object):
 
     def summarize(self):
         for iou_type, coco_eval in self.coco_eval.items():
-            print("IoU metric: {}".format(iou_type))
+            # print("IoU metric: {}".format(iou_type))
+            logtracker.debug("IoU metric: {}".format(iou_type))
             coco_eval.summarize()
 
     def prepare(self, predictions, iou_type):
@@ -227,7 +232,8 @@ def evaluate(self):
     # add backward compatibility if useSegm is specified in params
     if p.useSegm is not None:
         p.iouType = 'segm' if p.useSegm == 1 else 'bbox'
-        print('useSegm (deprecated) is not None. Running {} evaluation'.format(p.iouType))
+        logtracker.debug('useSegm (deprecated) is not None. Running {} evaluation'.format(p.iouType))
+        # print('useSegm (deprecated) is not None. Running {} evaluation'.format(p.iouType))
     # print('Evaluate annotation type *{}*'.format(p.iouType))
     p.imgIds = list(np.unique(p.imgIds))
     if p.useCats:
