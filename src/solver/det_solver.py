@@ -16,8 +16,8 @@ from .det_engine import train_one_epoch, evaluate
 import logging
 import logging.config
 logging.config.fileConfig('logging.conf')
-logtracker = logging.getLogger(f"train.{__name__}")
-
+logtracker = logging.getLogger(f"train.trainning.{__name__}")
+logvalidtracker = logging.getLogger(f"train.vaild.{__name__}")
 
 
 class DetSolver(BaseSolver):
@@ -57,10 +57,12 @@ class DetSolver(BaseSolver):
                     dist.save_on_master(self.state_dict(epoch), checkpoint_path)
 
             module = self.ema.module if self.ema else self.model
+            # here to add valid loss record
             test_stats, coco_evaluator = evaluate(
                 module, self.criterion, self.postprocessor, self.val_dataloader, base_ds, self.device, self.output_dir
             )
-
+            logvalidtracker.debug(f"valid test_stats \n{test_stats}")
+            logvalidtracker.debug(f"valid test_stats \n{coco_evaluator}")
             # TODO 
             for k in test_stats.keys():
                 if k in best_stat:
@@ -70,13 +72,14 @@ class DetSolver(BaseSolver):
                     best_stat['epoch'] = epoch
                     best_stat[k] = test_stats[k][0]
             # print('best_stat: ', best_stat)
-            logtracker.debug(f"\n best_stat: \n{best_stat}")
+            logvalidtracker.debug(f"\n best_stat: \n{best_stat}")
 
             log_stats = {**{f'train_{k}': v for k, v in train_stats.items()},
                         **{f'test_{k}': v for k, v in test_stats.items()},
                         'epoch': epoch,
                         'n_parameters': n_parameters}
-            logtracker.debug(f"\n log_stats: \n{log_stats}")
+            
+            logtracker.debug(f"\n train and test log_stats: \n{log_stats}")
             if self.output_dir and dist.is_main_process():
                 with (self.output_dir / "log.txt").open("a") as f:
                     f.write(json.dumps(log_stats) + "\n")
@@ -106,7 +109,8 @@ class DetSolver(BaseSolver):
         module = self.ema.module if self.ema else self.model
         test_stats, coco_evaluator = evaluate(module, self.criterion, self.postprocessor,
                 self.val_dataloader, base_ds, self.device, self.output_dir)
-                
+        logtracker.debug("\nvalid coco_evaluator part\n{coco_evaluator}")
+        logtracker.debug("\nvalid test_stats part\n{test_stats}")
         if self.output_dir:
             dist.save_on_master(coco_evaluator.coco_eval["bbox"].eval, self.output_dir / "eval.pth")
         
