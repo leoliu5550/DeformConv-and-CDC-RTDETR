@@ -62,7 +62,9 @@ class DetSolver(BaseSolver):
                 module, self.criterion, self.postprocessor, self.val_dataloader, base_ds, self.device, self.output_dir
             )
             logvalidtracker.debug(f"valid test_stats \n{test_stats}")
-            logvalidtracker.debug(f"valid test_stats \n{coco_evaluator}")
+            logvalidtracker.debug(f"valid test_stats data type\n{type(test_stats)}")
+            logvalidtracker.debug(f"valid coco_evaluator \n{coco_evaluator}")
+            logvalidtracker.debug(f"valid coco_evaluator data type\n{type(coco_evaluator)}")
             # TODO 
             for k in test_stats.keys():
                 if k in best_stat:

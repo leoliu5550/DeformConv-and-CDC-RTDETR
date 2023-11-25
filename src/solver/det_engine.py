@@ -62,7 +62,7 @@ def train_one_epoch(model: torch.nn.Module, criterion: torch.nn.Module,
         else:
             outputs = model(samples, targets)
             loss_dict = criterion(outputs, targets)
-            
+            logtracker.debug(f"\ntraining loss:\n{loss_dict}")
             loss = sum(loss_dict.values())
             optimizer.zero_grad()
             loss.backward()
