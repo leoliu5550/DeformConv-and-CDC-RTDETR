@@ -76,7 +76,8 @@ class BaseConfig(object):
 
         # self.device :str = torch.device('cpu')
         device = 'cuda' if torch.cuda.is_available() else 'cpu'
-        self.device = torch.device(device)
+        self.device = torch.device(device)#device
+        # self.device = torch.device('cpu')#device
 
 
     @property

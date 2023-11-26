@@ -25,7 +25,14 @@ class DeformConvBlock(nn.Module):
             padding=(kernel_size-1)//2 if padding is None else padding, 
             bias=bias
             )
-        self.conv_offset = nn.Conv2d(3, 18, kernel_size=3, stride=1, padding=1)
+        self.conv_offset = nn.Conv2d(
+            ch_in, 
+            (kernel_size**2)*2, 
+            kernel_size, 
+            stride, 
+            padding=(kernel_size-1)//2 if padding is None else padding, 
+            bias=bias
+            )
         # nn.init.constant_(self.conv_offset.weight,0)
         nn.init.trunc_normal_(self.conv_offset.weight)
         self.norm = nn.BatchNorm2d(ch_out)
@@ -33,12 +40,14 @@ class DeformConvBlock(nn.Module):
 
     def forward(self, x):
         offset = self.conv_offset(x)
+        # print(f"offset shape = {offset.shape}")
         # mask = self.sig(self.conv_mask(x)) 
 
-        out = deform_conv2d(input=x, offset=offset, 
-                                    weight=self.conv.weight, 
-                                        mask=None, padding=(1, 1))
-        
+        out = deform_conv2d(
+            input=x, offset=offset, 
+            weight=self.conv.weight, 
+            mask=None, padding=(1, 1))
+
         out = self.act(out)
         return out
 
@@ -237,23 +246,31 @@ class HybridEncoder(nn.Module):
         
         # channel projection
         self.input_proj = nn.ModuleList()
-        for layer_idx,in_channel in enumerate(in_channels) :
-            # add deform convlayer
-            if layer_idx == len(in_channels)-1:
-                self.input_proj.append(
-                    nn.Sequential(
-                        # let deform conv remain same size after deformconv
-                        DeformConvBlock(in_channel, hidden_dim, kernel_size=3, stride=1, padding=1,bias=True),
-                        nn.BatchNorm2d(hidden_dim)
-                    )
+        # for layer_idx,in_channel in enumerate(in_channels) :
+        #     # add deform convlayer
+        #     if layer_idx == len(in_channels)-1:
+        #         self.input_proj.append(
+        #             nn.Sequential(
+        #                 # let deform conv remain same size after deformconv
+        #                 DeformConvBlock(in_channel, hidden_dim, kernel_size=3, stride=1, padding=1,bias=True),
+        #                 nn.BatchNorm2d(hidden_dim)
+        #             )
+        #         )
+        #     else:
+        #         self.input_proj.append(
+        #             nn.Sequential(
+        #                 nn.Conv2d(in_channel, hidden_dim, kernel_size=1, bias=False),
+        #                 nn.BatchNorm2d(hidden_dim)
+        #             )
+        #         )
+                
+        for in_channel in in_channels:
+            self.input_proj.append(
+                nn.Sequential(
+                    nn.Conv2d(in_channel, hidden_dim, kernel_size=1, bias=False),
+                    nn.BatchNorm2d(hidden_dim)
                 )
-            else:
-                self.input_proj.append(
-                    nn.Sequential(
-                        nn.Conv2d(in_channel, hidden_dim, kernel_size=1, bias=False),
-                        nn.BatchNorm2d(hidden_dim)
-                    )
-                )
+            )
 
         # encoder transformer
         encoder_layer = TransformerEncoderLayer(

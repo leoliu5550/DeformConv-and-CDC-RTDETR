@@ -167,3 +167,5 @@ cython_debug/
 *.onnx
 rtdetr_pytorch/output/*
 rtdetr_pytorch/dataset/*
+
+wandb/*

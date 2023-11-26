@@ -1,6 +1,6 @@
 task: detection
 
-num_classes: 6
+num_classes: 7
 remap_mscoco_category: False
 
 train_dataloader: 
