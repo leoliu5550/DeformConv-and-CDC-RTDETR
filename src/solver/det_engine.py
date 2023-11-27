@@ -10,7 +10,7 @@ import os
 import sys
 import pathlib
 from typing import Iterable
-
+import json
 import torch
 import torch.amp 
 
@@ -128,7 +128,12 @@ def evaluate(model: torch.nn.Module, criterion: torch.nn.Module, postprocessors,
 
         outputs = model(samples)
 
-        # loss_dict = criterion(outputs, targets)
+        loss_dict = criterion(outputs, targets)
+
+        with open("vaildlog2.log","a") as file:
+            file.write(str(loss_dict))
+            file.write("\n")
+
         # weight_dict = criterion.weight_dict
         # # reduce losses over all GPUs for logging purposes
         # loss_dict_reduced = reduce_dict(loss_dict)
