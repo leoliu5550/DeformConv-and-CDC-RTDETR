@@ -1,15 +1,15 @@
 import wandb
 import json
 
-path = r"output/rtdetr_r50vd_6x_coco+deformConvv3/log.txt"
+path = r"output/rtdetr_r50vd_6x_coco/log.txt"
 
 cfg = {
-    "epoch": 71, "n_parameters": 50635843
+    "epoch": 71, "n_parameters": 47239437
 }
 wandb.init(
     # set the wandb project where this run will be logged
     project="RTDETR_Refactor",
-    name = "RTDETR_deformConvS3S4S5",
+    name = "RTDETR_deformConvS3_relu",
     # # track hyperparameters and run metadata
     config=cfg
 )

@@ -15,7 +15,7 @@ from src.core import register
 __all__ = ['HybridEncoder']
 
 class DeformConvBlock(nn.Module):
-    def __init__(self,ch_in, ch_out, kernel_size, stride, padding=None, bias=False, act='leaky_relu'):
+    def __init__(self,ch_in, ch_out, kernel_size, stride, padding=None, bias=False, act='relu'):
         super().__init__()
         self.conv = nn.Conv2d(
             ch_in, 
@@ -248,29 +248,29 @@ class HybridEncoder(nn.Module):
         self.input_proj = nn.ModuleList()
         for layer_idx,in_channel in enumerate(in_channels) :
             # add deform convlayer to all
-            self.input_proj.append(
-                nn.Sequential(
-                    # let deform conv remain same size after deformconv
-                    DeformConvBlock(in_channel, hidden_dim, kernel_size=3, stride=1, padding=1,bias=True),
-                    nn.BatchNorm2d(hidden_dim)
-                )
-            )
+            # self.input_proj.append(
+            #     nn.Sequential(
+            #         # let deform conv remain same size after deformconv
+            #         DeformConvBlock(in_channel, hidden_dim, kernel_size=3, stride=1, padding=1,bias=False),
+            #         nn.BatchNorm2d(hidden_dim)
+            #     )
+            # )
         
-            # if layer_idx == len(in_channels)-1:
-            #     self.input_proj.append(
-            #         nn.Sequential(
-            #             # let deform conv remain same size after deformconv
-            #             DeformConvBlock(in_channel, hidden_dim, kernel_size=3, stride=1, padding=1,bias=True),
-            #             nn.BatchNorm2d(hidden_dim)
-            #         )
-            #     )
-            # else:
-            #     self.input_proj.append(
-            #         nn.Sequential(
-            #             nn.Conv2d(in_channel, hidden_dim, kernel_size=1, bias=False),
-            #             nn.BatchNorm2d(hidden_dim)
-            #         )
-            #     )
+            if layer_idx == len(in_channels)-1:
+                self.input_proj.append(
+                    nn.Sequential(
+                        # let deform conv remain same size after deformconv
+                        DeformConvBlock(in_channel, hidden_dim, kernel_size=3, stride=1, padding=1,bias=False),
+                        nn.BatchNorm2d(hidden_dim)
+                    )
+                )
+            else:
+                self.input_proj.append(
+                    nn.Sequential(
+                        nn.Conv2d(in_channel, hidden_dim, kernel_size=1, bias=False),
+                        nn.BatchNorm2d(hidden_dim)
+                    )
+                )
                 
         # for in_channel in in_channels:
         #     self.input_proj.append(
