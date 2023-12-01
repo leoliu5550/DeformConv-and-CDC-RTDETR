@@ -9,7 +9,7 @@ cfg = {
 wandb.init(
     # set the wandb project where this run will be logged
     project="RTDETR_Refactor",
-    name = "RTDETR_deformConvS5_relu",
+    name = "test_run",
     # # track hyperparameters and run metadata
     config=cfg
 )
@@ -18,9 +18,19 @@ with open(path) as f:
     for line in f:
         data.append(json.loads(line))
         
+def wandb_prefixlogs(loss_dict,train=True):
+    if train:
+        prefix = "train"
+    else:
+        prefix = "valid"
+    
+        
+    for key,value in loss_dict.items():
+        if key == "test_coco_eval_bbox":
+            continue
+        else:
+            logs = {f"{prefix}.{key}":value}
+            wandb.log(logs)
 
 for rows in data:
-    # rows = rows.pop("test_coco_eval_bbox")
-    del rows["test_coco_eval_bbox"]
-
-    wandb.log(rows)
+    wandb_prefixlogs(rows)
