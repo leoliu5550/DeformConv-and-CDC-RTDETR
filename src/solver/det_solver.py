@@ -24,7 +24,7 @@ with open("configs/rtdetr/include/optimizer.yml") as file:
     cfg = yaml.safe_load(file)
 wandb.init(
     # set the wandb project where this run will be logged
-    project="RTDETR_Refactor",
+    project="RTDETR_Refactor_NEU",
     name = cfg['names'],
     # # track hyperparameters and run metadata
     config=cfg
@@ -105,7 +105,7 @@ class DetSolver(BaseSolver):
             
             logvalidtracker.debug(f"valid test_stats \n{test_stats}")
             logvalidtracker.debug(f"valid test_stats data type\n{type(test_stats)}")
-            logvalidtracker.debug(f"valid coco_evaluator \n{coco_evaluator}")
+            logvalidtracker.info(f"valid coco_evaluator \n{coco_evaluator}")
             logvalidtracker.debug(f"valid coco_evaluator data type\n{type(coco_evaluator)}")
             # TODO 
             for k in test_stats.keys():
@@ -153,8 +153,8 @@ class DetSolver(BaseSolver):
         module = self.ema.module if self.ema else self.model
         test_stats, coco_evaluator = evaluate(module, self.criterion, self.postprocessor,
                 self.val_dataloader, base_ds, self.device, self.output_dir)
-        logtracker.debug("\nvalid coco_evaluator part\n{coco_evaluator}")
-        logtracker.debug("\nvalid test_stats part\n{test_stats}")
+        logtracker.info("\nvalid coco_evaluator part\n{coco_evaluator}")
+        logtracker.info("\nvalid test_stats part\n{test_stats}")
         if self.output_dir:
             dist.save_on_master(coco_evaluator.coco_eval["bbox"].eval, self.output_dir / "eval.pth")
         
