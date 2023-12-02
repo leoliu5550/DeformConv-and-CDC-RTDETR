@@ -19,7 +19,7 @@ train_dataloader:
         - {type: SanitizeBoundingBox, min_size: 1}
         - {type: ConvertBox, out_fmt: 'cxcywh', normalize: True}
   shuffle: True
-  batch_size: 4
+  batch_size: 8
   num_workers: 4
   collate_fn: default_collate_fn
 
@@ -33,6 +33,8 @@ val_dataloader:
         - {type: Resize, size: [640, 640]}
         - {type: ToImageTensor}
         - {type: ConvertDtype}
+        - {type: SanitizeBoundingBox, min_size: 1}
+        - {type: ConvertBox, out_fmt: 'cxcywh', normalize: True}
   shuffle: False
   batch_size: 8
   num_workers: 4

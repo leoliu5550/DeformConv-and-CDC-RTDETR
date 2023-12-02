@@ -19,7 +19,30 @@ logging.config.fileConfig('logging.conf')
 logtracker = logging.getLogger(f"train.trainning.{__name__}")
 logvalidtracker = logging.getLogger(f"train.vaild.{__name__}")
 
-
+import wandb,yaml
+with open("configs/rtdetr/include/optimizer.yml") as file:
+    cfg = yaml.safe_load(file)
+wandb.init(
+    # set the wandb project where this run will be logged
+    project="RTDETR_Refactor_NEU",
+    name = cfg['names'],
+    # # track hyperparameters and run metadata
+    config=cfg
+)
+def wandb_prefixlogs(loss_dict,train=True):
+    if train:
+        prefix = "train"
+    else:
+        prefix = "valid"
+    
+        
+    for key,value in loss_dict.items():
+        if key == "test_coco_eval_bbox":
+            continue
+        else:
+            logs = {f"{prefix}.{key}":value}
+            wandb.log(logs)
+            
 class DetSolver(BaseSolver):
     
     def fit(self, ):
@@ -31,6 +54,7 @@ class DetSolver(BaseSolver):
         
         n_parameters = sum(p.numel() for p in self.model.parameters() if p.requires_grad)
         # print('number of params:', n_parameters)
+        wandb.log({"n_parameters":n_parameters})
         logtracker.debug(f"number of params: { n_parameters}")
 
         base_ds = get_coco_api_from_dataset(self.val_dataloader.dataset)
@@ -42,10 +66,19 @@ class DetSolver(BaseSolver):
             if dist.is_dist_available_and_initialized():
                 self.train_dataloader.sampler.set_epoch(epoch)
             
-            train_stats = train_one_epoch(
-                self.model, self.criterion, self.train_dataloader, self.optimizer, self.device, epoch,
-                args.clip_max_norm, print_freq=args.log_step, ema=self.ema, scaler=self.scaler)
-
+            train_stats,loss_dict = train_one_epoch(
+                    self.model, 
+                    self.criterion, 
+                    self.train_dataloader, 
+                    self.optimizer, 
+                    self.device, 
+                    epoch,
+                    args.clip_max_norm, 
+                    print_freq=args.log_step, 
+                    ema=self.ema, 
+                    scaler=self.scaler
+                )
+            wandb_prefixlogs(loss_dict)
             self.lr_scheduler.step()
             
             if self.output_dir:
@@ -58,12 +91,21 @@ class DetSolver(BaseSolver):
 
             module = self.ema.module if self.ema else self.model
             # here to add valid loss record
-            test_stats, coco_evaluator = evaluate(
-                module, self.criterion, self.postprocessor, self.val_dataloader, base_ds, self.device, self.output_dir
+            test_stats, coco_evaluator,valid_loss_dict = evaluate(
+                module,
+                self.criterion, 
+                self.postprocessor, 
+                self.val_dataloader, 
+                base_ds, 
+                self.device, 
+                self.output_dir
             )
+            wandb_prefixlogs(valid_loss_dict,train=False)
+            
+            
             logvalidtracker.debug(f"valid test_stats \n{test_stats}")
             logvalidtracker.debug(f"valid test_stats data type\n{type(test_stats)}")
-            logvalidtracker.debug(f"valid coco_evaluator \n{coco_evaluator}")
+            logvalidtracker.info(f"valid coco_evaluator \n{coco_evaluator}")
             logvalidtracker.debug(f"valid coco_evaluator data type\n{type(coco_evaluator)}")
             # TODO 
             for k in test_stats.keys():
@@ -111,8 +153,8 @@ class DetSolver(BaseSolver):
         module = self.ema.module if self.ema else self.model
         test_stats, coco_evaluator = evaluate(module, self.criterion, self.postprocessor,
                 self.val_dataloader, base_ds, self.device, self.output_dir)
-        logtracker.debug("\nvalid coco_evaluator part\n{coco_evaluator}")
-        logtracker.debug("\nvalid test_stats part\n{test_stats}")
+        logtracker.info("\nvalid coco_evaluator part\n{coco_evaluator}")
+        logtracker.info("\nvalid test_stats part\n{test_stats}")
         if self.output_dir:
             dist.save_on_master(coco_evaluator.coco_eval["bbox"].eval, self.output_dir / "eval.pth")
         

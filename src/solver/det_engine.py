@@ -93,7 +93,7 @@ def train_one_epoch(model: torch.nn.Module, criterion: torch.nn.Module,
     metric_logger.synchronize_between_processes()
     # print("Averaged stats:", metric_logger)
     logtracker.debug(f"Averaged stats = {metric_logger}")
-    return {k: meter.global_avg for k, meter in metric_logger.meters.items()}
+    return {k: meter.global_avg for k, meter in metric_logger.meters.items()},loss_dict_reduced
 
 
 
@@ -129,14 +129,11 @@ def evaluate(model: torch.nn.Module, criterion: torch.nn.Module, postprocessors,
         outputs = model(samples)
 
         loss_dict = criterion(outputs, targets)
-
-        with open("vaildlog2.log","a") as file:
-            file.write(str(loss_dict))
-            file.write("\n")
+        # loss_dict_reduced = reduce_dict(loss_dict)
 
         # weight_dict = criterion.weight_dict
-        # # reduce losses over all GPUs for logging purposes
-        # loss_dict_reduced = reduce_dict(loss_dict)
+        # reduce losses over all GPUs for logging purposes
+        loss_dict_reduced = reduce_dict(loss_dict)
         # loss_dict_reduced_scaled = {k: v * weight_dict[k]
         #                             for k, v in loss_dict_reduced.items() if k in weight_dict}
         # loss_dict_reduced_unscaled = {f'{k}_unscaled': v
@@ -199,7 +196,7 @@ def evaluate(model: torch.nn.Module, criterion: torch.nn.Module, postprocessors,
     #     stats['PQ_th'] = panoptic_res["Things"]
     #     stats['PQ_st'] = panoptic_res["Stuff"]
 
-    return stats, coco_evaluator
+    return stats, coco_evaluator , loss_dict_reduced
 
 
 
