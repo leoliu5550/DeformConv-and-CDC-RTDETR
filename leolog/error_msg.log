@@ -1,10 +1,18 @@
-2023-12-02 00:19:34 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
-2023-12-02 00:25:08 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
-2023-12-02 00:30:41 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
-2023-12-02 00:36:10 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
-2023-12-02 00:41:47 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
-2023-12-02 00:47:24 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
-2023-12-02 00:53:00 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
-2023-12-02 00:58:39 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
-2023-12-02 01:04:16 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
-2023-12-02 01:09:51 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
+2023-12-02 20:53:37 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
+2023-12-02 20:53:37 [train.vaild.src.solver.det_solver][INFO] [det_solver/fit] - 108  : valid coco_evaluator 
+<src.data.coco.coco_eval.CocoEvaluator object at 0x7fded2773c40>
+2023-12-02 20:59:09 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
+2023-12-02 20:59:09 [train.vaild.src.solver.det_solver][INFO] [det_solver/fit] - 108  : valid coco_evaluator 
+<src.data.coco.coco_eval.CocoEvaluator object at 0x7fde9c050af0>
+2023-12-02 21:04:46 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
+2023-12-02 21:04:46 [train.vaild.src.solver.det_solver][INFO] [det_solver/fit] - 108  : valid coco_evaluator 
+<src.data.coco.coco_eval.CocoEvaluator object at 0x7fde9c3f6100>
+2023-12-02 21:10:22 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
+2023-12-02 21:10:22 [train.vaild.src.solver.det_solver][INFO] [det_solver/fit] - 108  : valid coco_evaluator 
+<src.data.coco.coco_eval.CocoEvaluator object at 0x7fde96cbf190>
+2023-12-02 21:15:56 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
+2023-12-02 21:15:56 [train.vaild.src.solver.det_solver][INFO] [det_solver/fit] - 108  : valid coco_evaluator 
+<src.data.coco.coco_eval.CocoEvaluator object at 0x7fded204ee20>
+2023-12-02 21:21:30 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
+2023-12-02 21:21:30 [train.vaild.src.solver.det_solver][INFO] [det_solver/fit] - 108  : valid coco_evaluator 
+<src.data.coco.coco_eval.CocoEvaluator object at 0x7fde97161e20>

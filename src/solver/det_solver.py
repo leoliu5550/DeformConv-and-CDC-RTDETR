@@ -105,7 +105,7 @@ class DetSolver(BaseSolver):
             
             logvalidtracker.debug(f"valid test_stats \n{test_stats}")
             logvalidtracker.debug(f"valid test_stats data type\n{type(test_stats)}")
-            logvalidtracker.info(f"valid coco_evaluator \n{coco_evaluator}")
+            logvalidtracker.info(f"valid coco_evaluator \n{coco_evaluator()}")
             logvalidtracker.debug(f"valid coco_evaluator data type\n{type(coco_evaluator)}")
             # TODO 
             for k in test_stats.keys():
