@@ -1,4 +1,4 @@
-names: neu_with_CDIFF_at_s5
+names: neu_with_SPattenBlock_REPBlock
 use_ema: True 
 ema:
   type: ModelEMA
@@ -8,7 +8,7 @@ ema:
 
 find_unused_parameters: True 
 
-epoches: 72
+epoches: 80
 clip_max_norm: 0.1
 
 optimizer:
