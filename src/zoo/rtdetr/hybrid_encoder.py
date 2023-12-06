@@ -183,7 +183,7 @@ class RepVggBlock(nn.Module):
         super().__init__()
         self.ch_in = ch_in
         self.ch_out = ch_out
-        self.conv1 = ConvNormLayer(ch_in, ch_out, 3, 1, padding=1, act=None)
+        self.conv1 = Conv2d_cdiffBlock(ch_in, ch_out, 3, 1, padding=1, act=None)
         self.conv2 = ConvNormLayer(ch_in, ch_out, 1, 1, padding=0, act=None)
         self.act = nn.Identity() if act is None else get_activation(act) 
 
@@ -244,7 +244,7 @@ class CSPRepLayer(nn.Module):
         self.conv1 = ConvNormLayer(in_channels, hidden_channels, 1, 1, bias=bias, act=act)
         self.conv2 = ConvNormLayer(in_channels, hidden_channels, 1, 1, bias=bias, act=act)
         self.bottlenecks = nn.Sequential(*[
-            SPattenBlock(hidden_channels, hidden_channels, act=act) for _ in range(num_blocks)
+            RepVggBlock(hidden_channels, hidden_channels, act=act) for _ in range(num_blocks)
         ])
         if hidden_channels != out_channels:
             self.conv3 = ConvNormLayer(hidden_channels, out_channels, 1, 1, bias=bias, act=act)
