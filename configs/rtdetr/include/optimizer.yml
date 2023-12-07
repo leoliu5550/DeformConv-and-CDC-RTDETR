@@ -1,4 +1,4 @@
-names: neu_with_CDiff3v3_REPBlock
+names: neu_with_original
 use_ema: True 
 ema:
   type: ModelEMA

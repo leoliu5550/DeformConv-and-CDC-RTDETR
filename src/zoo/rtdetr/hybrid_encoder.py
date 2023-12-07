@@ -183,7 +183,7 @@ class RepVggBlock(nn.Module):
         super().__init__()
         self.ch_in = ch_in
         self.ch_out = ch_out
-        self.conv1 = Conv2d_cdiffBlock(ch_in, ch_out, 3, 1, padding=1, act=None)
+        self.conv1 = ConvNormLayer(ch_in, ch_out, 3, 1, padding=1, act=None)
         self.conv2 = ConvNormLayer(ch_in, ch_out, 1, 1, padding=0, act=None)
         self.act = nn.Identity() if act is None else get_activation(act) 
 
@@ -356,7 +356,7 @@ class HybridEncoder(nn.Module):
         
         # channel projection
         self.input_proj = nn.ModuleList()
-        for layer_idx,in_channel in enumerate(in_channels) :
+        # for layer_idx,in_channel in enumerate(in_channels) :
             # add deform convlayer to all
             # self.input_proj.append(
             #     nn.Sequential(
@@ -366,29 +366,29 @@ class HybridEncoder(nn.Module):
             #     )
             # )
         
-            if layer_idx == len(in_channels)-1:
-                self.input_proj.append(
-                    nn.Sequential(
-                        # let deform conv remain same size after deformconv
-                        Conv2d_cdiffBlock(in_channel, hidden_dim, kernel_size=3, stride=1, padding=1,bias=False),
-                        nn.BatchNorm2d(hidden_dim)
-                    )
-                )
-            else:
-                self.input_proj.append(
-                    nn.Sequential(
-                        nn.Conv2d(in_channel, hidden_dim, kernel_size=1, bias=False),
-                        nn.BatchNorm2d(hidden_dim)
-                    )
-                )
+            # if layer_idx == len(in_channels)-1:
+            #     self.input_proj.append(
+            #         nn.Sequential(
+            #             # let deform conv remain same size after deformconv
+            #             Conv2d_cdiffBlock(in_channel, hidden_dim, kernel_size=3, stride=1, padding=1,bias=False),
+            #             nn.BatchNorm2d(hidden_dim)
+            #         )
+            #     )
+            # else:
+            #     self.input_proj.append(
+            #         nn.Sequential(
+            #             nn.Conv2d(in_channel, hidden_dim, kernel_size=1, bias=False),
+            #             nn.BatchNorm2d(hidden_dim)
+            #         )
+            #     )
                 
-        # for in_channel in in_channels:
-        #     self.input_proj.append(
-        #         nn.Sequential(
-        #             nn.Conv2d(in_channel, hidden_dim, kernel_size=1, bias=False),
-        #             nn.BatchNorm2d(hidden_dim)
-        #         )
-        #     )
+        for in_channel in in_channels:
+            self.input_proj.append(
+                nn.Sequential(
+                    nn.Conv2d(in_channel, hidden_dim, kernel_size=1, bias=False),
+                    nn.BatchNorm2d(hidden_dim)
+                )
+            )
 
         # encoder transformer
         encoder_layer = TransformerEncoderLayer(
@@ -399,7 +399,7 @@ class HybridEncoder(nn.Module):
             activation=enc_act)
 
         self.encoder = nn.ModuleList([
-            TransformerEncoder(copy.deepcopy(encoder_layer), num_encoder_layers) for _ in range(len(use_encoder_idx))
+            TransformerEncoder(copy.deepcopy(encoder_layer), num_encoder_layers) for _ in range(3)
         ])
 
         # top-down fpn
