@@ -233,12 +233,12 @@ class RepVggBlock(nn.Module):
 
 class CSPRepLayer(nn.Module):
     def __init__(self,
-                 in_channels,
-                 out_channels,
-                 num_blocks=3,
-                 expansion=1.0,
-                 bias=None,
-                 act="silu"):
+                in_channels,
+                out_channels,
+                num_blocks=3,
+                expansion=1.0,
+                bias=None,
+                act="silu"):
         super(CSPRepLayer, self).__init__()
         hidden_channels = int(out_channels * expansion)
         self.conv1 = ConvNormLayer(in_channels, hidden_channels, 1, 1, bias=bias, act=act)
@@ -261,12 +261,12 @@ class CSPRepLayer(nn.Module):
 # transformer
 class TransformerEncoderLayer(nn.Module):
     def __init__(self,
-                 d_model,
-                 nhead,
-                 dim_feedforward=2048,
-                 dropout=0.1,
-                 activation="relu",
-                 normalize_before=False):
+                d_model,
+                nhead,
+                dim_feedforward=2048,
+                dropout=0.1,
+                activation="relu",
+                normalize_before=False):
         super().__init__()
         self.normalize_before = normalize_before
 
@@ -399,7 +399,7 @@ class HybridEncoder(nn.Module):
             activation=enc_act)
 
         self.encoder = nn.ModuleList([
-            TransformerEncoder(copy.deepcopy(encoder_layer), num_encoder_layers) for _ in range(3)
+            TransformerEncoder(copy.deepcopy(encoder_layer), num_encoder_layers) for _ in range(len(use_encoder_idx))
         ])
 
         # top-down fpn
