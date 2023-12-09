@@ -22,13 +22,24 @@ logvalidtracker = logging.getLogger(f"train.vaild.{__name__}")
 import wandb,yaml
 with open("configs/rtdetr/include/optimizer.yml") as file:
     cfg = yaml.safe_load(file)
-wandb.init(
-    # set the wandb project where this run will be logged
-    project="RTDETR_Refactor_NEU",
-    name = cfg['names'],
-    # # track hyperparameters and run metadata
-    config=cfg
-)
+
+if cfg['names']== None:
+    wandb.init(
+        mode="disabled",
+        # set the wandb project where this run will be logged
+        project="RTDETR_Refactor_NEU",
+        name = cfg['names'],
+        # # track hyperparameters and run metadata
+        config=cfg
+    )
+else:
+    wandb.init(
+        # set the wandb project where this run will be logged
+        project="RTDETR_Refactor_NEU",
+        name = cfg['names'],
+        # # track hyperparameters and run metadata
+        config=cfg
+    )
 def wandb_prefixlogs(loss_dict,train=True):
     if train:
         prefix = "train"
