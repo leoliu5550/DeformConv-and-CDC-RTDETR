@@ -4,9 +4,9 @@ by lyuwenyu
 import time 
 import json
 import datetime
-
+import os
 import torch 
-
+import requests
 from src.misc import dist
 from src.data import get_coco_api_from_dataset
 
@@ -154,6 +154,17 @@ class DetSolver(BaseSolver):
         total_time_str = str(datetime.timedelta(seconds=int(total_time)))
         print('Training time {}'.format(total_time_str))
         logtracker.debug(f'Training time = {total_time_str}')
+        print(f"pwd is {os.getcwd()}")
+        token = "NWBdEgLUPbCLNcs48EaiDBU3jxDIyWBcBwFFDooW3GJ"
+        url = 'https://notify-api.line.me/api/notify'
+        headers = {
+            'Authorization': 'Bearer ' + token    # 設定權杖
+        }
+        msg = f'\nTASK {os.getcwd()} is finished \nTraining time = {total_time_str}'
+        data = {
+            'message': msg    # 設定要發送的訊息
+        }
+        data = requests.post(url, headers=headers, data=data)   # 使用 POST 方法
 
 
     def val(self, ):
