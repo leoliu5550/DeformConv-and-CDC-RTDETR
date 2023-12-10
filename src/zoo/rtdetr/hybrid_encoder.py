@@ -11,7 +11,10 @@ from .utils import get_activation
 
 from src.core import register
 import math
-
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logtracker = logging.getLogger(f"model.HybridEncoder.{__name__}")
 __all__ = ['HybridEncoder']
 
 class DeformConvBlock(nn.Module):
@@ -457,9 +460,12 @@ class HybridEncoder(nn.Module):
         proj_feats = [self.input_proj[i](feat) for i, feat in enumerate(feats)]
         
         # encoder
+        # for rwo in proj_feats:
+        #     logtracker.debug(f" shape is {rwo.shape}")
         if self.num_encoder_layers > 0:
             for i, enc_ind in enumerate(self.use_encoder_idx):
                 h, w = proj_feats[enc_ind].shape[2:]
+                # logtracker.debug(f"at {enc_ind} shape is {proj_feats[enc_ind].shape}")
                 # flatten [B, C, H, W] to [B, HxW, C]
                 src_flatten = proj_feats[enc_ind].flatten(2).permute(0, 2, 1)
                 if self.training or self.eval_spatial_size is None:
@@ -471,7 +477,8 @@ class HybridEncoder(nn.Module):
                 memory = self.encoder[i](src_flatten, pos_embed=pos_embed)
                 proj_feats[enc_ind] = memory.permute(0, 2, 1).reshape(-1, self.hidden_dim, h, w).contiguous()
                 # print([x.is_contiguous() for x in proj_feats ])
-
+        for i,rw in enumerate(proj_feats):
+            logtracker.debug(f"the {i} shape is {rw.shape}")
         # broadcasting and fusion
         inner_outs = [proj_feats[-1]]
         for idx in range(len(self.in_channels) - 1, 0, -1):
@@ -490,5 +497,6 @@ class HybridEncoder(nn.Module):
             downsample_feat = self.downsample_convs[idx](feat_low)
             out = self.pan_blocks[idx](torch.concat([downsample_feat, feat_height], dim=1))
             outs.append(out)
-
+        # for rw in outs:
+        #     logtracker.debug(f" shape is {rw.shape}")
         return outs

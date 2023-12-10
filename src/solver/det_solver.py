@@ -66,6 +66,7 @@ class DetSolver(BaseSolver):
         n_parameters = sum(p.numel() for p in self.model.parameters() if p.requires_grad)
         # print('number of params:', n_parameters)
         wandb.log({"n_parameters":n_parameters})
+
         logtracker.debug(f"number of params: { n_parameters}")
 
         base_ds = get_coco_api_from_dataset(self.val_dataloader.dataset)
@@ -160,7 +161,7 @@ class DetSolver(BaseSolver):
         headers = {
             'Authorization': 'Bearer ' + token    # 設定權杖
         }
-        msg = f'\nTASK {os.getcwd()} is finished \nTraining time = {total_time_str}'
+        msg = f'\nTASK {os.path.split(os.getcwd())[1]} is finished \nTraining time = {total_time_str}'
         data = {
             'message': msg    # 設定要發送的訊息
         }

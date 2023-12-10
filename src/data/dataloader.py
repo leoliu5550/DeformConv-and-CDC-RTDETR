@@ -3,6 +3,10 @@ import torch.utils.data as data
 
 from src.core import register
 
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logtracker = logging.getLogger(f"coco.{__name__}")
 
 __all__ = ['DataLoader']
 
@@ -17,6 +21,7 @@ class DataLoader(data.DataLoader):
             format_string += "\n"
             format_string += "    {0}: {1}".format(n, getattr(self, n))
         format_string += "\n)"
+        logtracker.debug(format_string)
         return format_string
 
 
