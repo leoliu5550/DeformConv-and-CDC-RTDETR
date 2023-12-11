@@ -1,4 +1,4 @@
-names: s1s2encoder
+names: 
 use_ema: True 
 ema:
   type: ModelEMA

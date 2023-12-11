@@ -6,6 +6,7 @@ import json
 import datetime
 import os
 import torch 
+
 import requests
 from src.misc import dist
 from src.data import get_coco_api_from_dataset
@@ -64,9 +65,10 @@ class DetSolver(BaseSolver):
         args = self.cfg 
         
         n_parameters = sum(p.numel() for p in self.model.parameters() if p.requires_grad)
-        # print('number of params:', n_parameters)
-        wandb.log({"n_parameters":n_parameters})
-
+        # wandb.log({"n_parameters":n_parameters})
+    
+        wandb.config.n_parameters = n_parameters
+ 
         logtracker.debug(f"number of params: { n_parameters}")
 
         base_ds = get_coco_api_from_dataset(self.val_dataloader.dataset)
@@ -113,8 +115,8 @@ class DetSolver(BaseSolver):
                 self.output_dir
             )
             wandb_prefixlogs(valid_loss_dict,train=False)
-            
-            
+            print("test_stats")
+            print(test_stats)
             logvalidtracker.debug(f"valid test_stats \n{test_stats}")
             logvalidtracker.debug(f"valid test_stats data type\n{type(test_stats)}")
             logvalidtracker.debug(f"valid coco_evaluator \n{coco_evaluator}")
