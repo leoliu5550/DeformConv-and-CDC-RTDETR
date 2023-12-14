@@ -477,8 +477,7 @@ class HybridEncoder(nn.Module):
                 memory = self.encoder[i](src_flatten, pos_embed=pos_embed)
                 proj_feats[enc_ind] = memory.permute(0, 2, 1).reshape(-1, self.hidden_dim, h, w).contiguous()
                 # print([x.is_contiguous() for x in proj_feats ])
-        for i,rw in enumerate(proj_feats):
-            logtracker.debug(f"the {i} shape is {rw.shape}")
+
         # broadcasting and fusion
         inner_outs = [proj_feats[-1]]
         for idx in range(len(self.in_channels) - 1, 0, -1):
