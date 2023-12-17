@@ -31,7 +31,11 @@ class RTDETR(nn.Module):
             x = F.interpolate(x, size=[sz, sz])
             
         x = self.backbone(x)
-        x = self.encoder(x)        
+        x = self.encoder(x)      
+        print("#"*80)
+        print("encoder shape")
+        for out in x:
+            print(out.shape)  
         x = self.decoder(x, targets)
 
         return x

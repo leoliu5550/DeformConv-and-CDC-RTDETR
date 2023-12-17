@@ -331,20 +331,20 @@ class TransformerEncoder(nn.Module):
 @register
 class HybridEncoder(nn.Module):
     def __init__(self,
-                 in_channels=[512, 1024, 2048],
-                 feat_strides=[8, 16, 32],
-                 hidden_dim=256,
-                 nhead=8,
-                 dim_feedforward = 1024,
-                 dropout=0.0,
-                 enc_act='gelu',
-                 use_encoder_idx=[2],
-                 num_encoder_layers=1,
-                 pe_temperature=10000,
-                 expansion=1.0,
-                 depth_mult=1.0,
-                 act='silu',
-                 eval_spatial_size=None):
+                in_channels=[512, 1024, 2048],
+                feat_strides=[8, 16, 32],
+                hidden_dim=256,
+                nhead=8,
+                dim_feedforward = 1024,
+                dropout=0.0,
+                enc_act='gelu',
+                use_encoder_idx=[2],
+                num_encoder_layers=1,
+                pe_temperature=10000,
+                expansion=1.0,
+                depth_mult=1.0,
+                act='silu',
+                eval_spatial_size=None):
         super().__init__()
         self.in_channels = in_channels
         self.feat_strides = feat_strides
@@ -477,6 +477,11 @@ class HybridEncoder(nn.Module):
                 memory = self.encoder[i](src_flatten, pos_embed=pos_embed)
                 proj_feats[enc_ind] = memory.permute(0, 2, 1).reshape(-1, self.hidden_dim, h, w).contiguous()
                 # print([x.is_contiguous() for x in proj_feats ])
+
+        # add yolov1 backbone after encoder layer
+        
+
+
 
         # broadcasting and fusion
         inner_outs = [proj_feats[-1]]
