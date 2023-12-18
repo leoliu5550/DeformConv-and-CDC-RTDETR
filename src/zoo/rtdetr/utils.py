@@ -113,4 +113,3 @@ def get_activation(act: str, inpace: bool=True):
     
     return m 
 
-

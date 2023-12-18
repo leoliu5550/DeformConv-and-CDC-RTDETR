@@ -32,8 +32,8 @@ cfg = YAMLConfig(
     # print(cfg)
 
 print(cfg.model)
-print(cfg.find_unused_parameters)
-print(cfg.sync_bn)
+# print(cfg.find_unused_parameters)
+# print(cfg.sync_bn)
 # class resnet:
 #     __inject__ = ['backbone']
 #     def __init__(self, backbone: nn.Module):

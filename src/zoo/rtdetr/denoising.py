@@ -19,10 +19,9 @@ def get_contrastive_denoising_training_group(targets,
     if num_denoising <= 0:
         return None, None, None, None
 
-    num_gts = [t for t in targets]
-    # num_gts = [len(t['labels']) for t in targets]
-    device = 'cpu'
-    # device = targets[0]['labels'].device 
+    num_gts = [len(t['labels']) for t in targets]
+    device = targets[0]['labels'].device
+    
     max_gt_num = max(num_gts)
     if max_gt_num == 0:
         return None, None, None, None
