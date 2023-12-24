@@ -1,18 +1,18 @@
-device: 'cuda:0'
-notes: 'cpu'
+device: 'cpu'
+notes: 'cuda:0'
 
 task: detection
 statement: '11/4 train model with no denoise queries'
 wandbname: '1113runtest'
 train:
-  save_dir: runs/exp1
-  epoch: 100
+  save_dir: 'runs'
+  epoch: 1
   base_lr: 0.001
   img_size: 800
   label_smoothing: 0.0
   optimizer: 
   save: true
-  save_period: 50
+  save_period: 1
   tolerance_period: 50
   tolerance: 0.00001
   
@@ -33,14 +33,14 @@ data:
     type: DataLoader
     dataset: 
       type: CocoDetection
-      img_folder: /data/lcliu/coco_dataset/train2017/
-      ann_file: /data/lcliu/coco_dataset/annotations/instances_train2017.json
+      img_folder: /Users/leoliu/Documents/DATA/neu-det-debug/train
+      ann_file: /Users/leoliu/Documents/DATA/neu-det-debug/train_annotations.coco.json
       transforms:
         type: Compose
         ops: ~
     shuffle: False
-    batch_size: 8
-    num_workers: 4
+    batch_size: 2
+    num_workers: 1
     drop_last: True 
 
 
@@ -48,15 +48,15 @@ data:
     type: DataLoader
     dataset: 
       type: CocoDetection
-      img_folder: /data/lcliu/coco_dataset/val2017/
-      ann_file: /data/lcliu/coco_dataset/annotations/instances_val2017.json
+      img_folder: /Users/leoliu/Documents/DATA/neu-det-debug/valid
+      ann_file: /Users/leoliu/Documents/DATA/neu-det-debug/valid_annotations.coco.json
       transforms:
         type: Compose
         ops: ~ 
 
     shuffle: False
-    batch_size: 8
-    num_workers: 4
+    batch_size: 2
+    num_workers: 1
     drop_last: False
 
 
@@ -104,7 +104,7 @@ model:
     dim_feedforward: 1024
     dropout: 0.
     activation: 'silu'
-    num_denoising: 0
+    num_denoising: 100
     label_noise_ratio: 0.5
     box_noise_scale: 1.0
     learnt_init_query: False

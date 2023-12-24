@@ -18,14 +18,7 @@ logger = logging.getLogger(f"train.{__name__}")
 cfg_path = "model_config.yaml"
 with open(cfg_path,"r") as file:
     cfg = yaml.safe_load(file)
-# start a new wandb run to track this script
-# wandb.init(
-#     # set the wandb project where this run will be logged
-#     project="RTDETR_Refactor",
-#     name = "test4",
-#     # track hyperparameters and run metadata
-#     config=cfg
-# )
+
 # project total config
 training_cfg = cfg['train']
 data_cfg = cfg['data']
@@ -121,20 +114,16 @@ def main():
             output = model(data)
             # calculate the loss
             validloss = criter(output, target)
-            valloss = sum(validloss)
+             
+            logger.debug(f"validloss : {validloss}")
+            valloss = sum(validloss.values())
             logger.info(f"valid loss : {valloss}")
             # record validation loss
 
         if epoch == training_cfg['save_period']:
-            print(f"loss save at {epoch}")
-            # for loss_name,loss_value in trainloss.items():
-            #     wandb.log({f"train-{loss_name}":loss_value})
-            # for loss_name,loss_value in validloss.items():
-            #     wandb.log({f"valid-{loss_name}":loss_value})
 
-
-            
-            torch.save(model,os.path.join(cfg_path['save_dir'],"checkpoint{epoch}.pt"))
+            logger.info(f"loss save at {epoch}")
+            torch.save(model,os.path.join(cfg['save_dir'],"last.pt"))
             
 
             
@@ -150,9 +139,12 @@ def main():
         # last_loss = valloss
 # {epoch:>{training_cfg['epoch']}}/{epoch:>{training_cfg['epoch']}}
 
-        print(f"training msg : [{epoch}/{training_cfg['epoch']}] | tarin loss : {loss} | valid loss : ")#{valloss }
-
-    torch.save(model,os.path.join(cfg_path['save_dir'],"last.pt"))
+        logger.info(f"training msg : [{epoch}/{training_cfg['epoch']}] | tarin loss : {loss} | valid loss : {valloss }")
+        dir_path = os.path.join(cfg['train']['save_dir'],f"exp{len(os.listdir(cfg['train']['save_dir']))+1}")
+        if not os.path.exists(dir_path) :
+            os.makedirs(dir_path) 
+        torch.save(model,os.path.join(dir_path,f"checkpoint{epoch}.pt"))
+        print(model)
 
     pass
 

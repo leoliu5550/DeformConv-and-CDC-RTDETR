@@ -73,9 +73,11 @@ class rtdetr(nn.Module):
             aux_loss=decoder_cfg.aux_loss
         )
 
-    def forward(self,x):
+    def forward(self,x,target = None):
         x = self.backbone(x)
         x = self.HybirdEncoder(x)
+        if target != None:
+            x = self.decoder(x,target)
         x = self.decoder(x)
         return x
     
