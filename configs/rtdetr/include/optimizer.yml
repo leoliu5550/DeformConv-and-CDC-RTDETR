@@ -1,4 +1,4 @@
-names: half_yolo_noencoder
+names: half_yolo_r2encoder_v2
 use_ema: True 
 ema:
   type: ModelEMA
@@ -8,7 +8,7 @@ ema:
 
 find_unused_parameters: True 
 
-epoches: 80
+epoches: 100
 clip_max_norm: 0.1
 
 optimizer:

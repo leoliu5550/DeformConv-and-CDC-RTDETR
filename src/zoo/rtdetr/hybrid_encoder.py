@@ -570,7 +570,9 @@ class HybridEncoder(nn.Module):
         yolo_feats = self.yolov1(ori_x)
         assert len(feats) == len(self.in_channels)
         proj_feats = [self.input_proj[i](feat) for i, feat in enumerate(feats)]
-        
+        # add yolov1 backbone after encoder layer
+        for i in range(len(yolo_feats)):
+            proj_feats[i] =  yolo_feats[i]+proj_feats[i]
         # encoder
         # for rwo in proj_feats:
         #     logtracker.debug(f" shape is {rwo.shape}")
@@ -590,9 +592,7 @@ class HybridEncoder(nn.Module):
                 proj_feats[enc_ind] = memory.permute(0, 2, 1).reshape(-1, self.hidden_dim, h, w).contiguous()
                 # print([x.is_contiguous() for x in proj_feats ])
 
-        # add yolov1 backbone after encoder layer
-        for i in range(len(yolo_feats)):
-            proj_feats[i] =  yolo_feats[i]+proj_feats[i]
+
 
 
 
