@@ -9,7 +9,7 @@ from .box_ops import box_cxcywh_to_xyxy, box_xyxy_to_cxcywh
 import logging
 import logging.config
 logging.config.fileConfig('logging.conf')
-logger = logging.getLogger(f"model.{__name__}")
+logger = logging.getLogger(f"model.denoising.{__name__}")
 
 
 
@@ -24,8 +24,8 @@ def get_contrastive_denoising_training_group(targets,
     if num_denoising <= 0:
         return None, None, None, None
 
-    num_gts = [t for t in targets]
-    # num_gts = [len(t['labels']) for t in targets]
+    # num_gts = [t for t in targets]
+    num_gts = [len(t['labels']) for t in targets]
     device = 'cpu'
     # device = targets[0]['labels'].device 
     max_gt_num = max(num_gts)
@@ -129,5 +129,8 @@ def get_contrastive_denoising_training_group(targets,
     # print(input_query_class.shape) # torch.Size([4, 196, 256])
     # print(input_query_bbox.shape) # torch.Size([4, 196, 4])
     # print(attn_mask.shape) # torch.Size([496, 496])
-    
+    logger.debug(f"\ninput_query_class=\n{input_query_class}")
+    logger.debug(f"\ninput_query_bbox=\n{input_query_bbox}")
+    logger.debug(f"\nattn_mask=\n{attn_mask}")
+    logger.debug(f"\ndn_meta=\n{dn_meta}")
     return input_query_class, input_query_bbox, attn_mask, dn_meta

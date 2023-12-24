@@ -93,12 +93,13 @@ def main():
 
             # forward pass
             data = torch.stack(data) 
-            output = model(data)
+            output = model(data,target)
             
             # calculate the loss
             trainloss = criter(output, target)
+            # logger.debug(f"\n{target}")
             loss = sum(trainloss.values())
-            logger.info(f"train loss : {loss}")
+            # logger.info(f"train loss : {loss}")
             # backward pass: compute gradient of the loss with respect to model parameters
             loss.backward()
             # perform a single optimization step (parameter update)

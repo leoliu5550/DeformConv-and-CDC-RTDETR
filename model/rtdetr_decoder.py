@@ -407,9 +407,6 @@ class RTDETRTransformer(nn.Module):
     def _get_encoder_input(self, feats):
         # get projection features
         proj_feats = [self.input_proj[i](feat) for i, feat in enumerate(feats)]
-
-
-
         if self.num_levels > len(proj_feats):
             len_srcs = len(proj_feats)
             for i in range(len_srcs, self.num_levels):
@@ -421,7 +418,7 @@ class RTDETRTransformer(nn.Module):
         # get encoder inputs
         feat_flatten = []
         spatial_shapes = []
-        level_start_index = [0, ]
+        level_start_index = [0,]
         for i, feat in enumerate(proj_feats):
             _, _, h, w = feat.shape
             # [b, c, h, w] -> [b, h*w, c]
@@ -529,7 +526,9 @@ class RTDETRTransformer(nn.Module):
 
         # input projection and embedding
         (memory, spatial_shapes, level_start_index) = self._get_encoder_input(feats)
-
+        logger.debug(f"\nmemory= \n {memory}")
+        logger.debug(f"\nspatial_shapes= \n {spatial_shapes}")
+        logger.debug(f"\nlevel_start_index= \n {level_start_index}")
         # prepare denoising training
         if self.training and self.num_denoising > 0:
             denoising_class, denoising_bbox_unact, attn_mask, dn_meta = \
@@ -551,8 +550,10 @@ class RTDETRTransformer(nn.Module):
 
         target, init_ref_points_unact, enc_topk_bboxes, enc_topk_logits = \
             self._get_decoder_input(memory, spatial_shapes, denoising_class, denoising_bbox_unact)
-
-
+        # logger.debug(f"\ntarget = \n {target}")
+        # logger.debug(f"\ninit_ref_points_unact= \n {init_ref_points_unact}")
+        # logger.debug(f"\nenc_topk_bboxes= \n {enc_topk_bboxes}")
+        # logger.debug(f"\nenc_topk_logits= \n {enc_topk_logits}")
         # decoder
         out_bboxes, out_logits = self.decoder(
             target,
@@ -564,7 +565,8 @@ class RTDETRTransformer(nn.Module):
             self.dec_score_head,
             self.query_pos_head,
             attn_mask=attn_mask)
-
+        logger.debug(f"out_bboxes = \n{out_bboxes}")
+        logger.debug(f"out_logits = \n{out_logits}")
         if self.training and dn_meta is not None:
             dn_out_bboxes, out_bboxes = torch.split(out_bboxes, dn_meta['dn_num_split'], dim=2)
             dn_out_logits, out_logits = torch.split(out_logits, dn_meta['dn_num_split'], dim=2)
