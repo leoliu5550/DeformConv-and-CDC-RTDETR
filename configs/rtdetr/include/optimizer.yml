@@ -1,4 +1,4 @@
-names: half_yolo_r2encoder_v2
+names: remainet_bone
 use_ema: True 
 ema:
   type: ModelEMA

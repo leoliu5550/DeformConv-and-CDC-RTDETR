@@ -5,6 +5,8 @@ import copy
 import torch 
 import torch.nn as nn 
 import torch.nn.functional as F 
+
+from data.functional import interpolate
 from torchvision.ops import deform_conv2d
 
 from .utils import get_activation
@@ -54,8 +56,6 @@ class DeformConvBlock(nn.Module):
         
         return out
 
-
-
 class Conv2d_cdiffBlock(nn.Module):
     def __init__(self,
                 ch_in, 
@@ -101,7 +101,6 @@ class Conv2d_cdiffBlock(nn.Module):
             out = out_normal - self.theta * out_diff
             out = self.act(out)
             return out
-
 
 class ConvNormLayer(nn.Module):
     def __init__(self, ch_in, ch_out, kernel_size, stride, padding=None, bias=False, act=None):
@@ -309,7 +308,6 @@ class TransformerEncoderLayer(nn.Module):
             src = self.norm2(src)
         return src
 
-
 class TransformerEncoder(nn.Module):
     def __init__(self, encoder_layer, num_layers, norm=None):
         super(TransformerEncoder, self).__init__()
@@ -326,7 +324,6 @@ class TransformerEncoder(nn.Module):
             output = self.norm(output)
 
         return output
-
 
 class CNNBlock(nn.Module):
     def __init__(self,in_channels,out_channels,**kwargs):
@@ -437,6 +434,42 @@ class Yolov1(nn.Module):
 
         return nn.ModuleDict(subdict)
 
+class remainet(nn.Module):
+    def __init__(self,in_channels):
+        super().__init__()
+        self.transchannel_conv = CNNBlock(
+            in_channels=in_channels,
+            out_channels=256,
+            kernel_size =3
+        )
+        self.transchannel_conv1 = CNNBlock(
+            in_channels=256,
+            out_channels=256,
+            kernel_size =3
+        )
+        self.transchannel_conv2 = CNNBlock(
+            in_channels=256,
+            out_channels=256,
+            kernel_size =3
+        )
+        self.transchannel_conv3 = CNNBlock(
+            in_channels=256,
+            out_channels=256,
+            kernel_size =3
+        )
+        self.pool = nn.AvgPool2d(kernel_size=(2,2 ),stride=2)
+
+    def forward(self,x):
+        _,_,w,h = x.shape
+        x = self.transchannel_conv(x)
+        feat1 = self.transchannel_conv1(x)
+        feat1 = self.pool(feat1)
+        feat2 = self.transchannel_conv2(feat1)
+        feat2 = self.pool(feat2)
+        feat3 = self.transchannel_conv3(feat2)
+        feat3 = self.pool(feat3)
+        return [interpolate(feat1,(w//8,h//8)),interpolate(feat1,(w//16,h//16)),interpolate(feat3,((w//32,h//32)))]
+
 
 @register
 class HybridEncoder(nn.Module):
@@ -536,7 +569,7 @@ class HybridEncoder(nn.Module):
             )
 
         self._reset_parameters()
-        self.yolov1 = Yolov1()
+        self.remainet = remainet(in_channels=3)
 
     def _reset_parameters(self):
         if self.eval_spatial_size:
@@ -567,12 +600,12 @@ class HybridEncoder(nn.Module):
         return torch.concat([out_w.sin(), out_w.cos(), out_h.sin(), out_h.cos()], dim=1)[None, :, :]
 
     def forward(self, feats,ori_x):
-        yolo_feats = self.yolov1(ori_x)
+        subbone_feats = self.remainet(ori_x)
         assert len(feats) == len(self.in_channels)
         proj_feats = [self.input_proj[i](feat) for i, feat in enumerate(feats)]
         # add yolov1 backbone after encoder layer
-        for i in range(len(yolo_feats)):
-            proj_feats[i] =  yolo_feats[i]+proj_feats[i]
+        for i in range(len(subbone_feats)):
+            proj_feats[i] =  subbone_feats[i]*0.2 +proj_feats[i]
         # encoder
         # for rwo in proj_feats:
         #     logtracker.debug(f" shape is {rwo.shape}")
