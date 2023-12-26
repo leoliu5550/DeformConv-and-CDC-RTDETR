@@ -5,8 +5,7 @@ import copy
 import torch 
 import torch.nn as nn 
 import torch.nn.functional as F 
-
-from data.functional import interpolate
+import torchvision
 from torchvision.ops import deform_conv2d
 
 from .utils import get_activation
@@ -433,6 +432,24 @@ class Yolov1(nn.Module):
                     in_channels = conv2[1]
 
         return nn.ModuleDict(subdict)
+
+def interpolate(input, size=None, scale_factor=None, mode="nearest", align_corners=None):
+    """
+    Equivalent to nn.functional.interpolate, but with support for empty batch sizes.
+    This will eventually be supported natively by PyTorch, and this
+    class can go away.
+    """
+    # if version.parse(torchvision.__version__) < version.parse('0.7'):
+    #     if input.numel() > 0:
+    #         return torch.nn.functional.interpolate(
+    #             input, size, scale_factor, mode, align_corners
+    #         )
+
+    #     output_shape = _output_size(2, input, size, scale_factor)
+    #     output_shape = list(input.shape[:-2]) + list(output_shape)
+    #     return _new_empty_tensor(input, output_shape)
+    # else:
+    return torchvision.ops.misc.interpolate(input, size, scale_factor, mode, align_corners)
 
 class remainet(nn.Module):
     def __init__(self,in_channels):
