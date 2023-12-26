@@ -1,4 +1,4 @@
-names: nonencoderCDIFF
+names: r2encoderCDIFF
 use_ema: True 
 ema:
   type: ModelEMA
