@@ -129,8 +129,8 @@ def get_contrastive_denoising_training_group(targets,
     # print(input_query_class.shape) # torch.Size([4, 196, 256])
     # print(input_query_bbox.shape) # torch.Size([4, 196, 4])
     # print(attn_mask.shape) # torch.Size([496, 496])
-    logger.debug(f"\ninput_query_class=\n{input_query_class}")
-    logger.debug(f"\ninput_query_bbox=\n{input_query_bbox}")
-    logger.debug(f"\nattn_mask=\n{attn_mask}")
-    logger.debug(f"\ndn_meta=\n{dn_meta}")
+    # logger.debug(f"\ninput_query_class=\n{input_query_class}")
+    # logger.debug(f"\ninput_query_bbox=\n{input_query_bbox}")
+    # logger.debug(f"\nattn_mask=\n{attn_mask}")
+    # logger.debug(f"\ndn_meta=\n{dn_meta}")
     return input_query_class, input_query_bbox, attn_mask, dn_meta

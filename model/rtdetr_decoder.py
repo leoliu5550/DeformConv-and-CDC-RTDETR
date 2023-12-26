@@ -530,7 +530,9 @@ class RTDETRTransformer(nn.Module):
         logger.debug(f"\nspatial_shapes= \n {spatial_shapes}")
         logger.debug(f"\nlevel_start_index= \n {level_start_index}")
         # prepare denoising training
+        logger.debug(f"broken1")
         if self.training and self.num_denoising > 0:
+            logger.debug(f"broken2")
             denoising_class, denoising_bbox_unact, attn_mask, dn_meta = \
                 get_contrastive_denoising_training_group(targets, \
                     self.num_classes, 
@@ -543,17 +545,17 @@ class RTDETRTransformer(nn.Module):
             denoising_class, denoising_bbox_unact, attn_mask, dn_meta = None, None, None, None
 
 
-
+        
         # print("#######rtdetr transformer#####")
         # print(targets)
 
 
         target, init_ref_points_unact, enc_topk_bboxes, enc_topk_logits = \
             self._get_decoder_input(memory, spatial_shapes, denoising_class, denoising_bbox_unact)
-        # logger.debug(f"\ntarget = \n {target}")
-        # logger.debug(f"\ninit_ref_points_unact= \n {init_ref_points_unact}")
-        # logger.debug(f"\nenc_topk_bboxes= \n {enc_topk_bboxes}")
-        # logger.debug(f"\nenc_topk_logits= \n {enc_topk_logits}")
+        logger.debug(f"\ntarget = \n {target}")
+        logger.debug(f"\ninit_ref_points_unact= \n {init_ref_points_unact}")
+        logger.debug(f"\nenc_topk_bboxes= \n {enc_topk_bboxes}")
+        logger.debug(f"\nenc_topk_logits= \n {enc_topk_logits}")
         # decoder
         out_bboxes, out_logits = self.decoder(
             target,
