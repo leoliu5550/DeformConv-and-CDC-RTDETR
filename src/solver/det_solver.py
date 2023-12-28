@@ -163,7 +163,9 @@ class DetSolver(BaseSolver):
         headers = {
             'Authorization': 'Bearer ' + token    # 設定權杖
         }
-        msg = f'\nTASK {os.path.split(os.getcwd())[1]} is finished \nTraining time = {total_time_str}'
+        with open("configs/rtdetr/include/optimizer.yml", 'r') as file:
+            linecfg = yaml.safe_load(file)['names']
+        msg = f'\nTASK {linecfg} is finished \nTraining time = {total_time_str}'
         data = {
             'message': msg    # 設定要發送的訊息
         }
