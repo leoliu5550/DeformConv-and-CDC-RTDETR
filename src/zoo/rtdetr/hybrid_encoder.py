@@ -469,31 +469,31 @@ class HybridEncoder(nn.Module):
         
         # channel projection
         self.input_proj = nn.ModuleList()
-        for layer_idx,in_channel in enumerate(in_channels) :
-            # add deform convlayer to all
-            # self.input_proj.append(
-            #     nn.Sequential(
-            #         # let deform conv remain same size after deformconv
-            #         DeformConvBlock(in_channel, hidden_dim, kernel_size=3, stride=1, padding=1,bias=False),
-            #         nn.BatchNorm2d(hidden_dim)
-            #     )
-            # )
+        # for layer_idx,in_channel in enumerate(in_channels) :
+        #     # add deform convlayer to all
+        #     # self.input_proj.append(
+        #     #     nn.Sequential(
+        #     #         # let deform conv remain same size after deformconv
+        #     #         DeformConvBlock(in_channel, hidden_dim, kernel_size=3, stride=1, padding=1,bias=False),
+        #     #         nn.BatchNorm2d(hidden_dim)
+        #     #     )
+        #     # )
         
-            if layer_idx == len(in_channels)-1:
-                self.input_proj.append(
-                    nn.Sequential(
-                        # let deform conv remain same size after deformconv
-                        Conv2d_cdiffBlock(in_channel, hidden_dim, kernel_size=3, stride=1, padding=1,bias=False),
-                        nn.BatchNorm2d(hidden_dim)
-                    )
-                )
-            else:
-                self.input_proj.append(
-                    nn.Sequential(
-                        nn.Conv2d(in_channel, hidden_dim, kernel_size=1, bias=False),
-                        nn.BatchNorm2d(hidden_dim)
-                    )
-                )
+        #     if layer_idx == len(in_channels)-1:
+        #         self.input_proj.append(
+        #             nn.Sequential(
+        #                 # let deform conv remain same size after deformconv
+        #                 Conv2d_cdiffBlock(in_channel, hidden_dim, kernel_size=3, stride=1, padding=1,bias=False),
+        #                 nn.BatchNorm2d(hidden_dim)
+        #             )
+        #         )
+        #     else:
+        #         self.input_proj.append(
+        #             nn.Sequential(
+        #                 nn.Conv2d(in_channel, hidden_dim, kernel_size=1, bias=False),
+        #                 nn.BatchNorm2d(hidden_dim)
+        #             )
+        #         )
                 
         for in_channel in in_channels:
             self.input_proj.append(
@@ -536,7 +536,7 @@ class HybridEncoder(nn.Module):
             )
 
         self._reset_parameters()
-        self.yolov1 = Yolov1()
+        # self.yolov1 = Yolov1()
 
     def _reset_parameters(self):
         if self.eval_spatial_size:
@@ -567,7 +567,7 @@ class HybridEncoder(nn.Module):
         return torch.concat([out_w.sin(), out_w.cos(), out_h.sin(), out_h.cos()], dim=1)[None, :, :]
 
     def forward(self, feats,ori_x):
-        yolo_feats = self.yolov1(ori_x)
+        # yolo_feats = self.yolov1(ori_x)
         assert len(feats) == len(self.in_channels)
         proj_feats = [self.input_proj[i](feat) for i, feat in enumerate(feats)]
 
@@ -591,8 +591,8 @@ class HybridEncoder(nn.Module):
                 # print([x.is_contiguous() for x in proj_feats ])
 
         # add yolov1 backbone after encoder layer
-        for i in range(len(yolo_feats)):
-            proj_feats[i] =  yolo_feats[i]+proj_feats[i]
+        # for i in range(len(yolo_feats)):
+        #     proj_feats[i] =  yolo_feats[i]+proj_feats[i]
 
 
 
