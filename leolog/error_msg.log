@@ -1,6 +1,2 @@
-2023-12-29 01:21:50 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
-2023-12-29 01:30:01 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
-2023-12-29 01:38:11 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
-2023-12-29 01:46:25 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
-2023-12-29 01:54:34 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
-2023-12-29 02:02:48 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
+2024-01-07 14:14:16 [test.__main__][DEBUG] [test_register/<module>] - 20  : 
+ {'detection': <class 'src.solver.det_solver.DetSolver'>}

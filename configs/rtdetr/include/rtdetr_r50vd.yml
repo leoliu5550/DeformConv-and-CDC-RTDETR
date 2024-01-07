@@ -6,11 +6,12 @@ postprocessor: RTDETRPostProcessor
 
 
 RTDETR: 
-  backbone: PResNet
+  backbone: efficientnet
   encoder: HybridEncoder
   decoder: RTDETRTransformer
   multi_scale: [480, 512, 544, 576, 608, 640, 640, 640, 672, 704, 736, 768, 800]
-
+efficientnet:
+  depth: 
 PResNet:
   depth: 50
   variant: d
@@ -18,7 +19,7 @@ PResNet:
   return_idx: [1, 2, 3]
   num_stages: 4
   freeze_norm: True
-  pretrained: True 
+  pretrained: False
 
 HybridEncoder:
   in_channels: [512, 1024, 2048]
