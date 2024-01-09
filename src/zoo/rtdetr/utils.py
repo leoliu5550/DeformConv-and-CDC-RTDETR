@@ -54,7 +54,7 @@ def deformable_attention_core_func(value, value_spatial_shapes, sampling_locatio
         bs * n_head, 1, Len_q, n_levels * n_points)
     # for rw in sampling_value_list:
     #     logtracker.debug(rw.shape)
-    logtracker.debug(f"attention_weights = {attention_weights.shape}")
+    # logtracker.debug(f"attention_weights = {attention_weights.shape}")
     if hasattr(torch.cuda, 'empty_cache'):
         torch.cuda.empty_cache()
         

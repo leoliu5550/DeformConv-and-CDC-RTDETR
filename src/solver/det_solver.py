@@ -174,7 +174,7 @@ class DetSolver(BaseSolver):
             data = requests.post(url, headers=headers, data=data)   # 使用 POST 方法
         except Exception as error:
             
-            msg = f'\nTASK {linecfg} is failled \nTraining time = {total_time_str}'
+            msg = f'\nTASK {linecfg} is failled.'
             data = {
                 'message': msg    # 設定要發送的訊息
             }

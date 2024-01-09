@@ -40,12 +40,12 @@ class efficientnet(nn.Module):
             self.standard_model.features[0],
             # self.standard_model.features[1],
             self.standard_model.features[2],
-            self.standard_model.features[3],
+            self.standard_model.features[3]
         )
         # self.bs3 = self.standard_model.features[0:4]
         # [-1, 96, 80, 80]
         self.bs4 = nn.Sequential(
-            self.standard_model.features[4],
+            self.standard_model.features[4][0:2],
             self.standard_model.features[5][0:2]
         )
         # self.bs4 = self.standard_model.features[4:6]# [-1, 224, 40, 40]
@@ -53,21 +53,19 @@ class efficientnet(nn.Module):
             self.standard_model.features[6][0:2],
             self.standard_model.features[7]
         )
-        # self.bs5 = self.standard_model.features[6:]# [-1, 1280, 20, 20]
-        
         self.input_proj = nn.ModuleList()
         for in_channel in [64,160,1280]: # 1280
             self.input_proj.append(
                 CNNBlock(in_channels=in_channel,out_channels=256,kernel_size=3)
             )
-        self._reset_parameters()
+    #     self._reset_parameters()
         
-    def _reset_parameters(self):
-        for submodel in [self.bs3,self.bs4,self.bs5]:
-            for layers in submodel:
-                for lay in layers:
-                    if lay== "Conv2d":
-                        nn.init.normal_(lay.weight)
+    # def _reset_parameters(self):
+    #     for submodel in [self.bs3,self.bs4,self.bs5]:
+    #         for layers in submodel:
+    #             for lay in layers:
+    #                 if lay== "Conv2d":
+    #                     nn.init.normal_(lay.weight)
                         
     def forward(self,x):
         feat1 = self.bs3(x)
