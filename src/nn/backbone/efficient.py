@@ -33,7 +33,7 @@ class CNNBlock(nn.Module):
 
 @register
 class efficientnet(nn.Module):
-    standard_model = efficientnet_v2_s()
+    standard_model = efficientnet_v2_s(weights="IMAGENET1K_V1")
     def __init__(self):
         super().__init__()
         self.bs3 = nn.Sequential(

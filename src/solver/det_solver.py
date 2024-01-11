@@ -81,6 +81,8 @@ class DetSolver(BaseSolver):
         }
         with open("configs/rtdetr/include/optimizer.yml", 'r') as file:
             linecfg = yaml.safe_load(file)['names']
+            
+        wandb.config.epoches =  args.epoches
         try:
             start_time = time.time()
             for epoch in range(self.last_epoch + 1, args.epoches):
