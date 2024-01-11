@@ -1,4 +1,4 @@
-names: FalsePreBonev2
+names: FalsePreBoneL300
 use_ema: True 
 ema:
   type: ModelEMA
@@ -8,7 +8,7 @@ ema:
 
 find_unused_parameters: True 
 
-epoches: 100
+epoches: 300
 clip_max_norm: 0.1
 
 optimizer:
