@@ -1,4 +1,5 @@
-2024-01-09 23:15:14 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
-2024-01-09 23:23:01 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
-2024-01-09 23:30:45 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
-2024-01-09 23:38:37 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
+2024-01-13 00:41:17 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
+2024-01-13 00:48:35 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
+2024-01-13 00:55:50 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
+2024-01-13 01:03:07 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
+2024-01-13 01:10:24 [coco.src.data.coco.coco_eval][DEBUG] [coco_eval/summarize] - 74  : IoU metric: bbox
