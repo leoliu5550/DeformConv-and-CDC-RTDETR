@@ -6,12 +6,15 @@ postprocessor: RTDETRPostProcessor
 
 
 RTDETR: 
-  backbone: efficientnet
+  backbone: inceptionv3
   encoder: HybridEncoder
   decoder: RTDETRTransformer
   multi_scale: [480, 512, 544, 576, 608, 640, 640, 640, 672, 704, 736, 768, 800]
 efficientnet:
   depth: 
+inceptionv3:
+  depth: 
+  
 PResNet:
   depth: 50
   variant: d

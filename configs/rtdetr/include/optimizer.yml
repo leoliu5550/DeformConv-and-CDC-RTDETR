@@ -1,4 +1,5 @@
-names: simplefficientv2_w300
+names: inceptionv3_w150
+test: inceptionv3_w150
 use_ema: True 
 ema:
   type: ModelEMA
@@ -8,7 +9,7 @@ ema:
 
 find_unused_parameters: True 
 
-epoches: 300
+epoches: 150
 clip_max_norm: 0.1
 
 optimizer:
