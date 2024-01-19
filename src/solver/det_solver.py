@@ -28,7 +28,7 @@ if cfg['names']== None:
     wandb.init(
         mode="disabled",
         # set the wandb project where this run will be logged
-        project="RTDETR_Refactor_NEU",
+        project="RTDETR_Refactor_COCO",
         name = cfg['names'],
         # # track hyperparameters and run metadata
         config=cfg
@@ -36,7 +36,7 @@ if cfg['names']== None:
 else:
     wandb.init(
         # set the wandb project where this run will be logged
-        project="RTDETR_Refactor_NEU",
+        project="RTDETR_Refactor_COCO",
         name = cfg['names'],
         # # track hyperparameters and run metadata
         config=cfg
@@ -101,6 +101,7 @@ class DetSolver(BaseSolver):
                     )
                 wandb_prefixlogs(loss_dict)
                 self.lr_scheduler.step()
+                wandb.log({"learning rate":self.lr_scheduler})
                 
                 if self.output_dir:
                     checkpoint_paths = [self.output_dir / 'checkpoint.pth']

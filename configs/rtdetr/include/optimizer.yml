@@ -1,4 +1,4 @@
-names: FalsePreBoneL300
+names: origin_rtdetr
 use_ema: True 
 ema:
   type: ModelEMA
