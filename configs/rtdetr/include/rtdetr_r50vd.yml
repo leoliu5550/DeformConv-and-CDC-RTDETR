@@ -7,6 +7,8 @@ postprocessor: RTDETRPostProcessor
 
 RTDETR: 
   backbone: inceptionv3
+  subbone: Yolov1
+  catmodul: cbam
   encoder: HybridEncoder
   decoder: RTDETRTransformer
   multi_scale: [480, 512, 544, 576, 608, 640, 640, 640, 672, 704, 736, 768, 800]

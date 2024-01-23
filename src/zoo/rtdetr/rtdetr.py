@@ -18,9 +18,11 @@ __all__ = ['RTDETR', ]
 class RTDETR(nn.Module):
     __inject__ = ['backbone', 'encoder', 'decoder', ]
 
-    def __init__(self, backbone: nn.Module, encoder, decoder, multi_scale=None):
+    def __init__(self, backbone: nn.Module,subbone:nn.Module,catmodul, encoder, decoder, multi_scale=None):
         super().__init__()
         self.backbone = backbone
+        self.subbone = subbone
+        self.catmodul = catmodul
         self.decoder = decoder
         self.encoder = encoder
         self.multi_scale = multi_scale
@@ -31,7 +33,9 @@ class RTDETR(nn.Module):
             x = F.interpolate(x, size=[sz, sz])
             
         b_x = self.backbone(x)
-        x = self.encoder(b_x, x)      
+        sub_x = self.subbone(x)
+        att_x = self.catmodul(b_x.sub_x)
+        x = self.encoder(att_x )      
 
         x = self.decoder(x, targets)
 
