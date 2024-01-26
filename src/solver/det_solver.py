@@ -175,8 +175,8 @@ class DetSolver(BaseSolver):
             }
             data = requests.post(url, headers=headers, data=data)   # 使用 POST 方法
         except Exception as error:
-            
-            msg = f'\nTASK {linecfg} is failled.'
+            logtracker.debug(f"fail log = {error}")
+            msg = f'\nTASK {linecfg} is failled,fail logs ={error}'
             data = {
                 'message': msg    # 設定要發送的訊息
             }

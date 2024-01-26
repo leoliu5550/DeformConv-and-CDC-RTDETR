@@ -8,9 +8,10 @@ from src.core import register
 import logging
 import logging.config
 logging.config.fileConfig('logging.conf')
-logtracker = logging.getLogger(f"model.HybridEncoder.{__name__}")
-__all__ = ['cbam']
+logtracker = logging.getLogger(f"model.{__name__}")
 # endregion
+
+__all__ = ['cbam']
 
 class spatial_attention(nn.Module):
     def __init__(self,kernel_size=3,stride =1,padding =None,act = 'silu'):
@@ -92,7 +93,6 @@ class channel_attention(nn.Module):
         
         return outputs
 
-
 # Convolutional Block Attention Module
 class cbams(nn.Module):
     def __init__(self, ch_in,ratio=4, kernel_size=3,stride =1,padding =None,act = 'silu'):
@@ -109,6 +109,7 @@ class cbams(nn.Module):
         return x
     
 # Convolutional Block Attention Module 3
+
 @register
 class cbam(nn.Module):
     def __init__(self):
@@ -117,7 +118,10 @@ class cbam(nn.Module):
         for _ in range(3):
             self.sp_att.append(cbams(ch_in=256))
     def forward(self, b_x,sub_x):
+        # for i in range(3):
+        #     logtracker.debug(f"sub_x[{i}] = {self.sp_att[i](sub_x[i]).shape}")
+        #     logtracker.debug(f"b_x[{i}] = {b_x[i].shape}")     
         for i in range(3):
-            b_x = self.sp_att[i](sub_x[i]) * b_x[i]
+            b_x[i] = self.sp_att[i](sub_x[i]) * b_x[i]
         return b_x
     

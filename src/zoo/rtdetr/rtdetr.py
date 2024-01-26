@@ -10,15 +10,21 @@ import numpy as np
 
 from src.core import register
 
+# region
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logtracker = logging.getLogger(f"model.{__name__}")
+# endregion
 
 __all__ = ['RTDETR', ]
 
 
 @register
 class RTDETR(nn.Module):
-    __inject__ = ['backbone', 'encoder', 'decoder', ]
+    __inject__ = ['backbone','subbone','catmodul', 'encoder', 'decoder', ]
 
-    def __init__(self, backbone: nn.Module,subbone:nn.Module,catmodul, encoder, decoder, multi_scale=None):
+    def __init__(self, backbone: nn.Module,subbone:nn.Module,catmodul:nn.Module, encoder, decoder, multi_scale=None):
         super().__init__()
         self.backbone = backbone
         self.subbone = subbone
@@ -34,7 +40,8 @@ class RTDETR(nn.Module):
             
         b_x = self.backbone(x)
         sub_x = self.subbone(x)
-        att_x = self.catmodul(b_x.sub_x)
+        att_x = self.catmodul(b_x,sub_x)
+        logtracker.debug("after att_x")
         x = self.encoder(att_x )      
 
         x = self.decoder(x, targets)

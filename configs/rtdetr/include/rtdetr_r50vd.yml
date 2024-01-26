@@ -16,7 +16,10 @@ efficientnet:
   depth: 
 inceptionv3:
   depth: 
-  
+Yolov1:
+  depth:
+cbam:
+  depth:
 PResNet:
   depth: 50
   variant: d
