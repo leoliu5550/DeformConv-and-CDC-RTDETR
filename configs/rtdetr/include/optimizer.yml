@@ -1,4 +1,4 @@
-names: InceptionSEyolo
+names: run_test
 test: InceptionSEyolo
 use_ema: True 
 ema:
@@ -9,7 +9,7 @@ ema:
 
 find_unused_parameters: True 
 
-epoches: 150
+epoches: 10
 clip_max_norm: 0.1
 
 optimizer:
@@ -38,6 +38,6 @@ optimizer:
 
 lr_scheduler:
   type: MultiStepLR
-  milestones: [30]
+  milestones: [1]
   gamma: 0.1
 
