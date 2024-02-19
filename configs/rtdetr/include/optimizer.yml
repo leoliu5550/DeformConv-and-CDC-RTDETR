@@ -1,5 +1,5 @@
-names: InceptionSEyolo
-test: InceptionSEyolo
+names: pretrain
+test: 
 use_ema: True 
 ema:
   type: ModelEMA

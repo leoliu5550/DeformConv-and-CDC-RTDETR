@@ -1,14 +1,14 @@
 task: detection
 
-num_classes: 7
+num_classes: 5
 remap_mscoco_category: False
 
 train_dataloader: 
   type: DataLoader
   dataset: 
     type: CocoDetection
-    img_folder: /data/lcliu/neudet_coco/train/
-    ann_file: /data/lcliu/neudet_coco/train_annotations.json
+    img_folder: /data/lcliu/brandix_coco/train/
+    ann_file: /data/lcliu/brandix_coco/train_annotations.coco.json
     transforms:
       type: Compose
       ops: ~
@@ -22,8 +22,8 @@ val_dataloader:
   type: DataLoader
   dataset: 
     type: CocoDetection
-    img_folder: /data/lcliu/neudet_coco/valid/
-    ann_file: /data/lcliu/neudet_coco/valid_annotations.json
+    img_folder: /data/lcliu/brandix_coco/valid/
+    ann_file: /data/lcliu/brandix_coco/valid_annotations.coco.json
     transforms:
       type: Compose
       ops: ~ 
@@ -32,3 +32,9 @@ val_dataloader:
   batch_size: 2
   num_workers: 1
   drop_last: False
+
+main_load:
+  - /data/lcliu/neudet_coco/train/
+  - /data/lcliu/neudet_coco/train_annotations.json
+  - /data/lcliu/neudet_coco/valid/
+  - /data/lcliu/neudet_coco/valid_annotations.json
