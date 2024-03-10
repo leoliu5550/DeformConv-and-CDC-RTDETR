@@ -1,4 +1,5 @@
 names: origin_rtdetr
+test: origin_rtdetr
 use_ema: True 
 ema:
   type: ModelEMA

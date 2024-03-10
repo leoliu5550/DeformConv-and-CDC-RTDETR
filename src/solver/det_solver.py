@@ -68,7 +68,7 @@ class DetSolver(BaseSolver):
         # wandb.log({"n_parameters":n_parameters})
     
         wandb.config.n_parameters = n_parameters
- 
+
         logtracker.debug(f"number of params: { n_parameters}")
 
         base_ds = get_coco_api_from_dataset(self.val_dataloader.dataset)
@@ -101,7 +101,7 @@ class DetSolver(BaseSolver):
                     )
                 wandb_prefixlogs(loss_dict)
                 self.lr_scheduler.step()
-                wandb.log({"learning rate":self.lr_scheduler})
+                wandb.log({"learning rate":str(self.lr_scheduler)})
                 
                 if self.output_dir:
                     checkpoint_paths = [self.output_dir / 'checkpoint.pth']
@@ -125,10 +125,6 @@ class DetSolver(BaseSolver):
                 wandb_prefixlogs(valid_loss_dict,train=False)
                 print("test_stats")
                 print(test_stats)
-                logvalidtracker.debug(f"valid test_stats \n{test_stats}")
-                logvalidtracker.debug(f"valid test_stats data type\n{type(test_stats)}")
-                logvalidtracker.debug(f"valid coco_evaluator \n{coco_evaluator}")
-                logvalidtracker.debug(f"valid coco_evaluator data type\n{type(coco_evaluator)}")
                 # TODO 
                 for k in test_stats.keys():
                     if k in best_stat:
@@ -174,11 +170,12 @@ class DetSolver(BaseSolver):
             }
             data = requests.post(url, headers=headers, data=data)   # 使用 POST 方法
         except Exception as error:
-            
-            msg = f'\nTASK {linecfg} is failled \nTraining time = {total_time_str}'
+            logtracker.debug(f"process failed logs = \n {error}")
+            msg = f'\nTASK {linecfg} is failled, error log: \n{error}'
             data = {
                 'message': msg    # 設定要發送的訊息
             }
+            
             data = requests.post(url, headers=headers, data=data)   # 使用 POST 方法
 
 
