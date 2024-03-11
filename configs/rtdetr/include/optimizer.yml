@@ -1,5 +1,5 @@
-names: inceptionv3_w150
-test: inceptionv3_w150
+names: coco_inceptionv3
+test: coco_inceptionv3
 use_ema: True 
 ema:
   type: ModelEMA
@@ -9,7 +9,7 @@ ema:
 
 find_unused_parameters: True 
 
-epoches: 150
+epoches: 300
 clip_max_norm: 0.1
 
 optimizer:

@@ -15,7 +15,7 @@ from torchvision.models import inception_v3
 
 @register
 class inceptionv3(nn.Module):
-    standard_model = inception_v3(weights = "IMAGENET1K_V1")
+    standard_model = inception_v3(init_weights=True) #weights="IMAGENET1K_V1"
     def __init__(self):
         super().__init__()
         self.block1 = nn.Sequential(

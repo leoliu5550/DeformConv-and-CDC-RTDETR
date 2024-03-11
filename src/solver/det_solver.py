@@ -28,7 +28,7 @@ if cfg['names']== None:
     wandb.init(
         mode="disabled",
         # set the wandb project where this run will be logged
-        project="RTDETR_Refactor_NEU",
+        project="RTDETR_Refactor_COCO",
         name = cfg['names'],
         # # track hyperparameters and run metadata
         config=cfg
@@ -36,7 +36,7 @@ if cfg['names']== None:
 else:
     wandb.init(
         # set the wandb project where this run will be logged
-        project="RTDETR_Refactor_NEU",
+        project="RTDETR_Refactor_COCO",
         name = cfg['names'],
         # # track hyperparameters and run metadata
         config=cfg
@@ -175,8 +175,8 @@ class DetSolver(BaseSolver):
             }
             data = requests.post(url, headers=headers, data=data)   # 使用 POST 方法
         except Exception as error:
-            
-            msg = f'\nTASK {linecfg} is failled.'
+            logtracker.debug(f"error logs = \n{error}")
+            msg = f'\nTASK {linecfg} is failled. error logs = {error}'
             data = {
                 'message': msg    # 設定要發送的訊息
             }
