@@ -168,3 +168,4 @@ rtdetr_pytorch/output/*
 rtdetr_pytorch/dataset/*
 
 wandb/*
+emps
