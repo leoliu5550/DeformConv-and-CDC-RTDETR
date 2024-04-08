@@ -30,8 +30,9 @@ class RTDETR(nn.Module):
             sz = np.random.choice(self.multi_scale)
             x = F.interpolate(x, size=[sz, sz])
             
-        x = self.backbone(x)
-        x = self.encoder(x)        
+        b_x = self.backbone(x)
+        x = self.encoder(b_x, x)      
+
         x = self.decoder(x, targets)
 
         return x
