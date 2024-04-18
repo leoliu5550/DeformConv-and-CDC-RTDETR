@@ -1,12 +1,9 @@
-# num_classes: 91
-# remap_mscoco_category: True
-
 train_dataloader: 
   dataset: 
     return_masks: False
     transforms:
       ops:
-        - {type: RandomPhotometricDistort, p: 0.8}
+        - {type: RandomPhotometricDistort, p: 0.5}
         - {type: RandomZoomOut, fill: 0}
         - {type: RandomIoUCrop, p: 0.8}
         - {type: SanitizeBoundingBox, min_size: 1}
@@ -33,8 +30,6 @@ val_dataloader:
         - {type: Resize, size: [640, 640]}
         - {type: ToImageTensor}
         - {type: ConvertDtype}
-        - {type: SanitizeBoundingBox, min_size: 1}
-        - {type: ConvertBox, out_fmt: 'cxcywh', normalize: True}
   shuffle: False
   batch_size: 8
   num_workers: 8

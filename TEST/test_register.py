@@ -30,8 +30,8 @@ cfg = YAMLConfig(
 # for itm in dir(cfg):
 #     print(itm)
     # print(cfg)
-with open("model_info2.txt","w") as file:
-    file.write(str(cfg.model))
+
+print(cfg.model)
 # print(cfg.find_unused_parameters)
 # print(cfg.sync_bn)
 # class resnet:
