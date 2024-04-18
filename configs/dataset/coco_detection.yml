@@ -14,7 +14,7 @@ train_dataloader:
       ops: ~
   shuffle: True
   batch_size: 8
-  num_workers: 1
+  num_workers: 8
   drop_last: True 
 
 
@@ -30,5 +30,5 @@ val_dataloader:
 
   shuffle: False
   batch_size: 8
-  num_workers: 1
+  num_workers: 8
   drop_last: False

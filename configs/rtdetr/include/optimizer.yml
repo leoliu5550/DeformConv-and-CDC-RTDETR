@@ -1,4 +1,5 @@
-names: neu_with_original
+names: 
+test: deform_coco
 use_ema: True 
 ema:
   type: ModelEMA
