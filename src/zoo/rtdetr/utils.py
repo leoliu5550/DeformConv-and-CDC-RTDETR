@@ -5,7 +5,10 @@ import math
 import torch 
 import torch.nn as nn
 import torch.nn.functional as F 
-
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logtracker = logging.getLogger(f"model.utils.{__name__}")
 
 def inverse_sigmoid(x: torch.Tensor, eps: float=1e-5) -> torch.Tensor:
     x = x.clip(min=0., max=1.)
@@ -42,16 +45,28 @@ def deformable_attention_core_func(value, value_spatial_shapes, sampling_locatio
         sampling_value_l_ = F.grid_sample(
             value_l_,
             sampling_grid_l_,
-            mode='bilinear',
+            mode='nearest',#'bilinear'
             padding_mode='zeros',
             align_corners=False)
         sampling_value_list.append(sampling_value_l_)
     # (N_, Lq_, M_, L_, P_) -> (N_, M_, Lq_, L_, P_) -> (N_*M_, 1, Lq_, L_*P_)
     attention_weights = attention_weights.permute(0, 2, 1, 3, 4).reshape(
         bs * n_head, 1, Len_q, n_levels * n_points)
-    output = (torch.stack(
-        sampling_value_list, dim=-2).flatten(-2) *
-              attention_weights).sum(-1).reshape(bs, n_head * c, Len_q)
+    # for rw in sampling_value_list:
+    #     logtracker.debug(rw.shape)
+    # logtracker.debug(f"attention_weights = {attention_weights.shape}")
+    if hasattr(torch.cuda, 'empty_cache'):
+        torch.cuda.empty_cache()
+        
+    try:  
+        output = torch.stack(sampling_value_list, dim=-2).flatten(-2) *attention_weights
+        output = output.sum(-1).reshape(bs, n_head * c, Len_q)
+        
+        # output = (torch.stack(sampling_value_list, dim=-2).flatten(-2) *attention_weights).sum(-1).reshape(bs, n_head * c, Len_q)
+    except Exception as e:
+        logtracker.debug("error occurred")
+        logtracker.debug(e)
+
 
     return output.permute(0, 2, 1)
 
@@ -97,5 +112,4 @@ def get_activation(act: str, inpace: bool=True):
         m.inplace = inpace
     
     return m 
-
 

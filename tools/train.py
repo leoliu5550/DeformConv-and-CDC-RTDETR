@@ -5,7 +5,7 @@ import os
 import sys 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 import argparse
-
+import torch
 import src.misc.dist as dist 
 from src.core import YAMLConfig 
 from src.solver import TASKS
@@ -48,5 +48,6 @@ if __name__ == '__main__':
     parser.add_argument('--amp', action='store_true', default=False,)
 
     args = parser.parse_args()
-
+    torch.cuda.empty_cache()
     main(args)
+    torch.cuda.empty_cache()

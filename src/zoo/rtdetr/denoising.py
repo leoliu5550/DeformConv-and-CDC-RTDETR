@@ -32,6 +32,7 @@ def get_contrastive_denoising_training_group(targets,
     bs = len(num_gts)
 
     input_query_class = torch.full([bs, max_gt_num], num_classes, dtype=torch.int32, device=device)
+
     input_query_bbox = torch.zeros([bs, max_gt_num, 4], device=device)
     pad_gt_mask = torch.zeros([bs, max_gt_num], dtype=torch.bool, device=device)
 
@@ -45,6 +46,7 @@ def get_contrastive_denoising_training_group(targets,
     input_query_class = input_query_class.tile([1, 2 * num_group])
     input_query_bbox = input_query_bbox.tile([1, 2 * num_group, 1])
     pad_gt_mask = pad_gt_mask.tile([1, 2 * num_group])
+
     # positive and negative mask
     negative_gt_mask = torch.zeros([bs, max_gt_num * 2, 1], device=device)
     negative_gt_mask[:, max_gt_num:] = 1
