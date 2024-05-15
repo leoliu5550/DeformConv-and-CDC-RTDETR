@@ -1,5 +1,5 @@
-names: deform_coco
-test: deorm_coco
+names: DeformConvNEU
+test: DeformConvNEU
 use_ema: True 
 ema:
   type: ModelEMA
