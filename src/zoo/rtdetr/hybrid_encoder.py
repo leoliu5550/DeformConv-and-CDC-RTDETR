@@ -566,11 +566,13 @@ class HybridEncoder(nn.Module):
 
         return torch.concat([out_w.sin(), out_w.cos(), out_h.sin(), out_h.cos()], dim=1)[None, :, :]
 
-    def forward(self, feats,ori_x):
+    def forward(self, feats):
         # yolo_feats = self.yolov1(ori_x)
         assert len(feats) == len(self.in_channels)
         proj_feats = [self.input_proj[i](feat) for i, feat in enumerate(feats)]
-
+        logtracker.debug(feats[0].shape)
+        logtracker.debug(feats[1].shape)
+        logtracker.debug(feats[2].shape)
         # encoder
         # for rwo in proj_feats:
         #     logtracker.debug(f" shape is {rwo.shape}")

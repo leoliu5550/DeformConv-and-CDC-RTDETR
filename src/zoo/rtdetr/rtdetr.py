@@ -31,7 +31,8 @@ class RTDETR(nn.Module):
             x = F.interpolate(x, size=[sz, sz])
             
         b_x = self.backbone(x)
-        x = self.encoder(b_x, x)      
+        
+        x = self.encoder(b_x)      
 
         x = self.decoder(x, targets)
 
