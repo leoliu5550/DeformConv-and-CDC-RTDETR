@@ -58,7 +58,7 @@ def wandb_prefixlogs(loss_dict,train=True):
 class DetSolver(BaseSolver):
     
     def fit(self, ):
-        # print("Start training")
+        print("Start training")
         logtracker.debug("Start training")
         self.train()
 
@@ -74,11 +74,7 @@ class DetSolver(BaseSolver):
         base_ds = get_coco_api_from_dataset(self.val_dataloader.dataset)
         # best_stat = {'coco_eval_bbox': 0, 'coco_eval_masks': 0, 'epoch': -1, }
         best_stat = {'epoch': -1, }
-        token = "NWBdEgLUPbCLNcs48EaiDBU3jxDIyWBcBwFFDooW3GJ"
-        url = 'https://notify-api.line.me/api/notify'
-        headers = {
-            'Authorization': 'Bearer ' + token    # 設定權杖
-        }
+
         with open("configs/rtdetr/include/optimizer.yml", 'r') as file:
             linecfg = yaml.safe_load(file)['names']
         try:
@@ -123,8 +119,7 @@ class DetSolver(BaseSolver):
                     self.output_dir
                 )
                 wandb_prefixlogs(valid_loss_dict,train=False)
-                print("test_stats")
-                print(test_stats)
+
                 # TODO 
                 for k in test_stats.keys():
                     if k in best_stat:
@@ -163,20 +158,9 @@ class DetSolver(BaseSolver):
             logtracker.debug(f'Training time = {total_time_str}')
 
 
-
-            msg = f'\nTASK {linecfg} is finished \nTraining time = {total_time_str}'
-            data = {
-                'message': msg    # 設定要發送的訊息
-            }
-            data = requests.post(url, headers=headers, data=data)   # 使用 POST 方法
         except Exception as error:
             logtracker.debug(f"process failed logs = \n {error}")
             msg = f'\nTASK {linecfg} is failled, error log: \n{error}'
-            data = {
-                'message': msg    # 設定要發送的訊息
-            }
-            
-            data = requests.post(url, headers=headers, data=data)   # 使用 POST 方法
 
 
     def val(self, ):

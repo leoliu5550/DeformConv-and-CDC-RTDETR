@@ -384,21 +384,21 @@ class HybridEncoder(nn.Module):
         #     #     )
         #     # )
         
-            if layer_idx == len(in_channels)-1:
-                self.input_proj.append(
-                    nn.Sequential(
-                        # let deform conv remain same size after deformconv
-                        DeformConvBlock(in_channel, hidden_dim, kernel_size=3, stride=1, padding=1,bias=False),
-                        nn.BatchNorm2d(hidden_dim)
-                    )
-                )
-            else:
-                self.input_proj.append(
-                    nn.Sequential(
-                        nn.Conv2d(in_channel, hidden_dim, kernel_size=1, bias=False),
-                        nn.BatchNorm2d(hidden_dim)
-                    )
-                )
+            # if layer_idx == len(in_channels)-1:
+            #     self.input_proj.append(
+            #         nn.Sequential(
+            #             # let deform conv remain same size after deformconv
+            #             DeformConvBlock(in_channel, hidden_dim, kernel_size=3, stride=1, padding=1,bias=False),
+            #             nn.BatchNorm2d(hidden_dim)
+            #         )
+            #     )
+            # else:
+            #     self.input_proj.append(
+            #         nn.Sequential(
+            #             nn.Conv2d(in_channel, hidden_dim, kernel_size=1, bias=False),
+            #             nn.BatchNorm2d(hidden_dim)
+            #         )
+            #     )
                 
         # for in_channel in in_channels:
         #     self.input_proj.append(

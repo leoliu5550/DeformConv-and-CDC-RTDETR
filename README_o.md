@@ -1,12 +1,9 @@
-English | [简体中文](README_cn.md)
-
-
 <h2 align="center">RT-DETR: DETRs Beat YOLOs on Real-time Object Detection</h2>
 <p align="center">
-    <!-- <a href="https://github.com/lyuwenyu/RT-DETR/blob/main/LICENSE">
-        <img alt="license" src="https://img.shields.io/badge/LICENSE-Apache%202.0-blue">
-    </a> -->
     <a href="https://github.com/lyuwenyu/RT-DETR/blob/main/LICENSE">
+        <img alt="license" src="https://img.shields.io/badge/LICENSE-Apache%202.0-blue">
+    </a>
+    <a href="httaaps://github.com/lyuwenyu/RT-DETR/blob/main/LICENSE">
         <img alt="license" src="https://img.shields.io/github/license/lyuwenyu/RT-DETR">
     </a>
     <a href="https://github.com/lyuwenyu/RT-DETR/pulls">
