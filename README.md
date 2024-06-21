@@ -1,35 +1,41 @@
-## TODO
+<h2 align="center">Transformer-based method with Deformable Convolution and Central Difference Convolution for Object Detection</h2>
+<p align="center">
+    <a href="https://github.com/leoliu5550/RT-DETRv2/blob/main/LICENSE">
+        <img alt="license" src="https://img.shields.io/badge/LICENSE-Apache%202.0-blue">
+    </a>
+    <a href="httaaps://github.com/leoliu5550/RT-DETRv2/blob/main/LICENSE">
+        <img alt="license" src="https://img.shields.io/github/license/leoliu5550/RT-DETRv2">
+    </a>
+    <a href="https://github.com/leoliu5550/RT-DETRv2/pulls">
+        <img alt="prs" src="https://img.shields.io/github/issues-pr/leoliu5550/RT-DETRv2">
+    </a>
+    <a href="https://github.com/leoliu5550/RT-DETRv2/issues">
+        <img alt="issues" src="https://img.shields.io/github/issues/leoliu5550/RT-DETRv2?color=pink">
+    </a>
+    <a href="https://github.com/leoliu5550/RT-DETRv2">
+        <img alt="issues" src="https://img.shields.io/github/stars/leoliu5550/RT-DETRv2">
+    </a>
+    <!-- <a href="https://arxiv.org/abs/2304.08069">
+        <img alt="arXiv" src="https://img.shields.io/badge/arXiv-2304.08069-red">
+    </a> -->
+    <a href="mailto: leoliu5550@gmail.com">
+        <img alt="emal" src="https://img.shields.io/badge/contact_me-email-yellow">
+    </a>
+</p>
+
+---
 <details>
-<summary> see details </summary>
+<summary>Fig</summary>
 
-- [x] Training
-- [x] Evaluation
-- [x] Export onnx
-- [x] Upload source code
-- [x] Upload weight convert from paddle, see [*links*](https://github.com/lyuwenyu/RT-DETR/issues/42)
-- [x] Align training details with the [*paddle version*](../rtdetr_paddle/)
-- [x] Tuning rtdetr based on [*pretrained weights*](https://github.com/lyuwenyu/RT-DETR/issues/42)
-
+![ppdetr_overview](READIMG/OursRTDETR.png)
 </details>
 
 
-## Model Zoo
+## Introduction
 
-| Model | Dataset | Input Size | AP<sup>val</sup> | AP<sub>50</sub><sup>val</sup> | #Params(M) | FPS |  checkpoint |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-rtdetr_r18vd | COCO | 640 | 46.4 | 63.7 | 20 | 217 | [url<sup>*</sup>](https://github.com/lyuwenyu/storage/releases/download/v0.1/rtdetr_r18vd_dec3_6x_coco_from_paddle.pth)
-rtdetr_r34vd | COCO | 640 | 48.9 | 66.8 | 31 | 161 | [url<sup>*</sup>](https://github.com/lyuwenyu/storage/releases/download/v0.1/rtdetr_r34vd_dec4_6x_coco_from_paddle.pth)
-rtdetr_r50vd_m | COCO | 640 | 51.3 | 69.5 | 36 | 145 | [url<sup>*</sup>](https://github.com/lyuwenyu/storage/releases/download/v0.1/rtdetr_r50vd_m_6x_coco_from_paddle.pth)
-rtdetr_r50vd | COCO | 640 | 53.1 | 71.2| 42 | 108 | [url<sup>*</sup>](https://github.com/lyuwenyu/storage/releases/download/v0.1/rtdetr_r50vd_6x_coco_from_paddle.pth)
-rtdetr_r101vd | COCO | 640 | 54.3 | 72.8 | 76 | 74 | [url<sup>*</sup>](https://github.com/lyuwenyu/storage/releases/download/v0.1/rtdetr_r101vd_6x_coco_from_paddle.pth)
-rtdetr_18vd | COCO+Objects365 | 640 | 49.0 | 66.5 | 20 | 217 | [url<sup>*</sup>](https://github.com/lyuwenyu/storage/releases/download/v0.1/rtdetr_r18vd_5x_coco_objects365_from_paddle.pth)
-rtdetr_r50vd | COCO+Objects365 | 640 | 55.2 | 73.4 | 42 | 108 | [url<sup>*</sup>](https://github.com/lyuwenyu/storage/releases/download/v0.1/rtdetr_r50vd_2x_coco_objects365_from_paddle.pth)
-rtdetr_r101vd | COCO+Objects365 | 640 | 56.2 | 74.5 | 76 | 74 | [url<sup>*</sup>](https://github.com/lyuwenyu/storage/releases/download/v0.1/rtdetr_r101vd_2x_coco_objects365_from_paddle.pth)
+This study devotes to enhance the detection capabilities of real-time detection transformer (RT-DETR) by incorporating two adapter modules: the deformable convolutional network (DeformConv) and the central difference convolution (CDC) adapter module. These modules are integrated into backbone of RT-DETR and Transformer network, aiming to improve the ability of model to accurately locate and classify objects.
 
-Notes
-- `COCO + Objects365` in the table means finetuned model on `COCO` using pretrained weights trained on `Objects365`.
-- `url`<sup>`*`</sup> is the url of pretrained weights convert from paddle model for save energy. *It may have slight differences between this table and paper*
-<!-- - `FPS` is evaluated on a single T4 GPU with $batch\\_size = 1$ and $tensorrt\\_fp16$ mode -->
+To evaluate the effectiveness of the proposed adapter modules, comprehensive experiments are conducted on two benchmark datasets: the NEU-DET steel plate crack dataset and the COCO dataset. On the NEU-DET dataset, compared to RT-DETR, the DeformConv adapter module achieved a significant 1\% improvement in mean average precision (mAP) for medium-sized defects and a 0.1\% improvement in recall (AR) for large-sized defects. These results highlight the capability of DeformConv for this type of defect with complex shapes. On the COCO dataset, the CDC adapter module exhibited a 0.1\% mAP gain and a 0.5\% AR improvement for medium-sized objects. These results demonstrate the effectiveness of CDC in extracting fine-grained details and distinguishing objects from the background. In summary, both DeformConv and CDC adapter modules have the potential to enhance the object detection capabilities of the RT-DETR model in different application scenarios. DeformConv can effectively capture object shape variations for complex-shaped object detection, while CDC can distinguish target objects from the background in situations where objects may be obscured or the background is complicated.
 
 ## Quick start
 
@@ -40,6 +46,14 @@ Notes
 pip install -r requirements.txt
 ```
 
+</details>
+<details>
+<summary>Adapter</summary>
+
+- For using central difference convolution at s5, replace `Adapter` with `CDCadapter`
+- For using deformable convolution at s5, replace `Adapter` with `CDCadapter`
+- For using RT-DETR, remain `Adapter`
+- Modify config [`Adapter`, `CDCadapter`, `Deformadapter`](configs/rtdetr/include/rtdetr_r50vd.yml)
 </details>
 
 
@@ -99,11 +113,3 @@ python tools/export_onnx.py -c configs/rtdetr/rtdetr_r18vd_6x_coco.yml -r path/t
 
 
 
-
-<details open>
-<summary>Train custom data</summary>
-
-1. set `remap_mscoco_category: False`. This variable only works for ms-coco dataset. If you want to use `remap_mscoco_category` logic on your dataset, please modify variable [`mscoco_category2name`](https://github.com/lyuwenyu/RT-DETR/blob/main/rtdetr_pytorch/src/data/coco/coco_dataset.py#L154) based on your dataset.
-
-2. add `-t path/to/checkpoint` (optinal) to tuning rtdetr based on pretrained checkpoint. see [training script details](./tools/README.md).
-</details>
