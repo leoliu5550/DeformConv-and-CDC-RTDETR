@@ -341,101 +341,6 @@ class CNNBlock(nn.Module):
         x = self.leakyrelu(x)
         return x
     
-# class Yolov1(nn.Module):
-#     def __init__(self,in_channels = 3):
-#         architecture_config = [
-#             #Conv (kernl_size,out_put,stride,padding)
-#             (7, 64, 2, 3),
-#             "M",#MaxPooling (kernl_size =2 ,stride = 2)
-#             (15, 64, 1, 7),
-#             "M",
-#             # (1, 128, 1, 0),
-#             # (3, 256, 1, 1),
-#             # (1, 128, 1, 0),
-#             (3, 256, 1, 1),
-#             "feat1",
-#             "M",
-#             #[conv,Conv,repeat_times]
-#             # [(1, 256, 1, 0), (3, 512, 1, 1), 1],
-#             # (3, 256, 1, 1),
-#             # (1, 512, 1, 0),
-#             (3, 256, 1, 1),
-#             "feat2",
-#             "M",
-#             # [(1, 256, 1, 0), (3, 512, 1, 1), 1],
-#             # (3, 256, 1, 1),
-#             # (1, 512, 1, 0),
-#             (3, 256, 1, 1),
-#             "feat3"
-#         ]
-#         super(Yolov1,self).__init__()
-#         self.architecture = architecture_config
-#         self.in_channels = in_channels
-#         self.darknetdict = self._create_conv_layers(self.architecture)
-
-#     def forward(self,x):
-        
-#         feat1 = self.darknetdict['feat1'](x)
-#         feat2 = self.darknetdict['feat2'](feat1)
-#         feat3 = self.darknetdict['feat3'](feat2)
-#         # x = torch.flatten(x,start_dim=1)
-#         # [feat1,feat2,feat3]
-#         return [feat1,feat2,feat3]
-#     # {
-#     #         'feat1':feat1,
-#     #         'feat2':feat2,
-#     #         'feat3':feat3
-#     #     }
-#     def _create_conv_layers(self,architecture):
-#         layers = []
-#         subdict = {}
-#         in_channels = self.in_channels
-#         for x in architecture:
-#             if type(x) == tuple:
-#                 layers += [
-#                     CNNBlock(
-#                         in_channels=in_channels,
-#                         out_channels=x[1],
-#                         kernel_size =x[0],
-#                         stride = x[2],
-#                         padding = x[3])]
-#                 in_channels = x[1]
-#             elif x in ["feat1","feat2","feat3"]:
-#                 subdict[x] = nn.Sequential(*layers)
-#                 layers = []
-#             elif x == 'M':
-#                 layers+=[
-#                     nn.MaxPool2d(kernel_size=(2,2),stride=2)
-#                     ]
-#             # elif x == 'M2':
-#             #     layers+=[
-#             #         nn.MaxPool2d(kernel_size=(2,2),stride=2)
-#             #         ]
-#             elif type(x) == list:
-#                 conv1 = x[0]
-#                 conv2 = x[1]
-#                 num_repeats = x[2]
-
-#                 for _ in range(num_repeats):
-#                     layers +=[
-#                         CNNBlock(
-#                             in_channels=in_channels,
-#                             out_channels=conv1[1],
-#                             kernel_size = conv1[0],
-#                             stride=conv1[2],
-#                             padding = conv1[3]
-#                         )]
-#                     layers +=[
-#                         CNNBlock(
-#                             in_channels=conv1[1],
-#                             out_channels=conv2[1],
-#                             kernel_size = conv2[0],
-#                             stride = conv2[2],
-#                             padding = conv2[3]
-#                         )]
-#                     in_channels = conv2[1]
-
-#         return nn.ModuleDict(subdict)
 
 
 @register
@@ -479,29 +384,29 @@ class HybridEncoder(nn.Module):
         #     #     )
         #     # )
         
-        #     if layer_idx == len(in_channels)-1:
-        #         self.input_proj.append(
-        #             nn.Sequential(
-        #                 # let deform conv remain same size after deformconv
-        #                 Conv2d_cdiffBlock(in_channel, hidden_dim, kernel_size=3, stride=1, padding=1,bias=False),
-        #                 nn.BatchNorm2d(hidden_dim)
-        #             )
-        #         )
-        #     else:
-        #         self.input_proj.append(
-        #             nn.Sequential(
-        #                 nn.Conv2d(in_channel, hidden_dim, kernel_size=1, bias=False),
-        #                 nn.BatchNorm2d(hidden_dim)
-        #             )
-        #         )
-                
-        for in_channel in in_channels:
-            self.input_proj.append(
-                nn.Sequential(
-                    nn.Conv2d(in_channel, hidden_dim, kernel_size=1, bias=False),
-                    nn.BatchNorm2d(hidden_dim)
+            if layer_idx == len(in_channels)-1:
+                self.input_proj.append(
+                    nn.Sequential(
+                        # let deform conv remain same size after deformconv
+                        DeformConvBlock(in_channel, hidden_dim, kernel_size=3, stride=1, padding=1,bias=False),
+                        nn.BatchNorm2d(hidden_dim)
+                    )
                 )
-            )
+            else:
+                self.input_proj.append(
+                    nn.Sequential(
+                        nn.Conv2d(in_channel, hidden_dim, kernel_size=1, bias=False),
+                        nn.BatchNorm2d(hidden_dim)
+                    )
+                )
+                
+        # for in_channel in in_channels:
+        #     self.input_proj.append(
+        #         nn.Sequential(
+        #             nn.Conv2d(in_channel, hidden_dim, kernel_size=1, bias=False),
+        #             nn.BatchNorm2d(hidden_dim)
+        #         )
+        #     )
 
         # encoder transformer
         encoder_layer = TransformerEncoderLayer(
@@ -566,15 +471,12 @@ class HybridEncoder(nn.Module):
 
         return torch.concat([out_w.sin(), out_w.cos(), out_h.sin(), out_h.cos()], dim=1)[None, :, :]
 
-    def forward(self, feats,ori_x):
+    def forward(self, feats):
         # yolo_feats = self.yolov1(ori_x)
         assert len(feats) == len(self.in_channels)
-        # proj_feats = [feat for feat in feats]
-        proj_feats = [feat for i, feat in enumerate(feats)]
+        # proj_feats = [self.input_proj[i](feat) for i, feat in enumerate(feats)]
+        proj_feats = feats
 
-        # encoder
-        # for rwo in proj_feats:
-        #     logtracker.debug(f" shape is {rwo.shape}")
         if self.num_encoder_layers > 0:
             for i, enc_ind in enumerate(self.use_encoder_idx):
                 h, w = proj_feats[enc_ind].shape[2:]
@@ -589,12 +491,6 @@ class HybridEncoder(nn.Module):
 
                 memory = self.encoder[i](src_flatten, pos_embed=pos_embed)
                 proj_feats[enc_ind] = memory.permute(0, 2, 1).reshape(-1, self.hidden_dim, h, w).contiguous()
-                # print([x.is_contiguous() for x in proj_feats ])
-
-        # add yolov1 backbone after encoder layer
-        # for i in range(len(yolo_feats)):
-        #     proj_feats[i] =  yolo_feats[i]+proj_feats[i]
-
 
 
         # broadcasting and fusion

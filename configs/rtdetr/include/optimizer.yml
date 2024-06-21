@@ -1,5 +1,5 @@
-names: coco_inceptionv3
-test: coco_inceptionv3
+names: deorm_coco
+test: deorm_coco
 use_ema: True 
 ema:
   type: ModelEMA
@@ -9,7 +9,7 @@ ema:
 
 find_unused_parameters: True 
 
-epoches: 300
+epoches: 72
 clip_max_norm: 0.1
 
 optimizer:

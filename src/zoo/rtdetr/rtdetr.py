@@ -16,13 +16,14 @@ __all__ = ['RTDETR', ]
 
 @register
 class RTDETR(nn.Module):
-    __inject__ = ['backbone', 'encoder', 'decoder', ]
+    __inject__ = ['backbone','adapter', 'encoder', 'decoder', ]
 
-    def __init__(self, backbone: nn.Module, encoder, decoder, multi_scale=None):
+    def __init__(self, backbone: nn.Module,adapter, encoder, decoder, multi_scale=None):
         super().__init__()
         self.backbone = backbone
-        self.decoder = decoder
+        self.adapter = adapter
         self.encoder = encoder
+        self.decoder = decoder
         self.multi_scale = multi_scale
         
     def forward(self, x, targets=None):
@@ -30,9 +31,9 @@ class RTDETR(nn.Module):
             sz = np.random.choice(self.multi_scale)
             x = F.interpolate(x, size=[sz, sz])
             
-        b_x = self.backbone(x)
-        x = self.encoder(b_x, x)      
-
+        x = self.backbone(x)
+        x = self.adapter(x)
+        x = self.encoder(x)      
         x = self.decoder(x, targets)
 
         return x
