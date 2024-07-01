@@ -6,7 +6,7 @@ postprocessor: RTDETRPostProcessor
 
 
 RTDETR: 
-  backbone: inceptionv3
+  backbone: PResNet
   encoder: HybridEncoder
   adapter: CDCadapter
   decoder: RTDETRTransformer

@@ -4,7 +4,7 @@ by lyuwenyu
 import time 
 import json
 import datetime
-import os
+import os,yaml
 import torch 
 
 import requests
@@ -20,41 +20,8 @@ logging.config.fileConfig('logging.conf')
 logtracker = logging.getLogger(f"train.trainning.{__name__}")
 logvalidtracker = logging.getLogger(f"train.vaild.{__name__}")
 
-import wandb,yaml
-with open("configs/rtdetr/include/optimizer.yml") as file:
-    cfg = yaml.safe_load(file)
 
-if cfg['names']== None:
-    wandb.init(
-        mode="disabled",
-        # set the wandb project where this run will be logged
-        project="RTDETR_Refactor_COCO",
-        name = cfg['names'],
-        # # track hyperparameters and run metadata
-        config=cfg
-    )
-else:
-    wandb.init(
-        # set the wandb project where this run will be logged
-        project="RTDETR_Refactor_COCO",
-        name = cfg['names'],
-        # # track hyperparameters and run metadata
-        config=cfg
-    )
-def wandb_prefixlogs(loss_dict,train=True):
-    if train:
-        prefix = "train"
-    else:
-        prefix = "valid"
-    
-        
-    for key,value in loss_dict.items():
-        if key == "test_coco_eval_bbox":
-            continue
-        else:
-            logs = {f"{prefix}.{key}":value}
-            wandb.log(logs)
-            
+
 class DetSolver(BaseSolver):
     
     def fit(self, ):
@@ -66,8 +33,6 @@ class DetSolver(BaseSolver):
         
         n_parameters = sum(p.numel() for p in self.model.parameters() if p.requires_grad)
         # wandb.log({"n_parameters":n_parameters})
-    
-        wandb.config.n_parameters = n_parameters
 
         logtracker.debug(f"number of params: { n_parameters}")
 
@@ -95,10 +60,9 @@ class DetSolver(BaseSolver):
                         ema=self.ema, 
                         scaler=self.scaler
                     )
-                wandb_prefixlogs(loss_dict)
+
                 self.lr_scheduler.step()
-                wandb.log({"learning rate":str(self.lr_scheduler)})
-                
+
                 if self.output_dir:
                     checkpoint_paths = [self.output_dir / 'checkpoint.pth']
                     # extra checkpoint before LR drop and every 100 epochs
@@ -118,7 +82,6 @@ class DetSolver(BaseSolver):
                     self.device, 
                     self.output_dir
                 )
-                wandb_prefixlogs(valid_loss_dict,train=False)
 
                 # TODO 
                 for k in test_stats.keys():

@@ -11,6 +11,10 @@ from typing import Dict
 from src.misc import dist
 from src.core import BaseConfig
 
+# import logging
+# import logging.config
+# logging.config.fileConfig('logging.conf')
+# logtracker = logging.getLogger(f"configer.basesolver.{__name__}")
 
 class BaseSolver(object):
     def __init__(self, cfg: BaseConfig) -> None:
@@ -24,7 +28,6 @@ class BaseSolver(object):
         device = cfg.device
         self.device = device
         self.last_epoch = cfg.last_epoch
-
         self.model = dist.warp_model(cfg.model.to(device), cfg.find_unused_parameters, cfg.sync_bn)
         self.criterion = cfg.criterion.to(device)
         self.postprocessor = cfg.postprocessor

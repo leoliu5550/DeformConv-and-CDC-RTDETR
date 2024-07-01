@@ -5,6 +5,11 @@ import os
 import yaml 
 import inspect
 import importlib
+import logging
+import logging.config
+logging.config.fileConfig('logging.conf')
+logtracker = logging.getLogger(f"configer.yaml_utils.{__name__}")
+
 
 __all__ = ['GLOBAL_CONFIG', 'register', 'create', 'load_config', 'merge_config', 'merge_dict']
 
@@ -144,7 +149,7 @@ def create(type_or_name, **kwargs):
 
 
     cls_kwargs = {n: cls_kwargs[n] for n in arg_names}
-
+    logtracker.debug(f"cls_kwargs = {cls_kwargs} ")
     return cls(**cls_kwargs)
 
 
